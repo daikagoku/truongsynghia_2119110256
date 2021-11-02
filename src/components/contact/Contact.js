@@ -17,8 +17,8 @@ export default memo(function Contact(){
 				},
 				onMouseMove:function(event){
 					const cussorPos = getCursorPos(event);
-					contact.style.left 	= cussorPos.x - (contact.offsetWidth / 2) + "px";
-    				contact.style.top 	= cussorPos.y - (contact.offsetHeight / 2) + "px";
+					contact.style.left 	+= cussorPos.x - (contact.offsetWidth / 2) + "px";
+    				contact.style.top 	+= cussorPos.y - (contact.offsetHeight / 2) + "px";
     				console.log(cussorPos)
 				}
 			})

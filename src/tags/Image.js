@@ -11,7 +11,7 @@ const Image = (function(){
 			_Attr.className +=" "+className;
 		};
 		if(src === undefined){
-			src="http://localhost:3000/img/default-no-img.jpg";
+			src="/img/default-no-img.jpg";
 		};
 		if(ref !== undefined){
 			_Attr.ref = ref;
