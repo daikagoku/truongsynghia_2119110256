@@ -1,0 +1,32 @@
+.footer-list{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.footer-list-item{
+	color: #333;
+	display: flex;
+}
+.footer-list-item:hover,
+.footer-list-item.active{
+	color: #ffb416;
+}
+.footer-list-button{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	width: 100%;
+	word-break: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    padding: 0.1em 0;
+}
+.footer-list-button:before{
+	font-family: "Font Awesome 5 Solid";
+	content: "\f054";
+	margin: 0 0.2em;
+	font-size: 0.6em;
+}

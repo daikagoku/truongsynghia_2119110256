@@ -1,0 +1,42 @@
+.post-card {
+	border-radius: 0.5rem;
+	box-shadow: 0 0 0.3rem 0.1rem rgba(0, 0, 0, 0.1);
+}
+.post-card-head{
+	border-bottom: 1px solid rgba(200, 200, 200, 0.6);
+}
+.post-img{
+	transition: transform 0.3s;
+}
+.post-card.action:hover .post-img{
+	transform: scale(1.1);
+}
+.post-title{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	line-height: 1.2em;
+	height: 2.4em;
+	font-weight: bolder;
+	margin-bottom: 0;
+	width: 100%;
+    word-break: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.post-icon{
+	color: #fd2704;
+}
+.post-summary{
+	width: fit-content;
+	word-break: break-word;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+
+}

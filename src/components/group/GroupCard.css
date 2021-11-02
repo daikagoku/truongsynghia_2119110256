@@ -1,0 +1,12 @@
+.group-card-title{
+	width: fit-content;
+	padding: 0 2rem;
+	font-weight: bolder;
+	border-radius: 1rem 1rem 0 0;
+	background: #fd2704;
+	color: #fff;
+}
+.group-card-body {
+	border-radius: 1rem;
+	border: 0.1rem solid #fd2704;
+}

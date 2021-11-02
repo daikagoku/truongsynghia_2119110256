@@ -1,0 +1,23 @@
+:root{
+	--primary-color: #170f23;
+	--primary-text: #bbb;
+	--primary-highlight: #fff;
+	--primary-active: #7200a1;
+	--primary-banner: #7200a1;
+	--primary-line: #7200a1;
+	--primary-overlay: rgba(250,250,250,0.1);
+	--primary-shadow: rgba(250,250,250,0.2);
+
+	--secondary-color: #231b2e;
+	--highlight-gradient: #f00,#ff0,#0ff;
+}
+.gradient{
+	background: -webkit-linear-gradient(#f00,#ff0,#fff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+@media (min-width: 576px) {}
+@media (min-width: 768px) {}
+@media (min-width: 992px) {}
+@media (min-width: 1200px) {}
+@media (min-width: 1400px) {}

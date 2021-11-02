@@ -1,0 +1,9 @@
+[
+	{
+		"src":"http://localhost:3000/img/slide1.png",
+		"position":"main-slide"
+	},{
+		"src":"http://localhost:3000/img/slide2.png",
+		"position":"main-slide"
+	}
+]

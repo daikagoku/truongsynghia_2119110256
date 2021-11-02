@@ -1,0 +1,309 @@
+[{
+    "id" :0,
+    "title" :"Acer Nitro 5 AN515 57 51G6",
+    "alias" :"acer-nitro-5-an515-57-51g6",
+    "image" :"/upload/Acer Nitro 5 AN515 57 51G6.jpg",
+    "price" :76,
+    "salePrice":72
+},{
+    "id" :1,
+    "title" :"Acer Nitro 5 Gaming AN515",
+    "alias" :"acer-nitro-5-gaming-an515",
+    "image" :"/upload/Acer Nitro 5 Gaming AN515.jpg",
+    "price" :26,
+    "salePrice":11
+},{
+    "id" :2,
+    "title" :"Asus ROG Phone 3",
+    "alias" :"asus-rog-phone-3",
+    "image" :"/upload/Asus ROG Phone 3.png",
+    "price" :45,
+    "salePrice":32
+},{
+    "id" :3,
+    "title" :"Asus ROG Phone 5",
+    "alias" :"asus-rog-phone-5",
+    "image" :"/upload/Asus ROG Phone 5.png",
+    "price" :99,
+    "salePrice":30
+},{
+    "id" :4,
+    "title" :"Asus TUF Gaming FX706HE",
+    "alias" :"asus-tuf-gaming-fx706he",
+    "image" :"/upload/Asus TUF Gaming FX706HE.jpg",
+    "price" :198,
+    "salePrice":167
+},{
+    "id" :5,
+    "title" :"Asus VivoBook A515EA",
+    "alias" :"asus-vivobook-a515ea",
+    "image" :"/upload/Asus VivoBook A515EA.jpg",
+    "price" :147,
+    "salePrice":91
+},{
+    "id" :6,
+    "title" :"Dell Gaming G3 15",
+    "alias" :"dell-gaming-g3-15",
+    "image" :"/upload/Dell Gaming G3 15.jpg",
+    "price" :6,
+    "salePrice":5
+},{
+    "id" :7,
+    "title" :"Dell Gaming G15",
+    "alias" :"dell-gaming-g15",
+    "image" :"/upload/Dell Gaming G15.jpg",
+    "price" :36,
+    "salePrice":13
+},{
+    "id" :8,
+    "title" :"Dell Inspiron 15 3511",
+    "alias" :"dell-inspiron-15-3511",
+    "image" :"/upload/Dell Inspiron 15 3511.jpg",
+    "price" :43,
+    "salePrice":34
+},{
+    "id" :9,
+    "title" :"Dell Vostro 3400",
+    "alias" :"dell-vostro-3400",
+    "image" :"/upload/Dell Vostro 3400.jpg",
+    "price" :190,
+    "salePrice":130
+},{
+    "id" :10,
+    "title" :"GIGABYTE Gaming G5",
+    "alias" :"gigabyte-gaming-g5",
+    "image" :"/upload/GIGABYTE Gaming G5.jpg",
+    "price" :39,
+    "salePrice":32
+},{
+    "id" :11,
+    "title" :"HP Envy 13 ba1030TU",
+    "alias" :"hp-envy-13-ba1030tu",
+    "image" :"/upload/HP Envy 13 ba1030TU.jpg",
+    "price" :80,
+    "salePrice":67
+},{
+    "id" :12,
+    "title" :"HP Envy 13 ba1031TU",
+    "alias" :"hp-envy-13-ba1031tu",
+    "image" :"/upload/HP Envy 13 ba1031TU.jpg",
+    "price" :0,
+    "salePrice":0
+},{
+    "id" :13,
+    "title" :"HP Gaming VICTUS 16",
+    "alias" :"hp-gaming-victus-16",
+    "image" :"/upload/HP Gaming VICTUS 16.png",
+    "price" :3,
+    "salePrice":1
+},{
+    "id" :14,
+    "title" :"iPhone 11",
+    "alias" :"iphone-11",
+    "image" :"/upload/iPhone 11.png",
+    "price" :132,
+    "salePrice":86
+},{
+    "id" :15,
+    "title" :"iPhone 12 Pro",
+    "alias" :"iphone-12-pro",
+    "image" :"/upload/iPhone 12 Pro.png",
+    "price" :67,
+    "salePrice":42
+},{
+    "id" :16,
+    "title" :"iPhone 13 Mini",
+    "alias" :"iphone-13-mini",
+    "image" :"/upload/iPhone 13 Mini.png",
+    "price" :135,
+    "salePrice":97
+},{
+    "id" :17,
+    "title" :"iPhone 13 Pro Max",
+    "alias" :"iphone-13-pro-max",
+    "image" :"/upload/iPhone 13 Pro Max.png",
+    "price" :33,
+    "salePrice":25
+},{
+    "id" :18,
+    "title" :"iPhone SE",
+    "alias" :"iphone-se",
+    "image" :"/upload/iPhone SE.png",
+    "price" :11,
+    "salePrice":4
+},{
+    "id" :19,
+    "title" :"iPhone XR",
+    "alias" :"iphone-xr",
+    "image" :"/upload/iPhone XR.png",
+    "price" :128,
+    "salePrice":16
+},{
+    "id" :20,
+    "title" :"MacBook Air M1",
+    "alias" :"macbook-air-m1",
+    "image" :"/upload/MacBook Air M1.jpg",
+    "price" :113,
+    "salePrice":38
+},{
+    "id" :21,
+    "title" :"MacBook Pro M1",
+    "alias" :"macbook-pro-m1",
+    "image" :"/upload/MacBook Pro M1.jpg",
+    "price" :46,
+    "salePrice":2
+},{
+    "id" :22,
+    "title" :"MSI Gaming GE66 Raider 11UG",
+    "alias" :"msi-gaming-ge66-raider-11ug",
+    "image" :"/upload/MSI Gaming GE66 Raider 11UG.jpg",
+    "price" :170,
+    "salePrice":152
+},{
+    "id" :23,
+    "title" :"MSI Gaming GE66 Raider 11UH",
+    "alias" :"msi-gaming-ge66-raider-11uh",
+    "image" :"/upload/MSI Gaming GE66 Raider 11UH.jpg",
+    "price" :21,
+    "salePrice":7
+},{
+    "id" :24,
+    "title" :"MSI Gaming GF65 Thin 10UE",
+    "alias" :"msi-gaming-gf65-thin-10ue",
+    "image" :"/upload/MSI Gaming GF65 Thin 10UE.jpg",
+    "price" :44,
+    "salePrice":8
+},{
+    "id" :25,
+    "title" :"MSI Gaming GS66 Stealth 11UG",
+    "alias" :"msi-gaming-gs66-stealth-11ug",
+    "image" :"/upload/MSI Gaming GS66 Stealth 11UG.jpg",
+    "price" :99,
+    "salePrice":75
+},{
+    "id" :26,
+    "title" :"MSI Modern 15 A11MU",
+    "alias" :"msi-modern-15-a11mu",
+    "image" :"/upload/MSI Modern 15 A11MU.jpg",
+    "price" :193,
+    "salePrice":177
+},{
+    "id" :27,
+    "title" :"Nokia X10 5G",
+    "alias" :"nokia-x10-5g",
+    "image" :"/upload/Nokia X10 5G.png",
+    "price" :197,
+    "salePrice":44
+},{
+    "id" :28,
+    "title" :"OnePlus 7 Pro",
+    "alias" :"oneplus-7-pro",
+    "image" :"/upload/OnePlus 7 Pro.png",
+    "price" :44,
+    "salePrice":37
+},{
+    "id" :29,
+    "title" :"OnePlus 8 Pro",
+    "alias" :"oneplus-8-pro",
+    "image" :"/upload/OnePlus 8 Pro.png",
+    "price" :134,
+    "salePrice":3
+},{
+    "id" :30,
+    "title" :"OnePlus Nord N10 5G",
+    "alias" :"oneplus-nord-n10-5g",
+    "image" :"/upload/OnePlus Nord N10 5G.png",
+    "price" :184,
+    "salePrice":143
+},{
+    "id" :31,
+    "title" :"OPPO A55",
+    "alias" :"oppo-a55",
+    "image" :"/upload/OPPO A55.png",
+    "price" :98,
+    "salePrice":90
+},{
+    "id" :32,
+    "title" :"Oppo A74",
+    "alias" :"oppo-a74",
+    "image" :"/upload/Oppo A74.png",
+    "price" :45,
+    "salePrice":34
+},{
+    "id" :33,
+    "title" :"OPPO Reno5 5G",
+    "alias" :"oppo-reno5-5g",
+    "image" :"/upload/OPPO Reno5 5G.png",
+    "price" :126,
+    "salePrice":64
+},{
+    "id" :34,
+    "title" :"OPPO Reno6 5G",
+    "alias" :"oppo-reno6-5g",
+    "image" :"/upload/OPPO Reno6 5G.png",
+    "price" :130,
+    "salePrice":49
+},{
+    "id" :35,
+    "title" :"Samsung Galaxy A22",
+    "alias" :"samsung-galaxy-a22",
+    "image" :"/upload/Samsung Galaxy A22.png",
+    "price" :193,
+    "salePrice":15
+},{
+    "id" :36,
+    "title" :"Samsung Galaxy M51",
+    "alias" :"samsung-galaxy-m51",
+    "image" :"/upload/Samsung Galaxy M51.png",
+    "price" :89,
+    "salePrice":56
+},{
+    "id" :37,
+    "title" :"Vivo Y21s",
+    "alias" :"vivo-y21s",
+    "image" :"/upload/Vivo Y21s.png",
+    "price" :122,
+    "salePrice":47
+},{
+    "id" :38,
+    "title" :"Vsmart Aris",
+    "alias" :"vsmart-aris",
+    "image" :"/upload/Vsmart Aris.png",
+    "price" :98,
+    "salePrice":57
+},{
+    "id" :39,
+    "title" :"Vsmart Star 5",
+    "alias" :"vsmart-star-5",
+    "image" :"/upload/Vsmart Star 5.png",
+    "price" :34,
+    "salePrice":14
+},{
+    "id" :40,
+    "title" :"Xiaomi 11 Lite 5G",
+    "alias" :"xiaomi-11-lite-5g",
+    "image" :"/upload/Xiaomi 11 Lite 5G.png",
+    "price" :170,
+    "salePrice":162
+},{
+    "id" :41,
+    "title" :"Xiaomi Redmi 9T",
+    "alias" :"xiaomi-redmi-9t",
+    "image" :"/upload/Xiaomi Redmi 9T.png",
+    "price" :64,
+    "salePrice":40
+},{
+    "id" :42,
+    "title" :"Xiaomi Redmi 10",
+    "alias" :"xiaomi-redmi-10",
+    "image" :"/upload/Xiaomi Redmi 10.png",
+    "price" :145,
+    "salePrice":94
+},{
+    "id" :43,
+    "title" :"Xiaomi Redmi Note 10",
+    "alias" :"xiaomi-redmi-note-10",
+    "image" :"/upload/Xiaomi Redmi Note 10.png",
+    "price" :187,
+    "salePrice":156
+}]
