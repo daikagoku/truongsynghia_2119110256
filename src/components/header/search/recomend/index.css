@@ -1,0 +1,67 @@
+.header-search-recomend{
+	visibility: hidden;
+	padding:0 1em 0.5em;
+	z-index: 20;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	transform: translateY(-10px);
+	background: #fafafa;
+	border: 0.05em solid rgba(0,0,0,0.1);
+	border-top-color: transparent;
+	box-shadow: 0.05em 0.05em 0 0 rgba(0,0,0,0.1);
+	border-bottom-left-radius: 1.2em;
+    border-bottom-right-radius: 1.2em;
+    transition:height 0.5s, transform 0.3s,visibility 0s 0.1s;
+}
+.header-search-recomend-title{
+	width: 100%;
+	display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.9em;
+}
+.header-search-recomend-item{
+	display: flex;
+	align-items: center;
+}
+.header-search-recomend-button{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	opacity: 0.7;
+}
+.header-search-recomend-button:hover{
+	opacity: 1;
+}
+.header-search-recomend-button .icon{
+	font-size: 0.8em;
+	opacity: 0.6;
+	margin-right: 0.5em;
+}
+.header-search-recomend-button .label{
+	display: flex;
+	text-align: left;
+	flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.header-search-recomend-button .text{
+	display: block;
+	text-align: left;
+	flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.header-search-recomend-button .label .text{
+	flex: unset;
+}
+.header-search-recomend.show{
+	visibility: visible;
+	transform:translateY(0);
+	transition:height 0.3s,transform 0.3s,visibility 0s;
+}

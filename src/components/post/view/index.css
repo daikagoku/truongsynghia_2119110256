@@ -1,0 +1,11 @@
+
+.post-icon{
+	color: var(--primary-color-active);
+	margin: 0 0.5em;
+}
+.post-view{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 0.5em;
+}

@@ -1,0 +1,29 @@
+.thumbnail{
+	display: flex;
+	width: 100%;
+	position: relative;
+}
+.thumbnail-container{
+	width: 100%;
+	position: relative;
+	border-radius: 0.5rem;
+	overflow: hidden;
+}
+.thumbnail-container.square{
+	padding-top: 100%;
+
+}
+.thumbnail-container.rectangle{
+	padding-top: 50%;
+}
+.thumbnail-container.circle{
+	padding-top: 100%;
+	border-radius: 100%;
+}
+.thumbnail-content{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}

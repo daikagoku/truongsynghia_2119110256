@@ -1,0 +1,18 @@
+.image{
+	user-select: none;
+	transition: transform 0.2s;
+}
+.image.img-cover{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+.image.img-contain{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	object-position: center;
+}

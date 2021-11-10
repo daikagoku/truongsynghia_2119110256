@@ -1,0 +1,6 @@
+.group-slide-card-list{
+	display: flex;
+}
+.group-slide-card:hover .group-slide-card-arrows{
+	opacity: 1;
+}

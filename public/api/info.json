@@ -1,39 +1,30 @@
-[
-    {
-        "key":"copyright",
-        "title" : "@@@@@@@@@@@@@@",
-        "src" : ""
-    },{
-        "key":"address",
-        "title" : "Quận 9,TP.Hồ Chí Minh",
-        "src" : ""
-    },{
-        "key":"address",
-        "title" :"Quận 8,TP.Hồ Chí Minh",
-        "src" :""
-    },{
-        "key":"phone",
-        "title" :"000 000 0000",
-        "src" :""
-    },{
-        "key":"facebook",
-        "title":"Facebook",
-        "src":"nghia.coder2k1"
-    },{
-        "key":"youtube",
-        "title":"Facebook",
-        "src":"UC4DbqpODUvR7pz5-BXzvPFA"
-    },{
-        "key":"twitter",
-        "title":"Twitter",
-        "src":""
-    },{
-        "key":"instagram",
-        "title":"Instagram",
-        "src":""
-    },{
-        "key":"email",
-        "title":"Email",
-        "src":"minhtennghia2001@gmail.com"
+{
+    "address":{
+        "title":"Địa chỉ",
+        "value":[
+            "@",
+            "@"
+        ]
+    },"copyright":{
+        "title" : "Copyright",
+        "value" : ["@"]
+    },"phone":{
+        "title" :"Phone",
+        "value" :["@"]
+    },"facebook":{
+        "title" :"Facebook",
+        "value" :"@"
+    },"youtube":{
+        "title" :"Youtube",
+        "value" :"@"
+    },"email":{
+        "title" :"Email",
+        "value" :"@"
+    },"twitter":{
+        "title" :"Twitter",
+        "value" :"@"
+    },"instagram":{
+        "title" :"Instagram",
+        "value" :"@"
     }
-]
+}

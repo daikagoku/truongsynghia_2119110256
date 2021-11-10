@@ -1,0 +1,17 @@
+
+.product-title{
+	color: var(--second-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	line-height: 1.1em;
+	height: 2.2em;
+	font-weight: bolder;
+	width: 100%;
+    word-break: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}

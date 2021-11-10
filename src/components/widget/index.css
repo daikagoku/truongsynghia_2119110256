@@ -1,0 +1,30 @@
+.widget{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	word-wrap: break-word;
+	background: var(--second-background);
+	color: var(--second-color);
+	border-radius: 0.5rem;
+	border: 0.05em solid var(--second-border);
+	box-shadow: 0.05em 0.05em 0 0 var(--second-shadow);
+}
+.widget-title{
+	justify-content: flex-start;
+	text-align: left;
+	line-height: 1.1em;
+	height: 2.2em;
+	width: 100%;
+	padding: 0 0.5em;
+	font-weight: bolder;
+	word-break: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.widget-body{
+	display: flex;
+	flex-wrap: wrap;
+}

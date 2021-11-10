@@ -1,0 +1,57 @@
+.default,
+.light{
+	--primary-color: #000;
+	--primary-color-active: #fac100;
+	--primary-background: #fafafa;
+	--primary-shadow: rgb(0 0 0 / 10%);
+	--primary-border: rgb(0 0 0 / 10%);
+	--primary-overlay: rgb(0 0 0 / 50%);
+
+	--second-color: #000;
+	--second-color-active: #fac100;
+	--second-background: #ffffff;
+	--second-shadow: rgb(0 0 0 / 10%);
+	--second-border: rgb(0 0 0 / 10%);
+
+	--primary-hightlight-color: #fff;
+	--primary-hightlight-color-active: #fac100;
+	--primary-hightlight-background: #fd2704;
+
+
+}
+.dark{
+	--primary-color: #eee;
+	--primary-color-active: #fac100;
+	--primary-background: #303030;
+	--primary-shadow: rgb(250 250 250 / 10%);
+	--primary-border: rgb(250 250 250 / 10%);
+	--primary-overlay: rgb(250 250 250 / 50%);
+
+	--second-color: #eee;
+	--second-color-active: #fac100;
+	--second-background: #454545;
+	--second-shadow: rgb(250 250 250 / 10%);
+	--second-border: rgb(250 250 250 / 10%);
+
+	--primary-hightlight-color: #eee;
+	--primary-hightlight-color-active: #fff;
+	--primary-hightlight-background: #000;
+}
+.blue{
+	--primary-color: #000;
+	--primary-color-active: #00abd6;
+	--primary-background: #ebffff;
+	--primary-shadow: rgba(10,10,10,0.2);
+	--primary-border: rgba(10,10,10,0.1);
+	--primary-overlay: rgb(250 250 250 / 50%);
+
+	--second-color: #000;
+	--second-color-active: #fac100;
+	--second-background: #d5fffd;
+	--second-shadow: rgba(10,10,10,0.2);
+	--second-border: rgba(10,10,10,0.1);
+
+	--primary-hightlight-color: #fff;
+	--primary-hightlight-color-active: #03ffe5;
+	--primary-hightlight-background: #049bfd;
+}

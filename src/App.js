@@ -1,28 +1,24 @@
 import './App.css';
+import './Theme.css';
 import { BrowserRouter, Route} from "react-router-dom";
-import Header from './components/header/Header';
-import Footer from './components/footer/Footer';
-import Contact from './components/contact/Contact';
-import MainMenu from './components/menu/MainMenu';
-import MainContent from './components/content/MainContent';
-import HomeContent from './components/content/HomeContent';
-import ProductDetailContent from './components/content/ProductDetailContent';
+import useCartModel,{CartContext} from './model/Cart/';
+import useThemeModel,{ThemeContext} from './model/Theme/';
+import Home from './scenes/Home/';
+import Contact from './components/Contact/';
 function App() {
+  const [cartData,handleCart] = useCartModel();
+  const [themeData,handleTheme] = useThemeModel();
   return (
-    <div className="App">
-        <BrowserRouter>      
-          <Route path="/" component={Header} />
-          <Route path="/" component={MainMenu} />
-          <Route path="/" render={()=>(
-            <MainContent>
-                <Route exact path="/"component={HomeContent} />
-                <Route path="/productdetail" component={ProductDetailContent} />
-            </MainContent>
-          )} />
-          <Route path="/" component={Footer} />
-          <Route path="/" component={Contact} />
-        </BrowserRouter>
-    </div>
+    <ThemeContext.Provider value={[handleTheme]}>
+      <CartContext.Provider value={[cartData,handleCart]}>
+        <section id="App" className={themeData}>
+          <Contact />
+            <BrowserRouter>      
+              <Route path ="/" component={Home} />
+            </BrowserRouter>
+        </section>
+      </CartContext.Provider>
+    </ThemeContext.Provider>
   );
 }
 

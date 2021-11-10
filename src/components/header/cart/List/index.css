@@ -1,0 +1,11 @@
+.header-cart-content-list-container{
+	flex: 1;
+	overflow-x: hidden;
+}
+.header-cart-content-list{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+

@@ -1,0 +1,12 @@
+
+.product-price{
+	display: block;
+	height: 1.2em;
+	margin: 0 0.4em;
+	font-weight: bold;
+}
+
+.product-price.root{
+	opacity: 0.8;
+	text-decoration: line-through;
+}

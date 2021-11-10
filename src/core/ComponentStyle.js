@@ -1,6 +1,7 @@
 const StyleCss =[	
 		'color',
 		'background',
+		'backgroundImage',
 		'transform',
 		'opacity',
 		'display',
@@ -41,7 +42,7 @@ const DataReponsive = ['className','style'];
 export default function ComponentStyle({style,...props}){
 	const attr = {...props};
 	if(style!==undefined){
-			attr.style = style;
+			attr.style = {...style};
 	}else{
 			attr.style = {};
 	};

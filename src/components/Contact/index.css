@@ -1,0 +1,20 @@
+.contact{
+	pointer-events: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 10000;
+}
+.contact.drag {
+	pointer-events: auto;
+}
+.contact-btn{
+	position: absolute;
+	top: calc(var(--top,0) * 1px);
+	left: calc(var(--left,0) * 1px);
+	width: 2em;
+	height: 2em;
+	font-size: 2em;
+}	

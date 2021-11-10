@@ -1,0 +1,17 @@
+
+.post-icon{
+	color: var(--primary-color-active);
+	margin: 0 0.5em;
+}
+.post-date{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+    width: auto;
+    background-color: #a9a8a8;
+    border-bottom-left-radius: 100em;
+    border-top-right-radius: 100em;
+    padding: 0.1em 1.2em;
+    margin: 0 0.5em;
+    color: #fff;
+}

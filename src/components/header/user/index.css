@@ -1,0 +1,19 @@
+.header-user-button{
+	margin: 0 0.4em;
+	font-size: 1.2em;
+	height: 2.4em;
+	width: 2.4em;
+}
+.header-user_widget{
+	margin: 0.2em 0.4em;
+}
+.header-user_widget.head .widget-body{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	padding: 0.5em 5%;
+}
+.header-user-avatar_thumbnail{
+	padding: 0 30%;
+}

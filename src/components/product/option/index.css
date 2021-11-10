@@ -1,0 +1,20 @@
+.product-option{
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+.product-card:hover .product-option{
+	opacity: 1;
+}
+.product-option-btn{
+	border-radius: 0.5em;
+	background: var(--primary-hightlight-background);
+	color: var(--primary-hightlight-color);
+	transition: transform 0.25s;
+	margin: 0.5em;
+	width: 2em;
+	height: 2em;
+
+}
+.product-option-btn:hover{
+	transform: scale(1.2);
+}

@@ -1,4 +1,4 @@
-import {Icon} from '../../tags/Tags';
+import {Icon} from '../tags';
 import './Rating.css';
 function RatingStar({value,rating,...props}){
 	let _value  = Number.parseFloat(value) || 0;

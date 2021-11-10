@@ -1,0 +1,29 @@
+.offcanvas-view.right{
+	width: 25em;
+	top: 0.5em;
+	bottom: 0.5em;
+	right: 0;
+	transform: translateX(100%);
+}
+.offcanvas-view.left{
+	width: 25em;
+	top: 0.5em;
+	bottom: 0.5em;
+	left: 0;
+	transform: translateX(-100%);
+}
+.offcanvas-view.top{
+	height: auto;
+	left: 0.5em;
+	right: 0.5em;
+	top: 0;
+	transform: translateX(-100%);
+}
+.offcanvas-view.bottom{
+	height: auto;
+	left: 0.5em;
+	right: 0.5em;
+	bottom: 0;
+	transform: translateX(100%);
+}
+

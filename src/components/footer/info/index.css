@@ -1,0 +1,21 @@
+.footer-info-list{
+	display: flex;
+	flex-direction: column;
+	margin: 0.5em;
+}
+.footer-info-item{
+	display: flex;
+	margin: 0.2em 0;
+}
+.footer-info-icon{
+	width: 2.2em;
+	height: 1.6em;
+	margin: 0 0.5em;
+	border: 0.05em solid rgba(0, 0, 0, 0.1);
+    border-radius: 1000rem;
+    flex-shrink: 0;
+}
+.footer-info-button{
+	width: fit-content;
+	word-break: break-word;
+}

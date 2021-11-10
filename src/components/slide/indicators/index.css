@@ -1,0 +1,21 @@
+.main-slide-indicators{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 5;
+}
+.main-slide-indicator{
+	border-radius: 1000rem;
+	height: 0.8em;
+	width: 2em;
+	transition: color 0.3s,opacity 0.3s;
+	color: #ccc;
+	background: currentColor;
+}
+.main-slide-indicator.active{
+	color: #fd2704;
+}
