@@ -2,7 +2,8 @@
   "name": "truongsynghia_2119110256",
   "version": "0.1.0",
   "engines": {
-    "node": "14.x"
+    "node": "14.18.1",
+    "npm": "8.1.1"
   },
   "private": true,
   "dependencies": {
