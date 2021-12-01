@@ -10,3 +10,6 @@ export {default as List} from './List/';
 export {default as Widget} from './Widget/';
 export {default as Thumbnail} from './Thumbnail/';
 export {default as Tooltip} from './Tooltip/';
+
+export {default as Modal} from './Modal/';
+export {default as Offcanvas} from './Offcanvas/';
