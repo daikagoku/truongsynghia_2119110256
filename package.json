@@ -1,13 +1,15 @@
 {
   "name": "truongsynghia_2119110256",
   "version": "0.1.0",
+  "engines": {
+    "node": "14.x"
+  },
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "clsx": "^1.1.1",
-    "dotenv": "^10.0.0",
     "qrcode.react": "^1.0.1",
     "react": "^17.0.2",
     "react-alice-carousel": "^2.5.1",
