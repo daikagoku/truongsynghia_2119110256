@@ -1,0 +1,16 @@
+.footer-contact-list{
+	display: flex;
+	margin: 0.5em;
+}
+.footer-contact-btn{
+	background: var(--primary-background); 
+    border: 0.05em solid var(--primary-border);
+    box-shadow: 0 0 0.05em 0.05em var(--primary-shadow);
+	font-weight: bolder;
+	font-size: 1.2em;
+	width: 2em;
+	height: 2em;
+}
+.footer-contact-btn:hover{
+	color: var(--primary-color-active);
+}

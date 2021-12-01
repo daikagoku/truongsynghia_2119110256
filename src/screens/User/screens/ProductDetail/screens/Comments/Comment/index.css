@@ -1,0 +1,18 @@
+.product-card-detail-comment{
+	display: flex;
+	border-radius: 0.5em;
+	margin: 0.5em;
+	padding: 0.5em;
+	border: 0.05em solid var(--primary-border);
+	background: var(--primary-background);
+	color: var(--primary-color);
+}
+.product-card-detail-comment-head{
+	border-bottom: 0.05em dashed var(--primary-border);
+}
+.product-card-detail-comment-body{
+	padding: 0.5em 0;
+}
+.product-card-detail-comment-foot{
+	border-top: 0.05em dashed var(--primary-border);
+}

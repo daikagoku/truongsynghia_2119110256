@@ -1,25 +1,17 @@
 import './App.css';
-import './Theme.css';
-import { BrowserRouter, Route} from "react-router-dom";
-import useCartModel,{CartContext} from './model/Cart/';
-import useThemeModel,{ThemeContext} from './model/Theme/';
-import Home from './scenes/Home/';
-import Contact from './components/Contact/';
+import {Switch,Route} from 'react-router-dom';
+import {memo} from 'react'
+import clsx from 'clsx';
+import useThemeModel from './model/Theme/';
+import UserContent from "./screens/User";
 function App() {
-  const [cartData,handleCart] = useCartModel();
-  const [themeData,handleTheme] = useThemeModel();
+  const [theme] = useThemeModel();
   return (
-    <ThemeContext.Provider value={[handleTheme]}>
-      <CartContext.Provider value={[cartData,handleCart]}>
-        <section id="App" className={themeData}>
-          <Contact />
-            <BrowserRouter>      
-              <Route path ="/" component={Home} />
-            </BrowserRouter>
-        </section>
-      </CartContext.Provider>
-    </ThemeContext.Provider>
+    <section id="App" className={clsx(theme.current)}>
+      <Switch>
+        <Route path="/"component={UserContent} />
+      </Switch> 
+    </section>
   );
 }
-
-export default App;
+export default memo(App);

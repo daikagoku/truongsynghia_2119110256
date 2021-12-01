@@ -1,0 +1,30 @@
+.contact-content-input-form{
+	flex: 1;
+	position: relative;
+	display: flex;
+	padding: 0.5em;
+	margin: 0.5em;
+
+	border-radius: 0.5em;
+	background: var(--primary-background);
+	border: 0.1em solid var(--primary-border);
+}
+.contact-content-input{
+	flex: 1;
+	background: transparent;
+	overflow-x: hidden;
+	padding-right: 0.5em;
+	text-overflow: ellipsis;
+	resize: none;
+}
+.contact-content-submit{
+	flex-shrink: 0;
+	width: 2em;
+	height: 1.4em;
+	opacity: 0.6;
+	pointer-events: none !important;
+}
+.contact-content-input:not(:placeholder-shown) ~ .contact-content-submit{
+	pointer-events: auto !important;
+	opacity: 1;
+}

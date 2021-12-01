@@ -24,7 +24,3 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
 }
-.widget-body{
-	display: flex;
-	flex-wrap: wrap;
-}

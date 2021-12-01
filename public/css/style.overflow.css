@@ -1,0 +1,66 @@
+
+.overflow-x-hidden{overflow-x      :hidden}
+.overflow-y-hidden{overflow-y      :hidden}
+.overflow-x-visible{overflow-x     :visible}
+.overflow-y-visible{overflow-y     :visible}
+.overflow-x-scroll{overflow-x      :scroll}
+.overflow-y-scroll{overflow-y      :scroll}
+.overflow-hidden{overflow          :hidden}
+.overflow-visible{overflow         :visible}
+.overflow-scroll{overflow          :scroll}
+
+@media (min-width                  : 576px) {
+.overflow-sm-x-hidden{overflow-x   :hidden}
+.overflow-sm-y-hidden{overflow-y   :hidden}
+.overflow-sm-x-visible{overflow-x  :visible}
+.overflow-sm-y-visible{overflow-y  :visible}
+.overflow-sm-x-scroll{overflow-x   :scroll}
+.overflow-sm-y-scroll{overflow-y   :scroll}
+.overflow-sm-hidden{overflow       :hidden}
+.overflow-sm-visible{overflow      :visible}
+.overflow-sm-scroll{overflow       :scroll}
+}
+@media (min-width                  : 768px) {
+.overflow-md-x-hidden{overflow-x   :hidden}
+.overflow-md-y-hidden{overflow-y   :hidden}
+.overflow-md-x-visible{overflow-x  :visible}
+.overflow-md-y-visible{overflow-y  :visible}
+.overflow-md-x-scroll{overflow-x   :scroll}
+.overflow-md-y-scroll{overflow-y   :scroll}
+.overflow-md-hidden{overflow       :hidden}
+.overflow-md-visible{overflow      :visible}
+.overflow-md-scroll{overflow       :scroll}
+}
+@media (min-width                  : 992px) {
+.overflow-lg-x-hidden{overflow-x   : hidden}
+.overflow-lg-y-hidden{overflow-y   :hidden}
+.overflow-lg-x-visible{overflow-x  :visible}
+.overflow-lg-y-visible{overflow-y  :visible}
+.overflow-lg-x-scroll{overflow-x   :scroll}
+.overflow-lg-y-scroll{overflow-y   :scroll}
+.overflow-lg-hidden{overflow       :hidden}
+.overflow-lg-visible{overflow      :visible}
+.overflow-lg-scroll{overflow       :scroll}
+}
+@media (min-width                  : 1200px) {
+.overflow-xl-x-hidden{overflow-x   :hidden}
+.overflow-xl-y-hidden{overflow-y   :hidden}
+.overflow-xl-x-visible{overflow-x  :visible}
+.overflow-xl-y-visible{overflow-y  :visible}
+.overflow-xl-x-scroll{overflow-x   :scroll}
+.overflow-xl-y-scroll{overflow-y   :scroll}
+.overflow-xl-hidden{overflow       :hidden}
+.overflow-xl-visible{overflow      :visible}
+.overflow-xl-scroll{overflow       :scroll}
+}
+@media (min-width                  : 1400px) {
+.overflow-xxl-x-hidden{overflow-x  :hidden}
+.overflow-xxl-y-hidden{overflow-y  :hidden}
+.overflow-xxl-x-visible{overflow-x :visible}
+.overflow-xxl-y-visible{overflow-y :visible}
+.overflow-xxl-x-scroll{overflow-x  :scroll}
+.overflow-xxl-y-scroll{overflow-y  :scroll}
+.overflow-xxl-hidden{overflow      :hidden}
+.overflow-xxl-visible{overflow     :visible}
+.overflow-xxl-scroll{overflow      :scroll}
+}

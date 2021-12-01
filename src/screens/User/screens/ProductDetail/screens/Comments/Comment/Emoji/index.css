@@ -1,0 +1,65 @@
+.comment-control-icon{
+	color: var(--primary-color-active);
+	font-size: 1.4em;
+	margin: 0 0.2em;
+}
+.comment-control-text{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 0.5em;
+}
+
+.comment-emoji{
+	position: relative;
+}
+.comment-emoji-drop{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	transform: translateY(-0.5em);
+	width: fit-content;
+	background: var(--second-background);
+	border: 0.01em solid var(--second-border);
+	box-shadow:0 0 0 0.05em var(--second-shadow);
+	padding: 0.2em 0.5em;
+	border-radius: 0.5em;
+	visibility: hidden;
+	pointer-events: none;
+	transition: visibility 0s 0.3s,transform 0.3s;
+}
+.comment-emoji-drop.show{
+	transition: visibility 0s,transform 0.3s;
+	transform: translateY(0);
+	visibility: visible;
+	pointer-events: auto;
+}
+.comment-emoji-list{
+	display: flex;
+}
+.comment-emoji-button{
+	font-size: 2em;
+	margin: 0.1em 0.2em;
+}
+
+.comment-emoji .icon{
+	filter:drop-shadow( 0 0 0.05em var(--primary-shadow));
+}
+.comment-emoji .fa-thumbs-up{
+	color: #0ff;
+}
+.comment-emoji .fa-heart{
+	color: #f00;
+}
+.comment-emoji .fa-smile-beam{
+	color: #ff0;
+}
+.comment-emoji .fa-smile-wink{
+	color: #ff0;
+}
+.comment-emoji .fa-sad-tear{
+	color: #ff0;
+}
+.comment-emoji .fa-angry{
+	color: #f00;
+}

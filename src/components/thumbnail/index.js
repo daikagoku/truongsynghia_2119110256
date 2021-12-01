@@ -1,9 +1,15 @@
-import {forwardRef,memo} from 'react';
+import {forwardRef,memo,useEffect,useState} from 'react';
+import clsx from 'clsx';
 import './index.css';
+import LoadingDualRing from '../Loading/LoadingDualRing/';
 const Thumbnail = function({children,className,thumbnailClass,prefix,...props},ref){
+		const [loaded,setLoaded] = useState(false);
 		const thumbnailAttr = {
 			...props,
-			className:"thumbnail"
+			className:"thumbnail",
+			onLoad:function(event){
+				setLoaded(true);
+			}
 		};
 		if(className !== undefined){
 			thumbnailAttr.className+=" "+className;
@@ -14,9 +20,10 @@ const Thumbnail = function({children,className,thumbnailClass,prefix,...props},r
 		return(
 			<div ref={ref}{...thumbnailAttr}>
 				<div className={"thumbnail-container "+thumbnailClass}>
-					<div className="thumbnail-content ">
+					<div className={clsx("thumbnail-content",{load:loaded})}>
 						{children}
 					</div>
+					{loaded === false && <LoadingDualRing />}
 				</div>
 			</div>
 		);

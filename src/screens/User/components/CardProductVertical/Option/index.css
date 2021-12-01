@@ -1,0 +1,22 @@
+.product-option{
+	opacity: 0;
+	z-index: 2;
+	transition: opacity 0.3s;
+}
+.product-option.vertical{
+	position: absolute;
+	right: 0.2em;
+	top: 0.2em;
+}
+.product-card:hover .product-option{
+	opacity: 1;
+}
+.product-option-btn{
+	border-radius: 0.5em;
+	background: var(--primary-highlight-background);
+	color: var(--primary-highlight-color);
+	margin: 0.5em;
+	width: 2em;
+	height: 2em;
+
+}

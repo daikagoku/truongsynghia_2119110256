@@ -1,0 +1,28 @@
+.header-cart{
+	position: relative;
+}
+
+.header-cart-button{
+	margin: 0 0.4em;
+	font-size: 1.2em;
+	height: 2.4em;
+	width: 2.4em;
+	position: relative;
+}
+.header-cart-total{
+	font-size: 0.9em;
+	color: var(--primary-highlight-color);
+	background: var(--primary-highlight-background);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 1000em;
+	height: 1.4em;
+	min-width: 1.4em;
+	padding: 0.1em 0.3em;
+	position: absolute;
+	top: 0;
+	right: 0;
+	transform: translateY(-50%);
+
+}

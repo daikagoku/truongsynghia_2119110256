@@ -1,0 +1,31 @@
+.footer-search{
+	color: #000;
+}
+.footer-search-input {
+	border-radius: 100em;
+	padding: 0.5em 2em 0.5em 5em;
+	border: 0.15rem solid var(--primary-border);
+	background: var(--primary-background);
+	color: var(--primary-color);
+	transition: box-shadow 0.2s linear;
+}
+.footer-search-btn{
+	position: absolute;
+	top: 0.3em;
+	bottom: 0.3em;
+	pointer-events: none;
+	opacity: 0.4;
+}
+.footer-search-btn[type="submit"]{
+	left: 0.3em;
+	border-radius: 100em;
+	background: var(--primary-highlight-background);
+	color: var(--primary-highlight-color);
+	width: 4em;
+	font-weight: bolder;
+	pointer-events: none;
+}
+.footer-search-input:not(:placeholder-shown) ~ .footer-search-btn{
+	pointer-events: auto;
+	opacity: 1;
+}

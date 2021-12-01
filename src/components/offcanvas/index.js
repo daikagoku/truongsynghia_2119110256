@@ -1,22 +1,77 @@
+import {Button,Icon} from '../index';
+import {
+        useReducer,
+        createContext,
+        useContext,
+        useImperativeHandle,
+        useRef,
+        forwardRef,
+        memo} from 'react';
 import './index.css';
-import {createContext} from 'react';
+import {initData,reducer} from './init';
 export const OffcanvasContext = createContext([]);
-export const initData={
-    open:false
-};
-export function reducer(prevState,action){
-    switch(action.key){
-      case 'set_open':
-          return{
-            ...prevState,
-            open:action.value
-          };
-      default :
-        console.log(action.key,{prevState,action,error:"Không tồn tại action"});
-        return{
-          ...prevState
+export default memo(forwardRef(function Offcanvas({prefix,title,position,children},ref) {
+  const [state,dispatch] = useReducer(reducer,initData);
+  const thisRef = useRef();
+  const handle = {
+        open:function(){
+          dispatch({
+            key:"set_open",
+            value:true
+          })
+        },close:function(){
+          dispatch({
+            key:"set_open",
+            value:false
+          })
+        },toggle:function(){
+          dispatch({
+            key:"set_open",
+            value:!state.open
+          })
         }
-        break;
+      }
+  useImperativeHandle(ref,function(){
+    return{
+      ...thisRef.current,
+      state:state,
+      handle:handle
     }
-};
-export {default as Offcanvas} from './content/';
+  })
+  const contentAttr={
+    className:"offcanvas"
+  };
+  if(prefix){
+    contentAttr.className+=" "+prefix+"_offcanvas";
+  }
+  if(state.open){
+    contentAttr.className+=" show";
+  };
+  function handleClick(){
+    dispatch({
+      key:'set_open',
+      value:false
+    })
+  };
+  return (
+    <div ref={thisRef} {...contentAttr}>
+      <Button onClick={handleClick} className="offcanvas-overlay"></Button>
+      <div className={"offcanvas-view "+position}>
+        <div className="offcanvas-head">
+          <div className="offcanvas-title">
+            <span className="">{title}</span>
+          </div>
+          <Button 
+            className="offcanvas-close circle-btn"
+            onClick={handleClick}
+          >
+            <Icon icon="fas fa-times"/>
+          </Button>
+        </div>
+        <div className="offcanvas-body">
+          {state.open === true && children}
+        </div>
+      </div>
+    </div>
+  )
+}))

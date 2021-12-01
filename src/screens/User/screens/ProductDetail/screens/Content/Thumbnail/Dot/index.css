@@ -1,0 +1,10 @@
+#product-detail-thumbnail-dots .alice-carousel__stage-item{
+	cursor: pointer;
+	padding: 0.2em;
+}
+#product-detail-thumbnail-dots .alice-carousel__stage-item>.button{
+	width: 100%;
+}
+#product-detail-thumbnail-dots .alice-carousel__stage-item>.button.active{
+	box-shadow: 0 0 0.2em 0.2em var(--second-shadow);
+}

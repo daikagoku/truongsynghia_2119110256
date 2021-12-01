@@ -1,25 +1,34 @@
-
+import {createContext,useState} from 'react';
+export const StoreContext = createContext();
 const LocalStorage = (function(){
     const KEY  = 'GoShop';
-    const STORAGE = JSON.parse(localStorage.getItem(KEY)) ?? {};
-    function save(){
-        localStorage.setItem(KEY,JSON.stringify(STORAGE));
-    };
-    return function(nameSpace,initData){
-        return{
-            get:function(){
-                return STORAGE[nameSpace] ?? initData;
-            },set:function(value){
-                STORAGE[nameSpace]=value;
-                save();
-            },reset:function(value){
-                STORAGE[nameSpace]=initData;
-                save();
-            },remove:function(){
-                delete STORAGE[nameSpace];
-                save();
+    const initData = {};
+    return function({children}){
+        const [store,setStore] = useState(JSON.parse(localStorage.getItem(KEY)) ?? {});
+        function save(){
+            localStorage.setItem(KEY,JSON.stringify(store));
+        };
+        const handle = {
+            get:function(key){
+                return store[key];
+            },set:function(key,value){
+                setStore(function({...prevStore}){
+                    prevStore[key] = value;
+                    return prevStore;
+                });
+            },remove:function(key){
+                setStore(function({...prevStore}){
+                    delete prevStore[key];
+                    return prevStore;
+                });
             }
-        }
+        };
+        save();
+        return(
+            <StoreContext.Provider value={handle}>
+                {children}
+            </StoreContext.Provider>
+        )
    }
 })();
 export default LocalStorage;

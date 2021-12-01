@@ -1,0 +1,8 @@
+.footer-payment-list{
+	display: flex;
+	flex-wrap: wrap;
+}
+.footer-payment-button{
+	height: 2.4em;
+	background: var(--primary-background);
+}

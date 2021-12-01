@@ -1,6 +1,6 @@
 import './index.css';
 import {memo} from "react";
-import {Button} from '../tags';
+import {Button} from '../index';
 function Widget({children,title,prefix,className,...props}) {
   const widgetAttr={
     className:"widget"

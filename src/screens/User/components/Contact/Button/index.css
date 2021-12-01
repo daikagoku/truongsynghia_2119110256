@@ -1,0 +1,33 @@
+
+.contact-btn{
+	position: absolute;
+	width: 4em;
+	height: 4em;
+	overflow: hidden;
+	background: var(--primary-highlight-background);
+	position: relative;
+}
+.contact-btn .alice-carousel{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	margin: 0;
+	border-radius: 10000em;
+	background: var(--second-background);
+	width: 2.4em;
+	height: 2.4em;
+}
+.contact-btn .alice-carousel>div,
+.contact-btn .alice-carousel .alice-carousel__wrapper{
+	height: 100%;
+	width: 100%;
+}
+.contact-btn .alice-carousel__stage-item{
+	height: 100%;
+	text-align: center;
+}
+.contact-btn .alice-carousel__stage-item .icon{
+	height: 100%;
+	width: 100%;
+}

@@ -10,7 +10,7 @@ export const API_USER     = BASE_API+"/user.json";
 export const API_CATEGORY = BASE_API+"/category.json";
 export const API_TOPIC    = BASE_API+"/topic.json";
 export const API_INFO     = BASE_API+"/info.json";
-const API = {
+export const API = {
 	product  : API_PRODUCT,
 	post     : API_POST,
 	rating   : API_RATING,
@@ -22,4 +22,3 @@ const API = {
 	info     : API_INFO
 
 };
-export default API;

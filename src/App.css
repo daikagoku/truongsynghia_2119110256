@@ -80,6 +80,6 @@ html {
     border-radius: 1000rem;
 }
 ::-webkit-scrollbar-thumb {
-    background: var(--primary-hightlight-background);
+    background: var(--primary-highlight-background);
     border-radius: 1000rem;
 }

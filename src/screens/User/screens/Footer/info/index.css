@@ -1,0 +1,33 @@
+.footer-info-list{
+	display: flex;
+	flex-direction: column;
+	margin: 0.5em;
+}
+.footer-info-item{
+	display: flex;
+	width: 100%;
+	margin: 0.2em 0;
+}
+.footer-info-icon{
+	width: 2.2em;
+	height: 1.6em;
+	margin: 0 0.5em;
+	border: 0.05em solid var(--primary-border);
+	background: var(--primary-background);
+    border-radius: 1000rem;
+    flex-shrink: 0;
+}
+.footer-info-label{
+	display: flex;
+	flex-shrink: 0;
+	margin: 0 0.2em;
+}
+.footer-info-list-btn{
+	display: flex;
+	flex-grow: 1;
+	flex-direction: column;
+}
+.footer-info-button{
+	width: fit-content;
+	word-break: break-word;
+}

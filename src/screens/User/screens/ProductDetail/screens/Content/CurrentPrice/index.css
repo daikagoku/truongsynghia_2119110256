@@ -1,0 +1,13 @@
+
+.product-detail-price{
+	display: inline-block;
+	width: auto;
+	height: 1.2em;
+	font-weight: bold;
+}
+.product-detail-price.current{
+	font-size: 2em;
+}
+.product-detail-price.current.sale{
+	color: #f00;
+}

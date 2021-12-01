@@ -1,0 +1,28 @@
+.slide-dots{
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	z-index: 5;
+	transform: translate(-50%,-50%);
+	transition: opacity 0.25s;
+}
+.slide-dot-button{
+	display: flex;
+	justify-content: center;
+	height: 1em;
+	width: 2em;
+	margin: 0.2em 0.5em;
+	opacity: 0.8;
+	transition: opacity 0.3s,background 0.3s,width 0.3s;
+}
+.slide-dot-button:not(.disabled):hover{
+	background: var(--primary-highlight-background);
+	opacity: 0.4;
+}
+.slide-dot-button:not(.disabled).active{
+	width: 3em;
+	background: var(--primary-highlight-background);
+	opacity: 1;
+}

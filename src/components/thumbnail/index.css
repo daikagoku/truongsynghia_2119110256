@@ -26,4 +26,18 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
+	opacity: 0;
+	transition: opacity 1s;
+}
+.thumbnail-content.load{
+	opacity: 1;
+}
+
+.thumbnail .loading{
+	z-index: 10;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 5em;
+	transform: translate(-50%,-50%);
 }

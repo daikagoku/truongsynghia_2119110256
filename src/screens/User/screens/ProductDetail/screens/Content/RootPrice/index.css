@@ -1,0 +1,14 @@
+
+.product-detail-price{
+	display:inline-block;
+	width: auto;
+	height: 1.2em;
+	font-weight: bold;
+}
+
+.product-detail-price.root{
+	opacity: 0.8;
+	font-size: 1.6em;
+	margin: 0 0.4em;
+	text-decoration: line-through;
+}

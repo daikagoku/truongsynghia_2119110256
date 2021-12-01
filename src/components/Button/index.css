@@ -1,0 +1,48 @@
+.button{
+    background: transparent;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.1s;
+    color: var(--second-color);
+}
+.button.disabled,
+.button:disabled{
+    cursor: auto !important;
+    pointer-events: none !important;
+    opacity: 0.4 !important;
+}
+.button:not(.disabled),
+.button:not(:disabled){
+	cursor: pointer;
+	pointer-events: auto;
+}
+.button:not(.disabled):hover,
+.button:not(:disabled):hover{
+    opacity: 0.9;
+}
+.button:not(.disabled):active,
+.button:not(:disabled):active{
+    opacity: 0.6;
+}
+.button:not(.disabled)[href]:hover,
+.button:not(.disabled)[href]:active,
+.button:not(.disabled)[href].active{
+    color: var(--second-color-active);
+}
+
+.circle-btn{
+    border-radius: 1000rem;
+    position: relative;
+    background: var(--second-background);
+    border: 0.05em solid var(--second-border);
+    box-shadow:0 0 0.05em 0.05em var(--second-shadow);
+}
+.square-btn{
+    border-radius: 0.5em;
+    position: relative;
+    background: var(--second-background); 
+    border: 0.05em solid var(--second-border);
+    box-shadow:0 0 0.05em 0.05em var(--second-shadow);
+}

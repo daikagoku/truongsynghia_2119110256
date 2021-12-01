@@ -1,15 +1,20 @@
 import {useState,useEffect} from "react";
-import API from './Config';
-export default function Fetch({api,keyApi,initData,filter,sort,handle,...props}){
+import {API} from './Config';
+export default function Fetch({url,keyApi,method,header,initData,filter,sort,handle,...props}){
     const [data,setData] = useState(initData);
     let apiFetch;
     if(keyApi !== undefined && API[keyApi] !== undefined){
         apiFetch = API[keyApi];
-    }else if(api !== undefined){
-        apiFetch = api;
+    }else if(url !== undefined){
+        apiFetch = url;
     };
     useEffect(function(){
-        apiFetch !== undefined && fetch(apiFetch)
+        apiFetch !== undefined && 
+        fetch(apiFetch,{ 
+            method: method ?? 'GET',
+            'Content-Type': 'application/json'
+
+        })
             .then(function( response){
               return response.json();
             })
@@ -28,12 +33,12 @@ export default function Fetch({api,keyApi,initData,filter,sort,handle,...props})
                 if(results === undefined){
                     results = initData;
                 };
-                console.log("fetch:",{api,keyApi,results});
+                console.log("fetch:",keyApi,{url,results});
                 setData(results)
             })
             .catch(function(error){
-                console.log("fetch:",{api,keyApi,error});
+                console.log("fetch:",keyApi,{url,error});
         }); 
-    },[apiFetch]);
+    },[url,keyApi]);
     return [data];
 }

@@ -1,0 +1,35 @@
+
+.group-flash-sale-section{
+	position: relative;
+	background:var(--primary-highlight-background);
+	color: var(--primary-color);
+	margin: 0.5em 0;
+}
+.group-flash-sale-section:before{
+	content: "";
+	z-index: 0;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background:
+		url('./assets/img/khung1_topleft.png') no-repeat top left,
+		url('./assets/img/khung1_topright.png') no-repeat top right,
+		url('./assets/img/khung1_bottomleft.png') no-repeat bottom left,
+		url('./assets/img/khung1_bottomright.png') no-repeat bottom right;
+}
+.group-flash-sale-content{
+	z-index: 1;
+	padding: 1em;
+}
+.group-flash-sale-head{
+    border-bottom: 0.1em dashed var(--second-border);
+}
+.group-flash-sale-body{
+	padding: 0.5em 0;
+}
+#group-flash-sale{
+	position: relative;
+}

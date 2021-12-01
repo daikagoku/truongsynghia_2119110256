@@ -1,5 +1,5 @@
 .offcanvas{
-	z-index: 1000;
+	z-index: 10000;
 	display: block;
 	position: fixed;
 	top: 0;
@@ -32,11 +32,12 @@
 	display: flex;
 	flex-direction: column;
 	z-index: 1000;
-	max-width: 100%;
-	max-height: 100%;
+	max-width: calc(100% - 1em);
+	max-height: calc(100% - 1em);
 	position: fixed;
 	transition: transform 0.25s;
-	border-radius: 0.5rem;
+	border-radius: 1em;
+	padding: 0.5em;
 	color: var(--primary-color);
 	background: var(--primary-background);
 	border: 0.05em solid var(--primary-border);
@@ -72,4 +73,32 @@
 	margin-right: 0.2em;
 	margin-top: 0.2em;
 	margin-bottom: 0.2em;
+}
+.offcanvas-view.right{
+	width: 25em;
+	top: 0.5em;
+	bottom: 0.5em;
+	right: 0.5em;
+	transform: translateX(calc(100% + 0.5em));
+}
+.offcanvas-view.left{
+	width: 25em;
+	top: 0.5em;
+	bottom: 0.5em;
+	left: 0.5em;
+	transform: translateX(calc(-100% - 0.5em));
+}
+.offcanvas-view.bottom{
+	height: auto;
+	left: 0.5em;
+	right: 0.5em;
+	bottom: 0.5em;
+	transform: translateY(calc(100% + 0.5em));
+}
+.offcanvas-view.top{
+	height: auto;
+	left: 0.5em;
+	right: 0.5em;
+	top: 0.5em;
+	transform: translateY(calc(-100% - 0.5em));
 }

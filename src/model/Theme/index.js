@@ -1,29 +1,22 @@
 import {createContext,useMemo,useState} from 'react';
 import useStorage from '../../core/useStorage';
+import styles from './index.module.css';
 export const ThemeContext = createContext([]);
 export default function useThemeModel(){
-	const styles = {
-		default:1,
-		dark:1,
-		light:1,
-		blue:1
-	}
 	const [store,handleStore] = useStorage('theme',"default");
-	function checkTheme(key){
-		if(styles[key] !== 1){
-			return 'default';
-		};
-		return key;
+	const state = {
+		list:{
+			...styles
+		},current:styles[store]
 	};
-	function handle(action){
-		switch(action.key){
-			case 'set_theme':
-				handleStore({
-					key:"set_value",
-					value:checkTheme(action.value)
-				})
-				break;
+	const handle = {
+		set:function(key){
+			if(styles[key]){
+				handleStore.set(key);
+			}else{
+				handleStore.set("default");
+			}
 		}
 	};
-	return [store,handle];
+	return [state,handle];
 }

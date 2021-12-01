@@ -1,49 +1,43 @@
 import {createContext,useMemo,useState} from 'react';
-import ProductModel from '../Product/';
 import useStorage from '../../core/useStorage';
 export const CartContext = createContext([]);
 export default function useCartModel(){
-	const [list] = ProductModel();
 	const [store,handleStore] = useStorage('cart_product',[]);
-	const listProduct = [];
-		store.forEach(function(item){
-			const product = list.find(function(_product){
-				return _product.id === item.id;
-			});
-			if(typeof(product) === 'object'){
-				product.quantity = item.quantity;
-				listProduct.push(product);
-			};
-	});
-	function handle(action){
-		switch(action.key){
-			case 'add_product':
-				const newStore = [...store];
- 				const index = newStore.findIndex(function(item){
-					return item.id === action.value.id;
+	const handle = {
+		add:function({productId,version,quantity}){
+				const _newStore = [...store];
+ 				const _index = _newStore.findIndex(function(item){
+					return item.productId === productId && item.version === version;
 				});		
-				if(index === -1){
-					newStore.push({
-						id:action.value.id,
-						quantity:action.value.quantity
+				if(_index === -1){
+					let id = 0;
+					if(_newStore.length > 0){
+						id = _newStore[_newStore.length - 1].id + 1; 
+					};
+					_newStore.push({
+						id:id,
+						productId:productId,
+						version:version,
+						quantity:quantity
 					})
 				}else{
-					newStore[index].quantity++;
+					_newStore[_index].quantity+=quantity;
+					if(_newStore[_index].quantity >5){
+						_newStore[_index].quantity = 5
+					};
 				};
-				handleStore({
-					key:"set_value",
-					value:newStore
+				handleStore.set(_newStore);
+			return true;
+		},
+		delete:function(carId){
+				const _newStore = store.filter(function(item){
+					if(item){
+						return Number(item.id) && item.id !== carId;
+					}
 				})
-				break;
-			case 'delete_product':	
-				handleStore({
-					key:"set_value",
-					value:store.filter(function(item){
-						return item.id !== action.value.id;
-					})
-				})
-				break;
-		}
+				handleStore.set(_newStore);
+				return true;
+			}
 	};
-	return [listProduct,handle];
+	return [store,handle];
 }
