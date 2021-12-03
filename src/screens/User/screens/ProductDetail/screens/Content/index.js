@@ -23,7 +23,7 @@ export default function() {
 			<div className="col col-6">
 				<Widget prefix="product-detail-content" className="h-12">
 					<ProductDetailTitle />
-					<div className="row">
+					<div className="row product-detail-attr">
 						<div className="col col-4">
 							<span>Phiên bản:</span>
 						</div>
@@ -33,7 +33,7 @@ export default function() {
 							</div>
 						</div>
 					</div>
-					<div className="row">
+					<div className="row product-detail-attr">
 						<div className="col col-4">
 							<span>Giá:</span>
 						</div>
@@ -44,7 +44,7 @@ export default function() {
 							</div>
 						</div>
 					</div>
-					<div className="row">
+					<div className="row product-detail-attr">
 						<div className="col col-4">
 							<span>Số lượng:</span>
 						</div>
@@ -54,7 +54,7 @@ export default function() {
 							</div>
 						</div>
 					</div>
-					<div className="row">
+					<div className="row product-detail-attr">
 						<div className="col col-12">
 							<ProductDetailAddToCartButton />
 						</div>

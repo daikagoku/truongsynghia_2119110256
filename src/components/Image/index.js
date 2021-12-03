@@ -1,25 +1,15 @@
-import {useImperativeHandle,useRef,forwardRef,memo,useEffect} from 'react';
+import {useImperativeHandle,useRef,forwardRef,useState,useEffect,memo,useMemo} from 'react';
 import './index.css';
 
 const Image = (function(){
-	return function({src,dataLazy,alt,className,onLoadStart,...props},ref){
+	return function({src,alt,className,...props},ref){
 		const thisRef = useRef();
 		let _Attr = {
 			...props,
 			ref:thisRef,
 			className:"image",
-			alt:"Image",
-			onLoadStart:function(e){
-				if(onLoadStart !== undefined){
-					onLoadStart(e);
-				};
-			}
-		};
-		if(ref !== undefined){
-			useImperativeHandle(ref,()=>({
-				...thisRef
-				})
-			)
+			loading:"lazy",
+			alt:" "
 		};
 		if(className !== undefined){
 			_Attr.className +=" "+className;
@@ -27,13 +17,15 @@ const Image = (function(){
 		if(alt !== undefined){
 			_Attr.alt=alt;
 		};
-		if(dataLazy !== undefined){
-			_Attr['data-src']=src;
-		}else if(src !== undefined){
+		if(src !== undefined){
 			_Attr['src']=src;
 		}else{
 			_Attr['src']="/img/default-no-img.jpg";
 		};
+		useImperativeHandle(ref,()=>({
+				...thisRef.current
+			})
+		);
 		return(
 			<img
 				{..._Attr}

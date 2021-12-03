@@ -1,15 +1,12 @@
 import {Button,Icon} from '../index';
 import {
         useReducer,
-        createContext,
-        useContext,
         useImperativeHandle,
         useRef,
         forwardRef,
         memo} from 'react';
 import './index.css';
 import {initData,reducer} from './init';
-export const OffcanvasContext = createContext([]);
 export default memo(forwardRef(function Offcanvas({prefix,title,position,children},ref) {
   const [state,dispatch] = useReducer(reducer,initData);
   const thisRef = useRef();

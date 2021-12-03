@@ -2,8 +2,6 @@ import './index.css';
 import {Button,Icon} from '../index';
 import {
   useEffect,
-  useContext,
-  createContext,
   useReducer,
   forwardRef,
   useRef,

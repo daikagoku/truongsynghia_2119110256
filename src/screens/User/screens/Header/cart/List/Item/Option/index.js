@@ -1,4 +1,4 @@
-import {List,Item,Button,Icon} from 'components/';
+import {List,Item,Button,Icon} from '../../../../../../../../components/';
 import {useContext,memo} from 'react';
 import {HeaderCartContext} from '../../../init';
 import {CartProductContext} from '../init';

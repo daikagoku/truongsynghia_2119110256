@@ -18,6 +18,7 @@
 }
 .custom-theme-card-content-menu{
 	height: 15%;
+	margin: 0.2em;
 	text-align: center;
 	color: var(--primary-highlight-color);
 	background: var(--primary-highlight-background);
@@ -25,11 +26,12 @@
 .custom-theme-card-content-view{
 	flex: 1;
 	margin: 0.2em;
+	padding: 0.2em;
 	border-radius: 0.5em;
 	background: var(--second-background);
 	color: var(--second-color);
 	border: 0.02em solid var(--second-border);
-	box-shadow: 0.05em 0.05em 0 0 var(--second-shadow);
+	box-shadow: 0 0  0.05em 0.05em var(--second-shadow);
 }
 .custom-theme-card-buttons{
 	position: absolute;

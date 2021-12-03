@@ -1,5 +1,5 @@
 import {useContext,memo} from 'react';
-import {Input} from 'components/';
+import {Input} from '../../../../../../../../components/';
 import {CartProductContext} from '../init';
 
 export default memo(function(){

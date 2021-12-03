@@ -42,6 +42,7 @@ export default function(){
 							 		activeIndex = {index}
 							 		infinite
 							 		autoPlay
+							 		autoPlayStrategy = "all"
 							 		animationDuration={1000}
 							 		autoPlayInterval={4000}
 							 		disableDotsControls
@@ -49,6 +50,7 @@ export default function(){
 							 		disableDotsControls
 							 		disableButtonsControls
 							 		mouseTracking
+							 		touchTracking
 							 		items={items}
 							 />
 							 <SlideDots />

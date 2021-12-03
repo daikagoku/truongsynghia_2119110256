@@ -1,5 +1,5 @@
 import './index.css';
-import {useImperativeHandle,forwardRef,useRef,memo} from 'react';
+import {forwardRef,useRef,memo} from 'react';
 import {Link} from 'react-router-dom';
 
 const LinkTag = (function(){

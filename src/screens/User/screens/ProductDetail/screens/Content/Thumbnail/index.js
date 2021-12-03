@@ -9,7 +9,7 @@ import './index.css';
 import {BackButton,NextButton} from './Buttons/';
 import SlideItem from './Item/';
 import SlideDot from './Dot/';
-export const ProductThumbnailContext = createContext();
+export const ProductThumbnailContext = createContext({});
 export default memo(function ProductThumbnail({props}){
 	const [index,setIndex] = useState();
 	const thisRef = useRef();
@@ -19,6 +19,14 @@ export default memo(function ProductThumbnail({props}){
 			setIndex(thisRef.current.state.activeIndex);
 		}
 	},[thisRef.current]);
+	useEffect(function(){
+		if(thisRef.current){
+			thisRef.current.slideTo(index);
+		}
+		if(dotRef.current){
+			dotRef.current.slideTo(index);
+		}
+	},[index]);
 	function handleSlideChanged(event){
 		setIndex(event.item);
 	};
@@ -51,25 +59,27 @@ export default memo(function ProductThumbnail({props}){
 		});
 	},[listItem]);
 	return(
-	<ProductThumbnailContext.Provider value={[thisRef.current,listItem]}>
-		<div className="slide" id="product-detail-thumbnail">
+	<ProductThumbnailContext.Provider value={{
+		slide:thisRef.current,
+		dots:dotRef.current,
+		listItem:listItem
+	}}>
+		<div id="product-detail-thumbnail">
 			<AliceCarousel 
 				ref = {thisRef}
 				activeIndex ={index}
 				infinite
 				animationDuration={1000}
+				mouseTracking
+				items = {slides}
 				disableDotsControls
 				disableButtonsControls
-				mouseTracking
 				onSlideChanged={handleSlideChanged}
-				items = {slides}
-			>
-				
-			</AliceCarousel>
+			/>	
 			<BackButton />
 			<NextButton />
 		</div>
-		<div className="slide" id="product-detail-thumbnail-dots">
+		<div id="product-detail-thumbnail-dots">
 			<AliceCarousel 
 				ref = {dotRef}
 				infinite
@@ -77,19 +87,18 @@ export default memo(function ProductThumbnail({props}){
 				animationDuration={1000}
 				disableDotsControls
 				disableButtonsControls
+				onSlideChanged={handleSlideChanged}
 				mouseTracking
 				items = {dots}
 				responsive = {
 					{
-						0:{items:2},
-						600:{items:3},
-						800:{items:4},
-						1200:{items:5},
-						1400:{items:6}
+						0:{items:3},
+						400:{items:4},
+						800:{items:5},
+						1200:{items:6}
 					}
 				}
-			>			
-			</AliceCarousel>
+			/>
 		</div>
 	</ProductThumbnailContext.Provider>
 	)

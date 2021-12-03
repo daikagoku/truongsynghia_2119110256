@@ -3,7 +3,7 @@ import {ProductThumbnailContext} from '../index';
 import {Thumbnail,Image} from '../../../../../../../../components/';
 import './index.css';
 export default function({data,index}){
-	const [slide,listItem] = useContext(ProductThumbnailContext);
+	const {slide,listItem} = useContext(ProductThumbnailContext);
 	const thisRef = useRef();
 	const itemAttr= useMemo(function(){
 		return {

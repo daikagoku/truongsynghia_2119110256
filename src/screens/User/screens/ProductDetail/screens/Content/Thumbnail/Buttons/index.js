@@ -3,16 +3,15 @@ import clsx from 'clsx';
 import {ProductThumbnailContext} from '../index';
 import {List,Item,Button,Icon} from '../../../../../../../../components/';
 import styles from "./index.module.css";
-export  function BackButton(){
-	const [slide] = useContext(ProductThumbnailContext);
+export  function BackButton({isDisabled,...props}){
+	const {slide,dots} = useContext(ProductThumbnailContext);
 	const buttonAttr = {
-			className:clsx(styles.button,"square-btn",styles.back)	
-		}
-	if(slide){
-		buttonAttr.onClick=function(){
+			className:clsx(styles.button,{disabled:isDisabled},"square-btn",styles.back),
+			onClick:function(event){
+				dots.slidePrev();
 				slide.slidePrev();
+			}	
 		}
-	}
 	return(
 		<Button 
 		    {...buttonAttr}
@@ -21,16 +20,15 @@ export  function BackButton(){
 		</Button>
 	)
 };
-export  function NextButton(){
-	const [slide] = useContext(ProductThumbnailContext);
+export function NextButton({isDisabled,...props}){
+	const {slide,dots} = useContext(ProductThumbnailContext);
 	const buttonAttr = {
-			className:clsx(styles.button,"square-btn",styles.next)	
-	};
-	if(slide){
-		buttonAttr.onClick=function(){
+			className:clsx(styles.button,{disabled:isDisabled},"square-btn",styles.next),
+			onClick:function(event){
+				dots.slideNext();
 				slide.slideNext();
-		}
-	}
+			}	
+	};
 	return(
 		<Button 
 		    {...buttonAttr}

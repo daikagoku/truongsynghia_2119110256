@@ -1,4 +1,4 @@
-import {forwardRef,memo,useRef,useImperativeHandle,useState,useEffect} from 'react';
+import {forwardRef,memo,useRef,useImperativeHandle} from 'react';
 import './index.css';
 const Input = (function(){
 	return function({className,type,placeholder,multiple,...props},ref){
@@ -25,8 +25,6 @@ const Input = (function(){
 			Component = 'textarea';
 			_Attr.rows = multiple;
 		};
-		const handleValidate = {
-		}
 		useImperativeHandle(ref,function(){
 			return {
 				...thisRef.current

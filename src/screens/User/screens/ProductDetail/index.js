@@ -21,20 +21,26 @@ export default memo(function({history,location,match}){
 			return item.alias === args[2];
 	});
 	if(data){
-		data.version = data.versions.find(function(version){
+		const version = data.versions.find(function(version){
 			return version.alias === args[3];
-		}).id;
-	return(
-	<ProductDetailContext.Provider value ={[state,dispatch]}>
-		<ProductContext.Provider value ={{...data}}>
-			<section id="product-detail" className="container-fluid">
-				<div className="container">
-					<ProductDetailContent/>
-				</div>
-			</section>
-		</ProductContext.Provider>
-	</ProductDetailContext.Provider>
-	)}else{
-		return <></>
+		});
+		if(version){
+			data.version = version.id;
+			return(
+				<ProductDetailContext.Provider value ={[state,dispatch]}>
+					<ProductContext.Provider value ={{...data}}>
+						<section id="product-detail" className="container-fluid">
+							<div className="container">
+								<ProductDetailContent/>
+							</div>
+						</section>
+					</ProductContext.Provider>
+				</ProductDetailContext.Provider>
+			)
+		}else{
+			return <>Không tồn tại sản phẩm</>
+		}
+	}else{
+		return <>Không tồn tại sản phẩm</>
 	}
 });

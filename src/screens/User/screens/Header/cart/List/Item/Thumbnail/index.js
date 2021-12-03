@@ -1,6 +1,6 @@
 import {useContext,memo} from 'react';
 import {CartProductContext} from '../init';
-import {Thumbnail,Image} from 'components/';
+import {Thumbnail,Image} from '../../../../../../../../components/';
 export default memo(function ProductThumbnail({imageAttr,thumbnailAttr,children,...props}){
 	const data = useContext(CartProductContext) ?? {};
 	let version = {}

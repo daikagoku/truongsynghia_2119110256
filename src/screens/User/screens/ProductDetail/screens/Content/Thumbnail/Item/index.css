@@ -1,4 +1,6 @@
+#product-detail-thumbnail .alice-carousel__dots{
+	display: none;
+}
 #product-detail-thumbnail .alice-carousel__stage-item{
-	flex:  0 0 auto;
 	padding: 0.2em;
 }

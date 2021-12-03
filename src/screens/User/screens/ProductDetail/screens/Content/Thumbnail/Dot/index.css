@@ -1,3 +1,8 @@
+#product-detail-thumbnail-dots{
+	padding: 0 2em;
+	border: 0.1em solid var(--second-border);
+
+}
 #product-detail-thumbnail-dots .alice-carousel__stage-item{
 	cursor: pointer;
 	padding: 0.2em;
@@ -6,5 +11,5 @@
 	width: 100%;
 }
 #product-detail-thumbnail-dots .alice-carousel__stage-item>.button.active{
-	box-shadow: 0 0 0.2em 0.2em var(--second-shadow);
+	background: var(--primary-highlight-background);
 }

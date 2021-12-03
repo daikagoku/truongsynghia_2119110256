@@ -1,5 +1,5 @@
 import {Button,Icon} from '../../../../../components/';
-import {useReducer,useContext,useRef,memo} from 'react';
+import {useRef,memo} from 'react';
 import Offcanvas
 	from '../../../../../components/Offcanvas/';
 import useCartModel from '../../../../../model/Cart';
@@ -15,7 +15,7 @@ export default memo(function HeaderCart(){
 		keyApi:'product',
 		initData:[]
 	});
-	const listItem = Array.from(store,function(item){
+	const listItem = store.map(function(item){
 		if(item){
 			const newItem = datas.find(function(data){
 				if(data){
