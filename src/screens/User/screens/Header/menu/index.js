@@ -15,11 +15,10 @@ export default memo(function HeaderMenu(){
 		className:"header-button circle-btn",
 		onClick:function(){
 			if(OffcanvasRef.current){
-				OffcanvasRef.current.handle.open();
+				OffcanvasRef.current?.handle?.open();
 			}
 		}
 	};
-	console.log(Offcanvas)
 	return(
 		<div {...menuAttr}>
 			<Button {...buttonAttr}>
