@@ -9,7 +9,7 @@ import './index.css';
 import {initData,reducer} from './init';
 export default memo(forwardRef(function Offcanvas({show,prefix,title,position,widthSize,heightSize,children},ref) {
   const [state,dispatch] = useReducer(reducer,initData);
-  const thisRef = useRef();
+  const thisRef = useRef({});
   const handle = {
         open:function(){
           dispatch({

@@ -8,7 +8,7 @@ import HeaderSearchInput from './Input';
 import HeaderSearchSubmit from './Submit';
 import {reducer,initData,SearchContext} from '../init';
 function HeaderSearch(props) {
-  const formRef = useRef();
+  const formRef = useRef({});
   const [state,dispatch] = useReducer(reducer,initData);
   const [store,handleStore] = useStorage('header_search',[]);
   function newHistory(){

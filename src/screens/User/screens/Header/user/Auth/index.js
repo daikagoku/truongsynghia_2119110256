@@ -1,7 +1,6 @@
 import {useState,useEffect,useRef,useMemo,memo} from 'react';
 import { BrowserRouter, Route} from "react-router-dom";
-import Modal from '../../../../../../components/Modal/';
-import {Button,Icon} from '../../../../../../components/';
+import {Button,Icon,Modal} from '../../../../../../components/';
 import './index.css';
 import {AuthContext} from './init';
 import FormLogin from './scenes/form/Login/';

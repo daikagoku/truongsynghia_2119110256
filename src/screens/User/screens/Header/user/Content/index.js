@@ -1,7 +1,5 @@
 import {useRef} from 'react';
-import {Button,Icon,Widget} from '../../../../../../components/';
-import Offcanvas 
-	from '../../../../../../components/Offcanvas/';
+import {Button,Icon,Widget,Offcanvas} from '../../../../../../components/';
 import UserAvatar from './Avatar/';
 import UserFullname from './Fullname/';
 import UserOption from './Option/';

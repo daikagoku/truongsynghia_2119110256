@@ -1,16 +1,14 @@
 import {List,Item,Button,Icon} from '../../../../../components/';
-import {useRef,memo} from 'react';
-import Offcanvas
-	from '../../../../../components/Offcanvas/';
+import {useRef,memo,Offcanvas} from 'react';
 import useFetch from '../../../../../core/useFetch';
 import './index.css';
 import MenuItem from './Item/';
-export default memo(function HeaderCart(){
-	const OffcanvasRef = useRef();
+export default memo(function HeaderMenu(){
+	const OffcanvasRef = useRef({});
 	const menuAttr = {
 		className:"header-menu d-flex d-md-none"
 	};
-	if(OffcanvasRef.current && OffcanvasRef.current.state.open){
+	if(OffcanvasRef.current && OffcanvasRef.current?.state?.open){
 		menuAttr.className+=" active";
 	};
 	const buttonAttr = {
@@ -21,56 +19,13 @@ export default memo(function HeaderCart(){
 			}
 		}
 	};
+	console.log(Offcanvas)
 	return(
 		<div {...menuAttr}>
 			<Button {...buttonAttr}>
 				<Icon icon="fas fa-bars"/>
 			</Button>
-			<Offcanvas ref={OffcanvasRef} 
-				title="Menu" 
-				position="right"
-				widthSize="w-9 w-sm-7 w-md-6 w-lg-5 w-xl-4 w-xxl-3"
-			>
-			 	<List>
-					<MenuItem      
-                      keyApi ="category"
-                      filter ={(item)=>(item.parent==="mobile")}
-                      icon   ="fas fa-mobile-alt"
-                      text   ="Điện thoại"
-                    />
-                    <MenuItem 
-                      keyApi ="category"
-                      filter ={(item)=>(item.parent==="laptop")}
-                      icon   ="fas fa-laptop"
-                      text   ="Laptop"
-                    />
-                    <MenuItem 
-                      icon ="fas fa-tablet-alt"
-                      text ="Tablet"
-                    />
-                    <MenuItem 
-                      keyApi ="category"
-                      filter ={(item)=>(item.parent==="phu-kien")}
-                      icon   ="fas fa-headphones-alt"
-                      text   ="Phụ kiện"
-                    />
-                    <MenuItem 
-                      to   ="/tool"
-                      icon ="fas fa-tools"
-                      text ="Sửa chữa"
-                    />
-                    <MenuItem 
-                      to   ="/flash-sale"
-                      icon ="fas fa-bolt"
-                      text ="Flash Sale"
-                    />
-                    <MenuItem 
-                      to   ="/post"
-                      icon ="fas fa-clipboard-list"
-                      text ="Tin tức"
-                    />
-                </List>
-			</Offcanvas>
+			
 		</div>
 	)
 })

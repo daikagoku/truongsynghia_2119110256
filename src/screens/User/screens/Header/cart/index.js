@@ -1,7 +1,5 @@
-import {Button,Icon} from '../../../../../components/';
+import {Button,Icon,Offcanvas} from '../../../../../components/';
 import {useRef,memo} from 'react';
-import Offcanvas
-	from '../../../../../components/Offcanvas/';
 import useCartModel from '../../../../../model/Cart';
 import useFetch from '../../../../../core/useFetch';
 import {HeaderCartContext} from './init';

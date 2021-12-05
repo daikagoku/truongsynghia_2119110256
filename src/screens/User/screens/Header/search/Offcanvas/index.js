@@ -3,11 +3,11 @@ import {useRef,memo} from 'react';
 import useFetch from '../../../../../../core/useFetch';
 import './index.css';
 export default memo(function(){
-  const OffcanvasRef = useRef();
+  const OffcanvasRef = useRef({});
   const menuAttr = {
     className:"header-search-offcanvas d-flex d-md-none"
   };
-  if(OffcanvasRef.current && OffcanvasRef.current.state.open){
+  if(OffcanvasRef.current && OffcanvasRef.current?.state?.open){
     menuAttr.className+=" active";
   };
   const buttonAttr = {

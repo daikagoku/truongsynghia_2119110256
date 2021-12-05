@@ -1,6 +1,5 @@
 import {useRef,memo} from 'react';
-import {Button,Icon} from '../../../../../components/';
-import Modal from '../../../../../components/Modal/';
+import {Button,Icon,Modal} from '../../../../../components/';
 import CustomTheme from './CustomTheme/';
 import './index.css';
 export default memo(function HeaderSetting(){
