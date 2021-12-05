@@ -2,8 +2,7 @@ import {createContext,memo,useRef}from 'react';
 import	ProductThumbnail          from './Thumbnail/';
 import	ProductBookmask           from './Bookmask/';
 import	ProductTitle              from './Title/';
-import	ProductCurrentPrice       from './CurrentPrice/';
-import	ProductRootPrice          from './RootPrice/';
+import	ProductPrice       	      from './Price/';
 import	ProductOption             from './Option/';
 import	ProductRating             from './Rating/';
 import './index.css';
@@ -44,8 +43,8 @@ export default memo(function ProductCardVertical({data,prefix,...props}){
 	    			<ProductTitle />
 	    		</div>
 	    		<div className="px-2 pt-1 pb-2 d-flex align-items-center">
-	    			<ProductCurrentPrice />
-	    			<ProductRootPrice />	
+	    			<ProductPrice sale/>
+	    			<ProductPrice root/>	
 		    	</div>
 		    	<ProductOption className="vertical"/>
 			</div>

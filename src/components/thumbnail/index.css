@@ -27,7 +27,7 @@
 	right: 0;
 	bottom: 0;
 	opacity: 0;
-	transition: opacity 1s;
+	transition: opacity 0.25s;
 }
 .thumbnail-content.load{
 	opacity: 1;

@@ -10,5 +10,5 @@
 	color: var(--primary-highlight-color);
 	background: var(--primary-highlight-background);
 	border-color:0.02em solid var(--primary-highlight-border);
-	box-shadow: 0 0 0.05em 0.05emvar(--primary-highlight-shadow);
+	box-shadow: 0 0 0.05em 0.05em var(--primary-highlight-shadow);
 }

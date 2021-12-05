@@ -16,7 +16,7 @@ export default function() {
 	};
 	return(
 		<>
-			<Button className="header-user-button circle-btn"{...buttonAttr}>
+			<Button className="header-button circle-btn"{...buttonAttr}>
 				<UserAvatar/>
 			</Button>
 			<Offcanvas ref={OffcanvasRef} title="Tài khoản"position="right">

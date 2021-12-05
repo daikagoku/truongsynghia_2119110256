@@ -20,7 +20,7 @@ export default function({title}) {
 	return (
 		<div className="auth-more-container">
 			<div className="auth-more-head">
-				<span>{title}</span>
+				<span className="auth-more-title">{title}</span>
 			</div>	
 		 	<div className="auth-more-body">
 			 	<Button onClick={handleFacebookLogin}className="square-btn auth-more-button facebook">

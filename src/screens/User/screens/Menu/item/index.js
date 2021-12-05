@@ -15,7 +15,7 @@ export default memo(function MainMenuItem({api,keyApi,filter,sort,buttonClass,cl
   });
   const buttonAttr = {
       ...props,
-      className:"main-menu-button"
+      className:"main-menu-button flex-column flex-lg-row"
   };
   if(buttonClass !== undefined){
     buttonAttr.className+=" "+buttonClass;
@@ -35,14 +35,17 @@ export default memo(function MainMenuItem({api,keyApi,filter,sort,buttonClass,cl
   itemAttr.onMouseOut=function(_event,_this){
         setHover(false);
     };
+  const buttonTextAttr = {
+    className:"text"
+  }
   if(Array.isArray(listItem) && listItem.length !== 0 ){
-    buttonAttr.className+=" dropdown-toggle";
+    buttonTextAttr.className+=" dropdown-toggle";
   }
   return(
     <Item {...itemAttr}>
         <Button {...buttonAttr}>
-            <Icon hover={hover}icon={icon}className="d-none d-lg-flex fs-2 mx-1"/>
-            <span className="text">{text}</span>
+            <Icon hover={hover}icon={icon}className="fs-2 mx-1"/>
+            <span {...buttonTextAttr}>{text}</span>
         </Button>
         <MainMenuDrop open={hover}listItem={listItem}/>
         {children}

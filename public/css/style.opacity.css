@@ -1,80 +1,80 @@
 
 
-.opacity-0{opacity                 :0}
-.opacity-1{opacity                 :0.1}
-.opacity-2{opacity                 :0.2}
-.opacity-3{opacity                 :0.3}
-.opacity-4{opacity                 :0.4}
-.opacity-5{opacity                 :0.5}
-.opacity-6{opacity                 :0.6}
-.opacity-7{opacity                 :0.7}
-.opacity-8{opacity                 :0.8}
-.opacity-9{opacity                 :0.9}
-.opacity-10{opacity                :1}
+.opacity-0{opacity                 :0!important}
+.opacity-1{opacity                 :0.1!important}
+.opacity-2{opacity                 :0.2!important}
+.opacity-3{opacity                 :0.3!important}
+.opacity-4{opacity                 :0.4!important}
+.opacity-5{opacity                 :0.5!important}
+.opacity-6{opacity                 :0.6!important}
+.opacity-7{opacity                 :0.7!important}
+.opacity-8{opacity                 :0.8!important}
+.opacity-9{opacity                 :0.9!important}
+.opacity-10{opacity                :1!important}
 
 @media (min-width                  : 576px) {
-.opacity-sm-0{opacity              :0}
-.opacity-sm-1{opacity              :0.1}
-.opacity-sm-2{opacity              :0.2}
-.opacity-sm-3{opacity              :0.3}
-.opacity-sm-4{opacity              :0.4}
-.opacity-sm-5{opacity              :0.5}
-.opacity-sm-6{opacity              :0.6}
-.opacity-sm-7{opacity              :0.7}
-.opacity-sm-8{opacity              :0.8}
-.opacity-sm-9{opacity              :0.9}
-.opacity-sm-10{opacity             :1}
+.opacity-sm-0{opacity              :0!important}
+.opacity-sm-1{opacity              :0.1!important}
+.opacity-sm-2{opacity              :0.2!important}
+.opacity-sm-3{opacity              :0.3!important}
+.opacity-sm-4{opacity              :0.4!important}
+.opacity-sm-5{opacity              :0.5!important}
+.opacity-sm-6{opacity              :0.6!important}
+.opacity-sm-7{opacity              :0.7!important}
+.opacity-sm-8{opacity              :0.8!important}
+.opacity-sm-9{opacity              :0.9!important}
+.opacity-sm-10{opacity             :1!important}
 }
 @media (min-width                  : 768px) {
-.opacity-md-0{opacity              :0}
-.opacity-md-1{opacity              :0.1}
-.opacity-md-2{opacity              :0.2}
-.opacity-md-3{opacity              :0.3}
-.opacity-md-4{opacity              :0.4}
-.opacity-md-5{opacity              :0.5}
-.opacity-md-6{opacity              :0.6}
-.opacity-md-7{opacity              :0.7}
-.opacity-md-8{opacity              :0.8}
-.opacity-md-9{opacity              :0.9}
-.opacity-md-10{opacity             :1}
+.opacity-md-0{opacity              :0!important}
+.opacity-md-1{opacity              :0.1!important}
+.opacity-md-2{opacity              :0.2!important}
+.opacity-md-3{opacity              :0.3!important}
+.opacity-md-4{opacity              :0.4!important}
+.opacity-md-5{opacity              :0.5!important}
+.opacity-md-6{opacity              :0.6!important}
+.opacity-md-7{opacity              :0.7!important}
+.opacity-md-8{opacity              :0.8!important}
+.opacity-md-9{opacity              :0.9!important}
+.opacity-md-10{opacity             :1!important}
 }
 @media (min-width                  : 992px) {
-.opacity-lg-0{opacity              :0}
-.opacity-lg-1{opacity              :0.1}
-.opacity-lg-2{opacity              :0.2}
-.opacity-lg-3{opacity              :0.3}
-.opacity-lg-4{opacity              :0.4}
-.opacity-lg-5{opacity              :0.5}
-.opacity-lg-6{opacity              :0.6}
-.opacity-lg-7{opacity              :0.7}
-.opacity-lg-8{opacity              :0.8}
-.opacity-lg-9{opacity              :0.9}
-.opacity-lg-10{opacity             :1}
+.opacity-lg-0{opacity              :0!important}
+.opacity-lg-1{opacity              :0.1!important}
+.opacity-lg-2{opacity              :0.2!important}
+.opacity-lg-3{opacity              :0.3!important}
+.opacity-lg-4{opacity              :0.4!important}
+.opacity-lg-5{opacity              :0.5!important}
+.opacity-lg-6{opacity              :0.6!important}
+.opacity-lg-7{opacity              :0.7!important}
+.opacity-lg-8{opacity              :0.8!important}
+.opacity-lg-9{opacity              :0.9!important}
+.opacity-lg-10{opacity             :1!important}
 }
 @media (min-width                  : 1200px) {
-.opacity-xl-0{opacity              :0}
-.opacity-xl-1{opacity              :0.1}
-.opacity-xl-2{opacity              :0.2}
-.opacity-xl-3{opacity              :0.3}
-.opacity-xl-4{opacity              :0.4}
-.opacity-xl-5{opacity              :0.5}
-.opacity-xl-6{opacity              :0.6}
-.opacity-xl-7{opacity              :0.7}
-.opacity-xl-8{opacity              :0.8}
-.opacity-xl-9{opacity              :0.9}
-.opacity-xl-10{opacity             :1}
+.opacity-xl-0{opacity              :0!important}
+.opacity-xl-1{opacity              :0.1!important}
+.opacity-xl-2{opacity              :0.2!important}
+.opacity-xl-3{opacity              :0.3!important}
+.opacity-xl-4{opacity              :0.4!important}
+.opacity-xl-5{opacity              :0.5!important}
+.opacity-xl-6{opacity              :0.6!important}
+.opacity-xl-7{opacity              :0.7!important}
+.opacity-xl-8{opacity              :0.8!important}
+.opacity-xl-9{opacity              :0.9!important}
+.opacity-xl-10{opacity             :1!important}
 }
 @media (min-width                  : 1400px) {
-.opacity-xxl-0{opacity             :0}
-.opacity-xxl-1{opacity             :0.1}
-.opacity-xxl-2{opacity             :0.2}
-.opacity-xxl-3{opacity             :0.3}
-.opacity-xxl-4{opacity             :0.4}
-.opacity-xxl-5{opacity             :0.5}
-.opacity-xxl-6{opacity             :0.6}
-.opacity-xxl-7{opacity             :0.7}
-.opacity-xxl-8{opacity             :0.8}
-.opacity-xxl-9{opacity             :0.9}
-.opacity-xxl-10{opacity            :1}
+.opacity-xxl-0{opacity             :0!important}
+.opacity-xxl-1{opacity             :0.1!important}
+.opacity-xxl-2{opacity             :0.2!important}
+.opacity-xxl-3{opacity             :0.3!important}
+.opacity-xxl-4{opacity             :0.4!important}
+.opacity-xxl-5{opacity             :0.5!important}
+.opacity-xxl-6{opacity             :0.6!important}
+.opacity-xxl-7{opacity             :0.7!important}
+.opacity-xxl-8{opacity             :0.8!important}
+.opacity-xxl-9{opacity             :0.9!important}
+.opacity-xxl-10{opacity            :1!important}
 }
 

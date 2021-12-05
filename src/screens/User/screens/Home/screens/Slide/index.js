@@ -32,10 +32,10 @@ export default function(){
 		setIndex(event.item);
 	}
   return (
-    <section className="container-fluid  slide">
-    	<div className="container">
-    	 	<div className="row slide-container">
-    	 	  <SlideContext.Provider value={[thisRef.current,listItem]}>
+    <section className="container-fluid slide">
+    	<div className="container-lg">
+    		<div className="row">
+ 					<SlideContext.Provider value={[thisRef.current,listItem]}>
 	    	 		<div id="main-slide">
 		    	 		 <AliceCarousel 
 							 		ref = {thisRef}
@@ -58,7 +58,7 @@ export default function(){
 							 <NextButton />
 		    	 	</div>
 		    	</SlideContext.Provider>
-    	 	</div>
+    		</div> 	 
     	</div>
     </section>
   );

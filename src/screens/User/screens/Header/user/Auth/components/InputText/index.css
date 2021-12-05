@@ -2,7 +2,7 @@
 	width: 100%;
 	max-width: 100%;
 	position: relative;
-	margin:0.5em 0;
+	margin:0.2em 0;
 }
 .auth-input-content{
 	position: relative;
@@ -31,18 +31,20 @@
 	left: 1.2em;
 	transform: translate(-50%,-50%);
 }
-.auth-input-validate{
-	margin: 0.2em 0;
-	font-size: 0.6em;
-	color: #f00;
-}
-.auth-input-validate.validity{
-	color: #07b68a;
-}
 .auth-input-label.text{
 	left: 2.3em;
 	transform: translate(0,-50%);
 	transition: transform 0.3s,font-size 0.3s;
+}
+
+.auth-input-validate{
+	font-size: 0.8em;
+	height: 1.2em;
+	line-height: 1.2em;
+	color: #f00;
+}
+.auth-input-validate.validity{
+	color: #07b68a;
 }
 .auth-input:focus~.auth-input-label.text,
 .auth-input:not(:placeholder-shown)~.auth-input-label.text{

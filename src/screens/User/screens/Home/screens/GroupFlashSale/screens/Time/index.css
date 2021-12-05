@@ -1,8 +1,11 @@
 .group-flash-sale-time{
 	border-radius: 0.2em;
-	padding: 0.1em 0.3em;
+	min-width: 1em;
 	margin: 0 0.1em;
-	font-size: 1.6em;
+	font-size: 1.4em;
 	color: var(--primary-color);
 	background:var(--primary-background);
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }

@@ -2,9 +2,8 @@ import {useState,useRef,useEffect,memo} from 'react';
 import clsx from 'clsx';
 import './index.css';
 import {List} from '../../../../components/';
-import MainMenuItem from './item/index';
+import MainMenuItem from './item/';
 function MainMenu({history,location,match,...props}) {
-  // console.log({history,location,match})
   const ref       = useRef(null);
   const [fixed,setFixed] = useState(false);
   useEffect(function(){
@@ -12,7 +11,7 @@ function MainMenu({history,location,match,...props}) {
       const body = document.querySelector("#App");
       function handleScroll(event){
         if(ref.current !== null){
-            if(offsetTop <= body.scrollTop){
+            if(offsetTop < body.scrollTop){
                 setFixed(true);
             }else{
                 setFixed(false);
@@ -23,8 +22,8 @@ function MainMenu({history,location,match,...props}) {
     return ()=>(body.removeEventListener('scroll',handleScroll))
   },[]);
   return (
-      <section ref={ref}id="main-menu"className={clsx("container-fluid",{active:fixed})}>
-      		<div className="container">
+      <section ref={ref}id="main-menu"className={clsx("d-none d-md-flex container-fluid",{'active fixed-md top-0':fixed})}>
+      		<div className="container-lg">
       			<div className="row">
       				<List className="main-menu">	
                 <MainMenuItem 

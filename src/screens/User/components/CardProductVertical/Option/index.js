@@ -15,7 +15,7 @@ export default function ProductOption({className,...props}){
 		})
 	};
 	return(
-		<List className={"product-option "+className}>
+		<List className={"product-option opacity-10 opacity-md-0 "+className}>
     		<Item>
     			<Button className="product-option-btn">
     				<Icon className="far fa-heart"/>

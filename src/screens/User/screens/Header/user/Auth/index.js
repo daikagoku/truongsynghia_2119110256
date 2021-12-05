@@ -31,7 +31,7 @@ export default memo(function Auth({...props}){
 	},[]);
 	return(
 		<AuthContext.Provider value={[state,handle]}>
-			<Button className="header-user-button circle-btn"{...buttonAttr}>
+			<Button className="header-button circle-btn"{...buttonAttr}>
 				<Icon icon="fas fa-user"/>
 			</Button>
 			<div className="auth-content">

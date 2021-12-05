@@ -7,7 +7,7 @@ import {
         memo} from 'react';
 import './index.css';
 import {initData,reducer} from './init';
-export default memo(forwardRef(function Offcanvas({prefix,title,position,children},ref) {
+export default memo(forwardRef(function Offcanvas({show,prefix,title,position,widthSize,heightSize,children},ref) {
   const [state,dispatch] = useReducer(reducer,initData);
   const thisRef = useRef();
   const handle = {
@@ -40,10 +40,23 @@ export default memo(forwardRef(function Offcanvas({prefix,title,position,childre
   };
   if(prefix){
     contentAttr.className+=" "+prefix+"_offcanvas";
-  }
+  };
   if(state.open){
     contentAttr.className+=" show";
   };
+
+  const viewAttr={
+    className:"offcanvas-view"
+  };
+  if(position){
+    viewAttr.className+=" "+position;
+  }
+  if(widthSize){
+    viewAttr.className+=" "+widthSize;
+  }
+  if(heightSize){
+    viewAttr.className+=" "+heightSize;
+  }
   function handleClick(){
     dispatch({
       key:'set_open',
@@ -53,7 +66,7 @@ export default memo(forwardRef(function Offcanvas({prefix,title,position,childre
   return (
     <div ref={thisRef} {...contentAttr}>
       <Button onClick={handleClick} className="offcanvas-overlay"></Button>
-      <div className={"offcanvas-view "+position}>
+      <div {...viewAttr}>
         <div className="offcanvas-head">
           <div className="offcanvas-title">
             <span className="">{title}</span>

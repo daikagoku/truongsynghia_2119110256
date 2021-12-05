@@ -64,7 +64,7 @@ export default memo(function ProductThumbnail({props}){
 		dots:dotRef.current,
 		listItem:listItem
 	}}>
-		<div id="product-detail-thumbnail">
+		<div id="product-detail-thumbnail" className="relative">
 			<AliceCarousel 
 				ref = {thisRef}
 				activeIndex ={index}
@@ -79,7 +79,7 @@ export default memo(function ProductThumbnail({props}){
 			<BackButton />
 			<NextButton />
 		</div>
-		<div id="product-detail-thumbnail-dots">
+		<div id="product-detail-thumbnail-dots" className="relative">
 			<AliceCarousel 
 				ref = {dotRef}
 				infinite

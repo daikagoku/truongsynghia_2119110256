@@ -2,10 +2,10 @@ import {createContext} from 'react';
 import {PATH_TO_SRC as PATH} from '../init';
 
 export const PATH_TO_SRC = PATH +"../";
-export const SearchContext = createContext([]);
+export const SearchContext = createContext({});
 export const initData={
     value:"",
-    focus:false
+    onFocus:false
 };
 export function reducer(prevState,action){
     switch(action.key){
@@ -17,7 +17,7 @@ export function reducer(prevState,action){
       case 'set_focus':
           return{
             ...prevState,
-            focus:action.value
+            onFocus:action.value
           };
       default :
         console.log(action.key,{prevState,action,error:"Không tồn tại action"});

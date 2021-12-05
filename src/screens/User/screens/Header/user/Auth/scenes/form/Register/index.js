@@ -7,8 +7,8 @@ import TextLink    from '../../../components/TextLink';
 import MoreButtons from '../../../components/MoreButtons';
 export default function(){
 	return(
-		<Form>
-			<div className="col col-11 col-sm-10 col-md-9 col-lg-8 col-xl-7 col-xxl-6">
+		<div className="col col-11 col-sm-10 col-md-9 col-lg-8 col-xl-7 col-xxl-6 mx-auto">
+			<Form>
 				<Title title="Đăng ký"/>
 				<InputText label="Phone:"icon="fas fa-phone-alt"/>
 				<InputText type="password" label="Password:"icon="fas fa-lock"/>
@@ -18,7 +18,7 @@ export default function(){
 				<TextLink label="Bạn đã có tài khoản?"title="Đăng nhập"to="login"/>
 				<TextLink label="Bạn quên mật khẩu?"title="Quên mật khẩu"to="forget"/>
 				<MoreButtons title="Đăng nhập bằng tài khoản khác"/>
-			</div>
-		</Form>
+			</Form>
+		</div>
 	)
 }

@@ -5,8 +5,7 @@ import {CartProductContext} from './init';
 import ProductInputNumber from './InputNumber/';
 import ProductThumbnail from './Thumbnail/';
 import ProductTitle from './Title/';
-import ProductCurrentPrice from './CurrentPrice/';
-import ProductRootPrice from './RootPrice/';
+import ProductPrice from './Price/';
 import ProductOption from './Option/';
 export default memo(function({data,index}){
 	return(
@@ -18,8 +17,8 @@ export default memo(function({data,index}){
 			<div className="col col-6 ">
 				<ProductTitle />		
 				<div className="d-flex">
-					<ProductCurrentPrice />
-					<ProductRootPrice />
+					<ProductPrice sale/>
+					<ProductPrice root/>
 				</div>
 				<ProductInputNumber />
 			</div>

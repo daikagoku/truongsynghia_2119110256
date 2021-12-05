@@ -35,7 +35,7 @@ export default memo(function HeaderCart(){
 		cartAttr.className+=" active";
 	};
 	const buttonAttr = {
-		className:"header-cart-button circle-btn",
+		className:"header-button circle-btn",
 		onClick:function(){
 			if(OffcanvasRef.current){
 				OffcanvasRef.current.handle.open();
@@ -49,7 +49,11 @@ export default memo(function HeaderCart(){
 				<Icon icon="fab fa-opencart"/>
 				<span className="header-cart-total">{listItem.length}</span>
 			</Button>
-			<Offcanvas ref={OffcanvasRef} title="Giỏ hàng" position="right">
+			<Offcanvas ref={OffcanvasRef} 
+				title="Giỏ hàng" 
+				position="right"
+				widthSize="w-10 w-sm-8 w-md-6 w-lg-5 w-xl-4 w-xxl-3"
+			>
 				<HeaderCartContentList />
 				<HeaderCartContentButtons/>
 			</Offcanvas>

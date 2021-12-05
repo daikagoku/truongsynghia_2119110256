@@ -1,4 +1,5 @@
 import {Switch,Route} from 'react-router-dom';
+import Contact from './screens/Contact/';
 import Header from './screens/Header/';
 import Footer from './screens/Footer/';
 import Menu from './screens/Menu/';
@@ -8,6 +9,7 @@ export default function({history,location,match,...props}) {
 	console.log({history,location,match})
 	return(
 	<>
+		<Route path ="/" component={Contact}/>
 		<Route path ="/" component={Header}/>
 		<Route path ="/" component={Menu}/>
 		<Switch>

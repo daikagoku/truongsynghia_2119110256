@@ -1,0 +1,15 @@
+.header-menu-item{
+	display: flex;
+	width: 100%;
+}
+.header-menu-button{
+	font-size: 1.4em;
+	padding: 0.1em;
+	margin: 0.1em 0.2em;
+	flex: 1;
+	justify-content: flex-start;
+}
+.header-menu-button:hover{
+	color: var(--primary-highlight-color) !important;
+	background: var(--primary-highlight-background);
+}

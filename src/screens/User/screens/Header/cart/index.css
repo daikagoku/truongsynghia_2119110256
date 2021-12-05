@@ -1,14 +1,6 @@
 .header-cart{
 	position: relative;
 }
-
-.header-cart-button{
-	margin: 0 0.4em;
-	font-size: 1.2em;
-	height: 2.4em;
-	width: 2.4em;
-	position: relative;
-}
 .header-cart-total{
 	font-size: 0.9em;
 	color: var(--primary-highlight-color);

@@ -9,7 +9,7 @@
 	top: 0.2em;
 }
 .product-card:hover .product-option{
-	opacity: 1;
+	opacity: 1 !important;
 }
 .product-option-btn{
 	border-radius: 0.5em;

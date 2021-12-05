@@ -1,7 +1,9 @@
 .header-logo{
-	height: 5em;
+	height: 1em;
+	max-height: 100%;
 }
 .header-logo-image{
 	height: 100%;
+	max-width: 100%;
 	display: flex;
 }

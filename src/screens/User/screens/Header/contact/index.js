@@ -2,7 +2,7 @@ import {memo} from 'react';
 import {List,Item,Link,Icon} from "../../../../../components/";
 function HeaderContact(props) {
   return (
-      		<div id="header-contact"className="row">
+      		<div id="header-contact"className="row d-none d-md-flex">
       				<List className="d-flex justify-content-end ">
       						<Item className="d-flex">
       								<Link className="d-flex align-items-center justify-content-center py-1 px-2">

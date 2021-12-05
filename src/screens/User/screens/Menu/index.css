@@ -3,8 +3,6 @@
 }
 #main-menu.active{
 	z-index: 100;
-	position: fixed;
-	top: 0;
 	box-shadow: 0 0 0.2em 0.1em rgba(0, 0, 0, 0.2);
 }
 .main-menu{

@@ -4,6 +4,26 @@
 	align-items: center;
 	justify-content: center;
 }
+.auth-more-title{
+	position: relative;
+}
+.auth-more-title:before,
+.auth-more-title:after{
+	content: "";
+	width: 50%;
+    display: block;
+    height: 0.02em;
+    background: #ddd;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.auth-more-title:before{
+	right: 100%;
+}
+.auth-more-title:after{
+	left: 100%;
+}
 .auth-more-body{
 	display: flex;
 	align-items: center;

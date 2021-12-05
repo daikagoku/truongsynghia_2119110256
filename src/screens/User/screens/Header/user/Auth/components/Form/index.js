@@ -6,7 +6,6 @@ import './index.css';
 export const FormContact = createContext({});
 export default function({children,initData,reducer,className,...props}){
 	const [state,dispatch] = useReducer(reducer,initData);
-	console.log([state,dispatch])
 	return (
 	<FormContact.Provider value={[state,dispatch]}>
 		<Form className={clsx("auth-form",{[className]:className})} {...props}>

@@ -1,5 +1,6 @@
-import './index.css';
+import styles from './index.module.css';
 import {useContext,memo} from 'react';
+import clsx from 'clsx';
 import {CartProductContext} from '../init';
 import {Link} from '../../../../../../../../components/';
 export default memo(function ProductTitle({...props}){
@@ -12,9 +13,9 @@ export default memo(function ProductTitle({...props}){
 	}
 	let text = "Đang cập nhật";
 	const attr={
-		...props
+		...props,
+		className:clsx(styles.title)
 	};
-	attr.className+=" product-title ";
 	if(data.title !== undefined){
 		text = data.title;
 	};
