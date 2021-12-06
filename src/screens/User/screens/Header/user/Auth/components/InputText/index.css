@@ -12,8 +12,8 @@
 	display: block;
 	padding-right: 2em;
 	padding-left: 2em;
-	padding-top: 0.9em;
-	padding-bottom: 0.1em;
+	padding-top: 1em;
+	padding-bottom: 0.2em;
 	border-radius: 1em;
 	color: var(--primary-color);
 	background: var(--primary-background);

@@ -34,7 +34,7 @@ export default memo(function Auth({...props}){
 				<Icon icon="fas fa-user"/>
 			</Button>
 			<div className="auth-content">
-				<Modal prefix="auth" ref={modalRef} widthSize="w-10 w-sm-9 w-md-8 w-lg-7 w-xl-6" heightSize="h-12"title="">
+				<Modal prefix="auth" ref={modalRef} widthSize="w-12 w-sm-9 w-md-8 w-lg-7 w-xl-6" heightSize="h-12"title="">
 					{state.action ==='login' && <FormLogin />}
 					{state.action ==='register' && <FormRegister />}
 				</Modal>

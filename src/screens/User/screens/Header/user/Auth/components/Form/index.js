@@ -2,7 +2,6 @@ import {Form} from '../../../../../../../../components/';
 import {createContext,useReducer} from 'react';
 import clsx from 'clsx';
 import './index.css';
-
 export const FormContact = createContext({});
 export default function({children,initData,reducer,className,...props}){
 	const [state,dispatch] = useReducer(reducer,initData);

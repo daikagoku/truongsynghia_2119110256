@@ -9,7 +9,7 @@ import {initData,reducer} from './init';
 import {validatePhone,validatePassword} from '../init';
 export default function(){
 	return(
-			<div className="col col-11 col-sm-10 col-md-9 col-lg-8 col-xl-7 col-xxl-6 mx-auto">
+			<div className="w-10 w-sm-9 w-md-8 w-lg-7 w-xl-6 mx-auto">
 				<Form action ="auth/login" initData={initData} reducer={reducer}>
 					<Title title="Đăng nhập"/>
 					<InputText label="Phone:"icon="fas fa-phone-alt"validate={validatePhone}/>

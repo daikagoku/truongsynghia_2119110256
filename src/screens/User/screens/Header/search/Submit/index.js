@@ -1,7 +1,7 @@
 import './index.css';
-import { SearchContext } from '../../init';
+import { SearchContext } from '../init';
 import {useContext , useMemo,memo,useRef} from 'react';
-import {Button,Icon} from '../../../../../../../components/';
+import {Button,Icon} from '../../../../../../components/';
 export default memo(function HeaderSearchSubmit(){
 	const {state,dispatch,form} 		= useContext(SearchContext);
     const submitAttr = useMemo(function(){

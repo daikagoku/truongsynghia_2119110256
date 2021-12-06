@@ -15,12 +15,12 @@ import ProductDetailRootPrice from './RootPrice/';
 export default function() {
 	return(
 		<div className="product-detail-content row">
-			<div className="col col-12 col-md-6">
+			<div className="col col-12 col-md-6 py-1">
 				<Widget prefix="product-detail-content" className="h-12">
 					<ProductDetailThumbnail />
 				</Widget>
 			</div>
-			<div className="col col-12 col-md-6">
+			<div className="col col-12 col-md-6 py-1">
 				<Widget prefix="product-detail-content" className="h-12">
 					<ProductDetailTitle />
 					<div className="row product-detail-attr">

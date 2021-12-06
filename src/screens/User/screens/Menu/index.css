@@ -10,15 +10,9 @@
 	position: relative;
 	width: 100%;
 	justify-content: space-between;
-	font-size: 1.3em;
-}
-.main-menu-toggle{
-	display: none !important;
-}
-.main-menu-content{
-	display: flex;
-	padding: 0;
-	width: 100%;
-	justify-content: space-around;
+	font-size: 1.2em;
 }
 
+.main-menu-toggle{
+	font-size: 1.4em;
+}

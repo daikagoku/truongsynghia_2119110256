@@ -2,7 +2,8 @@ import {useState,useRef,useEffect,memo} from 'react';
 import clsx from 'clsx';
 import './index.css';
 import {List} from '../../../../components/';
-import MainMenuItem from './item/';
+import MainMenuItem from './navbar/item/';
+import MainMenuNavbar from './navbar/';
 function MainMenu({history,location,match,...props}) {
   const ref       = useRef(null);
   const [fixed,setFixed] = useState(false);
@@ -22,7 +23,7 @@ function MainMenu({history,location,match,...props}) {
     return ()=>(body.removeEventListener('scroll',handleScroll))
   },[]);
   return (
-      <section ref={ref}id="main-menu"className={clsx("d-none d-md-flex container-fluid",{'active fixed-md top-0':fixed})}>
+      <section ref={ref}id="main-menu"className={clsx("container-fluid",{'active fixed top-0':fixed})}>
       		<div className="container-lg">
       			<div className="row">
       				<List className="main-menu">	
@@ -33,48 +34,10 @@ function MainMenu({history,location,match,...props}) {
                       to="/"
                 />
                 <MainMenuItem 
-                    buttonClass="main-menu-toggle"
+                    buttonClass="main-menu-toggle d-flex d-md-none"
                     icon="fas fa-bars"
-                >               
-                  <List className="main-menu-content">                 
-                    <MainMenuItem      
-                      keyApi ="category"
-                      filter ={(item)=>(item.parent==="mobile")}
-                      icon   ="fas fa-mobile-alt"
-                      text   ="Điện thoại"
-                    />
-                    <MainMenuItem 
-                      keyApi ="category"
-                      filter ={(item)=>(item.parent==="laptop")}
-                      icon   ="fas fa-laptop"
-                      text   ="Laptop"
-                    />
-                    <MainMenuItem 
-                      icon ="fas fa-tablet-alt"
-                      text ="Tablet"
-                    />
-                    <MainMenuItem 
-                      keyApi ="category"
-                      filter ={(item)=>(item.parent==="phu-kien")}
-                      icon   ="fas fa-headphones-alt"
-                      text   ="Phụ kiện"
-                    />
-                    <MainMenuItem 
-                      to   ="/tool"
-                      icon ="fas fa-tools"
-                      text ="Sửa chữa"
-                    />
-                    <MainMenuItem 
-                      to   ="/flash-sale"
-                      icon ="fas fa-bolt"
-                      text ="Flash Sale"
-                    />
-                    <MainMenuItem 
-                      to   ="/post"
-                      icon ="fas fa-clipboard-list"
-                      text ="Tin tức"
-                    />
-                  </List>
+                >        
+                  <MainMenuNavbar />       
                 </MainMenuItem>
       				</List>
       			</div>

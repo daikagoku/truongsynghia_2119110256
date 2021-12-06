@@ -1,12 +1,12 @@
 
 import {useReducer,useMemo,useRef,memo} from 'react';
-import useStorage from '../../../../../../core/useStorage';
-import {Form,Input,Button,Icon} from '../../../../../../components/';
+import useStorage from '../../../../../core/useStorage';
+import {Form,Input,Button,Icon} from '../../../../../components/';
 import './index.css';
 import HeaderSearchRecomend from './Recomend';
 import HeaderSearchInput from './Input';
 import HeaderSearchSubmit from './Submit';
-import {reducer,initData,SearchContext} from '../init';
+import {reducer,initData,SearchContext} from './init';
 function HeaderSearch(props) {
   const formRef = useRef({});
   const [state,dispatch] = useReducer(reducer,initData);
@@ -22,7 +22,7 @@ function HeaderSearch(props) {
     return{
       ref:formRef,
       action:"/search",
-      className:"header-search-drop d-none d-md-flex",
+      className:"header-search-drop",
       onSubmit:function(e){
         e.preventDefault();
         if(state.value !== ""){

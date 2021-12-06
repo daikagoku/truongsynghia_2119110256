@@ -1,8 +1,8 @@
 import {useState,memo} from "react";
 import clsx from 'clsx';
 import './index.css';
-import useFetch from '../../../../../core/useFetch';
-import {Item,Button,Icon} from '../../../../../components/';
+import useFetch from '../../../../../../core/useFetch';
+import {Item,Button,Icon} from '../../../../../../components/';
 import MainMenuDrop from './drop';
 export default memo(function MainMenuItem({api,keyApi,filter,sort,buttonClass,className,icon,text,children,...props}){
   const [hover,setHover] = useState(false);
@@ -36,7 +36,7 @@ export default memo(function MainMenuItem({api,keyApi,filter,sort,buttonClass,cl
         setHover(false);
     };
   const buttonTextAttr = {
-    className:"text"
+    className:"text fs-0_8em fs-md-0_9em fs-lg-1em"
   }
   if(Array.isArray(listItem) && listItem.length !== 0 ){
     buttonTextAttr.className+=" dropdown-toggle";

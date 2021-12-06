@@ -1,7 +1,7 @@
-import {List,Item,Button,Icon} from '../../../../../../../components/';
+import {List,Item,Button,Icon} from '../../../../../../components/';
 import {useContext , useMemo,memo} from 'react';
 import clsx from 'clsx';
-import { SearchContext } from '../../init';
+import { SearchContext } from '../init';
 import './index.css';
 function HeaderRecomend(){
 	const {state,dispatch,store} 		= useContext(SearchContext);
@@ -23,15 +23,18 @@ function HeaderRecomend(){
 		 return store.filter(function(_item){
 	        return _item.includes(state.value) || _item==="";
 	   }).slice(0,5);
-	},[state.value]);
-
-	const recomendAttr = {
-			className:clsx("header-search-recomend",{show:state.onFocus})
-	};
+	});
 	const itemAttr = {className:"header-search-recomend-item"};
-	const buttonAttr = {
+	const buttonAttr = useMemo(function(){
+	    return{
 	    	className:"header-search-recomend-button"
-	};
+	    }
+	},[state.value]);
+	const recomendAttr = useMemo(function(){
+		return{
+			className:clsx("header-search-recomend",{show:state.onFocus})
+		};
+	},[state.onFocus]);
 	function setViewValue(value){
 		const index       = value.indexOf(state.value);
 		const beforeValue = value.substring(0,index);

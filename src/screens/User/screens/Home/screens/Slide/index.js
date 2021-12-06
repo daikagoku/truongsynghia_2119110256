@@ -32,7 +32,7 @@ export default function(){
 		setIndex(event.item);
 	}
   return (
-    <section className="container-fluid slide">
+    <section className="container-fluid slide px-0">
     	<div className="container-lg">
     		<div className="row">
  					<SlideContext.Provider value={[thisRef.current,listItem]}>

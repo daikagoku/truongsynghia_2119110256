@@ -3,51 +3,33 @@ import clsx from 'clsx';
 import {memo,useRef,useEffect,useState} from 'react';
 import HeaderLogo from './logo';
 import HeaderContact from './contact';
-import HeaderSearchDrop from './search/Drop/';
-import HeaderSearchOffcanvas from './search/Offcanvas/';
+import HeaderSearch from './search';
 import HeaderSetting from './setting';
 import HeaderCart from './cart';
 import HeaderUser from './user';
-import HeaderMenu from './menu';
 function Header(props) {
   const thisRef       = useRef(null);
-  const [fixed,setFixed] = useState(false);
-  useEffect(function(){
-      const offsetTop = thisRef.current.offsetTop;
-      const body = document.querySelector("#App");
-      function handleScroll(event){
-        if(thisRef.current !== null){
-            if(offsetTop < body.scrollTop){
-                setFixed(true);
-            }else{
-                setFixed(false);
-            };
-        }
-    };
-    body.addEventListener('scroll',handleScroll);
-    return ()=>(body.removeEventListener('scroll',handleScroll))
-  },[]);
   return (
-      <section ref={thisRef} id="header" className={clsx("container-fluid",{"active fixed relative-md top-0":fixed})}>
+      <section ref={thisRef} id="header" className="container-fluid">
           <HeaderContact />
-      		<header className="container">
+      		<header className="container-lg   px-0">
       			<div className="row py-2">
-      				<div className="col col-5 col-md-3 col-lg-3 col-xxl-2 justify-content-center">         
-                <div className="d-flex justify-content-start">
+      				<div className="order-0 col col-5 col-sm-4 col-md-3 col-lg-3 col-xxl-2 justify-content-center">         
+                <div className="w-12 d-flex justify-content-center py-1">
                   <HeaderLogo />
                 </div>
               </div>
-              <div className="col col-1 col-md-6 col-lg-5 justify-content-center">
-                  <HeaderSearchDrop />
-              </div>
-      				<div className="col col-6 col-md-3 col-lg-4 col-xxl-5 justify-content-center">
-      				  <div className="d-flex justify-content-end">
-                  <HeaderSearchOffcanvas />
+      				<div className="order-1 order-sm-2 col col-7 col-sm-4 col-md-3 col-lg-4 col-xxl-5 justify-content-center">
+      				  <div className="w-12 d-flex justify-content-end py-1">
                   <HeaderSetting /> 
                   <HeaderCart />
                   <HeaderUser />
-                  <HeaderMenu />
                 </div>
+              </div>
+              <div className="order-2 order-sm-1 col col-12 col-sm-4 col-md-6 col-lg-5 justify-content-center">
+                  <div className="w-12 d-flex justify-content-center py-1">
+                    <HeaderSearch />
+                  </div>
               </div>
       			</div>
       		</header>

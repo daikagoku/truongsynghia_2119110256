@@ -1,7 +1,8 @@
 import './index.css';
-import { SearchContext } from '../../init';
+import {PATH_TO_SRC}  from './init';
+import { SearchContext } from '../init';
 import {useContext , useMemo,memo,useRef} from 'react';
-import {Input} from '../../../../../../../components/';
+import {Input} from '../../../../../../components/';
 export default memo(function(){
 	const {state,dispatch} 		= useContext(SearchContext);
   	const inputRef = useRef();

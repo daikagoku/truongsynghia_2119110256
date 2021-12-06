@@ -1,0 +1,29 @@
+.error-page{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: var(--primary-color);
+}
+.error-number{
+	font-weight: bolder;
+	font-size: 10em;
+	line-height: 1em;
+	text-shadow: 0.02em 0.02em 0 var(--primary-shadow);
+}
+.error-title{
+	font-weight: bolder;
+	font-size: 2em;
+}
+
+.error-button{
+	font-weight: bolder;
+	font-size: 2em;
+	padding: 0.1em 0.5em;
+}
+.error-button .icon{
+	margin: 0 0.2em;
+}
+.error-button .text{
+	margin: 0 0.2em;
+}

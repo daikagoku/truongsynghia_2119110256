@@ -57,6 +57,7 @@
 	display: flex;
 	flex-direction: column;
 	overflow-x: hidden;
+	border-radius: 0.5em;
 }
 .offcanvas-title{
 	font-size: 2em;
