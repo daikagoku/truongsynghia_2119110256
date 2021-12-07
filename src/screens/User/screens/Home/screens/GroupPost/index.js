@@ -20,22 +20,22 @@ export default memo(function GroupPost() {
 						<GroupPostTitle />
 					</div>
 					<div className="row group-post-body">
-						<div className="col col-6 px-1 py-0">
+						<div className="col col-12 col-md-6 px-1 py-0">
 							<Widget prefix="group-post">
 								<PostCard data ={listItem[0]}/>
 							</Widget>
 						</div>
-						<div className="col col-6 px-1 py-0">
+						<div className="col col-12 col-md-6 px-1 py-0">
 							<Widget prefix="group-post">
 								<PostCard data ={listItem[1]}/>
 							</Widget>
 						</div>
-						<div className="col col-6 px-1 py-0">
+						<div className="col col-12 col-md-6 px-1 py-0">
 							<Widget prefix="group-post">
 								<PostCard data ={listItem[2]}/>
 							</Widget>
 						</div>
-						<div className="col col-6 px-1 py-0">
+						<div className="col col-12 col-md-6 px-1 py-0">
 						 	<Widget prefix="group-post">
 						 		<PostCard data ={listItem[3]}/>
 						 	</Widget>

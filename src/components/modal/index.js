@@ -60,7 +60,7 @@ export default memo(forwardRef(function Modal({prefix,show,title,widthSize,heigh
   if(state.open){
     contentAttr.className+=" show";
   };
-  function handleClick(){
+  function handleClick(event){
     handle.close();
   };
   return (

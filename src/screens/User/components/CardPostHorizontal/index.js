@@ -12,10 +12,10 @@ function PostCardVertical({data,...props}){
 	return(
 	<PostContext.Provider value ={data}>
 		<div className="post-card row">
-	   		<div className="post-card-head col col-12 col-lg-6">
+	   		<div className="post-card-head col col-5 col-md-6">
 	   			<PostThumbnail />
 	   		</div>
-	   		<div className="post-card-body col col-12 col-lg-6">
+	   		<div className="post-card-body col col-7 col-md-6">
 	   			<PostDate />
 	   			<PostTitle />
 	   			<div className="d-flex">

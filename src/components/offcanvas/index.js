@@ -58,10 +58,7 @@ export default memo(forwardRef(function Offcanvas({show,prefix,title,position,wi
     viewAttr.className+=" "+heightSize;
   }
   function handleClick(){
-    dispatch({
-      key:'set_open',
-      value:false
-    })
+    handle.close();
   };
   return (
     <div ref={thisRef} {...contentAttr}>
