@@ -8,9 +8,9 @@
 }
 .back{
 	left: 0%;
-	transform: translate(-20%,-50%);
+	transform: translate(-30%,-50%);
 }
 .next{
 	right: 0;
-	transform: translate(20%,-50%);
+	transform: translate(30%,-50%);
 }
