@@ -2,8 +2,9 @@ import './index.css';
 import {forwardRef,memo,useRef} from 'react';
 import clsx from 'clsx';
 import {Button,Icon} from '../../components/';
-function Error({...props},ref){
+function Error({history,location,match,...props},ref){
 	const thisRef = useRef({});
+	console.log(history,location,match)
 	return(
 		<section className="container-fluid">
 			<div className="container">
@@ -17,7 +18,7 @@ function Error({...props},ref){
 								<Icon icon="fas fa-home"/>
 								<span className="text">Go Home</span>
 							</Button>
-							<Button to="/" className="error-button circle-btn">
+							<Button onClick={()=>(history.goBack())} className="error-button circle-btn">
 								<Icon icon="fas fa-chevron-left"/>
 								<span className="text">Go Back</span>
 							</Button>
