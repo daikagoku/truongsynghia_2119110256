@@ -15,4 +15,5 @@
 
 .main-menu-toggle{
 	font-size: 1.4em;
+	justify-self: flex-end;
 }

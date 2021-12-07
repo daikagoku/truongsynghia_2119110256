@@ -41,7 +41,7 @@ function GroupFlashSale(props) {
                                  <GroupFlashTime /> 
                              </div>
                              <div className="col col-4 col-md-3 align-items-center justify-content-center">
-                                 <Button className="group-flash-sale-button-view">Xem thêm</Button>
+                                 <Button className="group-flash-sale-button-view"to="/flashsale">Xem thêm</Button>
                              </div>
                          </div>
                          <div className="row group-flash-sale-body">

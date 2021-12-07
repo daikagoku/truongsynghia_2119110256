@@ -12,10 +12,16 @@ function Error({...props},ref){
 						<span className="error-number">404</span>
 						<span className="error-title">PAGE NOT FOUNT</span>
 						<span className="error-description">We can't seen find page you're looking for.</span>
-						<Button to="/" className="error-button circle-btn">
-							<Icon icon="fas fa-home"/>
-							<span className="text">Go Home</span>
-						</Button>
+						<div className="d-flex">
+							<Button to="/" className="error-button circle-btn">
+								<Icon icon="fas fa-home"/>
+								<span className="text">Go Home</span>
+							</Button>
+							<Button to="/" className="error-button circle-btn">
+								<Icon icon="fas fa-chevron-left"/>
+								<span className="text">Go Back</span>
+							</Button>
+						</div>
 					</div>	
 				</div>	
 			</div>	

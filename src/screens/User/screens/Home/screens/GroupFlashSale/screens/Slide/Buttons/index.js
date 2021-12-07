@@ -1,11 +1,12 @@
 import {useContext} from "react";
+import clsx from 'clsx';
 import {SlideContext} from '../index';
 import {List,Item,Button,Icon} from '../../../../../../../../../components/';
-import "./index.css";
+import styles from './index.module.css';
 export  function BackButton(){
 	const [slide,listItem] = useContext(SlideContext);
 	const buttonAttr = {
-		className:"slide-button circle-btn back"	
+		className:clsx("circle-btn",styles.button,styles.back)	
 	}
 	if(slide){
 		buttonAttr.onClick = function(){
@@ -23,7 +24,7 @@ export  function BackButton(){
 export  function NextButton(){
 	const [slide] = useContext(SlideContext);
 	const buttonAttr = {
-		className:"slide-button circle-btn next"
+		className:clsx("circle-btn",styles.button,styles.next)	
 	}
 	if(slide){
 		buttonAttr.onClick=function(){

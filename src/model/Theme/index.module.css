@@ -50,11 +50,11 @@
 
 	--second-color: #000;
 	--second-color-active: #00abd6;
-	--second-background: #d5fffd;
+	--second-background: #fff;
 	--second-shadow: rgba(10,10,10,0.2);
 	--second-border: rgba(10,10,10,0.1);
 
 	--primary-highlight-color: #fff;
-	--primary-highlight-color-active: #03ffe5;
+	--primary-highlight-color-active: #fff;
 	--primary-highlight-background: #049bfd;
 }

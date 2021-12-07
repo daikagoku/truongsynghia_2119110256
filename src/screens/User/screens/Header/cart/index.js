@@ -50,7 +50,7 @@ export default memo(function HeaderCart(){
 			<Offcanvas ref={OffcanvasRef} 
 				title="Giỏ hàng" 
 				position="right"
-				widthSize="w-10 w-sm-8 w-md-6 w-lg-5 w-xl-4 w-xxl-3"
+				widthSize="w-12 w-xs-10 w-sm-8 w-md-7 w-lg-5 w-xl-4 w-xxl-3"
 			>
 				<HeaderCartContentList />
 				<HeaderCartContentButtons/>

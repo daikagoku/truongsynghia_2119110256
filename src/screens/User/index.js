@@ -1,4 +1,5 @@
 import {Switch,Route,Redirect} from 'react-router-dom';
+import {createContext,memo,reducer} from 'react';
 import Contact from './screens/Contact/';
 import Header from './screens/Header/';
 import Footer from './screens/Footer/';
@@ -7,7 +8,8 @@ import Home from './screens/Home/';
 import ProductDetail from './screens/ProductDetail/';
 import {Offcanvas} from '../../components/';
 export default function User({history,location,match,...props}) {
-	console.log({history,location,match})
+	console.log({history,location,match});
+
 	return(
 	<>
 		<Route path ="/" component={Contact}/>

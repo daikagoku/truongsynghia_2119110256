@@ -18,8 +18,9 @@
 
 .error-button{
 	font-weight: bolder;
-	font-size: 2em;
+	font-size: 1.4em;
 	padding: 0.1em 0.5em;
+	margin: 0.5em 0.2em;
 }
 .error-button .icon{
 	margin: 0 0.2em;
