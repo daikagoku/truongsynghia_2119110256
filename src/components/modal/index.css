@@ -39,6 +39,7 @@
 	box-shadow: -0.05em 0.05em 0 0 var(--primary-shadow);
 	transition: opacity 0.25s, visibility 0s 0.2s;
 	opacity: 0;
+	visibility: hidden;
 	padding: 0.5em;
 	position: fixed;
 	left: 50%;
@@ -50,6 +51,7 @@
 .modal.show .modal-view{
 	transition: opacity 0.25s;
 	opacity: 1;
+	visibility: visible;
 }
 .modal-head{
 	display: flex;
