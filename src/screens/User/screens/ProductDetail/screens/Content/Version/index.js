@@ -1,5 +1,5 @@
 import {useContext,useEffect} from 'react';
-import {List,Button,Icon} from '../../../../../../../components/';
+import {List,Item,Button,Icon} from '../../../../../../../components/';
 import './index.css';
 import {ProductContext,ProductDetailContext} from '../../../init';
 export default function() {
@@ -9,17 +9,19 @@ export default function() {
 		className:"product-card-detail-version-btn square-btn",
 	}
 	return(
-		<List className="product-card-detail-version" listItem={data.versions} itemAttr={{className:"d-flex"}}>
+		<List className="product-card-detail-version" >
 			{
-				function(item,index){
+				data.versions.map(function(item,index){
 					let _className ="product-card-detail-version-button square-btn";
 					if(item.id === data.version){
 						_className+=" active";
 					}
 					return (
-						<Button className={_className} to={item.alias}>{item.title}</Button>
+						<Item key={index}className="d-flex">
+							<Button className={_className} to={item.alias}>{item.title}</Button>
+						</Item>
 					)
-				}
+				})
 			}
 		</List>
 	)

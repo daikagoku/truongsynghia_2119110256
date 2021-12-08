@@ -2,7 +2,7 @@
 import {useContext,memo} from 'react';
 import {CartProductContext} from '../../init';
 export default function ProductCurrendPrice(){
-	const data = useContext(CartProductContext) ?? {};
+	const {data} = useContext(CartProductContext);
 	let version = {}
 	if(Array.isArray(data.versions)){
 		version=data.versions.find(function(_version,_index){

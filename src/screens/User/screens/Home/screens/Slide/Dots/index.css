@@ -18,11 +18,11 @@
 	transition: opacity 0.3s,background 0.3s,width 0.3s;
 }
 .slide-dot-button:not(.disabled):hover{
-	background: var(--primary-highlight-background);
+	background: var(--highlight-background);
 	opacity: 0.4;
 }
 .slide-dot-button:not(.disabled).active{
 	width: 3em;
-	background: var(--primary-highlight-background);
+	background: var(--highlight-background);
 	opacity: 1;
 }

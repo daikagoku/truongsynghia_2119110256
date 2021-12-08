@@ -26,10 +26,17 @@ export default memo(function({history,location,match}){
 		});
 		if(version){
 			data.version = version.id;
+			const sectionAttr = {
+				id:"product-detail",
+				className:"container-fluid",
+				onLoad:function(event){
+					console.log("product-detail load")
+				}
+			}
 			return(
 				<ProductDetailContext.Provider value ={[state,dispatch]}>
 					<ProductContext.Provider value ={{...data}}>
-						<section id="product-detail" className="container-fluid">
+						<section {...sectionAttr}>
 							<div className="container">
 								<ProductDetailContent/>
 							</div>

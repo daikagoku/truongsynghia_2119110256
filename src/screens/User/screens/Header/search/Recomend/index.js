@@ -19,7 +19,7 @@ function HeaderRecomend(){
 	      }
 	    }
 	},[]);
-	listAttr.listItem = useMemo(function(){
+	const historys = useMemo(function(){
 		 return store.filter(function(_item){
 	        return _item.includes(state.value) || _item==="";
 	   }).slice(0,5);
@@ -48,7 +48,7 @@ function HeaderRecomend(){
 	return(
 		<div {...recomendAttr}>
           <span className="header-search-recomend-title">Gợi ý tìm kiếm:</span>
-          <List {...listAttr} itemAttr={itemAttr}>
+          <List {...listAttr}>
           	{ 
           		state.onFocus === true &&
           		state.value!=="" && 
@@ -63,7 +63,7 @@ function HeaderRecomend(){
           	}
           	{
           		state.onFocus === true &&
-          		listAttr.listItem.length <= 0 && 
+          		historys.length <= 0 && 
           		<Item {...itemAttr}>
 	          	 	<Button {...buttonAttr} disabled>
 	                  <Icon className="fas fa-search"/>
@@ -75,14 +75,16 @@ function HeaderRecomend(){
           	}
             {
             		state.onFocus === true &&
-                function(value,index){
+                historys.map(function(value,index){
                   return(
+                  <Item key={index} {...itemAttr}>
                     <Button {...buttonAttr} onClick={()=>(handleClick(value))}>
                         <Icon className="fas fa-search"/>
                         <span className="text">{setViewValue(value)}</span>
                     </Button>
+                  </Item>
                   )
-                }
+                })
             }
           </List>
         </div>

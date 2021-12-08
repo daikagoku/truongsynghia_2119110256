@@ -3,8 +3,8 @@
 }
 .group-flash-sale-section{
 	position: relative;
-	background:var(--primary-highlight-background);
-	color: var(--primary-color);
+	background:var(--highlight-background);
+	color: var(--highlight-color);
 	margin: 0.5em 0;
 }
 .group-flash-sale-section:before{

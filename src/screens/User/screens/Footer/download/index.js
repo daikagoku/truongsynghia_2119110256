@@ -24,15 +24,15 @@ function FooterDownload(props) {
 				</Button>	
       		</div>
       		<div className="col col-6">
-	      		<List className="footer-download"listItem={listItem}>
+	      		<List className="footer-download">
 			    	{
-			    		(item,index)=>(
+			    		listItem.map((item,index)=>(
 			    			<Item key={index}className="footer-download-item">
 						  		<Button className="footer-download-button square-btn"to={BASE_URL}>
 						  			<Image className="img-contain" src={"/img/"+item}></Image>
 						  		</Button>	
 						  	</Item>
-			    		)
+			    		))
 			    	}
 			    </List>
 	    	</div>

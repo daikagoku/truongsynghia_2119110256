@@ -12,15 +12,15 @@ export default memo(function FooterPayment(){
 		"vietcombank.png"
 	];
 	return(
-		<List className="footer-payment-list"listItem={listItem}>
+		<List className="footer-payment-list">
 	    	{
-	    		(item,index)=>(
+	    		listItem.map((item,index)=>(
 	    			<Item key={index}className="footer-payment-item m-1">
 				  		<Button className="footer-payment-button square-btn p-1">
 				  			<Image className="img-contain" src={"/img/"+item}></Image>
 				  		</Button>	
 				  	</Item>
-	    		)
+	    		))
 	    	}
 	    </List>
    	)

@@ -2,7 +2,7 @@ import {useContext,memo} from 'react';
 import {CartProductContext} from '../init';
 import {Thumbnail,Image} from '../../../../../../../../components/';
 export default memo(function ProductThumbnail({imageAttr,thumbnailAttr,children,...props}){
-	const data = useContext(CartProductContext) ?? {};
+	const {data} = useContext(CartProductContext);
 	let version = {}
 	if(Array.isArray(data.versions)){
 		version=data.versions.find(function(_version,_index){

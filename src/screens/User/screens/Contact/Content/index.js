@@ -1,6 +1,6 @@
 import './index.css';
 import clsx from 'clsx';
-import {List,Button,Icon} from '../../../../../components/';
+import {Button,Icon} from '../../../../../components/';
 import {ContentContext,reducer,initData} from './init';
 import {ContactContext} from '../init';
 import {useReducer,useContext,useRef,useEffect,useMemo} from 'react';

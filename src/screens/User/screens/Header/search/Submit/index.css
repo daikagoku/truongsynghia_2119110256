@@ -9,8 +9,8 @@
 }
 .header-search-btn.submit{
 	width: 3em;
-	color: var(--primary-highlight-color);
-	background: var(--primary-highlight-background);
+	color: var(--highlight-color);
+	background: var(--highlight-background);
 	font-weight: bolder;
 	right: 0.2em;
 	pointer-events: none;

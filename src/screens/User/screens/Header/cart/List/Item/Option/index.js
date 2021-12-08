@@ -5,9 +5,9 @@ import {CartProductContext} from '../init';
 import './index.css';
 export default memo(function ProductOption({className,...props}){
 	const [store,handleStore] = useContext(HeaderCartContext);
-	const data = useContext(CartProductContext) ?? {};
+	const {data,index} = useContext(CartProductContext);
 	function handleClick(event){
-		handleStore.delete(data.id);
+		handleStore.delete(index);
 	};
 	return(
 		<Button onClick={handleClick} className="header-cart-list-card-delete square-btn">

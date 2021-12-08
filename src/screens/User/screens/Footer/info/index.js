@@ -1,10 +1,10 @@
 import './index.css';
 import {memo} from 'react';
 import useFetch from '../../../../../core/useFetch';
-import {List,Icon} from '../../../../../components/';
+import {List,Item,Icon} from '../../../../../components/';
 function FooterInfo({listItem,className,...props}) {
 	const [infos] = useFetch({
-    initData:{},
+    initData:[],
     keyApi:"info",
     handle:function(data){
        const newData = [];
@@ -38,21 +38,23 @@ function FooterInfo({listItem,className,...props}) {
       className:"footer-info-button"
   };
   return (
-    <List className="footer-info-list"listItem={infos}itemAttr={itemAttr}>
+    <List className="footer-info-list">
     	{
-        (item,index)=>(
-            <>
+        infos.map((item,index)=>(
+            <Item key={index} {...itemAttr}>
               <Icon icon={item.icon} className="footer-info-icon"/>
               <span className="footer-info-label">{item.title}:</span>
-              <List className="footer-info-list-btn"listItem={item.value}itemAttr={{className:"d-flex"}}>
+              <List className="footer-info-list-btn">
                 {
-                  (str,index)=>(
-                      <span {...buttonAttr}>{str}</span>
-                    )
+                  item.value.map((str,index)=>(
+                      <Item key={index} className="d-flex">
+                        <span {...buttonAttr}>{str}</span>
+                      </Item>
+                  ))
                 } 
               </List>
-            </>
-        )
+            </Item>
+        ))
       }
     </List>
   );

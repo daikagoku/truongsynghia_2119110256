@@ -3,8 +3,8 @@
 }
 .header-cart-total{
 	font-size: 0.9em;
-	color: var(--primary-highlight-color);
-	background: var(--primary-highlight-background);
+	color: var(--highlight-color);
+	background: var(--highlight-background);
 	display: flex;
 	align-items: center;
 	justify-content: center;

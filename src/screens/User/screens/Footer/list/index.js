@@ -1,24 +1,25 @@
 import './index.css';
-import {memo} from "react";
+import {memo,useState} from "react";
 import useFetch from '../../../../../core/useFetch';
-import {List,Link} from '../../../../../components/';
-function FooterMenu({keyApi,filter,className,...props}) {
+import {List} from '../../../../../components/';
+import FooterListItem from './Item/';
+function FooterList({keyApi,filter,className,...props}) {
 	const [listItem] = useFetch({
 		initData:[],
 		keyApi:keyApi,
 		filter:filter
 	});
+	const [state,setState] = useState();
   return (
-    <List className="footer-list"listItem={listItem}itemAttr={{className:"footer-list-item"}}>
+    <List className="footer-list">
     	{
-    		(item,index)=>(
-			  			<Link to={"/postdetail/"+item.alias}className="footer-list-button">
-			  				{item.title}
-			  			</Link>	
-    		)
+    		listItem.map(function(item,index){
+    			return(
+			  		<FooterListItem onClick={()=>(setState(index))} item={item} key={index} />
+    		)})
     	}
     </List>
   );
 }
 
-export default memo(FooterMenu);
+export default memo(FooterList);

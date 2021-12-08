@@ -11,12 +11,3 @@
 .product-card:hover .product-option{
 	opacity: 1 !important;
 }
-.product-option-btn{
-	border-radius: 0.5em;
-	background: var(--primary-highlight-background);
-	color: var(--primary-highlight-color);
-	margin: 0.5em;
-	width: 2em;
-	height: 2em;
-
-}

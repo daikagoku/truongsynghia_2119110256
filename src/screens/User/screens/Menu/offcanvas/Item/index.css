@@ -10,6 +10,6 @@
 	justify-content: flex-start;
 }
 .header-menu-button:hover{
-	color: var(--primary-highlight-color) !important;
-	background: var(--primary-highlight-background);
+	color: var(--highlight-color) !important;
+	background: var(--highlight-background);
 }

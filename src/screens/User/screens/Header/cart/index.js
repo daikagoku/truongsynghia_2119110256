@@ -8,12 +8,15 @@ import HeaderCartContentButtons from './Buttons/';
 import './index.css';
 export default memo(function HeaderCart(){
 	const OffcanvasRef = useRef();
-	const [store,handleStore] = useCartModel();
+	const [cart,handleCart] = useCartModel();
 	const [datas] = useFetch({
 		keyApi:'product',
 		initData:[]
 	});
-	const listItem = store.map(function(item){
+	const totalItem = cart.reduce(function(results,item){
+		return results+item.quantity;
+	},0)
+	const listItem = cart.map(function(item){
 		if(item){
 			const newItem = datas.find(function(data){
 				if(data){
@@ -22,7 +25,7 @@ export default memo(function HeaderCart(){
 			})
 			return {...newItem,...item};
 		}
-	})
+	});
 	const cartAttr = {
 		className:"header-cart",
 		onMouseDown:function(event){
@@ -41,11 +44,11 @@ export default memo(function HeaderCart(){
 		}
 	};
 	return(
-	<HeaderCartContext.Provider value={[listItem,handleStore]}>
+	<HeaderCartContext.Provider value={[listItem,handleCart]}>
 		<div {...cartAttr}>
 			<Button {...buttonAttr}>
 				<Icon icon="fab fa-opencart"/>
-				<span className="header-cart-total">{listItem.length}</span>
+				<span className="header-cart-total">{totalItem}</span>
 			</Button>
 			<Offcanvas ref={OffcanvasRef} 
 				title="Giỏ hàng" 

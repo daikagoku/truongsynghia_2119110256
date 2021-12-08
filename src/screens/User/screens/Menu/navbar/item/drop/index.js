@@ -1,7 +1,7 @@
 import './index.css';
 import {memo} from 'react';
 import clsx from 'clsx';
-import {List,Button} from '../../../../../../../components/';
+import {List,Item,Button} from '../../../../../../../components/';
 export default memo(function MainMenuDrop({listItem,open,...props}){
     const dropdown={
         className:clsx("main-menu-dropdown-content",{active:open})
@@ -18,12 +18,18 @@ export default memo(function MainMenuDrop({listItem,open,...props}){
     if(listItem !== undefined && listItem.length > 0 ){
         return(
             <div  {...dropdown}>
-                <List {...dropdownList}listItem={listItem} itemAttr={dropdownItem}>
-                    {function(_item,_index){
-                        return(
-                            <Button to={"/category/"+_item.alias}{...dropdownBtn}>{_item.title}</Button>
-                        )
-                    }}
+                <List {...dropdownList}>
+                    {
+                        listItem.map(function(_item,_index){
+                            return(
+                                <Item key={_index}{...dropdownItem}>
+                                    <Button to={"/category/"+_item.alias}{...dropdownBtn}>
+                                        {_item.title}
+                                    </Button>
+                                </Item>
+                            )
+                        })
+                    }
                 </List>
             </div>
         )

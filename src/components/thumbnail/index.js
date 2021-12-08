@@ -1,4 +1,4 @@
-import {useRef,forwardRef,memo,useEffect,useState} from 'react';
+import {forwardRef,memo,useState} from 'react';
 import clsx from 'clsx';
 import './index.css';
 import LoadingDualRing from '../Loading/LoadingDualRing/';

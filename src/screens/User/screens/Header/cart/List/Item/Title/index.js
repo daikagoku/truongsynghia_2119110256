@@ -4,7 +4,7 @@ import clsx from 'clsx';
 import {CartProductContext} from '../init';
 import {Link} from '../../../../../../../../components/';
 export default memo(function ProductTitle({...props}){
-	const data = useContext(CartProductContext) ?? {};
+	const {data} = useContext(CartProductContext);
 	let version = {}
 	if(Array.isArray(data.versions)){
 		version=data.versions.find(function(_version,_index){

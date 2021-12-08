@@ -3,22 +3,13 @@ import {useRef,memo} from 'react';
 import useFetch from '../../../../../core/useFetch';
 import './index.css';
 import MenuItem from './Item/';
-export default memo(function HeaderMenu(){
+export default memo(function MainMenuOffcanvas(show){
 	const OffcanvasRef = useRef({});
-	const menuAttr = {
-		className:"main-menu-offcanvas d-flex d-md-none"
-	};
-	if(OffcanvasRef.current && OffcanvasRef.current?.state?.open){
-		menuAttr.className+=" active";
-	};
-	const buttonAttr = {
-		className:"main-menu-offcanvas-button circle-btn",
-		onClick:function(){
-			if(OffcanvasRef.current){
-				OffcanvasRef.current.handle.open();
+	if(show){
+		if(OffcanvasRef.current){
+				OffcanvasRef.current?.handle?.open();
 			}
-		}
-	};
+	}
 	return(
 		<Offcanvas ref={OffcanvasRef} 
 				title="Menu" 

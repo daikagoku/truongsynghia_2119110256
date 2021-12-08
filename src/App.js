@@ -10,7 +10,7 @@ import UserPage from "./screens/User";
 function App() {
   const [theme] = useThemeModel();
   return (
-    <section id="App" className={clsx(theme.current)}>
+    <section id="App" className={clsx(theme.default,theme.current)}>
       <Switch>
         <Route path="/error"component={ErrorPage} />
         <Route path="/"component={UserPage} />

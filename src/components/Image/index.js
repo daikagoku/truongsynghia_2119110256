@@ -1,4 +1,4 @@
-import {useImperativeHandle,useRef,forwardRef,useState,useEffect,memo,useMemo} from 'react';
+import {useImperativeHandle,useRef,forwardRef,memo} from 'react';
 import './index.css';
 
 const Image = (function(){
@@ -7,9 +7,10 @@ const Image = (function(){
 		let _Attr = {
 			...props,
 			ref:thisRef,
+			type:"image",
 			className:"image",
 			loading:"lazy",
-			alt:" "
+			alt:'description of image'
 		};
 		if(className !== undefined){
 			_Attr.className +=" "+className;

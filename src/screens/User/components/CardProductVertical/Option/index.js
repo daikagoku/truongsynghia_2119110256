@@ -3,17 +3,8 @@ import {useContext} from 'react';
 import {ProductContext} from '../index';
 import useCartModel from '../../../../../model/Cart/';
 import './index.css';
-
+import AddToCartButton from './screens/AddToCart/';
 export default function ProductOption({className,...props}){
-	const data = useContext(ProductContext) ?? {};
-	const [store,handleStore] = useCartModel();
-	function handleClick(event){
-		handleStore.add({
-			productId:data.id,
-			version:data.version,
-			quantity:1
-		})
-	};
 	return(
 		<List className={"product-option opacity-10 opacity-md-0 "+className}>
     		<Item>
@@ -30,13 +21,8 @@ export default function ProductOption({className,...props}){
     			<Button className="product-option-btn">
     				<Icon className="far fa-eye"/>
     			</Button>
-    		</Item>
-    		<Item>
-    			<Button className="product-option-btn" 
-    				onClick={handleClick}>
-    				<Icon className="fas fa-cart-plus"/>
-    			</Button>
-    		</Item>    				
+    		</Item> 
+    		<AddToCartButton />  				
     	</List>
 	);
 };

@@ -1,4 +1,4 @@
-import {createContext,useMemo,useState} from 'react';
+import {createContext} from 'react';
 import useStorage from '../../core/useStorage';
 import styles from './index.module.css';
 export const ThemeContext = createContext([]);

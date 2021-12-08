@@ -1,5 +1,5 @@
 #main-menu{
-	background: var(--primary-highlight-background);
+	background: var(--highlight-background);
 }
 #main-menu.active{
 	z-index: 100;

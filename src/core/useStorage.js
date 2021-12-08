@@ -1,4 +1,4 @@
-import {useReducer,useContext,createContext,useEffect,useMemo} from 'react';
+import {useContext,useMemo} from 'react';
 import {StoreContext} from './LocalStorage';
 const useStorage = (function(){
     return function(nameSpace,initData){

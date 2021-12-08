@@ -20,8 +20,8 @@
 	height: 15%;
 	margin: 0.2em;
 	text-align: center;
-	color: var(--primary-highlight-color);
-	background: var(--primary-highlight-background);
+	color: var(--highlight-color);
+	background: var(--highlight-background);
 }
 .custom-theme-card-content-view{
 	flex: 1;

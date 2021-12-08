@@ -2,7 +2,6 @@ import {createContext,useState} from 'react';
 export const StoreContext = createContext();
 const LocalStorage = (function(){
     const KEY  = 'GoShop';
-    const initData = {};
     return function({children}){
         const [store,setStore] = useState(JSON.parse(localStorage.getItem(KEY)) ?? {});
         function save(){

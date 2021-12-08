@@ -49,9 +49,9 @@ function FooterContact({className,...props}) {
       className:"circle-btn footer-contact-btn mx-1"
     };
   return (
-      	<List className="footer-contact-list" listItem={infos}>
+      	<List className="footer-contact-list">
           {
-            function(item,index){
+            infos.map(function(item,index){
                 const _buttonAttr = {...buttonAttr};
                 _buttonAttr.className +=" "+item.buttonClass;
                 return(
@@ -61,7 +61,7 @@ function FooterContact({className,...props}) {
                     </Button>
                   </Item>
               )
-            }
+            })
           }
         </List>
   );

@@ -15,5 +15,5 @@
 	transition: border-color 0.2s;
 }
 #product-detail-thumbnail-dots .alice-carousel__stage-item>.button.active{
-	border-color:var(--primary-highlight-background);
+	border-color:var(--highlight-background);
 }

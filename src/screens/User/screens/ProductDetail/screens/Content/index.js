@@ -10,8 +10,7 @@ import ProductDetailVersion from './Version/';
 import ProductDetailInputQuantity from './InputQuantity/';
 import ProductDetailAddToCartButton from './AddToCartButton/';
 
-import ProductDetailCurrentPrice from './CurrentPrice/';
-import ProductDetailRootPrice from './RootPrice/';
+import ProductDetailPrice from './Price/';
 export default function() {
 	return(
 		<div className="product-detail-content row">
@@ -24,28 +23,28 @@ export default function() {
 				<Widget prefix="product-detail-content" className="h-12">
 					<ProductDetailTitle />
 					<div className="row product-detail-attr">
-						<div className="col col-4">
+						<div className="col col-4 justify-content-center">
 							<span>Phiên bản:</span>
 						</div>
 						<div className="col col-8">
-							<div className="row">
+							<div className="d-flex">
 								<ProductDetailVersion />
 							</div>
 						</div>
 					</div>
 					<div className="row product-detail-attr">
-						<div className="col col-4">
+						<div className="col col-4 justify-content-center">
 							<span>Giá:</span>
 						</div>
 						<div className="col col-8">
-							<div className="row">
-								<ProductDetailCurrentPrice />
-								<ProductDetailRootPrice />
+							<div className="d-flex">
+								<ProductDetailPrice sale/>
+								<ProductDetailPrice root/>
 							</div>
 						</div>
 					</div>
 					<div className="row product-detail-attr">
-						<div className="col col-4">
+						<div className="col col-4 justify-content-center">
 							<span>Số lượng:</span>
 						</div>
 						<div className="col col-8">

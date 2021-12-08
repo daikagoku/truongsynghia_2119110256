@@ -6,7 +6,6 @@ import	ProductPrice       	      from './Price/';
 import	ProductOption             from './Option/';
 import	ProductRating             from './Rating/';
 import './index.css';
-
 export const ProductContext = createContext({});
 export default memo(function ProductCardVertical({data,prefix,...props}){
 	const thisRef = useRef();

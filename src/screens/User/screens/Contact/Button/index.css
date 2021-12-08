@@ -4,7 +4,7 @@
 	width: 4em;
 	height: 4em;
 	overflow: hidden;
-	background: var(--primary-highlight-background);
+	background: var(--highlight-background);
 	position: relative;
 }
 .contact-btn .alice-carousel{

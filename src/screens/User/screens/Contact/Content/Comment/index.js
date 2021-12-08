@@ -7,7 +7,7 @@ import ContactCommentContent from './Content';
 import "./index.css";
 export default function(){
 	const [content,handle] = useContext(ContentContext);
-	const thisRef = useRef();
+	const thisRef = useRef({});
 	useEffect(function(){
 		if(thisRef.current){
 			const _item = thisRef.current.lastChild;
@@ -17,9 +17,9 @@ export default function(){
 		}		
 	})
 	return(
-	<List ref={thisRef}listItem = {content.list}>
+	<List ref={thisRef}>
 		{
-			function(item,index){
+			content.list.map(function(item,index){
 				let itemClass = "flex-row-reverse";
 				return(
 					<CommentContext.Provider value={[item]}>
@@ -29,7 +29,7 @@ export default function(){
 						</Item>
 					</CommentContext.Provider>
 				)
-			}
+			})
 		}
 	</List>
 	)
