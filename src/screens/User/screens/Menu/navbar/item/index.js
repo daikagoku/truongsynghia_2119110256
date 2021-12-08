@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import './index.css';
 import useFetch from '../../../../../../core/useFetch';
 import {Item,Button,Icon} from '../../../../../../components/';
-import MainMenuDrop from './drop';
+import MainMenuNavbarDrop from './Drop/';
 export default memo(function MainMenuItem({api,keyApi,filter,sort,buttonClass,className,icon,text,children,...props}){
   const [hover,setHover] = useState(false);
   const [listItem] = useFetch({
@@ -15,7 +15,7 @@ export default memo(function MainMenuItem({api,keyApi,filter,sort,buttonClass,cl
   });
   const buttonAttr = {
       ...props,
-      className:"main-menu-button flex-column flex-lg-row"
+      className:"main-menu-navbar-button flex-column flex-lg-row"
   };
   if(buttonClass !== undefined){
     buttonAttr.className+=" "+buttonClass;
@@ -24,7 +24,7 @@ export default memo(function MainMenuItem({api,keyApi,filter,sort,buttonClass,cl
     buttonAttr.className+=" active";
   };
   const itemAttr={
-    className:"main-menu-item"
+    className:"main-menu-navbar-item"
   };
   if(className !== undefined){
     itemAttr.className+=" "+className;
@@ -47,8 +47,7 @@ export default memo(function MainMenuItem({api,keyApi,filter,sort,buttonClass,cl
             <Icon hover={hover}icon={icon}className="fs-2 mx-1"/>
             <span {...buttonTextAttr}>{text}</span>
         </Button>
-        <MainMenuDrop open={hover}listItem={listItem}/>
-        {children}
+        <MainMenuNavbarDrop open={hover}listItem={listItem}/>
     </Item>
 	)
 });

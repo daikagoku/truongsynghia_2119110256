@@ -3,6 +3,7 @@ import clsx from 'clsx';
 import './index.css';
 import useFetch from '../../../../../../core/useFetch';
 import {Item,Button,Icon} from '../../../../../../components/';
+import MainMenuOffcanvasDrop from './Drop/';
 export default memo(function({api,keyApi,filter,sort,buttonClass,className,icon,text,children,...props}){
   const [hover,setHover] = useState(false);
   const [listItem] = useFetch({
@@ -13,20 +14,18 @@ export default memo(function({api,keyApi,filter,sort,buttonClass,className,icon,
         sort    :sort
   });
   const itemAttr={
-    className:"header-menu-item"
+    className:"main-menu-offcanvas-item square-btn"
   };
+  itemAttr.onClick = function(_event){
+    setHover(!hover);
+  }
   if(className !== undefined){
     itemAttr.className+=" "+className;
   };
-  itemAttr.onMouseOver=function(_event,_this){
-        setHover(true);
-    };
-  itemAttr.onMouseOut=function(_event,_this){
-        setHover(false);
-    };
+
   const buttonAttr = {
       ...props,
-      className:"header-menu-button square-btn"
+      className:"main-menu-offcanvas-button"
   };
   if(buttonClass !== undefined){
     buttonAttr.className+=" "+buttonClass;
@@ -47,7 +46,7 @@ export default memo(function({api,keyApi,filter,sort,buttonClass,className,icon,
             <Icon hover={hover}icon={icon}className="fs-2 mx-3"/>
             <span {...buttonTextAttr}>{text}</span>
         </Button>
-        {children}
+        <MainMenuOffcanvasDrop show={hover}listItem={listItem}/>
     </Item>
 	)
 });

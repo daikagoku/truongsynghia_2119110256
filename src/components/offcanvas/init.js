@@ -1,12 +1,12 @@
 export const initData={
-    open:false
+    show:false
 };
 export function reducer(prevState,action){
     switch(action.key){
-      case 'set_open':
+      case 'set_show':
           return{
             ...prevState,
-            open:action.value
+            show:action.value
           };
       default :
         console.log(action.key,{prevState,action,error:"Không tồn tại action"});

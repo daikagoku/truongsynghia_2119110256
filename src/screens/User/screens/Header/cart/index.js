@@ -32,14 +32,14 @@ export default memo(function HeaderCart(){
 			event.preventDefault();
 		}
 	};
-	if(OffcanvasRef.current && OffcanvasRef.current.state.open){
+	if(OffcanvasRef.current && OffcanvasRef.current.state.show){
 		cartAttr.className+=" active";
 	};
 	const buttonAttr = {
 		className:"header-button circle-btn",
 		onClick:function(){
 			if(OffcanvasRef.current){
-				OffcanvasRef.current.handle.open();
+				OffcanvasRef.current.handle.show();
 			}
 		}
 	};

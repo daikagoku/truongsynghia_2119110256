@@ -2,31 +2,33 @@ import './index.css';
 import {memo,useRef,useEffect} from 'react';
 import clsx from 'clsx';
 import {List,Item,Button} from '../../../../../../../components/';
-export default memo(function MainMenuDrop({listItem,open,...props}){
+export default memo(function MainMenuDrop({listItem,show,...props}){
     const thisRef = useRef();
     const dropdown={
-        ref:thisRef,
-        className:clsx("main-menu-navbar-dropdown-content",{active:open})
+        className:clsx("main-menu-offcanvas-dropdown-container",{active:show})
     };
     const dropdownList={
-        className:"main-menu-navbar-dropdown-list"
+        className:"main-menu-offcanvas-dropdown-list"
     };
     const dropdownItem={
-        className:"main-menu-navbar-dropdown-item"
+        className:"main-menu-offcanvas-dropdown-item"
     };
     const dropdownBtn={
-        className:"main-menu-navbar-dropdown-button"
+        className:"main-menu-offcanvas-dropdown-button"
     };
     useEffect(function(){
-        if(open && thisRef.current){
-            const height = thisRef.current.querySelector(".main-menu-navbar-dropdown-list").offsetHeight;
-            console.log(height)
-            thisRef.current.style.height = height + 'px';
+        if(thisRef.current){  
+            if(show){     
+                let height = thisRef.current.querySelector('.main-menu-offcanvas-dropdown-list').offsetHeight;
+                thisRef.current.style.height = height+"px";
+            }else{
+                thisRef.current.style.height = "0px";
+            }
         }
-    },[open])
+    },[show])
     if(listItem !== undefined && listItem.length > 0 ){
         return(
-            <div  {...dropdown}>
+            <div ref={thisRef} {...dropdown}>
                 <List {...dropdownList}>
                     {
                         listItem.map(function(_item,_index){

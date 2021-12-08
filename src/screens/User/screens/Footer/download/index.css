@@ -1,9 +1,13 @@
 .footer-download{
 	display: flex;
 	flex-direction: column;
+	max-width: 100%;
+}
+.footer-download-item{
+	width: 100%;
+	max-width: 100%;
 }
 .footer-download-button{
-	width: 6em;
 	max-width: 100%;
 	padding: 0.2em;
 	margin: 0.5em;

@@ -12,10 +12,7 @@ function MainMenu({history,location,match,...props}) {
   const sectionAttr = {
     ref:ref,
     id:"main-menu",
-    className:clsx("container-fluid",{'active fixed top-0':fixed}),
-    onLoad:function(event){
-      console.log("meni load");
-    }
+    className:clsx("container-fluid",{'active fixed top-0':fixed})
   }
   useEffect(function(){
       const offsetTop = ref.current.offsetTop;

@@ -1,15 +1,19 @@
-.header-menu-item{
+
+.main-menu-offcanvas-item{
 	display: flex;
+	flex-direction: column;
 	width: 100%;
+	margin: 0.2em 0;
+	padding: 0.2em;
+	border-radius: 0.5em;
 }
-.header-menu-button{
-	font-size: 1.4em;
-	padding: 0.1em;
-	margin: 0.1em 0.2em;
+.main-menu-offcanvas-button{
 	flex: 1;
 	justify-content: flex-start;
+	color: inherit !important;
+	background: transparent;
 }
-.header-menu-button:hover{
+.main-menu-offcanvas-item:hover{
 	color: var(--highlight-color) !important;
 	background: var(--highlight-background);
 }

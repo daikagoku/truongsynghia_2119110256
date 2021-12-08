@@ -1,22 +1,22 @@
 import {List,Item,Button,Icon,Offcanvas} from '../../../../../components/';
-import {useRef,memo} from 'react';
+import {useRef,useEffect,memo} from 'react';
 import useFetch from '../../../../../core/useFetch';
 import './index.css';
 import MenuItem from './Item/';
 export default memo(function MainMenuOffcanvas(show){
 	const OffcanvasRef = useRef({});
-	if(show){
-		if(OffcanvasRef.current){
-				OffcanvasRef.current?.handle?.open();
-			}
-	}
+	useEffect(function(){
+		if(show && OffcanvasRef.current){
+					OffcanvasRef.current?.handle?.show();
+		}
+	},[show])
 	return(
 		<Offcanvas ref={OffcanvasRef} 
 				title="Menu" 
 				position="right"
 				widthSize="w-9 w-sm-7 w-md-6 w-lg-5 w-xl-4 w-xxl-3"
 			>
-			 	<List className="header-menu">
+			 	<List className="main-menu-offcanvas">
 					<MenuItem      
             keyApi ="category"
             filter ={(item)=>(item.parent==="mobile")}

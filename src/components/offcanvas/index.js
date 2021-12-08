@@ -4,6 +4,7 @@ import {
         useImperativeHandle,
         useRef,
         forwardRef,
+        useEffect,
         memo} from 'react';
 import './index.css';
 import {initData,reducer} from './init';
@@ -11,19 +12,19 @@ export default memo(forwardRef(function Offcanvas({show,prefix,title,position,wi
   const [state,dispatch] = useReducer(reducer,initData);
   const thisRef = useRef({});
   const handle = {
-        open:function(){
+        show:function(){
           dispatch({
-            key:"set_open",
+            key:"set_show",
             value:true
           })
         },close:function(){
           dispatch({
-            key:"set_open",
+            key:"set_show",
             value:false
           })
         },toggle:function(){
           dispatch({
-            key:"set_open",
+            key:"set_show",
             value:!state.open
           })
         }
@@ -34,14 +35,19 @@ export default memo(forwardRef(function Offcanvas({show,prefix,title,position,wi
       state:state,
       handle:handle
     }
-  })
+  },[])
   const contentAttr={
     className:"offcanvas"
   };
   if(prefix){
     contentAttr.className+=" "+prefix+"_offcanvas";
   };
-  if(state.open){
+  useEffect(function(){
+    if(show){
+      handle.show();
+    }
+  },[show]);
+  if(state.show){
     contentAttr.className+=" show";
   };
 
@@ -76,7 +82,7 @@ export default memo(forwardRef(function Offcanvas({show,prefix,title,position,wi
           </Button>
         </div>
         <div className="offcanvas-body">
-          {state.open === true && children}
+          {state.show === true && children}
         </div>
       </div>
     </div>

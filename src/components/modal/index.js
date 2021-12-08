@@ -13,20 +13,20 @@ export default memo(forwardRef(function Modal({prefix,show,title,widthSize,heigh
   const [state,dispatch] = useReducer(reducer,initData);
   const thisRef = useRef();
   const handle = {
-        open:function(){
+        show:function(){
           dispatch({
-            key:"set_open",
+            key:"set_show",
             value:true
           })
         },close:function(){
           dispatch({
-            key:"set_open",
+            key:"set_show",
             value:false
           })
         },toggle:function(){
           dispatch({
-            key:"set_open",
-            value:!state.open
+            key:"set_show",
+            value:!state.show
           })
         }
       }
@@ -36,7 +36,7 @@ export default memo(forwardRef(function Modal({prefix,show,title,widthSize,heigh
       state:state,
       handle:handle
     }
-  })
+  },[])
   const contentAttr={
     className:"modal"
   };
@@ -54,10 +54,10 @@ export default memo(forwardRef(function Modal({prefix,show,title,widthSize,heigh
   };
   useEffect(function(){
     if(show){
-      handle.open();
+      handle.show();
     }
-  },[show])
-  if(state.open){
+  },[show]);
+  if(state.show){
     contentAttr.className+=" show";
   };
   function handleClick(event){
@@ -79,7 +79,7 @@ export default memo(forwardRef(function Modal({prefix,show,title,widthSize,heigh
           </Button>
         </div>
         <div className="modal-body">
-          {state.open === true && children}
+          {state.show === true && children}
         </div>
       </div>
     </div>

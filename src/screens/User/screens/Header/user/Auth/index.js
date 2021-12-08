@@ -22,7 +22,7 @@ export default memo(function Auth({...props}){
 		return {
 			onClick:function(e){
 				if(modalRef.current){
-					modalRef.current.handle.open();
+					modalRef.current.handle.show();
 					handle.setAction('login');
 				}
 			}
