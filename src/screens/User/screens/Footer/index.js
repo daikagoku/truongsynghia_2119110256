@@ -1,11 +1,11 @@
 import {memo} from 'react';
 import {Widget} from "../../../../components/";
-import FooterList from "./List";
-import FooterInfo from "./Info";
-import FooterSearch from "./Search";
-import FooterContact from "./Contact";
-import FooterPayment from "./Payment";
-import FooterDownload from "./Download";
+import FooterList from "./list";
+import FooterInfo from "./info";
+import FooterSearch from "./search";
+import FooterContact from "./contact";
+import FooterPayment from "./payment";
+import FooterDownload from "./download";
 import './index.css'
 function Footer(props) {
   return (
