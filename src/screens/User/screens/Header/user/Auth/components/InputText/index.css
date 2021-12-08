@@ -14,7 +14,7 @@
 	padding-left: 2em;
 	padding-top: 1em;
 	padding-bottom: 0.2em;
-	border-radius: 1em;
+	border-radius: 0.5em;
 	color: var(--primary-color);
 	background: var(--primary-background);
 	border: 0.1em solid var(--primary-border);
@@ -32,9 +32,9 @@
 	transform: translate(-50%,-50%);
 }
 .auth-input-label.text{
-	left: 2.3em;
-	transform: translate(0,-50%);
-	transition: transform 0.3s,font-size 0.3s;
+	left: 2.4em;
+	transform: translateY(-50%);
+	transition: transform 0.25s,font-size 0.25s;
 }
 
 .auth-input-validate{
@@ -48,6 +48,6 @@
 }
 .auth-input:focus~.auth-input-label.text,
 .auth-input:not(:placeholder-shown)~.auth-input-label.text{
-	transform: translate(1em,-100%);
+	transform: translateY(-100%);
 	font-size: 0.8em;
 }

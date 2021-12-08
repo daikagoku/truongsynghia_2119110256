@@ -3,7 +3,7 @@ import {useRef,useEffect,memo} from 'react';
 import useFetch from '../../../../../core/useFetch';
 import './index.css';
 import MenuItem from './Item/';
-export default memo(function MainMenuOffcanvas(show){
+export default memo(function MainMenuOffcanvas({show}){
 	const OffcanvasRef = useRef({});
 	useEffect(function(){
 		if(show && OffcanvasRef.current){

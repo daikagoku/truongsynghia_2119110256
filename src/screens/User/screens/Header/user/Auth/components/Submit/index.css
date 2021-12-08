@@ -7,8 +7,8 @@
 }
 .auth-submit{
 	font-weight: bolder;
-	background: var(--primary-highlight-background);
-	color: var(--primary-highlight-color);
+	background: var(--highlight-background);
+	color: var(--highlight-color);
 	font-size: 1.4em;
 	padding: 0.1em 4em;
 }
