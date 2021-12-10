@@ -4,14 +4,8 @@ import {List} from '../../../../../components/';
 import MainMenuItem from './item/';
 import './index.css';
 function MenuNavbar({...props},ref){
-	const thisRef = useRef({});
-	useImperativeHandle(ref,function(){
-		return{
-			...thisRef.current
-		}
-	});
 	return(
-		<List ref={thisRef} className="main-menu-navbar d-none d-md-flex">                 
+		<List ref={ref} className="main-menu-navbar d-none d-md-flex">                 
             <MainMenuItem      
               keyApi ="category"
               filter ={(item)=>(item.parent==="mobile")}

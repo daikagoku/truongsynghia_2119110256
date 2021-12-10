@@ -1,26 +1,32 @@
 import {useContext,memo,useMemo} from 'react';
 import clsx from 'clsx';
-import {Input,Button,Icon} from '../../../../../../../../components/';
-import {CartProductContext} from '../init';
-import {HeaderCartContext} from '../../../init';
+import {Input,Button,Icon} from '../../../../../../../components/';
+import {ProductDetailContext} from '../../../init';
 import styles from './index.module.css';
 export default memo(function(){
-	const [store,handleStore] = useContext(HeaderCartContext);
-	const {data,index} = useContext(CartProductContext);
-	const [min,max] = useMemo(()=>([1,5]),[])
+	const [state,dispatch] = useContext(ProductDetailContext);
+	const [min,max] = useMemo(()=>([1,5]),[]);
 	const inputAttr = {
 		className :styles.input,
 		type      :"number",
-		value     :data.quantity,
+		value     :state.quantity,
 		min       :min,
-		max       :max
+		max       :max,
+		onBlur:function(event){
+			if(state.quantity === ""){
+				setValue(min);
+			}
+		}
 	};
 	function setValue(value){
-		handleStore.update(index,value);
+		dispatch({
+			key:'set_quantity',
+			value:value
+		})
 	}
 	function handleSetValue(newValue){
 		newValue = Number(newValue);
-		if(data.quantity === 0){
+		if(state.quantity === 0){
 			setValue(min);
 		}else if(newValue < min){
 			setValue(min);
@@ -35,7 +41,7 @@ export default memo(function(){
 		event.preventDefault();
 	}
 	function handleClick(int){
-		handleSetValue(Number(data.quantity)+int);
+		handleSetValue(Number(state.quantity)+int);
 	}
 	inputAttr.onChange = useMemo(function(){
 		return function(event){
@@ -45,19 +51,19 @@ export default memo(function(){
 				handleSetValue(event.target.value);
 			}
 		}
-	},[data.quantity]);
+	},[state.quantity]) 
 	return(
 		<div>
 			<div className={styles.container}>
 				<Input {...inputAttr}/>
 				<Button 
 					onClick={()=>(handleClick(-1))}
-					className={clsx(styles.btn,styles.btnMinus,{disabled:data.quantity <= min})}>
+					className={clsx(styles.btn,styles.btnMinus,{disabled:state.quantity <= min})}>
 					<Icon className="fas fa-minus"></Icon>
 				</Button>
 				<Button 
 					onClick={()=>(handleClick(1))}
-					className={clsx(styles.btn,styles.btnPlus,{disabled:data.quantity >= max})}>
+					className={clsx(styles.btn,styles.btnPlus,{disabled:state.quantity >= max})}>
 					<Icon className="fas fa-plus"></Icon>
 				</Button>	
 			</div>	

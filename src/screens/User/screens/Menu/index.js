@@ -1,34 +1,67 @@
-import {useState,useRef,useEffect,memo} from 'react';
+import {useState,useReducer,useRef,useEffect,useContext,memo} from 'react';
 import clsx from 'clsx';
 import './index.css';
+import useReponsive from '../../../../core/useReponsive';
 import {List} from '../../../../components/';
 import MainMenuItem from './item/';
 import MainMenuNavbar from './navbar/';
 import MainMenuOffcanvas from './offcanvas/';
+import {MainMenuContext,initData,reducer} from './init';
 function MainMenu({history,location,match,...props}) {
-  const ref       = useRef({});
-  const [fixed,setFixed] = useState(false);
-  const [show,setShow] = useState(false);
+  const thisRef       = useRef({});
+  const offcanvasRef       = useRef({});
+  const [state,dispatch] = useReducer(reducer,initData);
+  const [reponsive] = useReponsive();
   const sectionAttr = {
-    ref:ref,
+    ref:thisRef,
     id:"main-menu",
-    className:clsx("container-fluid",{'active fixed top-0':fixed})
+    className:clsx("container-fluid",{'active fixed top-0':state.isFixed})
   }
   useEffect(function(){
-      const offsetTop = ref.current.offsetTop;
+      const offsetTop = thisRef.current.offsetTop;
+      const height = thisRef.current.offsetHeight;
       const body = document.querySelector("#App");
       function handleScroll(event){
-        if(ref.current){
+        if(thisRef.current){
             if(offsetTop < body.scrollTop){
-                setFixed(true);
+                dispatch({
+                  key:'set_fixed',
+                  value:true
+                })
+                body.dataset.offsetTop=height;
             }else{
-                setFixed(false);
+                dispatch({
+                  key:'set_fixed',
+                  value:false
+                })
+                body.dataset.offsetTop=0;
             };
         }
     };
     body.addEventListener('scroll',handleScroll);
     return ()=>(body.removeEventListener('scroll',handleScroll))
   },[]);
+  useEffect(function(){
+    switch(reponsive.state){
+            case "none":
+            case "xs":
+            case "sm":
+                dispatch({
+                  key:'set_reponsive',
+                  value:'mobile'
+                })
+                break;
+            case "md":
+            case "lg":
+            case "xl":
+            case "xxl":
+                dispatch({
+                  key:'set_reponsive',
+                  value:'desktop'
+                })
+                break;
+        }
+  },[reponsive.state])
   return (
       <section {...sectionAttr}>
       		<div className="container-lg">
@@ -41,12 +74,14 @@ function MainMenu({history,location,match,...props}) {
                       to="/"
                 />
                 <MainMenuItem 
-                    onClick = {()=>(setShow(!show))}
                     buttonClass="main-menu-toggle d-flex d-md-none"
+                    onClick={()=>(offcanvasRef.current?.handle?.show())}
                     icon="fas fa-bars"
-                >        
-                  <MainMenuNavbar />  
-                  <MainMenuOffcanvas show={show}/>       
+                >                        
+                  {
+                    state.reponsive === 'mobile' && <MainMenuOffcanvas ref={offcanvasRef}/> 
+                    || state.reponsive === 'desktop' && <MainMenuNavbar /> 
+                  }      
                 </MainMenuItem>
       				</List>
       			</div>

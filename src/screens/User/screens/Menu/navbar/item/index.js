@@ -1,4 +1,4 @@
-import {useState,memo} from "react";
+import {useState,useMemo,memo} from "react";
 import clsx from 'clsx';
 import './index.css';
 import useFetch from '../../../../../../core/useFetch';
@@ -29,12 +29,16 @@ export default memo(function MainMenuItem({api,keyApi,filter,sort,buttonClass,cl
   if(className !== undefined){
     itemAttr.className+=" "+className;
   };
-  itemAttr.onMouseOver=function(_event,_this){
+  itemAttr.onMouseOver=useMemo(function(){
+    return function(_event,_this){
         setHover(true);
     };
-  itemAttr.onMouseOut=function(_event,_this){
+  },[])
+  itemAttr.onMouseOut=useMemo(function(){
+    return function(_event,_this){
         setHover(false);
     };
+  },[])
   const buttonTextAttr = {
     className:"text fs-0_8em fs-md-0_9em fs-lg-1em"
   }

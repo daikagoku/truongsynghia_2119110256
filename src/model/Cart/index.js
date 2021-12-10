@@ -37,12 +37,9 @@ export default function useCartModel(){
 				_newStore.splice(carIds,1);
 			}
 			handleStore.set(_newStore);
-		},update:function(carId){
-			const _newStore = store.filter(function(item){
-				if(item){
-					return Number(item.id) && item.id !== carId;
-				}
-			});
+		},update:function(carId,quantity){
+			const _newStore = [...store];
+			_newStore[carId].quantity=quantity;
 			handleStore.set(_newStore);
 		}
 	};

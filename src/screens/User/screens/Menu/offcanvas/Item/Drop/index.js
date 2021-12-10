@@ -17,14 +17,15 @@ export default memo(function MainMenuDrop({listItem,show,...props}){
         className:"main-menu-offcanvas-dropdown-button"
     };
     useEffect(function(){
+        let timeout;
         if(thisRef.current){  
             if(show){     
-                let height = thisRef.current.querySelector('.main-menu-offcanvas-dropdown-list').offsetHeight;
+                let height =thisRef.current.offsetHeight + thisRef.current.querySelector('.main-menu-offcanvas-dropdown-list').offsetHeight;
                 thisRef.current.style.height = height+"px";
             }else{
                 thisRef.current.style.height = "0px";
             }
-        }
+        };
     },[show])
     if(listItem !== undefined && listItem.length > 0 ){
         return(

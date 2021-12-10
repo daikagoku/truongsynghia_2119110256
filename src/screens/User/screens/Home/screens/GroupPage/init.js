@@ -1,20 +1,20 @@
 import {createContext} from 'react';
-export const MainMenuContext = createContext({});
+export const HomePageContext = createContext([]);
 export const initData = {
-	isFixed:false,
-	reponsive:""
+	index:0,
+	limit:1
 };
 export function reducer(prevState,action) {
 	switch(action.key){
-		case 'set_fixed':
+		case 'set_index':
 			return{
 				...prevState,
-				isFixed:action.value
+				index:action.value
 			}
-		case 'set_reponsive':
+		case 'set_limit':
 			return{
 				...prevState,
-				reponsive:action.value
+				limit:action.value
 			}
 		default:
 			console.log(action.key,{action,prevState,"error":"Không tồn tại action"})

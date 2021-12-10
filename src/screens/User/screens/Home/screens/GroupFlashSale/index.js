@@ -11,26 +11,23 @@ function GroupFlashSale(props) {
         initData:[],
         keyApi:'product',
         handle:function(data){
-            const newProducts = [];
-            data.forEach(function({versions,..._product},_index){
+            const newProducts = data.reduce(function(results,{versions,..._product}){
                 versions.forEach(function({id,...__version},__index){
                     if(__version.salePrice !== undefined){
                         const __product = {..._product};
                         __product.version=id;
                         __product.versions=versions;
-                        newProducts.push(__product);
+                        results.push(__product);
                     }
-                })
-            });
+                });
+                return results;
+            },[]);
             return newProducts;
         }
     });
-    const itemAttr = {
-        className:"col col-6 col-md-4 col-lg-3 col-xl-2 py-1 px-2"
-    };
     return (
-        <div className="container-fluid group-flash-sale-section">
-             <div className="container">
+        <div className="container-fluid group-flash-sale-section px-0">
+             <div className="container-lg">
                  <div className="row">
                      <div className="col col-12 group-flash-sale-content">
                          <div className="row group-flash-sale-head">

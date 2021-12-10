@@ -62,47 +62,39 @@ export default memo(function ContactButton(){
     },[stateContact.onMouse]);
     const handleTouchTranslate =useMemo(function(){
         return function(event){
-        	let currentRect =buttonRef.current.getBoundingClientRect();
-            let x           =event.changedTouches[0].clientX - currentRect.width/2;
-            if(x < 0) x = 0;
-            else if(x > document.documentElement.clientWidth - currentRect.width){
-                x       =  document.documentElement.clientWidth - currentRect.width;
-            };
-            let y       = event.changedTouches[0].clientY - currentRect.height/2;
-            if(y < 0) y = 0;
-            else if(y > document.documentElement.clientHeight - currentRect.height){
-                y       =  document.documentElement.clientHeight - currentRect.height;
-            };
-            buttonRef.current.style.left = x+"px";
-            buttonRef.current.style.top  = y+"px";
+            setTranslate(event.changedTouches[0].clientX,event.changedTouches[0].clientY)
         };
     },[]);
 	const handleMouseTranslate =useMemo(function(){
         return function(event){
-        	let currentRect =buttonRef.current.getBoundingClientRect();
-            let x           =event.x - currentRect.width/2;
-            if(x < 0) x = 0;
-            else if(x > document.documentElement.clientWidth - currentRect.width){
-                x       =  document.documentElement.clientWidth - currentRect.width;
-            };
-            let y       = event.y - currentRect.height/2;
-            if(y < 0) y = 0;
-            else if(y > document.documentElement.clientHeight - currentRect.height){
-                y       =  document.documentElement.clientHeight - currentRect.height;
-            };
-            buttonRef.current.style.left = x+"px";
-            buttonRef.current.style.top  = y+"px";
+            setTranslate(event.x,event.y)
         };
     },[]);
+    function setTranslate(x,y){
+    	let currentRect =buttonRef.current.getBoundingClientRect();
+            x = document.documentElement.clientWidth - currentRect.width/2 - x;
+            if(x < 0) x = 0;
+            else if(x > document.documentElement.clientWidth - currentRect.width){
+            	x = document.documentElement.clientWidth - currentRect.width;
+            }
+            y = document.documentElement.clientHeight - currentRect.height/2 - y;
+            if(y < 0) y = 0;
+            else if(y > document.documentElement.clientHeight - currentRect.height){
+            	y = document.documentElement.clientHeight - currentRect.height;
+            }
+            buttonRef.current.style.right 	= x+"px";
+            buttonRef.current.style.bottom  = y+"px";
+    };
 	const handleStopDrag = useMemo(function(){
-		return function() {
+		return function(event) {
+			console.log("drag stop",event.type)
 			let currentRect =buttonRef.current.getBoundingClientRect();
 	        buttonRef.current.style.cursor="";
 	        dispatchContact({
 				key:'stop_drag',
 				value:{
-					x:currentRect.left + currentRect.width/2,
-					y:currentRect.top + currentRect.height/2
+					x: document.documentElement.clientWidth - currentRect.width/2 - currentRect.left,
+					y: document.documentElement.clientHeight - currentRect.height/2 - currentRect.top
 				}
 			})
 		}
@@ -118,6 +110,7 @@ export default memo(function ContactButton(){
             document.addEventListener('mousemove',handleMouseTranslate);
             document.addEventListener('touchmove',handleTouchTranslate);
         };
+        console.log({document})
         return function(){
             document.removeEventListener('mouseup',handleStopDrag); 
             document.removeEventListener('touchend',handleStopDrag); 

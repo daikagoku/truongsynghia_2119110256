@@ -7,7 +7,7 @@ import ProductDetailThumbnail from './Thumbnail/';
 
 import ProductDetailTitle from './Title/';
 import ProductDetailVersion from './Version/';
-import ProductDetailInputQuantity from './InputQuantity/';
+import ProductDetailInputNumber from './InputNumber/';
 import ProductDetailAddToCartButton from './AddToCartButton/';
 
 import ProductDetailPrice from './Price/';
@@ -49,7 +49,7 @@ export default function() {
 						</div>
 						<div className="col col-8">
 							<div className="row">
-								<ProductDetailInputQuantity />
+								<ProductDetailInputNumber />
 							</div>
 						</div>
 					</div>

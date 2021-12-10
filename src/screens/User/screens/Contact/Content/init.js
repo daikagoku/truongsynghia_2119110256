@@ -21,30 +21,6 @@ export function reducer(prevState,action){
 				...prevState,
 				list:newList
 			}
-		case 'increase_line':{
-			if(prevState.line < 5){
-				return{
-					...prevState,
-					line:prevState.line+1
-				}
-			}else{
-				return{
-					...prevState
-				}
-			}
-		}
-		case 'decrease_line':{
-			if(prevState.line > 0){
-				return{
-					...prevState,
-					line:prevState.line-1
-				}
-			}else{
-				return{
-					...prevState
-				}
-			}
-		}
 		default :
 	        console.log(action.key,{prevState,action,error:"Không tồn tại action"})
 	        return{

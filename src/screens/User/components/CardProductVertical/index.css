@@ -5,6 +5,7 @@
 	transition: box-shadow 0.25s;
 	position: relative;
 	background: var(--second-background);
+	border: 0.05em solid var(--second-border);
 	color: var(--second-color);
 }
 

@@ -1,4 +1,4 @@
-import {useImperativeHandle,useRef,forwardRef,memo} from 'react';
+import {useImperativeHandle,useRef,forwardRef,memo,useMemo} from 'react';
 import './index.css';
 
 const Image = (function(){
@@ -18,11 +18,13 @@ const Image = (function(){
 		if(alt !== undefined){
 			_Attr.alt=alt;
 		};
-		if(src !== undefined){
-			_Attr['src']=src;
-		}else{
-			_Attr['src']="/img/default-no-img.jpg";
-		};
+		_Attr['src'] = useMemo(function(){
+			if(src !== undefined){
+				return src;
+			}else{
+				return "/img/default-no-img.jpg";
+			};
+		},[src])
 		useImperativeHandle(ref,()=>({
 				...thisRef.current
 			})

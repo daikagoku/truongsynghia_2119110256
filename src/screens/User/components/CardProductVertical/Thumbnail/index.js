@@ -1,14 +1,15 @@
-import {useContext} from 'react';
+import {useContext,useMemo} from 'react';
 import {ProductContext} from '../index';
 import {Thumbnail,Image} from '../../../../../components/';
 export default function ProductThumbnail({imageAttr,thumbnailAttr,children,...props}){
 	const data = useContext(ProductContext);
-	let version = {}
-	if(Array.isArray(data.versions)){
-		version=data.versions.find(function(_version,_index){
-			return _version.id===data.version;
-		})
-	};
+	const version = useMemo(function(){
+		if(Array.isArray(data.versions)){
+			return data.versions.find(function(_version,_index){
+				return _version.id===data.version;
+			})
+		};
+	},[data]);
 	const _thumbnailAttr = {
 		...thumbnailAttr,
 		...props

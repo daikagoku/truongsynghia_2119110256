@@ -10,7 +10,7 @@ export default function ContactContent({title}) {
 	const contentRef = useRef();
 	const [stateContact,dispatchContact] = useContext(ContactContext);
 	const [stateContent,dispatchContent] = useReducer(reducer,initData);
-	const x = useMemo(function(){
+	useEffect(function(){
 		if(contentRef.current){
 			let currentRect = contentRef.current.getBoundingClientRect();
             let x       = stateContact.positionX - currentRect.width/2;
@@ -19,12 +19,10 @@ export default function ContactContent({title}) {
             }else if(x < 0){
             	x = 0;
             };
-            return x;
-		}else{
-			return stateContact.positionX;
+            contentRef.current.style.right=x+"px";
 		}
 	},[stateContact.positionX]);
-	const y = useMemo(function(){
+	useEffect(function(){
 		if(contentRef.current){
 			let currentRect = contentRef.current.getBoundingClientRect();
             let y       = stateContact.positionY - currentRect.height/2;
@@ -33,9 +31,7 @@ export default function ContactContent({title}) {
             }else if(y < 0){
             	y = 0;
             };
-            return y;
-		}else{
-			return stateContact.positionY;
+            contentRef.current.style.bottom=y+"px";
 		}
 	},[stateContact.positionY]);
 	function handleClick(){
@@ -45,7 +41,7 @@ export default function ContactContent({title}) {
 	};
 	return(
 	<ContentContext.Provider value={[stateContent,dispatchContent]}>
-		<div ref={contentRef} className={clsx("contact-content",{show:stateContact.isShow})}style={{"--left":x,"--top":y}}>
+		<div ref={contentRef} className={clsx("contact-content",{show:stateContact.isShow})}>
 			<div className="contact-content-head">
 	          <div className="contact-content-title">
 	            <span className="">Hổ trợ trực tuyến</span>

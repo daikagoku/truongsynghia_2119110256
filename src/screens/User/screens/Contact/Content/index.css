@@ -9,8 +9,6 @@
 	max-height: 100%;
 	overflow-x: hidden;
 	position: fixed;
-	left: calc(var(--left)*1px);
-	top: calc(var(--top)*1px);
 	color: var(--second-color);
 	background: var(--second-background);
 	border: 0.05em solid var(--second-border);

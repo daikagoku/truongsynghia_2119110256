@@ -80,7 +80,6 @@ export default memo(function ProductThumbnail({props}){
 		<div id="product-detail-thumbnail-dots" className="relative">
 			<AliceCarousel 
 				ref = {dotRef}
-				infinite
 				activeIndex ={index}
 				animationDuration={1000}
 				disableDotsControls
