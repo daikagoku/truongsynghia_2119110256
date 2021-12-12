@@ -112,8 +112,6 @@ function HomePagePagination({...props}){
 			result.indexs.push(currentPage+1);
 			result.components.push(newItem);
 		};
-		
-		console.log({currentPage,totalPage,result});
 		return result.components;
 	},[currentPage,totalPage]);	
 	function handleClick(page,disabled){

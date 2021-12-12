@@ -1,0 +1,19 @@
+.button{
+	font-size: 1.6em;
+	width: 1.4em;
+	background: transparent;
+	border: 0;
+	box-shadow: none;
+	position: absolute;
+	top: -0.1em;
+	bottom: -0.1em;
+	z-index: 5;
+}
+.back{
+	left: -0.1em;
+/*	transform: translate(-20%,-50%);*/
+}
+.next{
+	right: -0.1em;
+/*	transform: translate(20%,-50%);*/
+}

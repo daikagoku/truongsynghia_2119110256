@@ -27,10 +27,7 @@ export default memo(function HeaderCart(){
 		}
 	});
 	const cartAttr = {
-		className:"header-cart",
-		onMouseDown:function(event){
-			event.preventDefault();
-		}
+		className:"header-cart"
 	};
 	if(OffcanvasRef.current && OffcanvasRef.current.state.show){
 		cartAttr.className+=" active";

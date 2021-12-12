@@ -5,6 +5,8 @@ import {Thumbnail,Image} from '../../../../../../../components/';
 import {ProductContext,ProductDetailContext} from '../../../init';
 import './index.css';
 import {BackButton,NextButton} from './Buttons/';
+import {BackDotButton,NextDotButton} from './DotButtons/';
+
 import SlideItem from './Item/';
 import SlideDot from './Dot/';
 export const ProductThumbnailContext = createContext({});
@@ -96,6 +98,8 @@ export default memo(function ProductThumbnail({props}){
 					}
 				}
 			/>
+			<BackDotButton />
+			<NextDotButton />
 		</div>
 	</ProductThumbnailContext.Provider>
 	)

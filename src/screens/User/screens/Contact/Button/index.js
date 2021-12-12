@@ -110,7 +110,6 @@ export default memo(function ContactButton(){
             document.addEventListener('mousemove',handleMouseTranslate);
             document.addEventListener('touchmove',handleTouchTranslate);
         };
-        console.log({document})
         return function(){
             document.removeEventListener('mouseup',handleStopDrag); 
             document.removeEventListener('touchend',handleStopDrag); 

@@ -12,7 +12,7 @@ export default function useCartModel(){
 					if(item){
 						return item.productId === productId && item.version === version;
 					}
-				});		
+				});
 				if(_index === -1){
 					_newStore.push({
 						productId:productId,
@@ -21,9 +21,6 @@ export default function useCartModel(){
 					})
 				}else{
 					_newStore[_index].quantity+=quantity;
-					if(_newStore[_index].quantity >5){
-						_newStore[_index].quantity = 5
-					};
 				};
 				handleStore.set(_newStore);
 		},

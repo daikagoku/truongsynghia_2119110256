@@ -13,6 +13,9 @@ export default function() {
 			version:data.version,
 			quantity:state.quantity
 		})
+		dispatch({
+			key:"reset_quantity"
+		})
 	};
 	const buttonAttr={
 		className:"product-card-detail-add-to-cart square-btn",

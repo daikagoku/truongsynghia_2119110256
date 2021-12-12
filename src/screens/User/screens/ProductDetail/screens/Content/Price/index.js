@@ -8,26 +8,9 @@ export default memo(function ProductPrice({className,sale,root,...props}){
 		...props,
 		className:clsx(className,styles.price)
 	};
-	let price = "";
 	if(root){
-		price = RootPrice();
-		attr.className+=" "+styles.root
+		return (<RootPrice styles={{...styles}} attr={{...attr}}/>)
 	}else{
-		price = CurrentPrice();
-		if(price !== ""){
-			if(sale){
-				attr.className+=" "+styles.sale
-			}
-		}else{
-			price = "Liên hệ"
-		}
-	}
-	if(price !== ""){
-		return(
-			<span {...attr}>{price}</span>
-		)
-	}else{
-		return (<></>)
-	}
-			
+		return (<CurrentPrice styles={{...styles}} attr={{...attr}}/>)
+	};		
 });

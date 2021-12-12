@@ -1,7 +1,7 @@
 
 import {useContext,memo} from 'react';
 import {ProductContext} from '../../../../init';
-export default function ProductCurrendPrice(){
+export default function ProductCurrendPrice({styles,attr}){
 	const data = useContext(ProductContext) ?? {};
 	let version = {}
 	if(Array.isArray(data.versions)){
@@ -10,10 +10,15 @@ export default function ProductCurrendPrice(){
 		})
 	};
 	let text="";
+	attr.className+=" "+styles.current;
 	if(version !== undefined && version.salePrice !== undefined && version.price !== undefined){
 		text=version.salePrice+"$";
+		attr.className+=" "+styles.sale;
+		return (<span {...attr}>{text}</span>)
 	}else if(version !== undefined && version.price !== undefined){
 		text=version.price+"$";
-	};
-	return text;	
+		return (<span {...attr}>{text}</span>)
+	}else{
+		return (<span {...attr}>Liên hệ</span>)
+	};		
 };

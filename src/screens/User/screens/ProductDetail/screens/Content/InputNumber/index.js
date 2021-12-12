@@ -1,57 +1,64 @@
-import {useContext,memo,useMemo} from 'react';
+import {useContext,useEffect,memo,useMemo,useState} from 'react';
 import clsx from 'clsx';
 import {Input,Button,Icon} from '../../../../../../../components/';
 import {ProductDetailContext} from '../../../init';
 import styles from './index.module.css';
 export default memo(function(){
 	const [state,dispatch] = useContext(ProductDetailContext);
-	const [min,max] = useMemo(()=>([1,5]),[]);
+	const [value,setValue] = useState(state.quantity);
+	const [min,max] = useMemo(()=>([1,20]),[])
 	const inputAttr = {
 		className :styles.input,
 		type      :"number",
-		value     :state.quantity,
+		value     :value,
 		min       :min,
-		max       :max,
-		onBlur:function(event){
-			if(state.quantity === ""){
-				setValue(min);
-			}
-		}
+		max       :max
 	};
-	function setValue(value){
-		dispatch({
-			key:'set_quantity',
-			value:value
-		})
-	}
 	function handleSetValue(newValue){
 		newValue = Number(newValue);
-		if(state.quantity === 0){
-			setValue(min);
-		}else if(newValue < min){
-			setValue(min);
-		}else if(newValue > max){
-			setValue(max);
-		}else{
-			setValue(newValue);
-		}
-		
-	}
+		if(newValue > max) newValue = max;
+		else if(newValue < min) newValue = min;
+		dispatch({
+			key:'set_quantity',
+			value:newValue
+		})
+	};
 	function handleDown(event){
 		event.preventDefault();
-	}
+	};
 	function handleClick(int){
-		handleSetValue(Number(state.quantity)+int);
-	}
+		if(value === "" || Number(value) === 0){
+			handleSetValue(int);
+		}else{
+			handleSetValue(Number(value)+int);
+		}
+	};
 	inputAttr.onChange = useMemo(function(){
 		return function(event){
 			if(event.target.value === ""){
-				setValue(event.target.value);
+				setValue("");
 			}else{
-				handleSetValue(event.target.value);
+				let newValue = Number(event.target.value);
+				if(value === "" || Number(value) === 0){
+					event.target.value="";
+					newValue = event.nativeEvent.data;
+				}
+				setValue(newValue);
 			}
 		}
-	},[state.quantity]) 
+	},[value]);
+	inputAttr.onBlur = useMemo(function(){
+		return function(event){
+			if(value === "" || Number(value) < min){
+				handleSetValue(min);
+			}else if(Number(value) > max) {
+				handleSetValue(max);
+			}
+		}
+	},[value]);
+	useEffect(function () {
+		setValue(state.quantity);
+	},[state.quantity])
 	return(
 		<div>
 			<div className={styles.container}>

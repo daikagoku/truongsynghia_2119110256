@@ -28,10 +28,7 @@ export default memo(function({history,location,match}){
 			data.version = version.id;
 			const sectionAttr = {
 				id:"product-detail",
-				className:"container-fluid",
-				onLoad:function(event){
-					console.log("product-detail load")
-				}
+				className:"container-fluid"
 			}
 			return(
 				<ProductDetailContext.Provider value ={[state,dispatch]}>

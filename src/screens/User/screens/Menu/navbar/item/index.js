@@ -33,12 +33,12 @@ export default memo(function MainMenuItem({api,keyApi,filter,sort,buttonClass,cl
     return function(_event,_this){
         setHover(true);
     };
-  },[])
+  },[]);
   itemAttr.onMouseOut=useMemo(function(){
     return function(_event,_this){
         setHover(false);
     };
-  },[])
+  },[]);
   const buttonTextAttr = {
     className:"text fs-0_8em fs-md-0_9em fs-lg-1em"
   }

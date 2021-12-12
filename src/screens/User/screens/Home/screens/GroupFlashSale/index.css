@@ -1,8 +1,6 @@
-#group-flash-sale{
-	position: relative;
-}
 .group-flash-sale-section{
 	position: relative;
+	overflow: hidden;
 	background:var(--highlight-background);
 	color: var(--highlight-color);
 	margin: 0.5em 0;

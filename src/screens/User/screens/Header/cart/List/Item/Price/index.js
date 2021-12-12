@@ -9,9 +9,9 @@ export default memo(function ProductPrice({className,sale,root,...props}){
 		className:clsx(className,styles.price)
 	};
 	if(root){
-		return (<RootPrice styles={styles} attr={attr}/>)
+		return (<RootPrice styles={{...styles}} attr={{...attr}}/>)
 	}else{
-		return (<CurrentPrice styles={styles} attr={attr}/>)
+		return (<CurrentPrice styles={{...styles}} attr={{...attr}}/>)
 	};
 			
 });

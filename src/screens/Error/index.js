@@ -1,6 +1,14 @@
 import './index.css';
+import {useMemo} from 'react';
+import {useHistory} from 'react-router-dom';
 import {Button,Icon} from '../../components/';
-function Error({history,location,match,...props}){
+function Error({...props}){
+	const history = useHistory();
+	const handleClickBackButton = useMemo(function(){
+		return function(){
+			history.goBack();
+		}
+	},[history.pathname])
 	return(
 		<section className="container-fluid">
 			<div className="container">
@@ -14,7 +22,7 @@ function Error({history,location,match,...props}){
 								<Icon icon="fas fa-home"/>
 								<span className="text">Go Home</span>
 							</Button>
-							<Button onClick={()=>(history.goBack())} to="" className="error-button circle-btn">
+							<Button onClick={handleClickBackButton} to="" className="error-button circle-btn">
 								<Icon icon="fas fa-chevron-left"/>
 								<span className="text">Go Back</span>
 							</Button>

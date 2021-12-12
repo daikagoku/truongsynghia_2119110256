@@ -7,7 +7,10 @@ export {default as Input}    from './Input/';
 export {default as Checkbox} from './Checkbox/';
 export {default as List}     from './List/';
 export {default as Item}     from './Item/';
+
 export {default as Tooltip}  from './Tooltip/';
+export {default as Toast}    from './Toast/';
+
 export {default as Modal}    from './modal/';
 export {default as Offcanvas}from './offcanvas/';
 export {default as Widget}   from './widget/';

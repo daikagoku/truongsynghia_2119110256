@@ -9,7 +9,9 @@
 	font-size: 1.4em;
 	text-decoration: line-through;
 }
-.sale{
+.current{
 	font-size: 2.1em;
+}
+.sale{
 	color: #f00;
 }
