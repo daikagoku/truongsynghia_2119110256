@@ -55,6 +55,7 @@ function HomePagePagination({...props}){
 				<HomePagePaginationItem 
 					key={"null-back"}
 					text={"..."}
+					disabled
 				/>
 			);
 			result.components.unshift(newItem);
@@ -86,6 +87,7 @@ function HomePagePagination({...props}){
 				<HomePagePaginationItem 
 					key={"null-next"}
 					text="..."
+					disabled
 				/>
 			);
 			result.components.push(newItem);
