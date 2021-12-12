@@ -79,7 +79,7 @@ export default memo(forwardRef(function Modal({prefix,show,title,widthSize,heigh
           </Button>
         </div>
         <div className="modal-body">
-          {state.show === true && children}
+          {children}
         </div>
       </div>
     </div>

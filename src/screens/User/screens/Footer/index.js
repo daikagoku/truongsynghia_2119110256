@@ -10,7 +10,7 @@ import './index.css'
 function Footer(props) {
   return (
       <section id="footer"className="container-fluid">
-      		<footer className="container px-1 pt-3 pb-5">
+      		<footer className="container-lg pt-3 pb-5">
       			<div className="row py-2">
                 <div className="col col-12 col-sm-6 col-lg-4 col-xl-3 p-1 order-0">
                   <Widget title="THÔNG TIN"prefix="footer">

@@ -82,7 +82,7 @@ export default memo(forwardRef(function Offcanvas({show,prefix,title,position,wi
           </Button>
         </div>
         <div className="offcanvas-body">
-          {state.show === true && children}
+          {children}
         </div>
       </div>
     </div>

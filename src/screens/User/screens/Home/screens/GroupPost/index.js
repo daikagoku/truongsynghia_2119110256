@@ -13,7 +13,7 @@ export default memo(function GroupPost() {
     });
 	return(
 	<section className="container-fluid">
-		<div className="container">
+		<div className="container-lg">
 			<div className="row group-post">
 				<div className="col col-12">
 					<div className="row group-post-head">

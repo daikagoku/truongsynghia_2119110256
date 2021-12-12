@@ -12,7 +12,7 @@ function Header(props) {
   return (
       <section ref={thisRef} id="header" className="container-fluid">
           <HeaderContact />
-      		<header className="container-lg   px-0">
+      		<header className="container-lg">
       			<div className="row py-2">
       				<div className="order-0 col col-5 col-sm-4 col-md-3 col-lg-3 col-xxl-2 justify-content-center">         
                 <div className="w-12 d-flex justify-content-center py-1">

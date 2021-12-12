@@ -23,7 +23,6 @@
 }
 .group-flash-sale-content{
 	z-index: 1;
-	padding: 1em;
 }
 .group-flash-sale-head{
     border-bottom: 0.1em dashed var(--second-border);
