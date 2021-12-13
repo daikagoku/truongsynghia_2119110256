@@ -42,7 +42,7 @@ function MainMenu({history,location,match,...props}) {
     return ()=>(body.removeEventListener('scroll',handleScroll))
   },[]);
   useEffect(function(){
-    switch(reponsive.state){
+    switch(reponsive.state.width){
             case "none":
             case "xs":
             case "sm":
@@ -61,7 +61,7 @@ function MainMenu({history,location,match,...props}) {
                 })
                 break;
         }
-  },[reponsive.state])
+  },[reponsive.state.width])
   return (
       <section {...sectionAttr}>
       		<div className="container-lg">

@@ -11,31 +11,42 @@ function useReponsive(props){
 			"xxl":"1400"
 		}
 	},[])
-	const [state,setState] = useState("none");
+	const [state,setState] = useState({
+		width:"none",
+		height:"none"
+	});
 	useEffect(function(){
 		const body = document.querySelector("#App");
-		function handleSetSate(size){
-			let tmp = state;
-			Object.keys(list ?? {}).find(function(key){
-				if(Number(list[key]) >= size){
+		function handleSetSate(key,size){
+			let _tmp = state[key];
+			Object.keys(list ?? {}).find(function(_key){
+				if(Number(list[_key]) >= size){
 					return true;
 				}else{
-					tmp = key;
+					_tmp = _key;
 					return false;
 				}
 				
 			});
-			setState(tmp);
+			setState(function(prevState){
+				return{
+					...prevState,
+					[key]:_tmp
+				}
+			});
 		}
 		function handleResize(event){
-			handleSetSate(event.target.innerWidth);
+			handleSetSate("width",event.target.innerWidth);
+			handleSetSate("height",event.target.innerHeight);
 		};
-		handleSetSate(body.offsetWidth);
+		handleSetSate("width",body.offsetWidth);
+		handleSetSate("height",body.offsetHeight);
 		window.addEventListener('resize',handleResize);
 		return function(){
 			body.removeEventListener('resize',handleResize);
 		}
-	},[])
+	},[]);
+	console.log(state)
 	return [{list,state}];
 }
 export default useReponsive;

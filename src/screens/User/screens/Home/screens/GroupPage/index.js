@@ -36,7 +36,7 @@ function GroupPage({...props}){
             key:"set_index",
             value:0
         })
-    },[location.pathname])
+    },[location])
 	return(
 <HomePageContext.Provider value={[{...state,length:listItem.length,this:thisRef.current},dispatch]}>
 	<section ref={thisRef} className="container-fluid home-page py-2">

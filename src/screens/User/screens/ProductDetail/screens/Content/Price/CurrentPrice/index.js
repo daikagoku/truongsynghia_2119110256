@@ -10,15 +10,16 @@ export default function ProductCurrendPrice({styles,attr}){
 		})
 	};
 	let text="";
-	attr.className+=" "+styles.current;
+	const _attr = {...attr};
+	_attr.className+=" "+styles.current;
 	if(version !== undefined && version.salePrice !== undefined && version.price !== undefined){
 		text=version.salePrice+"$";
-		attr.className+=" "+styles.sale;
-		return (<span {...attr}>{text}</span>)
+		_attr.className+=" "+styles.sale;
+		return (<span {..._attr}>{text}</span>)
 	}else if(version !== undefined && version.price !== undefined){
 		text=version.price+"$";
-		return (<span {...attr}>{text}</span>)
+		return (<span {..._attr}>{text}</span>)
 	}else{
-		return (<span {...attr}>Liên hệ</span>)
+		return (<span {..._attr}>Liên hệ</span>)
 	};		
 };

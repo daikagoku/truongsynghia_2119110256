@@ -15,7 +15,7 @@ function App({...props}) {
     if(thisRef.current){
       thisRef.current.scrollTop = 0;
     }
-  },[location.pathname]);
+  },[location]);
   return (
     <section ref = {thisRef} id="App" className={clsx(theme.default,theme.current)}>
       <Switch>

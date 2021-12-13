@@ -15,7 +15,7 @@ function HomePageContent({listItem,...props}){
                 value:int
             })
         };
-    	switch(reponsive.state){
+    	switch(reponsive.state.width){
             case "none":
             case "xs":
                 setViewItem(8)
@@ -34,7 +34,7 @@ function HomePageContent({listItem,...props}){
                 setViewItem(12)
                 break;
         }
-    },[reponsive.state]);
+    },[reponsive.state.width]);
 	return(
 		<List className={clsx("d-flex flex-wrap",styles.list)}>
 			{

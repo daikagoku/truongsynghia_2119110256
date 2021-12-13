@@ -8,10 +8,11 @@ export default function ProductRootPrice({styles,attr}){
 			return _version.id===data.version;
 		})
 	};
+	const _attr = {...attr};
 	if(version !== undefined && version.price !== undefined && version.salePrice !== undefined){
 		const text=version.price+"$";
-		attr.className+=" "+styles.root;
-		return (<span {...attr}>{text}</span>)
+		_attr.className+=" "+styles.root;
+		return (<span {..._attr}>{text}</span>)
 	}else{
 		return <></>
 	};
