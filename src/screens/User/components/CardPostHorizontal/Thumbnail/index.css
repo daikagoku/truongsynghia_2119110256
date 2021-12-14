@@ -1,0 +1,4 @@
+.post-thumbnail{
+	box-shadow: 0.2em 0.3em 0.5em 0 var(--second-shadow);
+	border: 0.05em solid var(--second-border);
+}

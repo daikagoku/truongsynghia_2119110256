@@ -1,0 +1,24 @@
+.group-post{
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+.group-post-head{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow-x: hidden;
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
+
+}
+.group-post-body{
+	overflow-x: hidden;
+	display: flex;
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
+
+}
+.group-post_widget{
+	flex-grow: 1;
+	margin: 0.2em 0;
+}

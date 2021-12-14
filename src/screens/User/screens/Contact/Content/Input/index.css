@@ -1,0 +1,36 @@
+.contact-content-input-form{
+	flex: 1;
+	position: relative;
+	display: flex;
+	padding: 0.5em;
+	padding-right: 2em;
+	margin: 0.5em;
+	border-radius: 0.5em;
+	background: var(--primary-background);
+	border: 0.1em solid var(--primary-border);
+}
+.contact-content-input{
+	flex: 1;
+	color: var(--primary-color);
+	background: transparent;
+	overflow-x: hidden;
+	height: auto;
+	padding-right: 0.5em;
+	line-height: 1.4em;
+	max-height: calc(5 * 1.4em);
+	text-overflow: ellipsis;
+	resize: none;
+}
+.contact-content-submit{
+	flex-shrink: 0;
+	position: absolute;
+	right:  0;
+	width: 2em;
+	height: 1.4em;
+	opacity: 0.6;
+	pointer-events: none !important;
+}
+.contact-content-input:not(:placeholder-shown) ~ .contact-content-submit{
+	pointer-events: auto !important;
+	opacity: 1;
+}

@@ -1,0 +1,30 @@
+{
+    "address":{
+        "title":"Địa chỉ",
+        "value":[
+            "@",
+            "@"
+        ]
+    },"copyright":{
+        "title" : "Copyright",
+        "value" : ["@"]
+    },"phone":{
+        "title" :"Phone",
+        "value" :["@"]
+    },"facebook":{
+        "title" :"Facebook",
+        "value" :"@"
+    },"youtube":{
+        "title" :"Youtube",
+        "value" :"@"
+    },"email":{
+        "title" :"Email",
+        "value" :"@"
+    },"twitter":{
+        "title" :"Twitter",
+        "value" :"@"
+    },"instagram":{
+        "title" :"Instagram",
+        "value" :"@"
+    }
+}

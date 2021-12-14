@@ -1,0 +1,9 @@
+.auth-text-link-container{
+	display: flex;
+	align-items: center;
+}
+.auth-text-link{
+	margin: 0 0.5em;
+	display: flex;
+	font-weight: bolder;
+}

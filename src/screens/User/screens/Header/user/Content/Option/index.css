@@ -1,0 +1,29 @@
+.header-user-list-container{
+	padding: 0.5em;
+	width: 100%;
+}
+.header-user-list{
+	display: flex;
+	flex-direction: column;
+}
+.header-user-list-button{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	font-size: 1.2em;
+	padding: 0.2em;
+
+}
+.header-user-list-button .icon{
+	margin: 0 0.5em;
+	font-size: 1.2em;
+}
+.header-user-list-button .text{
+	display: block;
+	text-align: left;
+	flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

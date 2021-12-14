@@ -1,0 +1,15 @@
+.container{
+	position: fixed;
+	left: 50%;
+	bottom: 5em;
+	border-radius: 0.5em;
+	transform: translateX(-50%);
+	background: var(--highlight-background);
+	color: var(--highlight-color);
+	max-width: 100%;
+	min-width: 10em;
+	width: fit-content;
+	word-wrap: break-word;
+	text-align: center;
+	padding: 0.2em;
+}

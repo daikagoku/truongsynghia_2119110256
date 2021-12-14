@@ -1,0 +1,27 @@
+.group-post-title{
+	border: 0.05em solid #ddd;
+    padding: 0.2em 1.2em;
+    margin: 0.2rem 0;
+    border-radius: 10000em;
+    font-size: 2em;
+    width: fit-content;
+    font-weight: bold;
+    position: relative;
+}
+.group-post-title:before,
+.group-post-title:after{
+	content: "";
+	width: 100%;
+	display: block;
+	height: 0.05em;
+	background: #ddd;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.group-post-title:before{
+	right: 100%;
+}
+.group-post-title:after{
+	left: 100%;
+}

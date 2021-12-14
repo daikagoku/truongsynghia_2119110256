@@ -1,0 +1,11 @@
+.group-flash-sale-loading{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 2em;
+}
+
+.group-flash-sale-loading .loading{
+	font-size: 1.4em;
+	color: inherit;
+}

@@ -1,0 +1,10 @@
+.product-card-detail-add-to-cart{
+	padding: 0.3em 0.5em;
+	margin: 0.5em auto;
+	width: fit-content;
+	color: var(--highlight-color);
+	background: var(--highlight-background);
+}
+.product-card-detail-add-to-cart .icon{
+	margin: 0 0.5em;
+}

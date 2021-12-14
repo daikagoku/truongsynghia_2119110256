@@ -1,0 +1,23 @@
+#group-flash-sale {
+	position: relative;
+}
+#group-flash-sale .alice-carousel__wrapper{
+	position: relative;
+	overflow: hidden;
+	padding: 0.5em;
+}
+#group-flash-sale .alice-carousel__stage-item{
+	padding: 0.5em;
+}
+
+#group-flash-sale .product-card:after{
+	content: "";
+	position: absolute;
+	top: -0.2em;
+	bottom: -0.2em;
+	left: -0.2em;
+	right: -0.2em;
+	border: 0.2em dashed var(--second-background);
+	outline: 0.2em dashed var(--second-background);
+	z-index: -1;
+}

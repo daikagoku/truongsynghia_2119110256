@@ -1,0 +1,17 @@
+.price{
+	display: inline-block;
+	height: 1.2em;
+	font-weight: bold;
+}
+.root{
+	opacity: 0.8;
+	margin: 0 0.4em;
+	font-size: 1.4em;
+	text-decoration: line-through;
+}
+.current{
+	font-size: 2.1em;
+}
+.sale{
+	color: #f00;
+}

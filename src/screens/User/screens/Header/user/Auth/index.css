@@ -1,0 +1,6 @@
+.auth_modal .modal-view{
+	background: var(--second-background);
+	color: var(--second-color);
+	border: 0.05em solid var(--second-border);
+	box-shadow: 0 0 0.05em var(--second-shadow);
+}

@@ -1,0 +1,14 @@
+.auth-submit-container{
+	width: 100%;
+	margin:0.5em 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.auth-submit{
+	font-weight: bolder;
+	background: var(--highlight-background);
+	color: var(--highlight-color);
+	font-size: 1.4em;
+	padding: 0.1em 4em;
+}

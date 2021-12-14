@@ -1,0 +1,31 @@
+.main-menu-offcanvas-dropdown-container{
+	overflow: hidden;	
+	visibility: hidden;
+	height: 0;
+	border-radius: 0.5em;
+	transition: height 0.25s,visibility 0s 0.25s;
+	color: var(--primary-color) !important;
+	background: var(--primary-background);
+	border: 0.1em solid var(--primary-border);
+}
+.main-menu-offcanvas-dropdown-container.active{
+	visibility: visible;
+	transition: height 0.25s;
+	padding: 0.2em 0.1em;
+}
+.main-menu-offcanvas-dropdown-list{
+	display: flex;
+	flex-direction: column;
+}
+.main-menu-offcanvas-dropdown-item{
+	padding: 0.1em;
+}
+.main-menu-offcanvas-dropdown-button{
+	width: 100%;
+	padding: 0.2em 0.4em;
+	justify-content: flex-start;
+	border-radius: 0.5em;
+}
+.main-menu-offcanvas-dropdown-button:hover{
+	background: var(--second-background);
+}

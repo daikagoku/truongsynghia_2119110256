@@ -1,0 +1,12 @@
+.slide-container{
+	position: relative;
+}
+#main-slide {
+	position: relative;
+	padding: 0.5em 0;
+}
+#main-slide .alice-carousel__wrapper{
+	position: relative;
+	overflow: hidden;
+}
+

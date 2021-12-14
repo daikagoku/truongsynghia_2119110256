@@ -1,0 +1,17 @@
+.footer-download{
+	display: flex;
+	flex-direction: column;
+	max-width: 100%;
+}
+.footer-download-item{
+	width: 100%;
+	max-width: 100%;
+}
+.footer-download-button{
+	max-width: 100%;
+	padding: 0.2em;
+	margin: 0.5em;
+	background: var(--primary-background); 
+    border: 0.05em solid var(--primary-border);
+    box-shadow: 0.05em 0.05em 0 0 var(--primary-overlay);
+}

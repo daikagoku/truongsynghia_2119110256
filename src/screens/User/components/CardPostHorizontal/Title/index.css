@@ -1,0 +1,15 @@
+.post-title{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	line-height: 1.2em;
+	height: 2.4em;
+	font-weight: bolder;
+	width: 100%;
+    word-break: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}

@@ -1,0 +1,8 @@
+.product-option-btn{
+	border-radius: 0.5em;
+	background: var(--highlight-background);
+	color: var(--highlight-color);
+	margin: 0.5em;
+	width: 2em;
+	height: 2em;
+}

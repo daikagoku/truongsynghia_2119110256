@@ -1,0 +1,402 @@
+
+.relative{
+	position                 : relative;
+	top: unset;
+	bottom: unset;
+	left: unset;
+	right: unset;
+}
+.absolute{position                 : absolute}
+.fixed{position                    : fixed}
+.sticky{position                   : sticky}
+
+@media (min-width                  : 576px) {
+.relative-sm{
+	position                 : relative;
+	top: unset;
+	bottom: unset;
+	left: unset;
+	right: unset;
+}
+.absolute-sm{position              : absolute}
+.fixed-sm{position                 : fixed}
+.sticky-sm{position                : sticky}
+}
+@media (min-width                  : 768px) {
+.relative-md{
+	position                 : relative;
+	top: unset;
+	bottom: unset;
+	left: unset;
+	right: unset;
+}
+.absolute-md{
+	position                 : relative;
+	top: unset;
+	bottom: unset;
+	left: unset;
+	right: unset;
+}
+.fixed-md{position                 : fixed}
+.sticky-md{position                : sticky}
+}
+@media (min-width                  : 992px) {
+.relative-lg{
+	position                 : relative;
+	top: unset;
+	bottom: unset;
+	left: unset;
+	right: unset;
+}
+.absolute-lg{position              : absolute}
+.fixed-lg{position                 : fixed}
+.sticky-lg{position                : sticky}
+}
+@media (min-width                  : 1200px) {
+.relative-xl{
+	position                 : relative;
+	top: unset;
+	bottom: unset;
+	left: unset;
+	right: unset;
+}
+.absolute-xl{position              : absolute}
+.fixed-xl{position                 : fixed}
+.sticky-xl{position                : sticky}
+}
+@media (min-width                  : 1400px) {
+.relative-xxl{
+	position                 : relative;
+	top: unset;
+	bottom: unset;
+	left: unset;
+	right: unset;
+}
+.absolute-xxl{position             : absolute}
+.fixed-xxl{position                : fixed}
+.sticky-xxl{position               : sticky}
+}
+
+.start-0{ left                     :calc((0 / 12)*100%); }
+.start-1{ left                     :calc((1 / 12)*100%); }
+.start-2{ left                     :calc((2 / 12)*100%); }
+.start-3{ left                     :calc((3 / 12)*100%); }
+.start-4{ left                     :calc((4 / 12)*100%); }
+.start-5{ left                     :calc((5 / 12)*100%); }
+.start-6{ left                     :calc((6 / 12)*100%); }
+.start-7{ left                     :calc((7 / 12)*100%); }
+.start-8{ left                     :calc((8 / 12)*100%); }
+.start-9{ left                     :calc((9 / 12)*100%); }
+.start-10{ left                    :calc((10 / 12)*100%); }
+.start-11{ left                    :calc((11 / 12)*100%); }
+.start-12{ left                    :calc((12 / 12)*100%); }
+.end-0{ right                      :calc((0 / 12)*100%); }
+.end-1{ right                      :calc((1 / 12)*100%); }
+.end-2{ right                      :calc((2 / 12)*100%); }
+.end-3{ right                      :calc((3 / 12)*100%); }
+.end-4{ right                      :calc((4 / 12)*100%); }
+.end-5{ right                      :calc((5 / 12)*100%); }
+.end-6{ right                      :calc((6 / 12)*100%); }
+.end-7{ right                      :calc((7 / 12)*100%); }
+.end-8{ right                      :calc((8 / 12)*100%); }
+.end-9{ right                      :calc((9 / 12)*100%); }
+.end-10{ right                     :calc((10 / 12)*100%); }
+.end-11{ right                     :calc((11 / 12)*100%); }
+.end-12{ right                     :calc((12 / 12)*100%); }
+.top-0{ top                        :calc((0 / 12)*100%); }
+.top-1{ top                        :calc((1 / 12)*100%); }
+.top-2{ top                        :calc((2 / 12)*100%); }
+.top-3{ top                        :calc((3 / 12)*100%); }
+.top-4{ top                        :calc((4 / 12)*100%); }
+.top-5{ top                        :calc((5 / 12)*100%); }
+.top-6{ top                        :calc((6 / 12)*100%); }
+.top-7{ top                        :calc((7 / 12)*100%); }
+.top-8{ top                        :calc((8 / 12)*100%); }
+.top-9{ top                        :calc((9 / 12)*100%); }
+.top-10{ top                       :calc((10 / 12)*100%); }
+.top-11{ top                       :calc((11 / 12)*100%); }
+.top-12{ top                       :calc((12 / 12)*100%); }
+.bottom-0{ bottom                  :calc((0 / 12)*100%); }
+.bottom-1{ bottom                  :calc((1 / 12)*100%); }
+.bottom-2{ bottom                  :calc((2 / 12)*100%); }
+.bottom-3{ bottom                  :calc((3 / 12)*100%); }
+.bottom-4{ bottom                  :calc((4 / 12)*100%); }
+.bottom-5{ bottom                  :calc((5 / 12)*100%); }
+.bottom-6{ bottom                  :calc((6 / 12)*100%); }
+.bottom-7{ bottom                  :calc((7 / 12)*100%); }
+.bottom-8{ bottom                  :calc((8 / 12)*100%); }
+.bottom-9{ bottom                  :calc((9 / 12)*100%); }
+.bottom-10{ bottom                 :calc((10 / 12)*100%); }
+.bottom-11{ bottom                 :calc((11 / 12)*100%); }
+.bottom-12{ bottom                 :calc((12 / 12)*100%); }
+
+@media (min-width                  : 576px) {
+.start-sm-0{ left                  :calc((0 / 12)*100%); }
+.start-sm-1{ left                  :calc((1 / 12)*100%); }
+.start-sm-2{ left                  :calc((2 / 12)*100%); }
+.start-sm-3{ left                  :calc((3 / 12)*100%); }
+.start-sm-4{ left                  :calc((4 / 12)*100%); }
+.start-sm-5{ left                  :calc((5 / 12)*100%); }
+.start-sm-6{ left                  :calc((6 / 12)*100%); }
+.start-sm-7{ left                  :calc((7 / 12)*100%); }
+.start-sm-8{ left                  :calc((8 / 12)*100%); }
+.start-sm-9{ left                  :calc((9 / 12)*100%); }
+.start-sm-10{ left                 :calc((10 / 12)*100%); }
+.start-sm-11{ left                 :calc((11 / 12)*100%); }
+.start-sm-12{ left                 :calc((12 / 12)*100%); }
+.end-sm-0{ right                   :calc((0 / 12)*100%); }
+.end-sm-1{ right                   :calc((1 / 12)*100%); }
+.end-sm-2{ right                   :calc((2 / 12)*100%); }
+.end-sm-3{ right                   :calc((3 / 12)*100%); }
+.end-sm-4{ right                   :calc((4 / 12)*100%); }
+.end-sm-5{ right                   :calc((5 / 12)*100%); }
+.end-sm-6{ right                   :calc((6 / 12)*100%); }
+.end-sm-7{ right                   :calc((7 / 12)*100%); }
+.end-sm-8{ right                   :calc((8 / 12)*100%); }
+.end-sm-9{ right                   :calc((9 / 12)*100%); }
+.end-sm-10{ right                  :calc((10 / 12)*100%); }
+.end-sm-11{ right                  :calc((11 / 12)*100%); }
+.end-sm-12{ right                  :calc((12 / 12)*100%); }
+.top-sm-0{ top                     :calc((0 / 12)*100%); }
+.top-sm-1{ top                     :calc((1 / 12)*100%); }
+.top-sm-2{ top                     :calc((2 / 12)*100%); }
+.top-sm-3{ top                     :calc((3 / 12)*100%); }
+.top-sm-4{ top                     :calc((4 / 12)*100%); }
+.top-sm-5{ top                     :calc((5 / 12)*100%); }
+.top-sm-6{ top                     :calc((6 / 12)*100%); }
+.top-sm-7{ top                     :calc((7 / 12)*100%); }
+.top-sm-8{ top                     :calc((8 / 12)*100%); }
+.top-sm-9{ top                     :calc((9 / 12)*100%); }
+.top-sm-10{ top                    :calc((10 / 12)*100%); }
+.top-sm-11{ top                    :calc((11 / 12)*100%); }
+.top-sm-12{ top                    :calc((12 / 12)*100%); }
+.bottom-sm-0{ bottom               :calc((0 / 12)*100%); }
+.bottom-sm-1{ bottom               :calc((1 / 12)*100%); }
+.bottom-sm-2{ bottom               :calc((2 / 12)*100%); }
+.bottom-sm-3{ bottom               :calc((3 / 12)*100%); }
+.bottom-sm-4{ bottom               :calc((4 / 12)*100%); }
+.bottom-sm-5{ bottom               :calc((5 / 12)*100%); }
+.bottom-sm-6{ bottom               :calc((6 / 12)*100%); }
+.bottom-sm-7{ bottom               :calc((7 / 12)*100%); }
+.bottom-sm-8{ bottom               :calc((8 / 12)*100%); }
+.bottom-sm-9{ bottom               :calc((9 / 12)*100%); }
+.bottom-sm-10{ bottom              :calc((10 / 12)*100%); }
+.bottom-sm-11{ bottom              :calc((11 / 12)*100%); }
+.bottom-sm-12{ bottom              :calc((12 / 12)*100%); }
+}
+@media (min-width                  : 768px) {
+.start-md-0{ left                  :calc((0 / 12)*100%); }
+.start-md-1{ left                  :calc((1 / 12)*100%); }
+.start-md-2{ left                  :calc((2 / 12)*100%); }
+.start-md-3{ left                  :calc((3 / 12)*100%); }
+.start-md-4{ left                  :calc((4 / 12)*100%); }
+.start-md-5{ left                  :calc((5 / 12)*100%); }
+.start-md-6{ left                  :calc((6 / 12)*100%); }
+.start-md-7{ left                  :calc((7 / 12)*100%); }
+.start-md-8{ left                  :calc((8 / 12)*100%); }
+.start-md-9{ left                  :calc((9 / 12)*100%); }
+.start-md-10{ left                 :calc((10 / 12)*100%); }
+.start-md-11{ left                 :calc((11 / 12)*100%); }
+.start-md-12{ left                 :calc((12 / 12)*100%); }
+.end-md-0{ right                   :calc((0 / 12)*100%); }
+.end-md-1{ right                   :calc((1 / 12)*100%); }
+.end-md-2{ right                   :calc((2 / 12)*100%); }
+.end-md-3{ right                   :calc((3 / 12)*100%); }
+.end-md-4{ right                   :calc((4 / 12)*100%); }
+.end-md-5{ right                   :calc((5 / 12)*100%); }
+.end-md-6{ right                   :calc((6 / 12)*100%); }
+.end-md-7{ right                   :calc((7 / 12)*100%); }
+.end-md-8{ right                   :calc((8 / 12)*100%); }
+.end-md-9{ right                   :calc((9 / 12)*100%); }
+.end-md-10{ right                  :calc((10 / 12)*100%); }
+.end-md-11{ right                  :calc((11 / 12)*100%); }
+.end-md-12{ right                  :calc((12 / 12)*100%); }
+.top-md-0{ top                     :calc((0 / 12)*100%); }
+.top-md-1{ top                     :calc((1 / 12)*100%); }
+.top-md-2{ top                     :calc((2 / 12)*100%); }
+.top-md-3{ top                     :calc((3 / 12)*100%); }
+.top-md-4{ top                     :calc((4 / 12)*100%); }
+.top-md-5{ top                     :calc((5 / 12)*100%); }
+.top-md-6{ top                     :calc((6 / 12)*100%); }
+.top-md-7{ top                     :calc((7 / 12)*100%); }
+.top-md-8{ top                     :calc((8 / 12)*100%); }
+.top-md-9{ top                     :calc((9 / 12)*100%); }
+.top-md-10{ top                    :calc((10 / 12)*100%); }
+.top-md-11{ top                    :calc((11 / 12)*100%); }
+.top-md-12{ top                    :calc((12 / 12)*100%); }
+.bottom-md-0{ bottom               :calc((0 / 12)*100%); }
+.bottom-md-1{ bottom               :calc((1 / 12)*100%); }
+.bottom-md-2{ bottom               :calc((2 / 12)*100%); }
+.bottom-md-3{ bottom               :calc((3 / 12)*100%); }
+.bottom-md-4{ bottom               :calc((4 / 12)*100%); }
+.bottom-md-5{ bottom               :calc((5 / 12)*100%); }
+.bottom-md-6{ bottom               :calc((6 / 12)*100%); }
+.bottom-md-7{ bottom               :calc((7 / 12)*100%); }
+.bottom-md-8{ bottom               :calc((8 / 12)*100%); }
+.bottom-md-9{ bottom               :calc((9 / 12)*100%); }
+.bottom-md-10{ bottom              :calc((10 / 12)*100%); }
+.bottom-md-11{ bottom              :calc((11 / 12)*100%); }
+.bottom-md-12{ bottom              :calc((12 / 12)*100%); }
+}
+@media (min-width                  : 992px) {
+.start-lg-0{ left                  :calc((0 / 12)*100%); }
+.start-lg-1{ left                  :calc((1 / 12)*100%); }
+.start-lg-2{ left                  :calc((2 / 12)*100%); }
+.start-lg-3{ left                  :calc((3 / 12)*100%); }
+.start-lg-4{ left                  :calc((4 / 12)*100%); }
+.start-lg-5{ left                  :calc((5 / 12)*100%); }
+.start-lg-6{ left                  :calc((6 / 12)*100%); }
+.start-lg-7{ left                  :calc((7 / 12)*100%); }
+.start-lg-8{ left                  :calc((8 / 12)*100%); }
+.start-lg-9{ left                  :calc((9 / 12)*100%); }
+.start-lg-10{ left                 :calc((10 / 12)*100%); }
+.start-lg-11{ left                 :calc((11 / 12)*100%); }
+.start-lg-12{ left                 :calc((12 / 12)*100%); }
+.end-lg-0{ right                   :calc((0 / 12)*100%); }
+.end-lg-1{ right                   :calc((1 / 12)*100%); }
+.end-lg-2{ right                   :calc((2 / 12)*100%); }
+.end-lg-3{ right                   :calc((3 / 12)*100%); }
+.end-lg-4{ right                   :calc((4 / 12)*100%); }
+.end-lg-5{ right                   :calc((5 / 12)*100%); }
+.end-lg-6{ right                   :calc((6 / 12)*100%); }
+.end-lg-7{ right                   :calc((7 / 12)*100%); }
+.end-lg-8{ right                   :calc((8 / 12)*100%); }
+.end-lg-9{ right                   :calc((9 / 12)*100%); }
+.end-lg-10{ right                  :calc((10 / 12)*100%); }
+.end-lg-11{ right                  :calc((11 / 12)*100%); }
+.end-lg-12{ right                  :calc((12 / 12)*100%); }
+.top-lg-0{ top                     :calc((0 / 12)*100%); }
+.top-lg-1{ top                     :calc((1 / 12)*100%); }
+.top-lg-2{ top                     :calc((2 / 12)*100%); }
+.top-lg-3{ top                     :calc((3 / 12)*100%); }
+.top-lg-4{ top                     :calc((4 / 12)*100%); }
+.top-lg-5{ top                     :calc((5 / 12)*100%); }
+.top-lg-6{ top                     :calc((6 / 12)*100%); }
+.top-lg-7{ top                     :calc((7 / 12)*100%); }
+.top-lg-8{ top                     :calc((8 / 12)*100%); }
+.top-lg-9{ top                     :calc((9 / 12)*100%); }
+.top-lg-10{ top                    :calc((10 / 12)*100%); }
+.top-lg-11{ top                    :calc((11 / 12)*100%); }
+.top-lg-12{ top                    :calc((12 / 12)*100%); }
+.bottom-lg-0{ bottom               :calc((0 / 12)*100%); }
+.bottom-lg-1{ bottom               :calc((1 / 12)*100%); }
+.bottom-lg-2{ bottom               :calc((2 / 12)*100%); }
+.bottom-lg-3{ bottom               :calc((3 / 12)*100%); }
+.bottom-lg-4{ bottom               :calc((4 / 12)*100%); }
+.bottom-lg-5{ bottom               :calc((5 / 12)*100%); }
+.bottom-lg-6{ bottom               :calc((6 / 12)*100%); }
+.bottom-lg-7{ bottom               :calc((7 / 12)*100%); }
+.bottom-lg-8{ bottom               :calc((8 / 12)*100%); }
+.bottom-lg-9{ bottom               :calc((9 / 12)*100%); }
+.bottom-lg-10{ bottom              :calc((10 / 12)*100%); }
+.bottom-lg-11{ bottom              :calc((11 / 12)*100%); }
+.bottom-lg-12{ bottom              :calc((12 / 12)*100%); }
+}
+@media (min-width                  : 1200px) {
+.start-xl-0{ left                  :calc((0 / 12)*100%); }
+.start-xl-1{ left                  :calc((1 / 12)*100%); }
+.start-xl-2{ left                  :calc((2 / 12)*100%); }
+.start-xl-3{ left                  :calc((3 / 12)*100%); }
+.start-xl-4{ left                  :calc((4 / 12)*100%); }
+.start-xl-5{ left                  :calc((5 / 12)*100%); }
+.start-xl-6{ left                  :calc((6 / 12)*100%); }
+.start-xl-7{ left                  :calc((7 / 12)*100%); }
+.start-xl-8{ left                  :calc((8 / 12)*100%); }
+.start-xl-9{ left                  :calc((9 / 12)*100%); }
+.start-xl-10{ left                 :calc((10 / 12)*100%); }
+.start-xl-11{ left                 :calc((11 / 12)*100%); }
+.start-xl-12{ left                 :calc((12 / 12)*100%); }
+.end-xl-0{ right                   :calc((0 / 12)*100%); }
+.end-xl-1{ right                   :calc((1 / 12)*100%); }
+.end-xl-2{ right                   :calc((2 / 12)*100%); }
+.end-xl-3{ right                   :calc((3 / 12)*100%); }
+.end-xl-4{ right                   :calc((4 / 12)*100%); }
+.end-xl-5{ right                   :calc((5 / 12)*100%); }
+.end-xl-6{ right                   :calc((6 / 12)*100%); }
+.end-xl-7{ right                   :calc((7 / 12)*100%); }
+.end-xl-8{ right                   :calc((8 / 12)*100%); }
+.end-xl-9{ right                   :calc((9 / 12)*100%); }
+.end-xl-10{ right                  :calc((10 / 12)*100%); }
+.end-xl-11{ right                  :calc((11 / 12)*100%); }
+.end-xl-12{ right                  :calc((12 / 12)*100%); }
+.top-xl-0{ top                     :calc((0 / 12)*100%); }
+.top-xl-1{ top                     :calc((1 / 12)*100%); }
+.top-xl-2{ top                     :calc((2 / 12)*100%); }
+.top-xl-3{ top                     :calc((3 / 12)*100%); }
+.top-xl-4{ top                     :calc((4 / 12)*100%); }
+.top-xl-5{ top                     :calc((5 / 12)*100%); }
+.top-xl-6{ top                     :calc((6 / 12)*100%); }
+.top-xl-7{ top                     :calc((7 / 12)*100%); }
+.top-xl-8{ top                     :calc((8 / 12)*100%); }
+.top-xl-9{ top                     :calc((9 / 12)*100%); }
+.top-xl-10{ top                    :calc((10 / 12)*100%); }
+.top-xl-11{ top                    :calc((11 / 12)*100%); }
+.top-xl-12{ top                    :calc((12 / 12)*100%); }
+.bottom-xl-0{ bottom               :calc((0 / 12)*100%); }
+.bottom-xl-1{ bottom               :calc((1 / 12)*100%); }
+.bottom-xl-2{ bottom               :calc((2 / 12)*100%); }
+.bottom-xl-3{ bottom               :calc((3 / 12)*100%); }
+.bottom-xl-4{ bottom               :calc((4 / 12)*100%); }
+.bottom-xl-5{ bottom               :calc((5 / 12)*100%); }
+.bottom-xl-6{ bottom               :calc((6 / 12)*100%); }
+.bottom-xl-7{ bottom               :calc((7 / 12)*100%); }
+.bottom-xl-8{ bottom               :calc((8 / 12)*100%); }
+.bottom-xl-9{ bottom               :calc((9 / 12)*100%); }
+.bottom-xl-10{ bottom              :calc((10 / 12)*100%); }
+.bottom-xl-11{ bottom              :calc((11 / 12)*100%); }
+.bottom-xl-12{ bottom              :calc((12 / 12)*100%); }
+}
+@media (min-width                  : 1400px) {
+.start-xxl-0{ left                 :calc((0 / 12)*100%); }
+.start-xxl-1{ left                 :calc((1 / 12)*100%); }
+.start-xxl-2{ left                 :calc((2 / 12)*100%); }
+.start-xxl-3{ left                 :calc((3 / 12)*100%); }
+.start-xxl-4{ left                 :calc((4 / 12)*100%); }
+.start-xxl-5{ left                 :calc((5 / 12)*100%); }
+.start-xxl-6{ left                 :calc((6 / 12)*100%); }
+.start-xxl-7{ left                 :calc((7 / 12)*100%); }
+.start-xxl-8{ left                 :calc((8 / 12)*100%); }
+.start-xxl-9{ left                 :calc((9 / 12)*100%); }
+.start-xxl-10{ left                :calc((10 / 12)*100%); }
+.start-xxl-11{ left                :calc((11 / 12)*100%); }
+.start-xxl-12{ left                :calc((12 / 12)*100%); }
+.end-xxl-0{ right                  :calc((0 / 12)*100%); }
+.end-xxl-1{ right                  :calc((1 / 12)*100%); }
+.end-xxl-2{ right                  :calc((2 / 12)*100%); }
+.end-xxl-3{ right                  :calc((3 / 12)*100%); }
+.end-xxl-4{ right                  :calc((4 / 12)*100%); }
+.end-xxl-5{ right                  :calc((5 / 12)*100%); }
+.end-xxl-6{ right                  :calc((6 / 12)*100%); }
+.end-xxl-7{ right                  :calc((7 / 12)*100%); }
+.end-xxl-8{ right                  :calc((8 / 12)*100%); }
+.end-xxl-9{ right                  :calc((9 / 12)*100%); }
+.end-xxl-10{ right                 :calc((10 / 12)*100%); }
+.end-xxl-11{ right                 :calc((11 / 12)*100%); }
+.end-xxl-12{ right                 :calc((12 / 12)*100%); }
+.top-xxl-0{ top                    :calc((0 / 12)*100%); }
+.top-xxl-1{ top                    :calc((1 / 12)*100%); }
+.top-xxl-2{ top                    :calc((2 / 12)*100%); }
+.top-xxl-3{ top                    :calc((3 / 12)*100%); }
+.top-xxl-4{ top                    :calc((4 / 12)*100%); }
+.top-xxl-5{ top                    :calc((5 / 12)*100%); }
+.top-xxl-6{ top                    :calc((6 / 12)*100%); }
+.top-xxl-7{ top                    :calc((7 / 12)*100%); }
+.top-xxl-8{ top                    :calc((8 / 12)*100%); }
+.top-xxl-9{ top                    :calc((9 / 12)*100%); }
+.top-xxl-10{ top                   :calc((10 / 12)*100%); }
+.top-xxl-11{ top                   :calc((11 / 12)*100%); }
+.top-xxl-12{ top                   :calc((12 / 12)*100%); }
+.bottom-xxl-0{ bottom              :calc((0 / 12)*100%); }
+.bottom-xxl-1{ bottom              :calc((1 / 12)*100%); }
+.bottom-xxl-2{ bottom              :calc((2 / 12)*100%); }
+.bottom-xxl-3{ bottom              :calc((3 / 12)*100%); }
+.bottom-xxl-4{ bottom              :calc((4 / 12)*100%); }
+.bottom-xxl-5{ bottom              :calc((5 / 12)*100%); }
+.bottom-xxl-6{ bottom              :calc((6 / 12)*100%); }
+.bottom-xxl-7{ bottom              :calc((7 / 12)*100%); }
+.bottom-xxl-8{ bottom              :calc((8 / 12)*100%); }
+.bottom-xxl-9{ bottom              :calc((9 / 12)*100%); }
+.bottom-xxl-10{ bottom             :calc((10 / 12)*100%); }
+.bottom-xxl-11{ bottom             :calc((11 / 12)*100%); }
+.bottom-xxl-12{ bottom             :calc((12 / 12)*100%); }
+}

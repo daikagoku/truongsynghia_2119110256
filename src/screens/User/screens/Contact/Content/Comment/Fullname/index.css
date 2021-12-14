@@ -1,0 +1,23 @@
+.user-fullname{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	font-weight: bolder;
+	font-size: 1.2em;
+	padding: 0.2em 0.5em;
+}
+.user-fullname .icon{
+	margin: 0 0.5em;
+    font-size: 1.2em;
+}
+.user-fullname .text{
+	display: block;
+    text-align: left;
+    flex: 1 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

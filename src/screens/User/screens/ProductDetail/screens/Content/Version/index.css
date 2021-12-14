@@ -1,0 +1,17 @@
+.product-card-detail-version{
+	display: flex;
+}
+.product-card-detail-version-button{
+	height: 1.6em;
+	padding: 0.1em 0.5em;
+	margin: 0 0.4em;
+}
+.product-card-detail-version-button:first-child{
+	margin-left: 0;
+}
+.product-card-detail-version-button:not(.disabled)[href].active{
+	color: var(--highlight-color);
+	background: var(--highlight-background);
+	border-color:0.02em solid var(--highlight-border);
+	box-shadow: 0 0 0.05em 0.05em var(--highlight-shadow);
+}

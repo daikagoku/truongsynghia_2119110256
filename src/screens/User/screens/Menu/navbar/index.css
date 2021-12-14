@@ -1,0 +1,6 @@
+.main-menu-navbar{
+	display: flex;
+	padding: 0;
+	width: 100%;
+	justify-content: space-around;
+}

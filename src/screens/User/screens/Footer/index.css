@@ -1,0 +1,11 @@
+#footer{
+	background: #24272e;
+	color: #fff;
+}
+
+.footer_widget{
+	height: 100%;
+}
+.footer_widget .widget-body{
+	padding: 0.5em;
+}

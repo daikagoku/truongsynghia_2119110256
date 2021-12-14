@@ -1,0 +1,11 @@
+.contact-content-option{
+	display: flex;
+	position: absolute;
+	bottom: 0;
+	transform: translateY(50%);
+}
+.contact-comment-option-button{
+	width: 1.6em;
+	height: 1.6em;
+	margin: 0 0.2em;
+}
