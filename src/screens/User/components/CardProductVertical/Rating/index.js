@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-import RatingStar from '../../../../../components/rating/RatingStar';
-=======
 import RatingStar from '../../../../../components/rating/Star/';
->>>>>>> 98686d6b66d7c0ad8bcc9904205f163f4ca76f37
 import {useContext} from 'react';
 import {ProductContext} from '../index';
 import './index.css';
