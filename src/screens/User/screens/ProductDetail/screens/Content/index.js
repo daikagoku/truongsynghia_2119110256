@@ -48,14 +48,18 @@ export default function() {
 							<span>Số lượng:</span>
 						</div>
 						<div className="col col-8">
-							<div className="row">
+							<div className="d-flex">
 								<ProductDetailInputNumber />
 							</div>
 						</div>
 					</div>
 					<div className="row product-detail-attr">
-						<div className="col col-12">
-							<ProductDetailAddToCartButton />
+						<div className="col col-4">
+						</div>
+						<div className="col col-8">
+							<div className="d-flex">
+								<ProductDetailAddToCartButton />
+							</div>
 						</div>
 					</div>	
 				</Widget>

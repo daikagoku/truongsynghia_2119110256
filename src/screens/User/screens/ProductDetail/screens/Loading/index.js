@@ -1,4 +1,4 @@
-import LoadingDualRing from '../../../../../../../../components/Loading/LoadingDualRing/';
+import LoadingDualRing from '../../../../../../components/Loading/LoadingDualRing/';
 import './index.css';
 
 export default function() {

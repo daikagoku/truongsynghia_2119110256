@@ -10,6 +10,7 @@ import {
 import useFetch from '../../../../core/useFetch';
 import {ProductContext,ProductDetailContext,initData,reducer} from './init';
 import ProductDetailContent from './screens/Content/';
+import ProductDetailLoading from './screens/Loading/';
 export default memo(function({history,location,match}){
 	const [state,dispatch] = useReducer(reducer,initData);
 	const [listItem] = useFetch({
@@ -42,9 +43,9 @@ export default memo(function({history,location,match}){
 				</ProductDetailContext.Provider>
 			)
 		}else{
-			return <>Không tồn tại sản phẩm</>
+			return <ProductDetailLoading/>
 		}
 	}else{
-		return <>Không tồn tại sản phẩm</>
+		return <ProductDetailLoading/>
 	}
 });
