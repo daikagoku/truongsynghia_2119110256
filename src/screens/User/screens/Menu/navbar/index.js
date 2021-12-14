@@ -1,44 +1,44 @@
 import {useImperativeHandle,forwardRef,memo,useRef} from 'react';
 import clsx from 'clsx';
 import {List} from '../../../../../components/';
-import MainMenuItem from './item/';
+import MainMenuNavbarItem from './item/';
 import './index.css';
 function MenuNavbar({...props},ref){
 	return(
 		<List ref={ref} className="main-menu-navbar d-none d-md-flex">                 
-            <MainMenuItem      
+            <MainMenuNavbarItem      
               keyApi ="category"
               filter ={(item)=>(item.parent==="mobile")}
               icon   ="fas fa-mobile-alt"
               text   ="Điện thoại"
             />
-            <MainMenuItem 
+            <MainMenuNavbarItem 
               keyApi ="category"
               filter ={(item)=>(item.parent==="laptop")}
               icon   ="fas fa-laptop"
               text   ="Laptop"
             />
-            <MainMenuItem 
+            <MainMenuNavbarItem 
               icon ="fas fa-tablet-alt"
               text ="Tablet"
             />
-            <MainMenuItem 
+            <MainMenuNavbarItem 
               keyApi ="category"
               filter ={(item)=>(item.parent==="phu-kien")}
               icon   ="fas fa-headphones-alt"
               text   ="Phụ kiện"
             />
-            <MainMenuItem 
+            <MainMenuNavbarItem 
               to   ="/tool"
               icon ="fas fa-tools"
               text ="Sửa chữa"
             />
-            <MainMenuItem 
+            <MainMenuNavbarItem 
               to   ="/flash-sale"
               icon ="fas fa-bolt"
               text ="Flash Sale"
             />
-            <MainMenuItem 
+            <MainMenuNavbarItem 
               to   ="/post"
               icon ="fas fa-clipboard-list"
               text ="Tin tức"

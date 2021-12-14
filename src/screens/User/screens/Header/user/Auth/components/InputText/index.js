@@ -17,6 +17,7 @@ export default forwardRef(function({prefix,name,label,icon,validate,...props},re
 		ref:inputRef,
 		className:"auth-input",
 		onFocus:function(event){
+			event.target.scrollIntoView({block:"center"});
 			if(validate && typeof(validate) === 'function'){
 				dispatch({
 					key:'set_validity',

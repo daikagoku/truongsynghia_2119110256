@@ -24,14 +24,14 @@ export default memo(forwardRef(function MainMenuOffcanvas(props,ref){
             text   ="Laptop"
           />
           <MenuItem 
-            icon ="fas fa-tablet-alt"
-            text ="Tablet"
-          />
-          <MenuItem 
             keyApi ="category"
             filter ={(item)=>(item.parent==="phu-kien")}
             icon   ="fas fa-headphones-alt"
             text   ="Phụ kiện"
+          />
+          <MenuItem 
+            icon ="fas fa-tablet-alt"
+            text ="Tablet"
           />
           <MenuItem 
             to   ="/tool"

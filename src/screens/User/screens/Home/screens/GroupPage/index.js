@@ -4,6 +4,7 @@ import clsx from 'clsx';
 import './index.css';
 import useFetch from '../../../../../../core/useFetch';
 import GroupPageContent from './screens/Content/';
+import GroupPageLoading from './screens/Loading/';
 import GroupPagePagination from './screens/Pagination/';
 
 import {HomePageContext,initData,reducer} from './init';
@@ -47,7 +48,10 @@ function GroupPage({...props}){
                     
                     </div>
                     <div className="row home-page-body">
-                        <GroupPageContent listItem={products}/>
+                        {
+                            products.length>0 && <GroupPageContent listItem={products}/>
+                                             || <GroupPageLoading />
+                        }
                     </div>
                     <div className="row home-page-footer">
                         <GroupPagePagination/>

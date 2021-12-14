@@ -46,7 +46,6 @@ function useReponsive(props){
 			body.removeEventListener('resize',handleResize);
 		}
 	},[]);
-	console.log(state)
 	return [{list,state}];
 }
 export default useReponsive;

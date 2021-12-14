@@ -1,4 +1,4 @@
-import {useState,memo} from "react";
+import {useState,memo,useMemo} from "react";
 import clsx from 'clsx';
 import './index.css';
 import useFetch from '../../../../../../core/useFetch';
@@ -16,9 +16,11 @@ export default memo(function({api,keyApi,filter,sort,buttonClass,className,icon,
   const itemAttr={
     className:"main-menu-offcanvas-item square-btn"
   };
-  itemAttr.onClick = function(_event){
-    setHover(!hover);
-  }
+  itemAttr.onClick = useMemo(function(){
+    return function(_event){
+      setHover(!hover);
+    }
+  },[hover])
   if(className !== undefined){
     itemAttr.className+=" "+className;
   };

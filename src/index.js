@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import LocalStorage from './core/LocalStorage';
 import {BrowserRouter} from "react-router-dom";
+console.log(ReactDOM);
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>

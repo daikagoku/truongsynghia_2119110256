@@ -4,7 +4,7 @@ import './index.css';
 import useFetch from '../../../../../../core/useFetch';
 import {Item,Button,Icon} from '../../../../../../components/';
 import MainMenuNavbarDrop from './drop/';
-export default memo(function MainMenuItem({api,keyApi,filter,sort,buttonClass,className,icon,text,children,...props}){
+export default memo(function MainMenuNavbarItem({api,keyApi,filter,sort,buttonClass,className,icon,text,children,...props}){
   const [hover,setHover] = useState(false);
   const [listItem] = useFetch({
         initData:[],

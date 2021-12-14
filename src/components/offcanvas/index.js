@@ -1,38 +1,34 @@
 import {Button,Icon} from '../index';
 import {
-        useReducer,
+        useState,
+        useMemo,
         useImperativeHandle,
         useRef,
         forwardRef,
         useEffect,
         memo} from 'react';
 import './index.css';
-import {initData,reducer} from './init';
 export default memo(forwardRef(function Offcanvas({show,prefix,title,position,widthSize,heightSize,children},ref) {
-  const [state,dispatch] = useReducer(reducer,initData);
+  const [showState,setShowState] = useState(false);
   const thisRef = useRef({});
-  const handle = {
+  const handle = useMemo(function(){
+    return{
         show:function(){
-          dispatch({
-            key:"set_show",
-            value:true
-          })
+          setShowState(true);
         },close:function(){
-          dispatch({
-            key:"set_show",
-            value:false
-          })
-        },toggle:function(){
-          dispatch({
-            key:"set_show",
-            value:!state.open
-          })
+          setShowState(false);
         }
-      }
+    }
+  },[]);
+  handle.toggle=useMemo(function(){
+    return function(){
+      setShowState(!showState);
+    }
+  },[showState])
   useImperativeHandle(ref,function(){
     return{
       ...thisRef.current,
-      state:state,
+      state:showState,
       handle:handle
     }
   },[])
@@ -47,10 +43,9 @@ export default memo(forwardRef(function Offcanvas({show,prefix,title,position,wi
       handle.show();
     }
   },[show]);
-  if(state.show){
+  if(showState){
     contentAttr.className+=" show";
   };
-
   const viewAttr={
     className:"offcanvas-view"
   };
