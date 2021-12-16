@@ -1,4 +1,4 @@
-import {useImperativeHandle,useRef,forwardRef,memo,useMemo} from 'react';
+import {useImperativeHandle,useEffect,useRef,forwardRef,memo,useMemo} from 'react';
 import './index.css';
 
 const Image = (function(){
@@ -24,7 +24,7 @@ const Image = (function(){
 			}else{
 				return "/img/default-no-img.jpg";
 			};
-		},[src])
+		},[src]);
 		useImperativeHandle(ref,()=>({
 				...thisRef.current
 			})
