@@ -1,7 +1,7 @@
 import {useRef,useContext,useMemo} from 'react';
 import clsx from 'clsx';
 import {ProductThumbnailContext} from '../index';
-import {Thumbnail,Image,Button} from '../../../../../../../../components/';
+import {Thumbnail,Image,Button} from '../../../../../../../../../components/';
 import './index.css';
 export default function({data,index}){
 	const {slide,dots,listItem} = useContext(ProductThumbnailContext);

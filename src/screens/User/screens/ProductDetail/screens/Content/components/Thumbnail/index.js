@@ -1,10 +1,10 @@
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import {createContext,useContext,useRef,useState,useEffect,useMemo,memo} from 'react';
-import {Thumbnail,Image} from '../../../../../../../components/';
-import {ProductContext,ProductDetailContext} from '../../../init';
+import {Thumbnail,Image} from '../../../../../../../../components/';
+import {ProductContext,ProductDetailContext} from '../../../../init';
 import './index.css';
-import {BackButton,NextButton} from './Buttons/';
+import {BackButton,NextButton} from './ItemButtons/';
 import {BackDotButton,NextDotButton} from './DotButtons/';
 
 import SlideItem from './Item/';

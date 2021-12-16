@@ -1,7 +1,7 @@
-import './index.css';
+import styles from './index.module.css';
 import {useContext} from 'react';
-import {ProductContext,ProductDetailContext} from '../../../init';
-import {Link} from '../../../../../../../components/';
+import {ProductContext,ProductDetailContext} from '../../../../init';
+import {Link} from '../../../../../../../../components/';
 export default function ProductTitle({...props}){
 	const [state,dispatch] = useContext(ProductDetailContext) ?? {};
 	const data = useContext(ProductContext);
@@ -15,7 +15,7 @@ export default function ProductTitle({...props}){
 	const attr={
 		...props
 	};
-	attr.className+=" product-detail-title";
+	attr.className+=" "+styles.title;
 	if(data.title !== undefined){
 		text = data.title;
 	};

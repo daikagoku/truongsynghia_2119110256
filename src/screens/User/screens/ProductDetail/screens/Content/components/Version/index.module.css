@@ -1,15 +1,9 @@
-.product-card-detail-version{
-	display: flex;
-}
-.product-card-detail-version-button{
+.button{
 	height: 1.6em;
 	padding: 0.1em 0.5em;
 	margin: 0 0.4em;
 }
-.product-card-detail-version-button:first-child{
-	margin-left: 0;
-}
-.product-card-detail-version-button:not(.disabled)[href].active{
+.active{
 	color: var(--highlight-color);
 	background: var(--highlight-background);
 	border-color:0.02em solid var(--highlight-border);

@@ -1,6 +1,6 @@
 
 import {useContext,memo} from 'react';
-import {ProductContext} from '../../../../init';
+import {ProductContext} from '../../../../../init';
 export default function ProductCurrendPrice({styles,attr}){
 	const data = useContext(ProductContext) ?? {};
 	let version = {}

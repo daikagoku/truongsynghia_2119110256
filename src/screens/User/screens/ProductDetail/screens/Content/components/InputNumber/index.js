@@ -1,7 +1,7 @@
 import {useContext,useEffect,memo,useMemo,useState} from 'react';
 import clsx from 'clsx';
-import {Input,Button,Icon} from '../../../../../../../components/';
-import {ProductDetailContext} from '../../../init';
+import {Input,Button,Icon} from '../../../../../../../../components/';
+import {ProductDetailContext} from '../../../../init';
 import styles from './index.module.css';
 export default memo(function(){
 	const [state,dispatch] = useContext(ProductDetailContext);

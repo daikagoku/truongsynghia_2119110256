@@ -1,67 +1,39 @@
-import {
-	Widget
-} from '../../../../../../components/';
+import {Widget} from '../../../../../../components/';
 import './index.css';
+import Title from './components/Title/';
+import Price from './components/Price/';
+import Version from './components/Version/';
+import Thumbnail from './components/Thumbnail/';
+import InputNumber from './components/InputNumber/';
+import AddToCartButton from './components/AddToCartButton/';
 
-import ProductDetailThumbnail from './Thumbnail/';
 
-import ProductDetailTitle from './Title/';
-import ProductDetailVersion from './Version/';
-import ProductDetailInputNumber from './InputNumber/';
-import ProductDetailAddToCartButton from './AddToCartButton/';
+import Attr from './screens/Attr/';
 
-import ProductDetailPrice from './Price/';
 export default function() {
 	return(
 		<div className="product-detail-content row">
 			<div className="col col-12 col-md-6 py-1">
 				<Widget prefix="product-detail-content" className="h-12">
-					<ProductDetailThumbnail />
+					<Thumbnail />
 				</Widget>
 			</div>
 			<div className="col col-12 col-md-6 py-1">
 				<Widget prefix="product-detail-content" className="h-12">
-					<ProductDetailTitle />
-					<div className="row product-detail-attr">
-						<div className="col col-4 justify-content-center">
-							<span>Phiên bản:</span>
-						</div>
-						<div className="col col-8">
-							<div className="d-flex">
-								<ProductDetailVersion />
-							</div>
-						</div>
-					</div>
-					<div className="row product-detail-attr">
-						<div className="col col-4 justify-content-center">
-							<span>Giá:</span>
-						</div>
-						<div className="col col-8">
-							<div className="d-flex">
-								<ProductDetailPrice sale/>
-								<ProductDetailPrice root/>
-							</div>
-						</div>
-					</div>
-					<div className="row product-detail-attr">
-						<div className="col col-4 justify-content-center">
-							<span>Số lượng:</span>
-						</div>
-						<div className="col col-8">
-							<div className="d-flex">
-								<ProductDetailInputNumber />
-							</div>
-						</div>
-					</div>
-					<div className="row product-detail-attr">
-						<div className="col col-4">
-						</div>
-						<div className="col col-8">
-							<div className="d-flex">
-								<ProductDetailAddToCartButton />
-							</div>
-						</div>
-					</div>	
+					<Title />
+					<Attr title="Phiên bản">
+						<Version />
+					</Attr>
+
+					<Attr title="Giá">
+						<Price/>
+						<Price root/>
+					</Attr>
+
+					<Attr title="Số lượng">
+						<InputNumber />
+					</Attr>
+					<AddToCartButton />	
 				</Widget>
 			</div>
 		</div>

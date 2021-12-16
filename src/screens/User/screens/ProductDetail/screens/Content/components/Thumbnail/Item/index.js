@@ -1,6 +1,6 @@
 import {useRef,useContext,useMemo} from 'react';
 import {ProductThumbnailContext} from '../index';
-import {Thumbnail,Image} from '../../../../../../../../components/';
+import {Thumbnail,Image} from '../../../../../../../../../components/';
 import './index.css';
 export default function({data,index}){
 	const {slide,listItem} = useContext(ProductThumbnailContext);

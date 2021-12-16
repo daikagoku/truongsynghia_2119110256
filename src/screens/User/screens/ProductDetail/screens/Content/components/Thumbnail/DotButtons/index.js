@@ -1,9 +1,9 @@
 import {useContext,useMemo} from "react";
 import clsx from 'clsx';
 import {ProductThumbnailContext} from '../index';
-import {List,Item,Button,Icon} from '../../../../../../../../components/';
+import {List,Item,Button,Icon} from '../../../../../../../../../components/';
 import styles from "./index.module.css";
-export  function BackButton({isDisabled,...props}){
+export  function BackDotButton({isDisabled,...props}){
 	const {slide,dots} = useContext(ProductThumbnailContext);
 	const buttonAttr = {
 			className:clsx(styles.button,{disabled:isDisabled},"square-btn",styles.back),
@@ -20,7 +20,7 @@ export  function BackButton({isDisabled,...props}){
 		</Button>
 	)
 };
-export function NextButton({isDisabled,...props}){
+export function NextDotButton({isDisabled,...props}){
 	const {slide,dots} = useContext(ProductThumbnailContext);
 	const buttonAttr = {
 			className:clsx(styles.button,{disabled:isDisabled},"square-btn",styles.next),
