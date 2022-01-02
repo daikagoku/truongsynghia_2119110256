@@ -1,25 +1,5 @@
 
-.main-menu-navbar-dropdown-content{
-	min-width: 100%;
-	padding:0.5em;
-	visibility: hidden;
-	position: absolute;
-	top: 100%;
-	left: 0%;
-	transform: translateY(-10px);
-	border-radius: 0.5rem;
-	z-index: 10;
-	color: var(--second-color);
-	background: var(--second-background);
-	border: 0.05em solid var(--second-border);
-	box-shadow: 0.05em 0.05em 0 0 var(--second-shadow);
-	transition: transform 0.5s, visibility 0s 0.3s;
-}
-.main-menu-navbar-dropdown-content.active{
-	transform: translateY(0px);
-	visibility: visible;
-	transition: transform 0.5s, visibility 0s;
-}
+
 .main-menu-navbar-dropdown-list{
 	display: flex;
 	flex-direction: column;

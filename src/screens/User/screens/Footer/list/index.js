@@ -3,19 +3,19 @@ import {memo,useState} from "react";
 import useFetch from '../../../../../core/useFetch';
 import {List} from '../../../../../components/';
 import FooterListItem from './Item/';
-function FooterList({keyApi,filter,className,...props}) {
-	const [listItem] = useFetch({
+function FooterList({keyApi,params,filter,className,...props}) {
+	const [fetchData] = useFetch({
 		initData:[],
 		keyApi:keyApi,
-		filter:filter
+		params:params,
+		position:"footer-list"
 	});
-	const [state,setState] = useState();
   return (
     <List className="footer-list">
     	{
-    		listItem.map(function(item,index){
+    		fetchData.results.map(function(item,index){
     			return(
-			  		<FooterListItem onClick={()=>(setState(index))} item={item} key={index} />
+			  		<FooterListItem item={item} key={index} />
     		)})
     	}
     </List>
@@ -23,3 +23,8 @@ function FooterList({keyApi,filter,className,...props}) {
 }
 
 export default memo(FooterList);
+/*
+{
+    		
+    	}
+    	*/

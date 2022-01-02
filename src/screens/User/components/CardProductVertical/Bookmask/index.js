@@ -3,20 +3,14 @@ import {useContext,memo} from 'react';
 import {ProductContext} from '../index';
 export default memo(function ProductBookmask({...props}){
 	const data = useContext(ProductContext);
-	let version = {}
-	if(Array.isArray(data.versions)){
-		version=data.versions.find(function(_version,_index){
-			return _version.id===data.version;
-		})
-	};
 	const attr = {...props};
 	attr.className+=" product-boolmask";
-	if(version !== undefined && version.price !== undefined && version.price !== 0 && version.salePrice !== undefined){
+	if(data.price && data.price !== 0 && data.salePrice){
 		let text ="";
-		if(version.salePrice === 0){
+		if(data.salePrice === 0){
 			text ="Sale 0$";
 		}else{
-			let percent = Math.round(100 - version.salePrice * 100 / version.price);
+			let percent = Math.round(100 - data.salePrice * 100 / data.price);
 			text ="Giảm "+percent+"%";
 		}
 		return(

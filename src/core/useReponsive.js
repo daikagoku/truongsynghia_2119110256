@@ -12,22 +12,29 @@ function useReponsive(props){
 		}
 	},[])
 	const [state,setState] = useState({
-		width:"none",
-		height:"none"
+			width:"none",
+			height:"none"
 	});
+	const checkReponsive = useMemo(function(){
+		return function(key,size){
+			let _tmp = state[key];
+				Object.keys(list ?? {}).find(function(_key){
+					if(Number(list[_key]) >= size){
+						return true;
+					}else{
+						_tmp = _key;
+						return false;
+					}
+					
+			});
+			return _tmp;
+
+		}
+	},[])
 	useEffect(function(){
 		const body = document.querySelector("#App");
 		function handleSetSate(key,size){
-			let _tmp = state[key];
-			Object.keys(list ?? {}).find(function(_key){
-				if(Number(list[_key]) >= size){
-					return true;
-				}else{
-					_tmp = _key;
-					return false;
-				}
-				
-			});
+			let _tmp = checkReponsive(key,size);
 			setState(function(prevState){
 				return{
 					...prevState,
@@ -41,6 +48,7 @@ function useReponsive(props){
 		};
 		handleSetSate("width",body.offsetWidth);
 		handleSetSate("height",body.offsetHeight);
+
 		window.addEventListener('resize',handleResize);
 		return function(){
 			body.removeEventListener('resize',handleResize);

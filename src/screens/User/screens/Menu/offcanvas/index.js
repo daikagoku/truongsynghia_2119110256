@@ -13,19 +13,19 @@ export default memo(forwardRef(function MainMenuOffcanvas(props,ref){
 			 	<List className="main-menu-offcanvas">
 					<MenuItem      
             keyApi ="category"
-            filter ={(item)=>(item.parent==="mobile")}
+            params = {{parent_alias:'dien-thoai'}}
             icon   ="fas fa-mobile-alt"
             text   ="Điện thoại"
           />
           <MenuItem 
             keyApi ="category"
-            filter ={(item)=>(item.parent==="laptop")}
+            params = {{parent_alias:'may-tinh'}}
             icon   ="fas fa-laptop"
             text   ="Laptop"
           />
           <MenuItem 
             keyApi ="category"
-            filter ={(item)=>(item.parent==="phu-kien")}
+            params = {{parent_alias:'phu-kien'}}
             icon   ="fas fa-headphones-alt"
             text   ="Phụ kiện"
           />
@@ -44,7 +44,7 @@ export default memo(forwardRef(function MainMenuOffcanvas(props,ref){
             text ="Flash Sale"
           />
           <MenuItem 
-            to   ="/post"
+            keyApi ="topic"
             icon ="fas fa-clipboard-list"
             text ="Tin tức"
           />

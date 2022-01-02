@@ -8,6 +8,7 @@ import GroupPostContent from './Content/';
 export default memo(function GroupPost() {
 	const [listItem] = useFetch({
         initData:[],
+        position:"home-post",
         keyApi:'post'
     });
 	return(

@@ -6,12 +6,12 @@ import GroupPage from './screens/GroupPage/';
 import './index.css';
 export default function({props}) {
 	return(
-		<div id="home">
+		<section id="home">
 			<Slide />
 			<GroupFlashSale />
 			<GroupPage />
 			<GroupPost />
-		</div>
+		</section>
 
 	)
 }

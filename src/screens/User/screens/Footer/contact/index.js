@@ -3,21 +3,20 @@ import React,{memo} from 'react';
 import useFetch from '../../../../../core/useFetch';
 import {List,Item,Button,Icon} from '../../../../../components/';
 function FooterContact({className,...props}) {
-  const [infos] = useFetch({
+  const [fetchData] = useFetch({
     initData:[],
-    keyApi:"info",
-    handle:function(data){
-       const newData = [];
-       Object.keys(data).forEach(function(key){
-          if(listInfo[key] !== undefined ){
-            const newObj = {
-              ...listInfo[key],
-              ...data[key]
-            };
-            newData.push(newObj)
-          }
-       })
-       return newData;
+    keyApi:"about",
+    position:"footer-contact",
+    handle:function(datas){
+      return datas.reduce(function(result,data,index){
+        if(listInfo[data.alias]){
+          result.push( {
+            ...data,
+            ...listInfo[data.alias]
+          })
+        }
+        return result;
+      },[]);
     }
   });
   const listInfo = {
@@ -51,7 +50,7 @@ function FooterContact({className,...props}) {
   return (
       	<List className="footer-contact-list">
           {
-            infos.map(function(item,index){
+            fetchData.results.map(function(item,index){
                 const _buttonAttr = {...buttonAttr};
                 _buttonAttr.className +=" "+item.buttonClass;
                 return(

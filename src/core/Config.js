@@ -1,24 +1,23 @@
-export const BASE_URL     = process.env.PUBLIC_URL;
-export const BASE_API     = BASE_URL+"/api";
-export const API_PRODUCT  = BASE_API+"/product.json";
-export const API_POST     = BASE_API+"/post.json";
-export const API_RATING   = BASE_API+"/rating.json";
-export const API_COMMENT  = BASE_API+"/comment.json";
-export const API_SLIDE    = BASE_API+"/image.json";
-export const API_WIDGET   = BASE_API+"/widget.json";
-export const API_USER     = BASE_API+"/user.json";
-export const API_CATEGORY = BASE_API+"/category.json";
-export const API_TOPIC    = BASE_API+"/topic.json";
-export const API_INFO     = BASE_API+"/info.json";
+export const BASE_URL     = "process.env.PUBLIC_URL";
+export const BASE_API     = "http://localhost:9999/api";
+export const API_PRODUCT  = BASE_API+"/product";
+export const API_CATEGORY = BASE_API+"/category";
+export const API_TOPIC    = BASE_API+"/topic";
+export const API_IMAGE    = BASE_API+"/image";
+export const API_POST     = BASE_API+"/post";
+export const API_RATING   = BASE_API+"/rating";
+export const API_COMMENT  = BASE_API+"/comment";
+export const API_USER     = BASE_API+"/user";
+export const API_ABOUT    = BASE_API+"/about";
 export const API = {
 	product  : API_PRODUCT,
 	post     : API_POST,
 	rating   : API_RATING,
 	category : API_CATEGORY,
 	topic    : API_TOPIC,
+	image    : API_IMAGE,
 	comment  : API_COMMENT,
 	user     : API_USER,
-	slide    : API_SLIDE,
-	info     : API_INFO
+	about    : API_ABOUT
 
 };

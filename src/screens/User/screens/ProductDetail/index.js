@@ -8,44 +8,29 @@ import {
 	useMemo
 } from 'react';
 import useFetch from '../../../../core/useFetch';
-import {ProductContext,ProductDetailContext,initData,reducer} from './init';
 import ProductDetailContent from './screens/Content/';
 import ProductDetailLoading from './screens/Loading/';
+import ProductDetailThumbnail from './screens/Thumbnail/';
 export default memo(function({history,location,match}){
-	const [state,dispatch] = useReducer(reducer,initData);
-	const [listItem] = useFetch({
-        initData:[],
-        keyApi:'product'
-    });
 	const args = location.pathname.split("/");
-	const data = listItem.find(function(item){
-			return item.alias === args[2];
-	});
-	if(data){
-		const version = data.versions.find(function(version){
-			return version.alias === args[3];
-		});
-		if(version){
-			data.version = version.id;
-			const sectionAttr = {
-				id:"product-detail",
-				className:"container-fluid"
-			}
-			return(
-				<ProductDetailContext.Provider value ={[state,dispatch]}>
-					<ProductContext.Provider value ={{...data}}>
-						<section {...sectionAttr}>
-							<div className="container">
-								<ProductDetailContent/>
-							</div>
-						</section>
-					</ProductContext.Provider>
-				</ProductDetailContext.Provider>
-			)
-		}else{
-			return <ProductDetailLoading/>
-		}
-	}else{
-		return <ProductDetailLoading/>
-	}
+	const sectionAttr = {
+			id:"product-detail",
+			className:"container-fluid"
+		};
+		return(
+			<section {...sectionAttr}>
+				<div className="container">
+					<div className="row">
+						<ProductDetailThumbnail
+							args = {args}
+							className="col col-12 col-md-6 p-1"
+						/>
+						<ProductDetailContent
+							args = {args}
+							className="col col-12 col-md-6 p-1"
+						/>
+					</div>
+				</div>
+			</section>
+		)
 });

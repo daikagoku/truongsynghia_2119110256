@@ -1,15 +1,14 @@
 import {Form} from '../../../../../../../../components/';
-import {createContext,useReducer} from 'react';
+import {AuthContext} from '../../init';
+import {useReducer} from 'react';
 import clsx from 'clsx';
 import './index.css';
-export const FormContact = createContext({});
-export default function({children,initData,reducer,className,...props}){
-	const [state,dispatch] = useReducer(reducer,initData);
+export default function({children,value,className,...props}){
 	return (
-	<FormContact.Provider value={[state,dispatch]}>
+	<AuthContext.Provider value={value}>
 		<Form className={clsx("auth-form",{[className]:className})} {...props}>
 			{children}
 		</Form>
-	</FormContact.Provider>
+	</AuthContext.Provider>
 	)
 }

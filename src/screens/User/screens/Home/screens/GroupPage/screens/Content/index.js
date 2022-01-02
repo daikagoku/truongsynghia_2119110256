@@ -10,13 +10,13 @@ function HomePageContent({listItem,...props}){
 	const [state,dispatch] = useContext(HomePageContext);
 	useEffect(function(){
         function setViewItem(int){
+            console.log("home-page change limit to "+int,reponsive.state.width)
             dispatch({
                 key:'set_limit',
                 value:int
             })
         };
     	switch(reponsive.state.width){
-            case "none":
             case "xs":
                 setViewItem(8)
                 break;

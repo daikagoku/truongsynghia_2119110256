@@ -7,23 +7,11 @@ import GroupLoading from './screens/Loading/';
 import GroupTitle from './screens/Title';
 import GroupTime from './screens/Time';
 function GroupFlashSale(props) {
-    const [listItem] = useFetch({
+    const [fetchData] = useFetch({
         initData:[],
         keyApi:'product',
-        handle:function(data){
-            const newProducts = data.reduce(function(results,{versions,..._product}){
-                versions.forEach(function({id,...__version},__index){
-                    if(__version.salePrice !== undefined){
-                        const __product = {..._product};
-                        __product.version=id;
-                        __product.versions=versions;
-                        results.push(__product);
-                    }
-                });
-                return results;
-            },[]);
-            return newProducts;
-        }
+        uriApi:'/sale_price',
+        position:'home-sale'
     });
     return (
         <div className="container-fluid group-flash-sale-section px-0">
@@ -43,9 +31,9 @@ function GroupFlashSale(props) {
                          </div>
                          <div className="row group-flash-sale-body">
                             {
-                                listItem.length !== 0 && <GroupSlide listItem={listItem} />
-                                                      || <GroupLoading />
-                            }  
+                                fetchData.isLoading && <GroupLoading />
+                                || <GroupSlide data={fetchData} />
+                            }
                          </div>
                      </div>
                 </div>
@@ -54,3 +42,11 @@ function GroupFlashSale(props) {
     );
 };    
 export default memo(GroupFlashSale);
+
+/*
+
+*/
+// {
+                            //     
+                            //     
+                            // }  

@@ -2,9 +2,9 @@ import {useState,useEffect,useRef,useMemo,memo} from 'react';
 import { BrowserRouter, Route} from "react-router-dom";
 import {Button,Icon,Modal} from '../../../../../../components/';
 import './index.css';
-import {AuthContext} from './init';
-import FormLogin from './scenes/form/Login/';
-import FormRegister from './scenes/form/Register/';
+import {FormContext} from './init';
+import FormLogin from './screens/Login/';
+import FormRegister from './screens/Register/';
 export default memo(function Auth({...props}){
 	const [state,setState] = useState({action:"login"});
 	const modalRef= useRef();
@@ -22,14 +22,14 @@ export default memo(function Auth({...props}){
 		return {
 			onClick:function(e){
 				if(modalRef.current){
-					modalRef.current.handle.show();
+					modalRef.current.show();
 					handle.setAction('login');
 				}
 			}
 		}
 	},[]);
 	return(
-		<AuthContext.Provider value={[state,handle]}>
+		<FormContext.Provider value={[state,handle]}>
 			<Button className="header-button circle-btn"{...buttonAttr}>
 				<Icon icon="fas fa-user"/>
 			</Button>
@@ -39,6 +39,6 @@ export default memo(function Auth({...props}){
 					{state.action ==='register' && <FormRegister />}
 				</Modal>
 			</div>
-		</AuthContext.Provider>
+		</FormContext.Provider>
 	)
 })

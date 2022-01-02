@@ -33,7 +33,7 @@ export default memo(function MainMenuItem({buttonClass,className,icon,text,child
   return(
     <Item {...itemAttr}>
         <Button {...buttonAttr}>
-            <Icon hover={hover}icon={icon}className="fs-2 mx-1"/>
+            <Icon isHover={hover}icon={icon}className="fs-2 mx-1"/>
             <span {...buttonTextAttr}>{text}</span>
         </Button>
         {children}

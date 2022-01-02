@@ -1,36 +1,40 @@
 import './index.css';
-import {memo} from 'react';
+import {memo,useMemo} from 'react';
 import useFetch from '../../../../../core/useFetch';
 import {List,Item,Icon} from '../../../../../components/';
-function FooterInfo({listItem,className,...props}) {
-	const [infos] = useFetch({
+function FooterInfo({className,...props}) {
+	const [fetchData] = useFetch({
     initData:[],
-    keyApi:"info",
-    handle:function(data){
-       const newData = [];
-       Object.keys(data).forEach(function(key){
-          if(listInfo[key] !== undefined ){
-            const newObj = {
-              ...listInfo[key],
-              ...data[key]
-            };
-            newData.push(newObj)
-          }
-       })
-       return newData;
+    position:"footer-info",
+    keyApi:"about",
+    handle:function(datas){
+      return datas.reduce(function(result,data,index){
+        if(listInfo[data.alias]){
+          result.push( {
+            ...data,
+            ...listInfo[data.alias]
+          })
+        }
+        return result;
+      },[]);
     }
   });
-  const listInfo = {
-  	copyright:{
-  		icon:"far fa-copyright"
-  	},
-    address:{
-      icon:"fas fa-map-marker-alt"
-    },
-    phone:{
-    	icon:"fas fa-phone-alt"
+  const listInfo = useMemo(function(){
+    return {
+      copyright:{
+        icon:"far fa-copyright",
+        value:"@"
+      },
+      address:{
+        icon:"fas fa-map-marker-alt",
+        value:"@"
+      },
+      phone:{
+        icon:"fas fa-phone-alt",
+        value:"@"
+      }
     }
-  };
+  },[]);
   const itemAttr={
       className:"footer-info-item"
   };
@@ -40,24 +44,15 @@ function FooterInfo({listItem,className,...props}) {
   return (
     <List className="footer-info-list">
     	{
-        infos.map((item,index)=>(
+        fetchData.results.map((item,index)=>(
             <Item key={index} {...itemAttr}>
               <Icon icon={item.icon} className="footer-info-icon"/>
               <span className="footer-info-label">{item.title}:</span>
-              <List className="footer-info-list-btn">
-                {
-                  item.value.map((str,index)=>(
-                      <Item key={index} className="d-flex">
-                        <span {...buttonAttr}>{str}</span>
-                      </Item>
-                  ))
-                } 
-              </List>
+              <span {...buttonAttr}>{item.value}</span>
             </Item>
         ))
       }
     </List>
   );
 }
-
 export default memo(FooterInfo);

@@ -3,21 +3,21 @@
     "id":0,
     "title":"Acer Nitro 5 AN515 57 51G6",
     "alias":"acer-nitro-5-an515-57-51g6",
-    "rating":3.356156010368606,
+    "rating":4.806502153672118,
     "content":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,",
     "versions":[
       {
         "id":0,
-        "alias":"3gb-32gb",
         "title":"3GB-32GB",
+        "alias":"3gb-32gb",
         "image":"/upload/Acer Nitro 5 AN515 57 51G6.png" ,
-        "price":29.38
+        "price":319.49
       },{
         "id":1,
-        "alias":"4gb-64gb",
         "title":"4GB-64GB",
+        "alias":"4gb-64gb",
         "image":"/upload/Acer Nitro 5 AN515 57 51G6.png" ,
-        "price":35.26
+        "price":383.39
       }
     ],
       "albums":[
@@ -42,21 +42,21 @@
     "id":1,
     "title":"Acer Nitro 5 Gaming AN515",
     "alias":"acer-nitro-5-gaming-an515",
-    "rating":4.403637911688842,
+    "rating":1.0879293148947533,
     "content":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,",
     "versions":[
       {
         "id":0,
-        "alias":"3gb-32gb",
         "title":"3GB-32GB",
+        "alias":"3gb-32gb",
         "image":"/upload/Acer Nitro 5 Gaming AN515.png" ,
-        "price":6.40
+        "price":285.52
       },{
         "id":1,
-        "alias":"4gb-64gb",
         "title":"4GB-64GB",
+        "alias":"4gb-64gb",
         "image":"/upload/Acer Nitro 5 Gaming AN515.png" ,
-        "price":7.68
+        "price":342.62
       }
     ],
       "albums":[
@@ -81,21 +81,22 @@
     "id":2,
     "title":"Asus ROG Phone 3",
     "alias":"asus-rog-phone-3",
-    "rating":2.639735096674211,
+    "rating":2.7525586993681364,
     "content":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,",
     "versions":[
       {
         "id":0,
-        "alias":"3gb-32gb",
         "title":"3GB-32GB",
+        "alias":"3gb-32gb",
         "image":"/upload/Asus ROG Phone 3.png" ,
-        "price":26.51
+        "price":80.82
       },{
         "id":1,
-        "alias":"4gb-64gb",
         "title":"4GB-64GB",
+        "alias":"4gb-64gb",
         "image":"/upload/Asus ROG Phone 3.png" ,
-        "price":31.81
+        "price":96.98 ,
+        "salePrice":22.34
       }
     ],
       "albums":[
@@ -120,22 +121,21 @@
     "id":3,
     "title":"Asus ROG Phone 5",
     "alias":"asus-rog-phone-5",
-    "rating":1.3720381006768823,
+    "rating":2.1004842702215623,
     "content":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,",
     "versions":[
       {
         "id":0,
-        "alias":"3gb-32gb",
         "title":"3GB-32GB",
+        "alias":"3gb-32gb",
         "image":"/upload/Asus ROG Phone 5.png" ,
-        "price":141.30 ,
-        "salePrice":62.52
+        "price":156.58
       },{
         "id":1,
-        "alias":"4gb-64gb",
         "title":"4GB-64GB",
+        "alias":"4gb-64gb",
         "image":"/upload/Asus ROG Phone 5.png" ,
-        "price":169.56
+        "price":187.90
       }
     ],
       "albums":[
@@ -160,19 +160,23 @@
     "id":4,
     "title":"Asus TUF Gaming FX706HE",
     "alias":"asus-tuf-gaming-fx706he",
-    "rating":1.967864035642719,
+    "rating":3.9415983562886794,
     "content":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,",
     "versions":[
       {
         "id":0,
-        "alias":"3gb-32gb",
         "title":"3GB-32GB",
-        "image":"/upload/Asus TUF Gaming FX706HE.png"
+        "alias":"3gb-32gb",
+        "image":"/upload/Asus TUF Gaming FX706HE.png" ,
+        "price":343.55 ,
+        "salePrice":93.34
       },{
         "id":1,
-        "alias":"4gb-64gb",
         "title":"4GB-64GB",
-        "image":"/upload/Asus TUF Gaming FX706HE.png"
+        "alias":"4gb-64gb",
+        "image":"/upload/Asus TUF Gaming FX706HE.png" ,
+        "price":412.26 ,
+        "salePrice":100.66
       }
     ],
       "albums":[
@@ -197,21 +201,21 @@
     "id":5,
     "title":"Asus VivoBook A515EA",
     "alias":"asus-vivobook-a515ea",
-    "rating":4.313475788567294,
+    "rating":2.4723351132319635,
     "content":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,",
     "versions":[
       {
         "id":0,
-        "alias":"3gb-32gb",
         "title":"3GB-32GB",
+        "alias":"3gb-32gb",
         "image":"/upload/Asus VivoBook A515EA.png" ,
-        "price":137.48
+        "price":254.89
       },{
         "id":1,
-        "alias":"4gb-64gb",
         "title":"4GB-64GB",
+        "alias":"4gb-64gb",
         "image":"/upload/Asus VivoBook A515EA.png" ,
-        "price":164.98
+        "price":305.87
       }
     ],
       "albums":[
@@ -236,22 +240,19 @@
     "id":6,
     "title":"Dell Gaming G15",
     "alias":"dell-gaming-g15",
-    "rating":2.882422963088198,
+    "rating":2.6926061060717976,
     "content":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,",
     "versions":[
       {
         "id":0,
-        "alias":"3gb-32gb",
         "title":"3GB-32GB",
-        "image":"/upload/Dell Gaming G15.png" ,
-        "price":127.88 ,
-        "salePrice":44.65
+        "alias":"3gb-32gb",
+        "image":"/upload/Dell Gaming G15.png"
       },{
         "id":1,
-        "alias":"4gb-64gb",
         "title":"4GB-64GB",
-        "image":"/upload/Dell Gaming G15.png" ,
-        "price":153.46
+        "alias":"4gb-64gb",
+        "image":"/upload/Dell Gaming G15.png"
       }
     ],
       "albums":[
@@ -276,22 +277,22 @@
     "id":7,
     "title":"Dell Inspiron 15 3511",
     "alias":"dell-inspiron-15-3511",
-    "rating":4.125404582804103,
+    "rating":4.409107253589442,
     "content":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,",
     "versions":[
       {
         "id":0,
-        "alias":"3gb-32gb",
         "title":"3GB-32GB",
+        "alias":"3gb-32gb",
         "image":"/upload/Dell Inspiron 15 3511.png" ,
-        "price":146.56 ,
-        "salePrice":32.22
+        "price":385.25
       },{
         "id":1,
-        "alias":"4gb-64gb",
         "title":"4GB-64GB",
+        "alias":"4gb-64gb",
         "image":"/upload/Dell Inspiron 15 3511.png" ,
-        "price":175.87
+        "price":462.30 ,
+        "salePrice":217.25
       }
     ],
       "albums":[
@@ -316,22 +317,21 @@
     "id":8,
     "title":"Dell Vostro 3400",
     "alias":"dell-vostro-3400",
-    "rating":2.1317525950727543,
+    "rating":2.487612280492267,
     "content":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,",
     "versions":[
       {
         "id":0,
-        "alias":"3gb-32gb",
         "title":"3GB-32GB",
+        "alias":"3gb-32gb",
         "image":"/upload/Dell Vostro 3400.png" ,
-        "price":186.06 ,
-        "salePrice":54.38
+        "price":215.80
       },{
         "id":1,
-        "alias":"4gb-64gb",
         "title":"4GB-64GB",
+        "alias":"4gb-64gb",
         "image":"/upload/Dell Vostro 3400.png" ,
-        "price":223.27
+        "price":258.96
       }
     ],
       "albums":[
@@ -356,21 +356,22 @@
     "id":9,
     "title":"GIGABYTE Gaming G5",
     "alias":"gigabyte-gaming-g5",
-    "rating":2.643534368006333,
+    "rating":3.8141911772669532,
     "content":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,",
     "versions":[
       {
         "id":0,
-        "alias":"3gb-32gb",
         "title":"3GB-32GB",
+        "alias":"3gb-32gb",
         "image":"/upload/GIGABYTE Gaming G5.png" ,
-        "price":116.11
+        "price":327.17
       },{
         "id":1,
-        "alias":"4gb-64gb",
         "title":"4GB-64GB",
+        "alias":"4gb-64gb",
         "image":"/upload/GIGABYTE Gaming G5.png" ,
-        "price":139.33
+        "price":392.60 ,
+        "salePrice":119.47
       }
     ],
       "albums":[
@@ -395,22 +396,21 @@
     "id":10,
     "title":"HP Envy 13 ba1031TU",
     "alias":"hp-envy-13-ba1031tu",
-    "rating":0.5989428982536305,
+    "rating":1.4793413479108064,
     "content":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,",
     "versions":[
       {
         "id":0,
-        "alias":"3gb-32gb",
         "title":"3GB-32GB",
+        "alias":"3gb-32gb",
         "image":"/upload/HP Envy 13 ba1031TU.png" ,
-        "price":13.76 ,
-        "salePrice":6.72
+        "price":294.97
       },{
         "id":1,
-        "alias":"4gb-64gb",
         "title":"4GB-64GB",
+        "alias":"4gb-64gb",
         "image":"/upload/HP Envy 13 ba1031TU.png" ,
-        "price":16.51
+        "price":353.96
       }
     ],
       "albums":[
@@ -435,21 +435,23 @@
     "id":11,
     "title":"HP Gaming VICTUS 16",
     "alias":"hp-gaming-victus-16",
-    "rating":1.9893170148058592,
+    "rating":3.6540767711576483,
     "content":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,",
     "versions":[
       {
         "id":0,
-        "alias":"3gb-32gb",
         "title":"3GB-32GB",
+        "alias":"3gb-32gb",
         "image":"/upload/HP Gaming VICTUS 16.png" ,
-        "price":88.17
+        "price":72.80 ,
+        "salePrice":26.20
       },{
         "id":1,
-        "alias":"4gb-64gb",
         "title":"4GB-64GB",
+        "alias":"4gb-64gb",
         "image":"/upload/HP Gaming VICTUS 16.png" ,
-        "price":105.80
+        "price":87.36 ,
+        "salePrice":30.77
       }
     ],
       "albums":[
@@ -474,21 +476,22 @@
     "id":12,
     "title":"iPhone 11",
     "alias":"iphone-11",
-    "rating":3.921180923935262,
+    "rating":1.8961491601275104,
     "content":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,",
     "versions":[
       {
         "id":0,
-        "alias":"3gb-32gb",
         "title":"3GB-32GB",
+        "alias":"3gb-32gb",
         "image":"/upload/iPhone 11.png" ,
-        "price":184.39
+        "price":375.54 ,
+        "salePrice":116.43
       },{
         "id":1,
-        "alias":"4gb-64gb",
         "title":"4GB-64GB",
+        "alias":"4gb-64gb",
         "image":"/upload/iPhone 11.png" ,
-        "price":221.27
+        "price":450.65
       }
     ],
       "albums":[
@@ -513,18 +516,18 @@
     "id":13,
     "title":"iPhone 12 Pro",
     "alias":"iphone-12-pro",
-    "rating":1.5911749225690175,
+    "rating":4.9594512238395785,
     "content":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,",
     "versions":[
       {
         "id":0,
-        "alias":"3gb-32gb",
         "title":"3GB-32GB",
+        "alias":"3gb-32gb",
         "image":"/upload/iPhone 12 Pro.png"
       },{
         "id":1,
-        "alias":"4gb-64gb",
         "title":"4GB-64GB",
+        "alias":"4gb-64gb",
         "image":"/upload/iPhone 12 Pro.png"
       }
     ],
@@ -550,22 +553,22 @@
     "id":14,
     "title":"iPhone 13 Mini",
     "alias":"iphone-13-mini",
-    "rating":1.7563170425133179,
+    "rating":4.3891669039408585,
     "content":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,",
     "versions":[
       {
         "id":0,
-        "alias":"3gb-32gb",
         "title":"3GB-32GB",
+        "alias":"3gb-32gb",
         "image":"/upload/iPhone 13 Mini.png" ,
-        "price":49.93
+        "price":384.59
       },{
         "id":1,
-        "alias":"4gb-64gb",
         "title":"4GB-64GB",
+        "alias":"4gb-64gb",
         "image":"/upload/iPhone 13 Mini.png" ,
-        "price":59.92 ,
-        "salePrice":45.79
+        "price":461.51 ,
+        "salePrice":214.50
       }
     ],
       "albums":[
@@ -590,21 +593,23 @@
     "id":15,
     "title":"iPhone 13 Pro Max",
     "alias":"iphone-13-pro-max",
-    "rating":0.936327461743367,
+    "rating":3.4430914724928865,
     "content":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,",
     "versions":[
       {
         "id":0,
-        "alias":"3gb-32gb",
         "title":"3GB-32GB",
+        "alias":"3gb-32gb",
         "image":"/upload/iPhone 13 Pro Max.png" ,
-        "price":39.18
+        "price":59.58 ,
+        "salePrice":24.40
       },{
         "id":1,
-        "alias":"4gb-64gb",
         "title":"4GB-64GB",
+        "alias":"4gb-64gb",
         "image":"/upload/iPhone 13 Pro Max.png" ,
-        "price":47.02
+        "price":71.50 ,
+        "salePrice":35.47
       }
     ],
       "albums":[
@@ -629,22 +634,19 @@
     "id":16,
     "title":"iPhone SE",
     "alias":"iphone-se",
-    "rating":2.4924754098814472,
+    "rating":2.853886796636238,
     "content":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,",
     "versions":[
       {
         "id":0,
-        "alias":"3gb-32gb",
         "title":"3GB-32GB",
-        "image":"/upload/iPhone SE.png" ,
-        "price":89.15
+        "alias":"3gb-32gb",
+        "image":"/upload/iPhone SE.png"
       },{
         "id":1,
-        "alias":"4gb-64gb",
         "title":"4GB-64GB",
-        "image":"/upload/iPhone SE.png" ,
-        "price":106.98 ,
-        "salePrice":73.11
+        "alias":"4gb-64gb",
+        "image":"/upload/iPhone SE.png"
       }
     ],
       "albums":[
@@ -669,21 +671,21 @@
     "id":17,
     "title":"iPhone XR",
     "alias":"iphone-xr",
-    "rating":3.663133425374181,
+    "rating":2.2401617818088138,
     "content":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,",
     "versions":[
       {
         "id":0,
-        "alias":"3gb-32gb",
         "title":"3GB-32GB",
+        "alias":"3gb-32gb",
         "image":"/upload/iPhone XR.png" ,
-        "price":182.90
+        "price":246.14
       },{
         "id":1,
-        "alias":"4gb-64gb",
         "title":"4GB-64GB",
+        "alias":"4gb-64gb",
         "image":"/upload/iPhone XR.png" ,
-        "price":219.48
+        "price":295.37
       }
     ],
       "albums":[
@@ -708,19 +710,22 @@
     "id":18,
     "title":"MacBook Air M1",
     "alias":"macbook-air-m1",
-    "rating":0.3897547013331759,
+    "rating":0.2698809356277032,
     "content":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,",
     "versions":[
       {
         "id":0,
-        "alias":"3gb-32gb",
         "title":"3GB-32GB",
-        "image":"/upload/MacBook Air M1.png"
+        "alias":"3gb-32gb",
+        "image":"/upload/MacBook Air M1.png" ,
+        "price":43.08 ,
+        "salePrice":9.85
       },{
         "id":1,
-        "alias":"4gb-64gb",
         "title":"4GB-64GB",
-        "image":"/upload/MacBook Air M1.png"
+        "alias":"4gb-64gb",
+        "image":"/upload/MacBook Air M1.png" ,
+        "price":51.70
       }
     ],
       "albums":[
@@ -745,21 +750,21 @@
     "id":19,
     "title":"MacBook Pro M1",
     "alias":"macbook-pro-m1",
-    "rating":0.9045458150225671,
+    "rating":0.4420774782179626,
     "content":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,",
     "versions":[
       {
         "id":0,
-        "alias":"3gb-32gb",
         "title":"3GB-32GB",
+        "alias":"3gb-32gb",
         "image":"/upload/MacBook Pro M1.png" ,
-        "price":151.09
+        "price":286.10
       },{
         "id":1,
-        "alias":"4gb-64gb",
         "title":"4GB-64GB",
+        "alias":"4gb-64gb",
         "image":"/upload/MacBook Pro M1.png" ,
-        "price":181.31
+        "price":343.32
       }
     ],
       "albums":[
@@ -784,19 +789,22 @@
     "id":20,
     "title":"MSI Gaming GE66 Raider 11UG",
     "alias":"msi-gaming-ge66-raider-11ug",
-    "rating":1.8083992939913351,
+    "rating":2.5264458368937435,
     "content":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,",
     "versions":[
       {
         "id":0,
-        "alias":"3gb-32gb",
         "title":"3GB-32GB",
-        "image":"/upload/MSI Gaming GE66 Raider 11UG.png"
+        "alias":"3gb-32gb",
+        "image":"/upload/MSI Gaming GE66 Raider 11UG.png" ,
+        "price":25.13
       },{
         "id":1,
-        "alias":"4gb-64gb",
         "title":"4GB-64GB",
-        "image":"/upload/MSI Gaming GE66 Raider 11UG.png"
+        "alias":"4gb-64gb",
+        "image":"/upload/MSI Gaming GE66 Raider 11UG.png" ,
+        "price":30.16 ,
+        "salePrice":14.41
       }
     ],
       "albums":[
@@ -821,21 +829,19 @@
     "id":21,
     "title":"MSI Gaming GE66 Raider 11UH",
     "alias":"msi-gaming-ge66-raider-11uh",
-    "rating":3.8759413466898818,
+    "rating":4.249399516054058,
     "content":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,",
     "versions":[
       {
         "id":0,
-        "alias":"3gb-32gb",
         "title":"3GB-32GB",
-        "image":"/upload/MSI Gaming GE66 Raider 11UH.png" ,
-        "price":89.75
+        "alias":"3gb-32gb",
+        "image":"/upload/MSI Gaming GE66 Raider 11UH.png"
       },{
         "id":1,
-        "alias":"4gb-64gb",
         "title":"4GB-64GB",
-        "image":"/upload/MSI Gaming GE66 Raider 11UH.png" ,
-        "price":107.70
+        "alias":"4gb-64gb",
+        "image":"/upload/MSI Gaming GE66 Raider 11UH.png"
       }
     ],
       "albums":[
@@ -860,21 +866,21 @@
     "id":22,
     "title":"MSI Gaming GF65 Thin 10UE",
     "alias":"msi-gaming-gf65-thin-10ue",
-    "rating":3.365184775807255,
+    "rating":1.9577977792642953,
     "content":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,",
     "versions":[
       {
         "id":0,
-        "alias":"3gb-32gb",
         "title":"3GB-32GB",
+        "alias":"3gb-32gb",
         "image":"/upload/MSI Gaming GF65 Thin 10UE.png" ,
-        "price":103.49
+        "price":31.03
       },{
         "id":1,
-        "alias":"4gb-64gb",
         "title":"4GB-64GB",
+        "alias":"4gb-64gb",
         "image":"/upload/MSI Gaming GF65 Thin 10UE.png" ,
-        "price":124.19
+        "price":37.24
       }
     ],
       "albums":[
@@ -899,21 +905,23 @@
     "id":23,
     "title":"MSI Gaming GS66 Stealth 11UG",
     "alias":"msi-gaming-gs66-stealth-11ug",
-    "rating":0.9209813321785454,
+    "rating":2.345161745038171,
     "content":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,",
     "versions":[
       {
         "id":0,
-        "alias":"3gb-32gb",
         "title":"3GB-32GB",
+        "alias":"3gb-32gb",
         "image":"/upload/MSI Gaming GS66 Stealth 11UG.png" ,
-        "price":115.22
+        "price":54.76 ,
+        "salePrice":23.82
       },{
         "id":1,
-        "alias":"4gb-64gb",
         "title":"4GB-64GB",
+        "alias":"4gb-64gb",
         "image":"/upload/MSI Gaming GS66 Stealth 11UG.png" ,
-        "price":138.26
+        "price":65.71 ,
+        "salePrice":17.36
       }
     ],
       "albums":[
@@ -938,21 +946,21 @@
     "id":24,
     "title":"MSI Modern 15 A11MU",
     "alias":"msi-modern-15-a11mu",
-    "rating":0.27369862845945225,
+    "rating":0.8114296324826875,
     "content":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,",
     "versions":[
       {
         "id":0,
-        "alias":"3gb-32gb",
         "title":"3GB-32GB",
+        "alias":"3gb-32gb",
         "image":"/upload/MSI Modern 15 A11MU.png" ,
-        "price":127.89
+        "price":386.66
       },{
         "id":1,
-        "alias":"4gb-64gb",
         "title":"4GB-64GB",
+        "alias":"4gb-64gb",
         "image":"/upload/MSI Modern 15 A11MU.png" ,
-        "price":153.47
+        "price":463.99
       }
     ],
       "albums":[
@@ -977,22 +985,21 @@
     "id":25,
     "title":"Nokia X10 5G",
     "alias":"nokia-x10-5g",
-    "rating":1.4264116238527036,
+    "rating":2.9298404883832028,
     "content":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,",
     "versions":[
       {
         "id":0,
-        "alias":"3gb-32gb",
         "title":"3GB-32GB",
+        "alias":"3gb-32gb",
         "image":"/upload/Nokia X10 5G.png" ,
-        "price":113.07 ,
-        "salePrice":53.35
+        "price":136.23
       },{
         "id":1,
-        "alias":"4gb-64gb",
         "title":"4GB-64GB",
+        "alias":"4gb-64gb",
         "image":"/upload/Nokia X10 5G.png" ,
-        "price":135.68
+        "price":163.48
       }
     ],
       "albums":[
@@ -1017,22 +1024,19 @@
     "id":26,
     "title":"OnePlus 7 Pro",
     "alias":"oneplus-7-pro",
-    "rating":2.263286118403174,
+    "rating":3.007096329469068,
     "content":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,",
     "versions":[
       {
         "id":0,
-        "alias":"3gb-32gb",
         "title":"3GB-32GB",
-        "image":"/upload/OnePlus 7 Pro.png" ,
-        "price":119.72
+        "alias":"3gb-32gb",
+        "image":"/upload/OnePlus 7 Pro.png"
       },{
         "id":1,
-        "alias":"4gb-64gb",
         "title":"4GB-64GB",
-        "image":"/upload/OnePlus 7 Pro.png" ,
-        "price":143.66 ,
-        "salePrice":97.91
+        "alias":"4gb-64gb",
+        "image":"/upload/OnePlus 7 Pro.png"
       }
     ],
       "albums":[
@@ -1057,19 +1061,21 @@
     "id":27,
     "title":"OnePlus 8 Pro",
     "alias":"oneplus-8-pro",
-    "rating":3.703543018143537,
+    "rating":0.27041409751225154,
     "content":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,",
     "versions":[
       {
         "id":0,
-        "alias":"3gb-32gb",
         "title":"3GB-32GB",
-        "image":"/upload/OnePlus 8 Pro.png"
+        "alias":"3gb-32gb",
+        "image":"/upload/OnePlus 8 Pro.png" ,
+        "price":252.90
       },{
         "id":1,
-        "alias":"4gb-64gb",
         "title":"4GB-64GB",
-        "image":"/upload/OnePlus 8 Pro.png"
+        "alias":"4gb-64gb",
+        "image":"/upload/OnePlus 8 Pro.png" ,
+        "price":303.48
       }
     ],
       "albums":[
@@ -1094,21 +1100,21 @@
     "id":28,
     "title":"OnePlus Nord N10 5G",
     "alias":"oneplus-nord-n10-5g",
-    "rating":2.745550992842496,
+    "rating":0.5452785534537696,
     "content":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,",
     "versions":[
       {
         "id":0,
-        "alias":"3gb-32gb",
         "title":"3GB-32GB",
+        "alias":"3gb-32gb",
         "image":"/upload/OnePlus Nord N10 5G.png" ,
-        "price":144.08
+        "price":327.34
       },{
         "id":1,
-        "alias":"4gb-64gb",
         "title":"4GB-64GB",
+        "alias":"4gb-64gb",
         "image":"/upload/OnePlus Nord N10 5G.png" ,
-        "price":172.90
+        "price":392.81
       }
     ],
       "albums":[
@@ -1133,21 +1139,22 @@
     "id":29,
     "title":"OPPO A55",
     "alias":"oppo-a55",
-    "rating":3.2193162672563655,
+    "rating":1.4519506720747666,
     "content":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,",
     "versions":[
       {
         "id":0,
-        "alias":"3gb-32gb",
         "title":"3GB-32GB",
+        "alias":"3gb-32gb",
         "image":"/upload/OPPO A55.png" ,
-        "price":60.69
+        "price":388.11 ,
+        "salePrice":102.23
       },{
         "id":1,
-        "alias":"4gb-64gb",
         "title":"4GB-64GB",
+        "alias":"4gb-64gb",
         "image":"/upload/OPPO A55.png" ,
-        "price":72.83
+        "price":465.73
       }
     ],
       "albums":[
@@ -1172,21 +1179,22 @@
     "id":30,
     "title":"Oppo A74",
     "alias":"oppo-a74",
-    "rating":2.1884991597811143,
+    "rating":2.272871211448079,
     "content":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,",
     "versions":[
       {
         "id":0,
-        "alias":"3gb-32gb",
         "title":"3GB-32GB",
+        "alias":"3gb-32gb",
         "image":"/upload/Oppo A74.png" ,
-        "price":6.51
+        "price":356.87
       },{
         "id":1,
-        "alias":"4gb-64gb",
         "title":"4GB-64GB",
+        "alias":"4gb-64gb",
         "image":"/upload/Oppo A74.png" ,
-        "price":7.81
+        "price":428.24 ,
+        "salePrice":167.42
       }
     ],
       "albums":[
@@ -1211,19 +1219,22 @@
     "id":31,
     "title":"OPPO Reno5 5G",
     "alias":"oppo-reno5-5g",
-    "rating":4.952982932193414,
+    "rating":2.6884003174784388,
     "content":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,",
     "versions":[
       {
         "id":0,
-        "alias":"3gb-32gb",
         "title":"3GB-32GB",
-        "image":"/upload/OPPO Reno5 5G.png"
+        "alias":"3gb-32gb",
+        "image":"/upload/OPPO Reno5 5G.png" ,
+        "price":103.43 ,
+        "salePrice":49.83
       },{
         "id":1,
-        "alias":"4gb-64gb",
         "title":"4GB-64GB",
-        "image":"/upload/OPPO Reno5 5G.png"
+        "alias":"4gb-64gb",
+        "image":"/upload/OPPO Reno5 5G.png" ,
+        "price":124.12
       }
     ],
       "albums":[
@@ -1248,21 +1259,22 @@
     "id":32,
     "title":"OPPO Reno6 5G",
     "alias":"oppo-reno6-5g",
-    "rating":2.1717576764646984,
+    "rating":4.314501979500599,
     "content":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,",
     "versions":[
       {
         "id":0,
-        "alias":"3gb-32gb",
         "title":"3GB-32GB",
+        "alias":"3gb-32gb",
         "image":"/upload/OPPO Reno6 5G.png" ,
-        "price":171.09
+        "price":396.41 ,
+        "salePrice":119.61
       },{
         "id":1,
-        "alias":"4gb-64gb",
         "title":"4GB-64GB",
+        "alias":"4gb-64gb",
         "image":"/upload/OPPO Reno6 5G.png" ,
-        "price":205.31
+        "price":475.69
       }
     ],
       "albums":[
@@ -1287,19 +1299,21 @@
     "id":33,
     "title":"Samsung Galaxy A22",
     "alias":"samsung-galaxy-a22",
-    "rating":3.1250354657367865,
+    "rating":1.4431602794057385,
     "content":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,",
     "versions":[
       {
         "id":0,
-        "alias":"3gb-32gb",
         "title":"3GB-32GB",
-        "image":"/upload/Samsung Galaxy A22.png"
+        "alias":"3gb-32gb",
+        "image":"/upload/Samsung Galaxy A22.png" ,
+        "price":311.25
       },{
         "id":1,
-        "alias":"4gb-64gb",
         "title":"4GB-64GB",
-        "image":"/upload/Samsung Galaxy A22.png"
+        "alias":"4gb-64gb",
+        "image":"/upload/Samsung Galaxy A22.png" ,
+        "price":373.50
       }
     ],
       "albums":[
@@ -1324,22 +1338,19 @@
     "id":34,
     "title":"Samsung Galaxy M51",
     "alias":"samsung-galaxy-m51",
-    "rating":1.1087450994014059,
+    "rating":3.103706213561115,
     "content":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,",
     "versions":[
       {
         "id":0,
-        "alias":"3gb-32gb",
         "title":"3GB-32GB",
-        "image":"/upload/Samsung Galaxy M51.png" ,
-        "price":40.14
+        "alias":"3gb-32gb",
+        "image":"/upload/Samsung Galaxy M51.png"
       },{
         "id":1,
-        "alias":"4gb-64gb",
         "title":"4GB-64GB",
-        "image":"/upload/Samsung Galaxy M51.png" ,
-        "price":48.17 ,
-        "salePrice":26.94
+        "alias":"4gb-64gb",
+        "image":"/upload/Samsung Galaxy M51.png"
       }
     ],
       "albums":[
@@ -1364,19 +1375,21 @@
     "id":35,
     "title":"Vivo Y21s",
     "alias":"vivo-y21s",
-    "rating":4.1331963859160386,
+    "rating":4.296435166328774,
     "content":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,",
     "versions":[
       {
         "id":0,
-        "alias":"3gb-32gb",
         "title":"3GB-32GB",
-        "image":"/upload/Vivo Y21s.png"
+        "alias":"3gb-32gb",
+        "image":"/upload/Vivo Y21s.png" ,
+        "price":125.79
       },{
         "id":1,
-        "alias":"4gb-64gb",
         "title":"4GB-64GB",
-        "image":"/upload/Vivo Y21s.png"
+        "alias":"4gb-64gb",
+        "image":"/upload/Vivo Y21s.png" ,
+        "price":150.95
       }
     ],
       "albums":[
@@ -1401,22 +1414,21 @@
     "id":36,
     "title":"Vsmart Aris",
     "alias":"vsmart-aris",
-    "rating":0.17722402178004248,
+    "rating":4.604421809608819,
     "content":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,",
     "versions":[
       {
         "id":0,
-        "alias":"3gb-32gb",
         "title":"3GB-32GB",
+        "alias":"3gb-32gb",
         "image":"/upload/Vsmart Aris.png" ,
-        "price":118.31
+        "price":368.16
       },{
         "id":1,
-        "alias":"4gb-64gb",
         "title":"4GB-64GB",
+        "alias":"4gb-64gb",
         "image":"/upload/Vsmart Aris.png" ,
-        "price":141.97 ,
-        "salePrice":80.68
+        "price":441.79
       }
     ],
       "albums":[
@@ -1441,22 +1453,19 @@
     "id":37,
     "title":"Vsmart Star 5",
     "alias":"vsmart-star-5",
-    "rating":0.023517210826742296,
+    "rating":3.309941900904181,
     "content":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,",
     "versions":[
       {
         "id":0,
-        "alias":"3gb-32gb",
         "title":"3GB-32GB",
-        "image":"/upload/Vsmart Star 5.png" ,
-        "price":170.92 ,
-        "salePrice":69.17
+        "alias":"3gb-32gb",
+        "image":"/upload/Vsmart Star 5.png"
       },{
         "id":1,
-        "alias":"4gb-64gb",
         "title":"4GB-64GB",
-        "image":"/upload/Vsmart Star 5.png" ,
-        "price":205.10
+        "alias":"4gb-64gb",
+        "image":"/upload/Vsmart Star 5.png"
       }
     ],
       "albums":[
@@ -1481,21 +1490,22 @@
     "id":38,
     "title":"Xiaomi 11 Lite 5G",
     "alias":"xiaomi-11-lite-5g",
-    "rating":0.5643857530261798,
+    "rating":2.031863821787656,
     "content":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,",
     "versions":[
       {
         "id":0,
-        "alias":"3gb-32gb",
         "title":"3GB-32GB",
+        "alias":"3gb-32gb",
         "image":"/upload/Xiaomi 11 Lite 5G.png" ,
-        "price":17.84
+        "price":93.28
       },{
         "id":1,
-        "alias":"4gb-64gb",
         "title":"4GB-64GB",
+        "alias":"4gb-64gb",
         "image":"/upload/Xiaomi 11 Lite 5G.png" ,
-        "price":21.41
+        "price":111.94 ,
+        "salePrice":50.93
       }
     ],
       "albums":[
@@ -1520,22 +1530,19 @@
     "id":39,
     "title":"Xiaomi Redmi 9T",
     "alias":"xiaomi-redmi-9t",
-    "rating":0.021439646732466233,
+    "rating":2.9735875241394294,
     "content":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,",
     "versions":[
       {
         "id":0,
-        "alias":"3gb-32gb",
         "title":"3GB-32GB",
-        "image":"/upload/Xiaomi Redmi 9T.png" ,
-        "price":123.10
+        "alias":"3gb-32gb",
+        "image":"/upload/Xiaomi Redmi 9T.png"
       },{
         "id":1,
-        "alias":"4gb-64gb",
         "title":"4GB-64GB",
-        "image":"/upload/Xiaomi Redmi 9T.png" ,
-        "price":147.72 ,
-        "salePrice":83.52
+        "alias":"4gb-64gb",
+        "image":"/upload/Xiaomi Redmi 9T.png"
       }
     ],
       "albums":[
@@ -1560,21 +1567,21 @@
     "id":40,
     "title":"Xiaomi Redmi 10",
     "alias":"xiaomi-redmi-10",
-    "rating":3.751817324349017,
+    "rating":1.8631379384791646,
     "content":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,",
     "versions":[
       {
         "id":0,
-        "alias":"3gb-32gb",
         "title":"3GB-32GB",
+        "alias":"3gb-32gb",
         "image":"/upload/Xiaomi Redmi 10.png" ,
-        "price":94.21
+        "price":359.39
       },{
         "id":1,
-        "alias":"4gb-64gb",
         "title":"4GB-64GB",
+        "alias":"4gb-64gb",
         "image":"/upload/Xiaomi Redmi 10.png" ,
-        "price":113.05
+        "price":431.27
       }
     ],
       "albums":[
@@ -1599,19 +1606,22 @@
     "id":41,
     "title":"Xiaomi Redmi Note 10",
     "alias":"xiaomi-redmi-note-10",
-    "rating":2.2635998563785287,
+    "rating":1.363637650767452,
     "content":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,",
     "versions":[
       {
         "id":0,
-        "alias":"3gb-32gb",
         "title":"3GB-32GB",
-        "image":"/upload/Xiaomi Redmi Note 10.png"
+        "alias":"3gb-32gb",
+        "image":"/upload/Xiaomi Redmi Note 10.png" ,
+        "price":276.65
       },{
         "id":1,
-        "alias":"4gb-64gb",
         "title":"4GB-64GB",
-        "image":"/upload/Xiaomi Redmi Note 10.png"
+        "alias":"4gb-64gb",
+        "image":"/upload/Xiaomi Redmi Note 10.png" ,
+        "price":331.98 ,
+        "salePrice":155.45
       }
     ],
       "albums":[

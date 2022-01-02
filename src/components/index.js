@@ -8,9 +8,14 @@ export {default as Checkbox} from './Checkbox/';
 export {default as List}     from './List/';
 export {default as Item}     from './Item/';
 
+
+export {default as RatingStar} from './rating/Star/';
+export {default as RatingGroup} from './rating/GroupStar/';
+
 export {default as Tooltip}  from './Tooltip/';
 export {default as Toast}    from './Toast/';
 export {default as Modal}    from './Modal/';
+export {default as Drop}    from './Drop/';
 export {default as Offcanvas}from './Offcanvas/';
 export {default as Widget}   from './Widget/';
 export {default as Thumbnail}from './Thumbnail/';

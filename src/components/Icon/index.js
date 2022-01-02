@@ -1,6 +1,6 @@
 import './index.css';
 import {forwardRef,memo} from 'react';
-function Icon({className,icon,iconHover,hover,...props},ref){
+function Icon({className,isLoading,icon,iconHover,isHover,...props},ref){
 		const _Attr = {
 			...props,
 			className:'icon'
@@ -8,7 +8,9 @@ function Icon({className,icon,iconHover,hover,...props},ref){
 		if(className !== undefined){
 			_Attr.className+=" "+className;
 		};
-		if(hover === true && iconHover !== undefined){
+		if(isLoading === true){
+			_Attr.className+=" "+"sync fas fa-sync-alt";
+		}else if(isHover === true && iconHover !== undefined){
 			_Attr.className+=" "+iconHover;
 		}else{
 			_Attr.className+=" "+icon;
@@ -16,10 +18,9 @@ function Icon({className,icon,iconHover,hover,...props},ref){
 		if(ref !== undefined){
 			_Attr.ref = ref;
 		};
+		
 		return(
-			<span
-				{..._Attr}
-			/>
+			<span {..._Attr} />
 		);
 	};
 export default memo(forwardRef(Icon));

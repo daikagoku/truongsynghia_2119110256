@@ -1,31 +1,39 @@
-import {createContext,useReducer,useMemo} from 'react';
+import {createContext,useState,useMemo} from 'react';
 import useStorage from '../../core/useStorage';
 import {initData,reducer} from './init';
 export const CartContext = createContext([]);
-export default function useCartModel(){
-	const [store,handleStore] = useStorage('cart_product',[]);
-	const [state,dispatch] = useReducer(reducer,initData);
-	const handle = {
-		add:function({productId,version,quantity}){
-				const _newStore = [...store];
- 				const _index = _newStore.findIndex(function(item){
+async function handleAdd(store,newItem,setProgress,setStore){
+	setProgress(true);
+	console.log("[start] add to cart ",newItem);
+	new Promise(function(resolve, reject){
+		const _newStore = [...store];
+				const _index = _newStore.findIndex(function(item){
 					if(item){
-						return item.productId === productId && item.version === version;
+						return item.productId === newItem.productId && item.versionId === newItem.versionId;
 					}
 				});
 				if(_index === -1){
 					_newStore.push({
-						productId:productId,
-						version:version,
-						quantity:quantity
+						...newItem
 					})
 				}else{
-					_newStore[_index].quantity+=quantity;
+					_newStore[_index].quantity+=newItem.quantity;
 				};
-				handleStore.set(_newStore);
-		},
-		delete:function(carIds){
-			const _newStore = [...store];
+		resolve(_newStore);
+	})
+		.then(function(results){
+			setStore(results);
+		})
+		.finally(function(){
+			setProgress(false);
+			console.log("[finally] add to cart ",newItem);
+		})
+}
+async function handleDelete(store,carIds,setProgress,setStore){
+	setProgress(true);
+	console.log("[start] delete from cart ",carIds);
+	new Promise(function(resolve, reject){
+		const _newStore = [...store];
 			if(Array.isArray(carIds)){
 				carIds.forEach(function(carId){
 					_newStore.splice(carId,1);
@@ -33,12 +41,33 @@ export default function useCartModel(){
 			}else{
 				_newStore.splice(carIds,1);
 			}
-			handleStore.set(_newStore);
+		resolve(_newStore);
+	})
+		.then(function(results){
+			setStore(results);
+		})
+		.finally(function(){
+			setProgress(false);
+			console.log("[finally] delete from cart ",carIds);
+		})
+}
+export default function useCartModel(){
+	const [store,handleStore] = useStorage('cart_product',[]);
+	const [onProgress,setProgress] = useState(false);
+	const handle = {
+		add:function(newItem){
+			handleAdd(store,newItem,setProgress,handleStore.set);
+		},
+		delete:function(carIds){
+			handleDelete(store,carIds,setProgress,handleStore.set);
 		},update:function(carId,quantity){
 			const _newStore = [...store];
 			_newStore[carId].quantity=quantity;
 			handleStore.set(_newStore);
 		}
 	};
-	return [store,handle];
+	return [{
+		data:store,
+		onProgress:onProgress
+	},handle];
 }

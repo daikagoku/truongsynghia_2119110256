@@ -9,10 +9,7 @@ export default function({label,...props},ref) {
 	}
 	return (
 		<div className="auth-checkbox-container">
-		 	<div className="auth-checkbox-control">
-		 		<Checkbox {...props} ref={checkboxRef} className="auth-checkbox"/>
-		 		<div className="auth-checkbox-view"></div>
-		 	</div>
+		 	<Checkbox {...props} ref={checkboxRef} className="auth-checkbox"/>
 		 	<label onClick={handleClickLabel} className="auth-checkbox-label text"htmlFor="">{label}</label>
 		</div>
 	)

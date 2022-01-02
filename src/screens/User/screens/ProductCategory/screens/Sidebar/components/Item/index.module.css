@@ -1,0 +1,17 @@
+.item{
+	display: block;
+}
+.button{
+	width: 100%;
+	padding:0.1em 0.4em;
+	justify-content: flex-start;
+}
+.checkbox{
+	margin:  0.2em;
+	pointer-events: none;
+}
+
+.text{
+	margin: 0.2em;
+	line-height: 1em;
+}

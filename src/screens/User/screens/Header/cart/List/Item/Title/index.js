@@ -1,33 +1,21 @@
 import styles from './index.module.css';
 import {useContext,memo} from 'react';
 import clsx from 'clsx';
-import {CartProductContext} from '../init';
+import {ProductContext} from '../init';
 import {Link} from '../../../../../../../../components/';
 export default memo(function ProductTitle({...props}){
-	const {data} = useContext(CartProductContext);
-	let version = {}
-	if(Array.isArray(data.versions)){
-		version=data.versions.find(function(_version,_index){
-			return _version.id===data.version;
-		})
-	}
+	const {data} = useContext(ProductContext);
 	let text = "Đang cập nhật";
 	const attr={
 		...props,
 		className:clsx(styles.title)
 	};
 	if(data.title !== undefined){
-		text = data.title;
+		text="/"+data.title+"/"+data.versionTitle;
 	};
-	if(version!== undefined){
-		text+="/"+version.title;
-	}
-	if(data.alias!==undefined){
-		attr.to="/productdetail/"+data.alias;
-	}
-	if(version!== undefined){
-		attr.to+="/"+version.alias;
-	}
+	if(data.alias !==undefined){
+		attr.to="/product/detail/"+data.alias+"/"+data.versionAlias;
+	};
 	return(
 		<Link {...attr}>{text}</Link>
 	)

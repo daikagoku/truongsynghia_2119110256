@@ -1,11 +1,10 @@
 import './index.css';
-import {memo,useRef,useEffect} from 'react';
+import {memo,forwardRef,useRef,useEffect} from 'react';
 import clsx from 'clsx';
-import {List,Item,Button} from '../../../../../../../components/';
-export default memo(function MainMenuDrop({listItem,open,...props}){
-    const thisRef = useRef();
+import {List,Item,Button,Drop} from '../../../../../../../components/';
+export default memo(forwardRef(function MainMenuDrop({listItem,to,...props},ref){
     const dropdown={
-        className:clsx("main-menu-navbar-dropdown-content",{active:open})
+        className:clsx("main-menu-navbar-dropdown-content")
     };
     const dropdownList={
         className:"main-menu-navbar-dropdown-list"
@@ -18,13 +17,14 @@ export default memo(function MainMenuDrop({listItem,open,...props}){
     };
     if(listItem !== undefined && listItem.length > 0 ){
         return(
-            <div ref={thisRef} {...dropdown}>
+        <Drop ref={ref} position="bottom" >
+            <div {...dropdown}>
                 <List {...dropdownList}>
                     {
                         listItem.map(function(_item,_index){
                             return(
                                 <Item key={_index}{...dropdownItem}>
-                                    <Button to={"/category/"+_item.alias}{...dropdownBtn}>
+                                    <Button to={to+"/"+_item.alias}{...dropdownBtn}>
                                         {_item.title}
                                     </Button>
                                 </Item>
@@ -33,8 +33,9 @@ export default memo(function MainMenuDrop({listItem,open,...props}){
                     }
                 </List>
             </div>
+         </Drop>
         )
     }else{
         return <></>
     }
-})
+}))

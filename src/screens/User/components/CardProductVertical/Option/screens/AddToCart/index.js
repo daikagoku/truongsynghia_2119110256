@@ -6,32 +6,26 @@ import {Icon} from '../../../../../../../components/';
 import ProductOptionItem from '../../components/Item/';
 function ProductAddToCartButton({...props}){
 	const data = useContext(ProductContext) ?? {};
-	const [store,handleStore] = useCartModel();
+	const [cart,handleCart] = useCartModel();
 	function handleClickAdd(event){
-		handleStore.add({
+		handleCart.add({
 			productId:data.id,
-			version:data.version,
+			versionId:data.versionId,
 			quantity:1
 		})
 	};
 	function handleClickContact(event){
 	};
-	let version = {}
-	if(Array.isArray(data.versions)){
-		version=data.versions.find(function(_version,_index){
-			return _version.id===data.version;
-		})
-	};
-	if(version.price !== undefined){
+	if(data.price){
 		return(
 			<ProductOptionItem onClick={handleClickAdd}>
-	    		<Icon className="fas fa-cart-plus"/>
+	    		<Icon isLoading={cart.onProgress}  icon="fas fa-cart-plus"/>
 	    	</ProductOptionItem> 
 		)
 	}else{
 		return(
 			<ProductOptionItem onClick={handleClickContact}>
-	    		<Icon className="fas fa-phone-alt"/>
+	    		<Icon icon="fas fa-phone-alt"/>
 	    	</ProductOptionItem> 
 		)
 	}

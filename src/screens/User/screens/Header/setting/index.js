@@ -8,7 +8,7 @@ export default memo(function HeaderSetting(){
 		className:"header-button circle-btn",
 		onClick:function(e){
 			if(modalRef.current){
-				modalRef.current.handle.show();
+				modalRef.current.show();
 			}
 		}
 	};

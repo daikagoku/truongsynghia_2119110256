@@ -1,2 +1,3 @@
 import {createContext} from 'react';
-export const AuthContext = createContext("login");
+export const FormContext = createContext("login");
+export const AuthContext = createContext({});

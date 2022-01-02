@@ -1,7 +1,7 @@
 import {useContext,useEffect,memo,useMemo,useState} from 'react';
 import clsx from 'clsx';
 import {Input,Button,Icon} from '../../../../../../../../components/';
-import {ProductDetailContext} from '../../../../init';
+import {ProductDetailContext} from '../../init';
 import styles from './index.module.css';
 export default memo(function(){
 	const [state,dispatch] = useContext(ProductDetailContext);
@@ -60,20 +60,27 @@ export default memo(function(){
 		setValue(state.quantity);
 	},[state.quantity])
 	return(
-		<div>
-			<div className={styles.container}>
-				<Input {...inputAttr}/>
-				<Button 
-					onClick={()=>(handleClick(-1))}
-					className={clsx(styles.btn,styles.btnMinus,{disabled:state.quantity <= min})}>
-					<Icon className="fas fa-minus"></Icon>
-				</Button>
-				<Button 
-					onClick={()=>(handleClick(1))}
-					className={clsx(styles.btn,styles.btnPlus,{disabled:state.quantity >= max})}>
-					<Icon className="fas fa-plus"></Icon>
-				</Button>	
-			</div>	
+		<div className="row product-detail-attr">
+			<div className="col col-4 justify-content-center">
+				<span>Số lượng:</span>
+			</div>
+			<div className="col col-8">
+				<div className="d-flex">
+					<div className={styles.container}>
+						<Input {...inputAttr}/>
+						<Button 
+							onClick={()=>(handleClick(-1))}
+							className={clsx(styles.btn,styles.btnMinus,{disabled:state.quantity <= min})}>
+							<Icon className="fas fa-minus"></Icon>
+						</Button>
+						<Button 
+							onClick={()=>(handleClick(1))}
+							className={clsx(styles.btn,styles.btnPlus,{disabled:state.quantity >= max})}>
+							<Icon className="fas fa-plus"></Icon>
+						</Button>	
+					</div>	
+				</div>
+			</div>
 		</div>
 	)
 });

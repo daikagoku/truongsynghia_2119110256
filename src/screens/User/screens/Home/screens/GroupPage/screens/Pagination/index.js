@@ -7,113 +7,122 @@ import {HomePageContext} from '../../init';
 function HomePagePagination({...props}){
 	const [state,dispatch] = useContext(HomePageContext);
 	const totalPage = useMemo(function(){
-		let tmp = (state.length / state.limit) || 0;
-		return Math.ceil(tmp);
+		if(state.length > 0 && state.limit > 0){
+			let tmp = (state.length / state.limit) || 0;
+			return Math.ceil(tmp);
+		}else{
+			return 0;
+		}
 	},[state.length,state.limit]);
-
 	const currentPage = useMemo(function(){
-		let tmp = (state.index / state.limit) || 0;
-		return Math.floor(tmp) + 1;
+		if(state.limit > 0){
+			let tmp = (state.index / state.limit) || 0;
+			return Math.floor(tmp) + 1;
+		}else{
+			return 0;
+		}
 	},[state.index,state.limit]);
 	const items = useMemo(function(){
 		const result = {
 			components:[],
 			indexs:[]
 		};
-		let iStart,iStop;
-		if(totalPage <= 5){
-			iStart = 1;
-			iStop  = totalPage;
-		}else{
-			if(currentPage === 1){
-				iStart = currentPage;
-				iStop  = currentPage+2;
-			}else if(currentPage === totalPage){
-				iStart = totalPage-2;
+		if(totalPage > 1){
+			let iStart,iStop;
+			if(totalPage <= 5){
+				iStart = 1;
 				iStop  = totalPage;
 			}else{
-				iStart = currentPage-1;
-				iStop  = currentPage+1;
+				if(currentPage === 1){
+					iStart = currentPage;
+					iStop  = currentPage+2;
+				}else if(currentPage === totalPage){
+					iStart = totalPage-2;
+					iStop  = totalPage;
+				}else{
+					iStart = currentPage-1;
+					iStop  = currentPage+1;
+				};
 			};
-		};
-		for (let i = iStart; i <= iStop; i++) {
-			const index = i;
-			const newItem =(
-				<HomePagePaginationItem 
-					key={index}
-					text={index}
-					active = {index === currentPage}
-					onClick={()=>(handleClick(index))}
-				/>
-			);
-			result.indexs.push(index);
-			result.components.push(newItem);
-		};
+			for (let i = iStart; i <= iStop; i++) {
+				const index = i;
+				const newItem =(
+					<HomePagePaginationItem 
+						key={index}
+						text={index}
+						active = {index === currentPage}
+						onClick={()=>(handleClick(index))}
+					/>
+				);
+				result.indexs.push(index);
+				result.components.push(newItem);
+			};
 
-		if(result.indexs[0] > 2){
-			const newItem =(
-				<HomePagePaginationItem 
-					key={"null-back"}
-					text={"..."}
-					disabled
-				/>
-			);
-			result.components.unshift(newItem);
-		};
-		if(result.indexs[0] > 1){
-			const newItem =(
-				<HomePagePaginationItem 
-					key={1}
-					text="1"
-					onClick={()=>(handleClick(1))}
-				/>
-			);
-			result.indexs.unshift(1);
-			result.components.unshift(newItem);
-		};
-		if(currentPage > 1){
-			const newItem =(
-				<HomePagePaginationItem 
-					key={"back"}
-					icon="fas fa-chevron-left"
-					onClick={()=>(handleClick(currentPage-1))}
-				/>
-			);
-			result.indexs.unshift(currentPage-1);
-			result.components.unshift(newItem);
-		};
-		if(result.indexs[result.indexs.length-1] < totalPage - 1){
-			const newItem =(
-				<HomePagePaginationItem 
-					key={"null-next"}
-					text="..."
-					disabled
-				/>
-			);
-			result.components.push(newItem);
-		};
-		if(result.indexs[result.indexs.length-1] < totalPage){
-			const newItem =(
-				<HomePagePaginationItem 
-					key={totalPage}
-					text={totalPage}
-					onClick={()=>(handleClick(totalPage))}
-				/>
-			);
-			result.indexs.push(totalPage);
-			result.components.push(newItem);
-		};
-		if(currentPage < totalPage){
-			const newItem =(
-				<HomePagePaginationItem 
-					key={"next"}
-					icon="fas fa-chevron-right"
-					onClick={()=>(handleClick(currentPage+1))}
-				/>
-			);
-			result.indexs.push(currentPage+1);
-			result.components.push(newItem);
-		};
+			if(result.indexs[0] > 2){
+				const newItem =(
+					<HomePagePaginationItem 
+						key={"null-back"}
+						text={"..."}
+						disabled
+					/>
+				);
+				result.components.unshift(newItem);
+			};
+			if(result.indexs[0] > 1){
+				const newItem =(
+					<HomePagePaginationItem 
+						key={1}
+						text="1"
+						onClick={()=>(handleClick(1))}
+					/>
+				);
+				result.indexs.unshift(1);
+				result.components.unshift(newItem);
+			};
+			if(currentPage > 1){
+				const newItem =(
+					<HomePagePaginationItem 
+						key={"back"}
+						icon="fas fa-chevron-left"
+						onClick={()=>(handleClick(currentPage-1))}
+					/>
+				);
+				result.indexs.unshift(currentPage-1);
+				result.components.unshift(newItem);
+			};
+			if(result.indexs[result.indexs.length-1] < totalPage - 1){
+				const newItem =(
+					<HomePagePaginationItem 
+						key={"null-next"}
+						text="..."
+						disabled
+					/>
+				);
+				result.components.push(newItem);
+			};
+			if(result.indexs[result.indexs.length-1] < totalPage){
+				const newItem =(
+					<HomePagePaginationItem 
+						key={totalPage}
+						text={totalPage}
+						onClick={()=>(handleClick(totalPage))}
+					/>
+				);
+				result.indexs.push(totalPage);
+				result.components.push(newItem);
+			};
+			if(currentPage < totalPage){
+				const newItem =(
+					<HomePagePaginationItem 
+						key={"next"}
+						icon="fas fa-chevron-right"
+						onClick={()=>(handleClick(currentPage+1))}
+					/>
+				);
+				result.indexs.push(currentPage+1);
+				result.components.push(newItem);
+			};
+		}
 		return result.components;
 	},[currentPage,totalPage]);	
 	function handleClick(page,disabled){

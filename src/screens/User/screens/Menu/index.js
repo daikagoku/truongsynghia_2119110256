@@ -5,7 +5,6 @@ import useReponsive from '../../../../core/useReponsive';
 import {List} from '../../../../components/';
 import MainMenuItem from './item/';
 import MainMenuNavbar from './navbar/';
-import MainMenuOffcanvas from './offcanvas/';
 import {MainMenuContext,initData,reducer} from './init';
 function MainMenu({history,location,match,...props}) {
   const thisRef       = useRef({});
@@ -75,12 +74,11 @@ function MainMenu({history,location,match,...props}) {
                 />
                 <MainMenuItem 
                     buttonClass="main-menu-toggle d-flex d-md-none"
-                    onClick={()=>(offcanvasRef.current?.handle?.show())}
+                    onClick={()=>(offcanvasRef.current && offcanvasRef.current.show())}
                     icon="fas fa-bars"
                 >                        
                   {
-                    state.reponsive === 'mobile' && <MainMenuOffcanvas ref={offcanvasRef}/> 
-                    || state.reponsive === 'desktop' && <MainMenuNavbar /> 
+                    <MainMenuNavbar /> 
                   }      
                 </MainMenuItem>
       				</List>
@@ -91,3 +89,7 @@ function MainMenu({history,location,match,...props}) {
 }
 
 export default memo(MainMenu);
+/*
+state.reponsive === 'mobile' && <MainMenuOffcanvas ref={offcanvasRef}/> 
+                    || state.reponsive === 'desktop' && 
+                    */

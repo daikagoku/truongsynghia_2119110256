@@ -1,58 +1,73 @@
 import {Button,Icon} from '../index';
 import {
-        useReducer,
+        useState,
         useImperativeHandle,
         useRef,
         forwardRef,
+        useEffect,
+        useMemo,
         memo} from 'react';
 import './index.css';
-import {initData,reducer} from './init';
-export default memo(forwardRef(function Offcanvas({show,prefix,title,position,children},ref) {
-  const [state,dispatch] = useReducer(reducer,initData);
+export default memo(forwardRef(function Drop({show,prefix,title,position,children},ref) {
+  const [isShow,setShow] = useState(false);
   const thisRef = useRef();
   const handle = {
-        open:function(){
-          dispatch({
-            key:"set_open",
-            value:true
-          })
+        show:function(){
+          setShow(true)
         },close:function(){
-          dispatch({
-            key:"set_open",
-            value:false
-          })
-        },toggle:function(){
-          dispatch({
-            key:"set_open",
-            value:!state.open
-          })
+          setShow(false)
         }
       }
+  handle.toggle=useMemo(function(){
+    return function(){
+      setShow(!isShow);
+    }
+  },[isShow]);
+  useEffect(function(){
+    if(show){
+      handle.show();
+    }
+  },[show]);
   useImperativeHandle(ref,function(){
     return{
       ...thisRef.current,
-      state:state,
-      handle:handle
+      ...handle,
+      isShow:isShow
     }
   })
-  const contentAttr={
-    className:"offcanvas"
+  useEffect(function(){
+    if(show){
+      handle.show();
+    }
+  },[show]);
+  const containerAttr={
+    className:"drop "+position
   };
+
   if(prefix){
-    contentAttr.className+=" "+prefix+"_offcanvas";
+    containerAttr.className+=" "+prefix+"_drop";
   }
-  if(state.open){
-    contentAttr.className+=" show";
+  if(isShow){
+    containerAttr.className+=" show";
   };
-  function handleClick(){
-    dispatch({
-      key:'set_open',
-      value:false
-    })
+
+  const contentAttr={
+    className:"drop-content"
   };
-  return (
-    <div ref={thisRef} {...contentAttr}>
+
+  useEffect(function(){
+    if(isShow){
       
+    }
+  },[isShow])
+
+  return (
+    <div ref={thisRef} {...containerAttr}>
+      <div {...contentAttr}>
+      {
+        children
+      }
+      </div>
     </div>
   )
 }))

@@ -1,10 +1,10 @@
 import {useContext} from 'react';
 
 import {Button} from '../../../../../../../../components/';
-import {AuthContext} from '../../init';
+import {FormContext} from '../../init';
 import './index.css';
 export default function({className,label,title,to,...props}){
-	const [state,handle] = useContext(AuthContext);
+	const [state,handle] = useContext(FormContext);
 	function handleClick(){
 		handle.setAction(to);
 	}

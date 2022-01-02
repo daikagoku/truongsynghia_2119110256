@@ -9,27 +9,27 @@ import {
   memo,
   useImperativeHandle} from 'react';
 export default memo(forwardRef(function Modal({prefix,show,title,widthSize,heightSize,children},ref) {
-  const [showState,setShowState] = useState(false);
+  const [isShow,setShow] = useState(false);
   const thisRef = useRef({});
   const handle = useMemo(function(){
     return{
         show:function(){
-          setShowState(true);
+          setShow(true);
         },close:function(){
-          setShowState(false);
+          setShow(false);
         }
     }
   },[]);
   handle.toggle=useMemo(function(){
     return function(){
-      setShowState(!showState);
+      setShow(!isShow);
     }
-  },[showState])
+  },[isShow])
   useImperativeHandle(ref,function(){
     return{
       ...thisRef.current,
-      state:showState,
-      handle:handle
+      ...handle,
+      isShow:isShow
     }
   },[])
   const contentAttr={
@@ -52,7 +52,7 @@ export default memo(forwardRef(function Modal({prefix,show,title,widthSize,heigh
       handle.show();
     }
   },[show]);
-  if(showState){
+  if(isShow){
     contentAttr.className+=" show";
   };
   function handleClick(event){

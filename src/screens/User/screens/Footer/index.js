@@ -16,7 +16,7 @@ function Footer(props) {
                   <Widget title="THÔNG TIN"prefix="footer">
                       <FooterList 
                         keyApi="post"
-                        filter={(item)=>(item.topic === "thong-tin")}
+                        params={{parent_alias:'thong-tin'}}
                       />
                   </Widget>
                 </div>
@@ -24,7 +24,7 @@ function Footer(props) {
                   <Widget title="CHÍNH SÁCH"prefix="footer">
                       <FooterList 
                         keyApi="post"
-                        filter={(item)=>(item.topic === "chinh-sach")}
+                        params={{parent_alias:'chinh-sach'}}
                       />
                   </Widget>
                 </div>
@@ -59,3 +59,12 @@ function Footer(props) {
 }
 
 export default memo(Footer);
+
+/*
+                  
+                  
+
+                  
+
+                  
+*/

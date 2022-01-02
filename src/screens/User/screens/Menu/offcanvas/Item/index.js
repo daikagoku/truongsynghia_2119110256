@@ -4,23 +4,23 @@ import './index.css';
 import useFetch from '../../../../../../core/useFetch';
 import {Item,Button,Icon} from '../../../../../../components/';
 import MainMenuOffcanvasDrop from './Drop/';
-export default memo(function({api,keyApi,filter,sort,buttonClass,className,icon,text,children,...props}){
+export default memo(function({api,keyApi,params,buttonClass,className,icon,text,children,...props}){
   const [hover,setHover] = useState(false);
-  const [listItem] = useFetch({
-        initData:[],
-        api     :api,
-        keyApi  :keyApi,
-        filter  :filter,
-        sort    :sort
+  let [fetchData] = useFetch({
+        initData :[],
+        keyApi   :keyApi,
+        position :"main-menu",
+        params   :params
   });
   const itemAttr={
     className:"main-menu-offcanvas-item square-btn"
   };
   itemAttr.onClick = useMemo(function(){
     return function(_event){
+      _event.target.scrollIntoView();
       setHover(!hover);
     }
-  },[hover])
+  },[hover]);
   if(className !== undefined){
     itemAttr.className+=" "+className;
   };
@@ -39,16 +39,21 @@ export default memo(function({api,keyApi,filter,sort,buttonClass,className,icon,
   const buttonTextAttr = {
     className:"text"
   }
-  if(Array.isArray(listItem) && listItem.length !== 0 ){
-    buttonTextAttr.className+=" dropdown-toggle";
-  }
+  buttonTextAttr.className+=useMemo(function(){
+    if(fetchData.results.length !== 0 ){
+        return " dropdown-toggle";
+    }else{
+      return "";
+    }
+  },[fetchData.results])
+  
   return(
     <Item {...itemAttr}>
         <Button {...buttonAttr}>
             <Icon hover={hover}icon={icon}className="fs-2 mx-3"/>
             <span {...buttonTextAttr}>{text}</span>
         </Button>
-        <MainMenuOffcanvasDrop show={hover}listItem={listItem}/>
+        <MainMenuOffcanvasDrop show={hover}listItem={fetchData.results}/>
     </Item>
 	)
 });

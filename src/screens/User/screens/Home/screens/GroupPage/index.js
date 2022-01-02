@@ -12,26 +12,28 @@ function GroupPage({...props}){
 	const [state,dispatch] = useReducer(reducer,initData);
     const location = useLocation();
     const thisRef = useRef();
-	const [listItem] = useFetch({
-        initData:[],
+    const [fetchDataLength] = useFetch({
+        initData:0,
         keyApi:'product',
-        handle:function(data){
-            const newProducts = data.reduce(function(results,{versions,..._product}){
-                versions.forEach(function({id,...__version},__index){
-                    const __product = {..._product};
-                        __product.version=id;
-                        __product.versions=versions;
-                    results.push(__product);
-                });
-                return results;
-            },[]);
-            return newProducts;
+        uriApi:'/count',
+        position:"home-page",
+        handle:function(results){
+            dispatch({
+                key:"set_length",
+                value:results
+            })
+            return results;
         }
     });
-    const products = useMemo(function(){
-        const newList = [...listItem].splice(state.index,state.limit);
-        return newList;
-    },[listItem,state.index,state.limit]);
+	const [fetchDataList] = useFetch({
+        initData:[],
+        keyApi:'product',
+        params:{
+            offset:state.index,
+            limit:state.limit
+        },
+        position:"home-page"
+    });
     useEffect(function(){
         dispatch({
             key:"set_index",
@@ -39,7 +41,7 @@ function GroupPage({...props}){
         })
     },[location])
 	return(
-<HomePageContext.Provider value={[{...state,length:listItem.length,this:thisRef.current},dispatch]}>
+<HomePageContext.Provider value={[{...state,this:thisRef.current},dispatch]}>
 	<section ref={thisRef} className="container-fluid home-page py-2">
     	<div className="container-lg">
     		<div className="row">
@@ -48,10 +50,8 @@ function GroupPage({...props}){
                     
                     </div>
                     <div className="row home-page-body">
-                        {
-                            products.length>0 && <GroupPageContent listItem={products}/>
-                                             || <GroupPageLoading />
-                        }
+                        <GroupPageContent listItem={fetchDataList.results}/>
+                        <GroupPageLoading />
                     </div>
                     <div className="row home-page-footer">
                         <GroupPagePagination/>

@@ -8,7 +8,7 @@ export default function() {
 	const buttonAttr = {
 		onClick:function(e){
 			if(OffcanvasRef.current){
-				OffcanvasRef.current.handle.open()
+				OffcanvasRef.current.show()
 			}
 		}
 	};

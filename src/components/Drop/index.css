@@ -1,1 +1,49 @@
-index.css
+.drop{
+	position: absolute;
+	min-width: 100%;
+	padding:0.5em;
+	border-radius: 0.5rem;
+	position: absolute;
+
+	z-index: 10;
+	color: var(--second-color);
+	background: var(--second-background);
+	border: 0.05em solid var(--second-border);
+	box-shadow: 0.05em 0.05em 0 0 var(--second-shadow);
+
+
+	visibility: hidden;
+	transition: transform 0.5s, visibility 0s 0.3s;
+}
+.drop.show{
+	visibility: visible;
+	transition: transform 0.5s;
+}
+
+.drop.top{
+	bottom: 100%;
+	transform: translateY(1em);
+}
+.drop.bottom{
+	top: 100%;
+	transform: translateY(-1em);
+}
+.drop.show.top,
+.drop.show.bottom{
+	transform: translateY(0em);
+}
+
+
+.drop.left{
+	right: 100%;
+	transform: translateX(1em);
+}
+.drop.right{
+	left: 100%;
+	transform: translateX(-1em);
+}
+.drop.show.left,
+.drop.show.right{
+	transform: translateX(0em);
+}
+
