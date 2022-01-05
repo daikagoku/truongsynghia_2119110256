@@ -1,10 +1,10 @@
 import {createContext,useState,useMemo} from 'react';
 import useStorage from '../../core/useStorage';
+import useMessageBox from '../../core/useMessageBox';
 import {initData,reducer} from './init';
 export const CartContext = createContext([]);
-async function handleAdd(store,newItem,setProgress,setStore){
+async function handleAdd(store,newItem,setProgress,setError,setStore,messageBox){
 	setProgress(true);
-	console.log("[start] add to cart ",newItem);
 	new Promise(function(resolve, reject){
 		const _newStore = [...store];
 				const _index = _newStore.findIndex(function(item){
@@ -23,15 +23,20 @@ async function handleAdd(store,newItem,setProgress,setStore){
 	})
 		.then(function(results){
 			setStore(results);
+			messageBox.show({type:"success",text:"Thêm thành công"})
+		})
+		.catch(function(error){
+			setError(error);
+			messageBox.show({type:"error",text:"Thêm không thành công"})
 		})
 		.finally(function(){
-			setProgress(false);
-			console.log("[finally] add to cart ",newItem);
+			setTimeout(function(){
+				setProgress(false);			
+			},500)
 		})
 }
-async function handleDelete(store,carIds,setProgress,setStore){
+async function handleDelete(store,carIds,setProgress,setError,setStore,messageBox){
 	setProgress(true);
-	console.log("[start] delete from cart ",carIds);
 	new Promise(function(resolve, reject){
 		const _newStore = [...store];
 			if(Array.isArray(carIds)){
@@ -45,21 +50,30 @@ async function handleDelete(store,carIds,setProgress,setStore){
 	})
 		.then(function(results){
 			setStore(results);
+			messageBox.show({type:"success",text:"Xóa thành công"})
+		})
+		.catch(function(error){
+			setError(error);
+			messageBox.show({type:"error",text:"Xóa không thành công"})
 		})
 		.finally(function(){
-			setProgress(false);
-			console.log("[finally] delete from cart ",carIds);
+			setTimeout(function(){
+				setProgress(false);			
+			},500)
 		})
 }
 export default function useCartModel(){
 	const [store,handleStore] = useStorage('cart_product',[]);
 	const [onProgress,setProgress] = useState(false);
+	const [error,setError] = useState("");
+	const messageBox = useMessageBox();
+
 	const handle = {
 		add:function(newItem){
-			handleAdd(store,newItem,setProgress,handleStore.set);
+			handleAdd(store,newItem,setProgress,setError,handleStore.set,messageBox);
 		},
 		delete:function(carIds){
-			handleDelete(store,carIds,setProgress,handleStore.set);
+			handleDelete(store,carIds,setProgress,setError,handleStore.set,messageBox);
 		},update:function(carId,quantity){
 			const _newStore = [...store];
 			_newStore[carId].quantity=quantity;
@@ -68,6 +82,7 @@ export default function useCartModel(){
 	};
 	return [{
 		data:store,
+		error:error,
 		onProgress:onProgress
 	},handle];
 }

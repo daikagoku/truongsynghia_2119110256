@@ -18,7 +18,7 @@ function ProductAddToCartButton({...props}){
 	};
 	if(data.price){
 		return(
-			<ProductOptionItem onClick={handleClickAdd}>
+			<ProductOptionItem disabled={cart.onProgress} onClick={handleClickAdd}>
 	    		<Icon isLoading={cart.onProgress}  icon="fas fa-cart-plus"/>
 	    	</ProductOptionItem> 
 		)

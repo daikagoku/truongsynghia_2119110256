@@ -93,3 +93,20 @@ font-face {
     background: var(--highlight-background);
     border-radius: 1000rem;
 }
+
+
+.default{
+    --var-color: #007bff;
+}
+.info{
+    --var-color: #17a2b8;
+}
+.warning{
+    --var-color: #ffc107;
+}
+.success{
+    --var-color: #28a745;
+}
+.error{
+    --var-color: #dc3545;
+}

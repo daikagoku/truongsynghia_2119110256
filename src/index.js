@@ -3,14 +3,21 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import LocalStorage from './core/LocalStorage';
 import {BrowserRouter} from "react-router-dom";
-console.log(ReactDOM);
+
+
+import LocalStorage from './core/LocalStorage';
+import {ToastProvider,MessageBoxProvider} from './components/';
+
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <LocalStorage>
-        <App />
+        <ToastProvider>
+          <MessageBoxProvider>
+            <App />
+          </MessageBoxProvider>
+        </ToastProvider>
       </LocalStorage>
     </BrowserRouter>
   </React.StrictMode>,

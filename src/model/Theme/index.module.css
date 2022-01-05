@@ -17,6 +17,9 @@
 	--highlight-color: #fff;
 	--highlight-color-active: #fac100;
 	--highlight-background: #fd2704;
+	--highlight-shadow: rgb(0 0 0 / 10%);
+	--highlight-border: rgb(0 0 0 / 10%);
+	--highlight-overlay: rgb(0 0 0 / 50%);
 
 
 }
@@ -38,6 +41,10 @@
 	--highlight-color: #eee;
 	--highlight-color-active: #fff;
 	--highlight-background: #000;
+
+	--highlight-shadow: rgb(250 250 250 / 20%);
+	--highlight-border: rgb(250 250 250 / 20%);
+	--highlight-overlay: rgb(250 250 250 / 50%);
 }
 .blue{
 	--primary-color: #000;
@@ -57,4 +64,8 @@
 	--highlight-color: #fff;
 	--highlight-color-active: #fff;
 	--highlight-background: #049bfd;
+
+	--highlight-shadow: rgb(0 0 0 / 10%);
+	--highlight-border: rgb(0 0 0 / 10%);
+	--highlight-overlay: rgb(0 0 0 / 50%);
 }

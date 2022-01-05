@@ -16,7 +16,7 @@ const useStorage = (function(){
                 }
             }
         },[nameSpace]);
-        return [data,handle]
+        return [data,handle];
    }
 })();
 export default useStorage;

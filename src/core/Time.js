@@ -1,5 +1,9 @@
-export default function Time(time){
-	const newTime = {
+function create(){
+	const time = new Date();
+	return format(time);
+};
+function format(time){
+	return {
 		day:time.getDay(),
 		d:time.getDate(),
 		m:time.getMonth()+1,
@@ -10,5 +14,9 @@ export default function Time(time){
 		mili:time.getMilliseconds(),
 		timezone:time.getTimezoneOffset()
 	};
-	return newTime;
+}
+const time = {
+	create:create,
+	format:format
 };
+export default time;

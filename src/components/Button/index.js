@@ -1,7 +1,7 @@
 import './index.css';
 import {forwardRef,useRef,memo} from 'react';
 import {Link} from 'react-router-dom';
-function Button({href,to,children,onClick,className,type,...props},ref){
+function Button({href,to,children,onClick,className,disabled,type,...props},ref){
 		let Component = 'button';
 		const thisRef = useRef();
 		const _Attr= {
@@ -14,8 +14,11 @@ function Button({href,to,children,onClick,className,type,...props},ref){
 			_Attr.className +=" "+className;
 		};
 		if(type !== undefined){
-			_Attr.type =type;
+			_Attr.type = type;
 		};
+		if(disabled === true){
+			_Attr.className+=" disabled";
+		}
 		if(href !== undefined){
 			Component = "a";
 			_Attr.href = href;

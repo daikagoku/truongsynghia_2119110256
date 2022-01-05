@@ -1,0 +1,32 @@
+.toast{
+	border-radius: 1em;
+	transform: translateX(-50%);
+	background: var(--highlight-background);
+	color: var(--highlight-color);
+	box-shadow: 0 0 0.1em 0.1em var(--highlight-shadow);
+
+	max-width: 100%;
+	min-width: 10em;
+	width: fit-content;
+	word-wrap: break-word;
+	text-align: center;
+	padding: 0.1em 0.2em;
+	margin: 0.2em 0; 
+	
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.5s,visibility 0s 0.5s;
+
+	pointer-events: auto;
+}
+.content{
+	
+}
+.close{
+	display: none;
+}
+.show{
+	opacity: 1;
+	visibility: visible;
+	transition: opacity 0.5s;
+}

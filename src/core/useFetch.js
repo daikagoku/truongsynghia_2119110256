@@ -78,11 +78,6 @@ export default function useFetch({url,keyApi,uriApi,params,method,header,body,in
             }
         }
     },[]);
-    // option.payload = useMemo(function(){
-    //     return params;
-    // },[params]);
-    // const { data, error, isLoading } = useAsync({ promiseFn: usingFetch });
-    // console.log(data, error, isLoading)
     useEffect(function(){
         if(body!==undefined && ( method == 'POST' || method == 'PUT' )){
             option.body = JSON.stringify(body);
