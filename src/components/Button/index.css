@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: center;
     color: var(--second-color);
+    padding: 0.1em 0.4em;
 }
 .button.disabled,
 .button:disabled{

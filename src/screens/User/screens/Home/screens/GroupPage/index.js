@@ -50,7 +50,7 @@ function GroupPage({...props}){
                     
                     </div>
                     <div className="row home-page-body">
-                        <GroupPageContent listItem={fetchDataList.results}/>
+                        <GroupPageContent listItem={fetchDataList.data}/>
                         <GroupPageLoading />
                     </div>
                     <div className="row home-page-footer">

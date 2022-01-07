@@ -50,7 +50,7 @@ function FooterContact({className,...props}) {
   return (
       	<List className="footer-contact-list">
           {
-            fetchData.results.map(function(item,index){
+            fetchData.data.map(function(item,index){
                 const _buttonAttr = {...buttonAttr};
                 _buttonAttr.className +=" "+item.buttonClass;
                 return(

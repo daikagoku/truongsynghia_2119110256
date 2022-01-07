@@ -1,0 +1,35 @@
+.toast{
+	border-radius: 1em;
+	background: var(--highlight-background);
+	color: var(--highlight-color);
+	box-shadow: 0 0 0.1em 0.1em var(--highlight-shadow);
+
+	max-width: 100%;
+	min-width: 10em;
+	width: fit-content;
+	word-wrap: break-word;
+	text-align: center;
+	padding: 0.1em 0.2em;
+	margin: 0.2em 0;
+
+	pointer-events: auto;
+
+	animation: toast-show 1 0.3s linear both;
+}
+.content{
+	
+}
+.close{
+	display: none;
+}
+.hidden{
+	animation: toast-hidden 1 0.3s linear both;
+}
+
+@keyframes  toast-show{
+	0% { opacity: 0;}
+	100% { opacity: 1;}
+}
+@keyframes  toast-hidden{
+	100% { opacity: 0;}
+}

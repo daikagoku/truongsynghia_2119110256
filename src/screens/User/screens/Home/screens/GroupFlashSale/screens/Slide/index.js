@@ -5,15 +5,15 @@ import './index.css';
 import CardProductVertical from '../../../../../../components/CardProductVertical/';
 import {NextButton,BackButton} from './Buttons/';
 export const SlideContext = createContext();
-export default function({data}){
+export default function({fetchData}){
 	const [index,setIndex] = useState();
 	const thisRef = useRef();
 
 	const items = useMemo(function(){
-		return data.results.map(function(item,index){
+		return fetchData.data.map(function(item,index){
 			return (<CardProductVertical prefix="group-flash-sale" data={item} index = {index} />)
 		});
-	},[data.results]);
+	},[fetchData.data]);
 
 	useEffect(function(){
 		if(thisRef.current){
@@ -23,9 +23,9 @@ export default function({data}){
 	function handleSlideChanged(event){
 		setIndex(event.item);
 	};
-	if(data.error === undefined){
+	if(!fetchData.error){
 		return (
-		  <SlideContext.Provider value={[thisRef.current,data.results]}>
+		  <SlideContext.Provider value={[thisRef.current,fetchData.data]}>
 		    <div 	id="group-flash-sale">
 			    	 		<AliceCarousel 
 									ref = {thisRef}

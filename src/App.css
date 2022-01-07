@@ -98,7 +98,7 @@ font-face {
 .default{
     --var-color: #007bff;
 }
-.info{
+.question{
     --var-color: #17a2b8;
 }
 .warning{

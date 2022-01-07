@@ -1,0 +1,20 @@
+.header-cart{
+	position: relative;
+}
+.header-cart-total{
+	font-size: 0.9em;
+	color: var(--highlight-color);
+	background: var(--highlight-background);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 1000em;
+	height: 1.4em;
+	min-width: 1.4em;
+	padding: 0.1em 0.3em;
+	position: absolute;
+	top: 0;
+	right: 0;
+	transform: translateY(-50%);
+
+}

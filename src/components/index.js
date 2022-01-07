@@ -13,14 +13,6 @@ export {default as RatingStar} from './rating/Star/';
 export {default as RatingGroup} from './rating/GroupStar/';
 
 export {default as Tooltip}  from './Tooltip/';
-
-export {default as ToastProvider}    from './Toast/provider';
-export {default as ToastContainer}    from './Toast/container';
-
-export {default as MessageBoxProvider}    from './MessageBox/provider';
-export {default as MessageBoxContainer}    from './MessageBox/container';
-
-
 export {default as Modal}    from './Modal/';
 export {default as Drop}    from './Drop/';
 export {default as Offcanvas}from './Offcanvas/';

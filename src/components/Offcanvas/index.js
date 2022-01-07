@@ -8,7 +8,7 @@ import {
         useEffect,
         memo} from 'react';
 import './index.css';
-export default memo(forwardRef(function Offcanvas({show,prefix,title,position,widthSize,heightSize,children},ref) {
+export default memo(forwardRef(function Offcanvas({id,prefix,onShow,onClose,onToggle,title,position,widthSize,heightSize,children},ref) {
   const [isShow,setShow] = useState(false);
   const thisRef = useRef({});
   const handle = useMemo(function(){
@@ -20,6 +20,23 @@ export default memo(forwardRef(function Offcanvas({show,prefix,title,position,wi
         }
     }
   },[]);
+  useEffect(function(){
+    if(onShow && typeof(onShow) === 'function' && isShow){
+      onShow({
+        value:isShow
+      })
+    };
+    if(onClose && typeof(onClose) === 'function' && !isShow){
+      onClose({
+        value:isShow
+      })
+    };
+    if(onToggle && typeof(onToggle) === 'function'){
+      onToggle({
+        value:isShow
+      })
+    };
+  },[isShow])
   handle.toggle=useMemo(function(){
     return function(){
       setShow(!isShow);
@@ -33,16 +50,12 @@ export default memo(forwardRef(function Offcanvas({show,prefix,title,position,wi
     }
   },[])
   const contentAttr={
+    id:id,
     className:"offcanvas"
   };
   if(prefix){
     contentAttr.className+=" "+prefix+"_offcanvas";
   };
-  useEffect(function(){
-    if(show){
-      handle.show();
-    }
-  },[show]);
   if(isShow){
     contentAttr.className+=" show";
   };

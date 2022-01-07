@@ -1,0 +1,27 @@
+.custom-theme{
+	display: flex;
+	flex-direction: column;
+}
+.custom-theme-head{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.custom-theme-title{
+	font-size: 1.4em;
+	font-weight: bolder;
+	margin: 0.2em 0.5em;
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.custom-theme-body{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: stretch;
+}
+.custom-theme-item{
+	padding: 0.2em 0.5em;
+}

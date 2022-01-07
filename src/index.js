@@ -7,18 +7,15 @@ import {BrowserRouter} from "react-router-dom";
 
 
 import LocalStorage from './core/LocalStorage';
-import {ToastProvider,MessageBoxProvider} from './components/';
-
+import AppProvider from './AppProvider';
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <LocalStorage>
-        <ToastProvider>
-          <MessageBoxProvider>
+      <AppProvider>
+        <LocalStorage>
             <App />
-          </MessageBoxProvider>
-        </ToastProvider>
-      </LocalStorage>
+        </LocalStorage>
+      </AppProvider>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')

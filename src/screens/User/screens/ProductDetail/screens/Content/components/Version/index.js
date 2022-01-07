@@ -25,7 +25,7 @@ export default function() {
 				<div className="d-flex">
 					<List className="d-flex" >
 						{
-							dataFetch.results.map(function(item,index){
+							dataFetch.data.map(function(item,index){
 								return (
 									<Item key={index}className="d-flex">
 										<Button 

@@ -46,7 +46,7 @@ export default memo(function MainMenuNavbarItem({to,keyApi,params,buttonClass,cl
     className:"text fs-0_8em fs-md-0_9em fs-lg-1em"
   }
   buttonTextAttr.className+=useMemo(function(){
-    if(fetchData.results.length !== 0 ){
+    if(fetchData.data.length !== 0 ){
         return " dropdown-toggle";
     }else{
       return "";

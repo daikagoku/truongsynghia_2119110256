@@ -44,7 +44,7 @@ function FooterInfo({className,...props}) {
   return (
     <List className="footer-info-list">
     	{
-        fetchData.results.map((item,index)=>(
+        fetchData.data.map((item,index)=>(
             <Item key={index} {...itemAttr}>
               <Icon icon={item.icon} className="footer-info-icon"/>
               <span className="footer-info-label">{item.title}:</span>

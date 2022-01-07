@@ -4,6 +4,8 @@ import Contact from './screens/Contact/';
 import Header from './screens/Header/';
 import Menu from './screens/Menu/';
 import Home from './screens/Home/';
+
+import Cart from './screens/Cart/';
 import ProductCategory from './screens/ProductCategory/';
 import ProductDetail from './screens/ProductDetail/';
 
@@ -15,6 +17,7 @@ export default function User({history,location,match,...props}) {
 		<Route path ="/" component={Contact}/>
 		<Route path ="/" component={Header}/>
 		<Route path ="/" component={Menu}/>
+		<Route path ="/" component={Cart}/>
 		<Switch>	
 			<Route exact path ="/" component={Home}/>
 			<Route path ="/product/detail" component={ProductDetail}/>

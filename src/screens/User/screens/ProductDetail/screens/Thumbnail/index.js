@@ -26,19 +26,14 @@ function ProductDetailThumbnail({args,...props}){
         	version_alias:args[4]
         }
     });
+    console.log(dataFetchVersion,dataFetch)
     const list = useMemo(function(){
-    	let isArray1 = Array.isArray(dataFetchVersion.results);
-    	let isArray2 = Array.isArray(dataFetch.results)
-    	if(isArray1 && isArray2){
-			return dataFetchVersion.results.concat(dataFetch.results);
-    	}else if(isArray1){
-    		return dataFetchVersion.results;
-    	}else if(isArray2){
-    		 return dataFetch.results;
-    	}else {
-    		return [];
+    	const newList = [...dataFetch.data];
+    	if(dataFetchVersion.data.id !== undefined){
+    		newList.unshift(dataFetchVersion.data);
     	}
-    },[dataFetchVersion.results,dataFetch.results]);
+    	return newList;
+    },[dataFetchVersion.data,dataFetch.data]);
 	return(
 		<div {...props}>
 		<Widget prefix="product-detail-thumbnail" className="h-12">

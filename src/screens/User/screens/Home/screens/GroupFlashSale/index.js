@@ -32,7 +32,7 @@ function GroupFlashSale(props) {
                          <div className="row group-flash-sale-body">
                             {
                                 fetchData.isLoading && <GroupLoading />
-                                || <GroupSlide data={fetchData} />
+                                || <GroupSlide fetchData={fetchData} />
                             }
                          </div>
                      </div>

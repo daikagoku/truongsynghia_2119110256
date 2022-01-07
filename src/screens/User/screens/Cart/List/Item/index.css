@@ -1,0 +1,10 @@
+.cart-list-card{
+	display: flex;
+	width: 100%;
+	margin: 0.2em 0.5em;
+	padding: 0.2em;
+	border-radius: 0.5em;
+	color: var(--second-color);
+	background: var(--second-background);
+	border: 0.05em solid var(--second-border);
+}

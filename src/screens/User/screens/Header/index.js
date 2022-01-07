@@ -1,12 +1,12 @@
 import './index.css';
 import clsx from 'clsx';
 import {memo,useRef,useEffect,useState} from 'react';
-import HeaderLogo from './logo';
-import HeaderContact from './contact';
-import HeaderSearch from './search';
-import HeaderSetting from './setting';
-import HeaderCart from './cart';
-import HeaderUser from './user';
+import HeaderLogo from './Logo';
+import HeaderContact from './Contact';
+import HeaderSearch from './Search';
+import HeaderSetting from './Setting';
+import HeaderCart from './Cart';
+import HeaderUser from './User';
 function Header(props) {
   const thisRef       = useRef(null);
   return (

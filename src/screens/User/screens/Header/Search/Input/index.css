@@ -1,0 +1,18 @@
+.header-search-input{
+    border-radius:1.2em;
+	height: 2.4em;
+	flex: 1;
+	width: 100%;
+	padding-left: 1.5em;
+	padding-right: 3.5em;
+	color: var(--second-color);
+	background: var(--second-background);
+	border: 0.1em solid var(--second-border);
+    transition: all 0.3s;
+}
+.header-search-input:focus{
+	z-index: 20;
+	border-bottom-color: transparent;
+	border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}

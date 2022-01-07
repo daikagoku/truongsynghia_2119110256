@@ -5,7 +5,10 @@ import clsx from 'clsx';
 import useThemeModel from './model/Theme/';
 import ErrorPage from "./screens/Error";
 import UserPage from "./screens/User";
-import {ToastContainer,MessageBoxContainer} from "./components/";
+import MessageContainer from "./screens/Messages/";
+import ToastContainer from "./screens/Toasts/";
+import DialogContainer from "./screens/Dialogs/";
+import AuthContainer from "./screens/Auth/";
 function App({...props}) {
   const [theme] = useThemeModel();
   const location = useLocation();
@@ -17,8 +20,10 @@ function App({...props}) {
   },[location]);
   return (
   <section ref = {thisRef} id="App" className={clsx(theme.default,theme.current)}>
+      <MessageContainer />
       <ToastContainer />
-      <MessageBoxContainer />
+      <DialogContainer />
+      <AuthContainer />
       <Switch>
         <Route path="/error"component={ErrorPage} />
         <Route path="/"component={UserPage} />
@@ -29,5 +34,5 @@ function App({...props}) {
 export default memo(App);
 /*
 
-
+<ToastContainer />
 s*/

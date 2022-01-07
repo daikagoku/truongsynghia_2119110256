@@ -8,7 +8,7 @@ import {
   useRef,
   memo,
   useImperativeHandle} from 'react';
-export default memo(forwardRef(function Modal({prefix,show,title,widthSize,heightSize,children},ref) {
+export default memo(forwardRef(function Modal({prefix,onShow,onClose,onToggle,title,widthSize,heightSize,children},ref) {
   const [isShow,setShow] = useState(false);
   const thisRef = useRef({});
   const handle = useMemo(function(){
@@ -48,10 +48,22 @@ export default memo(forwardRef(function Modal({prefix,show,title,widthSize,heigh
     viewAttr.className+=" "+heightSize;
   };
   useEffect(function(){
-    if(show){
-      handle.show();
-    }
-  },[show]);
+    if(onShow && typeof(onShow) === 'function' && isShow){
+      onShow({
+        value:isShow
+      })
+    };
+    if(onClose && typeof(onClose) === 'function' && !isShow){
+      onClose({
+        value:isShow
+      })
+    };
+    if(onToggle && typeof(onToggle) === 'function'){
+      onToggle({
+        value:isShow
+      })
+    };
+  },[isShow])
   if(isShow){
     contentAttr.className+=" show";
   };

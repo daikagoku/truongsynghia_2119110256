@@ -24,7 +24,7 @@ export default memo(function ProductDetailContent({args,...props}) {
 
 	return(
 	<ProductDetailContext.Provider value={[state,dispatch]}>
-		<ProductContext.Provider value={dataFetch.results}>
+		<ProductContext.Provider value={dataFetch.data}>
 			<div {...props}>
 				{
 					<Widget prefix="product-detail-content" className="h-12">

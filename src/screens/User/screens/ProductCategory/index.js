@@ -11,7 +11,7 @@ function ProductCategory({...props}){
 				<section className="container">
 					<div className="row">
 						<div className="col col-3">
-							<Sidebar />
+							<Sidebar args = {args}/>
 						</div>
 						<div className="col col-9">
 							<GroupPage args = {args}/>

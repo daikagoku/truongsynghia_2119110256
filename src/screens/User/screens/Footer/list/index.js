@@ -13,7 +13,7 @@ function FooterList({keyApi,params,filter,className,...props}) {
   return (
     <List className="footer-list">
     	{
-    		fetchData.results.map(function(item,index){
+    		fetchData.data.map(function(item,index){
     			return(
 			  		<FooterListItem item={item} key={index} />
     		)})
