@@ -26,7 +26,6 @@ function HeaderSearch(props) {
       onSubmit:function(e){
         e.preventDefault();
         if(state.value !== ""){
-          console.log({"search":state.value})
           handleStore.set(newHistory());
           dispatch({
             key:'set_value',

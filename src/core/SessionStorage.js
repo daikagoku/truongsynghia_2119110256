@@ -1,8 +1,8 @@
 import {createContext,useState,useMemo,useEffect} from 'react';
-const LocalStorage = (function(){
+export const SessionStorage = (function(){
     const KEY  = 'GoShop';
     return function(){
-        const [store,setStore] = useState(JSON.parse(localStorage.getItem(KEY)) ?? {});
+        const [store,setStore] = useState(JSON.parse(sessionStorage.getItem(KEY)) ?? {});
         const handle = useMemo(function(){
             return {
                 get:function(key){
@@ -21,9 +21,9 @@ const LocalStorage = (function(){
             };
         },[store]);
         useEffect(function(){
-            localStorage.setItem(KEY,JSON.stringify(store));
+            sessionStorage.setItem(KEY,JSON.stringify(store));
         },[store]);
         return [store,handle];
    }
 })();
-export default LocalStorage;
+export default SessionStorage;

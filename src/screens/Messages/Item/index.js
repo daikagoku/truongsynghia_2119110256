@@ -4,7 +4,7 @@ import styles from './index.module.css';
 import useMessageModel from "../../../model/Message/";
 
 import {Icon} from '../../../components/';
-export default memo(function MessageBoxComponent({type,title,text,index,time,...props}){
+export default memo(function MessageBoxComponent({type,id,title,text,index,time,...props}){
 	const [isHidden,setHidden] = useState(false);
 	const [isClear,setClear] = useState(false);
 	const [messages,handleMes] = useMessageModel();

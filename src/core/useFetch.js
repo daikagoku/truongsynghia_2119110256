@@ -1,10 +1,15 @@
 import {useState,useEffect,useMemo} from "react";
 import { useAsync } from 'react-async';
-import {API} from './Config';
-function asyncFetch({apiFetch,option,initData,filter,sort,handle,position}) {
+import {API,getApiByParams} from './Config';
+
+function asyncFetch({apiFetch,apiSearch,option,initData,filter,sort,handle,position}) {
     return async function(setData,setError,setLoading){
-        console.log("[start]"+position+" fetch ",{api:apiFetch,data:initData});
-        return await fetch(apiFetch,option)
+        console.log("[start]"+position+" fetch ",
+            {api:apiFetch,
+                search:apiSearch,
+                data:initData});
+        
+        return await fetch(apiFetch+apiSearch,option)
             .then(function(res){
                 if(res.ok){
                     return res.json();
@@ -21,12 +26,19 @@ function asyncFetch({apiFetch,option,initData,filter,sort,handle,position}) {
                 }
                 setData(results);
                 setError("");
-                console.log("[finally]"+position+" fetch ",{api:apiFetch,data:results});
+                console.log("[finally]"+position+" fetch ",
+                    {api:apiFetch
+                        ,search:apiSearch
+                        ,data:results});
             })
             .catch(function(error){
                 setData(initData);
                 setError(error);
-                console.log("[error]"+position+" fetch ",{api:apiFetch,data:initData,error:error});
+                console.log("[error]"+position+" fetch ",
+                    {api:apiFetch,
+                        search:apiSearch,
+                        data:initData,
+                        error:error});
  
             })   
             .finally(function(){
@@ -43,31 +55,23 @@ function getApi(url,keyApi){
             return "";
     };
 }
-function getApiByParams(params){
-   let str = ( new URLSearchParams( params ) ).toString();
-   if(str != ""){
-        return "?"+str;
-   };
-   return "";
-}
-export default function useFetch({url,keyApi,uriApi,params,method,header,body,initData,filter,sort,handle,position,...props}){    
+
+export default function useFetch({url,keyApi,uriApi,params,search,method,header,initData,filter,sort,handle,position,...props}){    
     const [data,setData] = useState(initData);
     const [error,setError] = useState("");
     const [isLoading,setLoading] = useState(false);
-    let apiFetch = "";
-    apiFetch += useMemo(function(){
-        return getApi(url,keyApi);
-    },[keyApi,url]);
-    apiFetch += useMemo(function(){
+    const [apiFetch,setApi] = useState("");
+    const [apiSearch,setSearch] = useState("");
+    useEffect(function(){
+        let newApiFetch = getApi(url,keyApi);
         if(uriApi !== undefined){
-            return uriApi;
-        } else{
-            return "";
-        }
-    },[uriApi])
-    apiFetch += useMemo(function(){
-        return getApiByParams(params);
-    },[params]);
+           newApiFetch += uriApi;
+        };
+        setApi(newApiFetch);
+    },[url,keyApi,uriApi])
+   useEffect(function(){
+        setSearch(getApiByParams(params,search));
+    },[params,search])
     const option = useMemo(function(){
         return {
             method: method ?? 'GET',
@@ -78,20 +82,19 @@ export default function useFetch({url,keyApi,uriApi,params,method,header,body,in
         }
     },[]);
     useEffect(function(){
-        setLoading(true);
-        setData(initData);
-        if(body!==undefined && ( method == 'POST' || method == 'PUT' )){
-            option.body = JSON.stringify(body);
-        };
-        const usingFetch = asyncFetch({apiFetch,option,initData,filter,sort,handle,position});
-        usingFetch(setData,setError,setLoading);
-        // const timeFetch = setInterval(function(){
-        //     usingFetch(setData,setError,setLoading);
-        // },5000);
-        // return function(){
-        //     clearInterval(timeFetch)
-        // }
-    },[apiFetch])
+        if(apiFetch!=""){
+            setLoading(true);
+            setData(initData);
+            const usingFetch = asyncFetch({apiFetch,apiSearch,option,initData,filter,sort,handle,position});
+            usingFetch(setData,setError,setLoading);
+            // const timeFetch = setInterval(function(){
+            //     usingFetch(setData,setError,setLoading);
+            // },100);
+            // return function(){
+            //     clearInterval(timeFetch)
+            // }
+        }
+    },[apiFetch,apiSearch])
     return [{data,error,isLoading}]
 }
 

@@ -1,9 +1,9 @@
 import './index.css';
 import {forwardRef,useRef,memo} from 'react';
 import {Link} from 'react-router-dom';
-
+import {getApiByParams} from '../../core/Config';
 const LinkTag = (function(){
-	return function({href,to,children,onClick,className,type,...props},ref){
+	return function({params,href,to,children,onClick,className,type,...props},ref){
 		let Component = "a";
 		let thisRef = useRef();
 		const _Attr= {
@@ -21,10 +21,19 @@ const LinkTag = (function(){
 		};
 		if(href !== undefined){
 			_Attr.href = href;
+			if(params !== undefined){
+			_Attr.href+=getApiByParams(params)
+		}
 		}else if(to !== undefined){
 			Component = Link;
 			_Attr.to = to;
+			if(params !== undefined){
+			_Attr.to+=getApiByParams(params)
+		}
 		};
+		if(params !== undefined){
+			_Attr.href+=getApiByParams(params)
+		}
 		_Attr.onClick = function(event){
 			event.this = thisRef.current;
 			if(onClick !== undefined && typeof(onClick)==='function'){

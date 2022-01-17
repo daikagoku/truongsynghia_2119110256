@@ -9,9 +9,13 @@ export default function({props}) {
 		<section id="home">
 			<Slide />
 			<GroupFlashSale />
-			<GroupPage />
-			<GroupPost />
 		</section>
 
 	)
 }
+/*
+
+			<GroupPage />
+			<GroupPost />
+			
+*/

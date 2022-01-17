@@ -1,4 +1,4 @@
-import {memo,useReducer,useRef,useMemo,useEffect} from 'react';
+import {memo,useReducer,useRef,useMemo,useEffect,useContext} from 'react';
 import {useLocation} from 'react-router-dom';
 import clsx from 'clsx';
 import './index.css';
@@ -6,19 +6,18 @@ import useFetch from '../../../../../../core/useFetch';
 import GroupPageContent from './screens/Content/';
 import GroupPageLoading from './screens/Loading/';
 import GroupPagePagination from './screens/Pagination/';
-
+import {ProductCategoryContext} from '../../init';
 import {PageContext,initData,reducer} from './init';
-function GroupPage({args,...props}){
+function GroupPage({...props}){
 	const [state,dispatch] = useReducer(reducer,initData);
+    const [search,handleSearch] = useContext(ProductCategoryContext);
     const location = useLocation();
     const thisRef = useRef();
     const [fetchDataLength] = useFetch({
         initData:0,
         keyApi:'product',
         uriApi:'/category/count',
-        params:{
-            alias:args[3]
-        },
+        search:search,
         position:"product-category-page",
         handle:function(results){
             dispatch({
@@ -32,8 +31,8 @@ function GroupPage({args,...props}){
         initData:[],
         keyApi:'product',
         uriApi:'/category',
+        search:search,
         params:{
-            alias:args[3],
             offset:state.index,
             limit:state.limit
         },
@@ -48,18 +47,20 @@ function GroupPage({args,...props}){
 	return(
 <PageContext.Provider value={[{...state,this:thisRef.current},dispatch]}>
 	<section ref={thisRef} className="row">
-    			<div className="col col-12">
-    				<div className="row home-page-head">
-                    
-                    </div>
-                    <div className="row home-page-body">
-                        <GroupPageContent listItem={fetchDataList.results}/>
-                        <GroupPageLoading />
-                    </div>
-                    <div className="row home-page-footer">
-                        <GroupPagePagination/>
-                    </div>
-                </div>
+    	<div className="col col-12">
+    		<div className="row home-page-head">
+            
+            </div>
+            <div className="row home-page-body">
+                <GroupPageContent 
+                    listItem={fetchDataList.data} 
+                />
+                <GroupPageLoading />
+            </div>
+            <div className="row home-page-footer">
+                <GroupPagePagination/>
+            </div>
+        </div>
     </section>
 </PageContext.Provider>
 	)

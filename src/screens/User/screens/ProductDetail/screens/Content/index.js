@@ -1,6 +1,7 @@
 import {memo,useReducer} from 'react';
 import {Widget} from '../../../../../../components/';
 import useFetch from '../../../../../../core/useFetch';
+
 import './index.css';
 import Title from './components/Title/';
 import Price from './components/Price/';
@@ -9,17 +10,18 @@ import InputNumber from './components/InputNumber/';
 import AddToCartButton from './components/AddToCartButton/';
 import {ProductContext,ProductDetailContext,initData,reducer} from './init';
 
-export default memo(function ProductDetailContent({args,...props}) {
+export default memo(function ProductDetailContent({search,handleSearch,...props}) {
 	const [state,dispatch] = useReducer(reducer,initData);
 	const [dataFetch] = useFetch({
         initData:{},
         keyApi:'product',
-        uriApi:'/detail',
         position:"product-detail",
-        params:{
-        	alias:args[3],
-        	version_alias:args[4]
-        }
+        handle:function(results){
+        	if(Array.isArray(results) && results.length > 0){
+        		return results[0];
+        	}
+        },
+        search:search
     });
 
 	return(
@@ -29,7 +31,7 @@ export default memo(function ProductDetailContent({args,...props}) {
 				{
 					<Widget prefix="product-detail-content" className="h-12">
 						<Title />
-						<Version />
+						<Version handleSearch={handleSearch}/>
 						<Price />
 						<InputNumber />
 						<AddToCartButton />	

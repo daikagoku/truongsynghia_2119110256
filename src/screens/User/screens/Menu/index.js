@@ -74,7 +74,7 @@ function MainMenu({history,location,match,...props}) {
                 />
                 <MainMenuItem 
                     buttonClass="main-menu-toggle d-flex d-md-none"
-                    onClick={()=>(offcanvasRef.current && offcanvasRef.current.show())}
+                    onClick=""
                     icon="fas fa-bars"
                 >                        
                   {

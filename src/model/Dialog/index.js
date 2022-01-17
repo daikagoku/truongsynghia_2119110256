@@ -1,22 +1,35 @@
 import {useContext,useMemo,useImperativeHandle,useState,forwardRef,memo,useRef,useEffect} from 'react';
 import ReactDOM from 'react-dom';
 import Time from '../../core/Time';
-import useApp from '../../core/useApp';
-function useDialogModel(){
-	const [data,handle] = useApp("dialog",[]);
-	const handleMes = useMemo(function(){
-		const newMes = [...data];
+import {AppContext} from '../../AppInit';
+export function useDialogProvider(){
+	const [data,setData] = useState([]);
+	const handleDialog = useMemo(function(){
 		return {
 			show:function(props){
-				props.time = Time.create();
-				newMes.push(props);
-				handle.set(newMes);
-			},remove:function(index){
-				newMes.splice(index,1);
-				handle.set(newMes);
+				setData(function([...prevState]){
+					let id = 1;
+					if(prevState.length > 0 ){
+						id = prevState[0].id++;
+					}
+					props.id = id;
+					props.time = Time.create();
+					prevState.push(props);
+					return prevState;
+				})
+			},remove:function(id){
+				setData(function([...prevState]){
+					return prevState.filter(function(item){
+						return item.id != id;
+					});
+				})
 			}
 		}
 	},[data])
-  	return [data,handleMes];
+	return [data,handleDialog];
+}
+function useDialogModel(){
+	const dataApp = useContext(AppContext);
+	return dataApp['dialog'];
 };
 export default useDialogModel;

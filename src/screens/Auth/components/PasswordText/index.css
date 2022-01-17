@@ -30,6 +30,10 @@
 	left: 1.2em;
 	transform: translate(-50%,-50%);
 }
+.auth-input-hidden-btn{
+	right: 1.2em;
+	transform: translate(50%,-50%);
+}
 .auth-input-label.text{
 	left: 2.4em;
 	transform: translateY(-50%);

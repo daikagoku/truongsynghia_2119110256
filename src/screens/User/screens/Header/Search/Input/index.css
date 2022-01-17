@@ -8,11 +8,12 @@
 	color: var(--second-color);
 	background: var(--second-background);
 	border: 0.1em solid var(--second-border);
-    transition: all 0.3s;
+    transition: all 0.4s;
 }
 .header-search-input:focus{
 	z-index: 20;
 	border-bottom-color: transparent;
 	border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    transition: all 0s;
 }

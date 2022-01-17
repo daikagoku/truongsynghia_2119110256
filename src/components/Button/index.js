@@ -1,7 +1,8 @@
 import './index.css';
 import {forwardRef,useRef,memo} from 'react';
+import {getApiByParams} from '../../core/Config';
 import {Link} from 'react-router-dom';
-function Button({href,to,children,onClick,className,disabled,type,...props},ref){
+function Button({params,href,to,children,onClick,className,disabled,type,...props},ref){
 		let Component = 'button';
 		const thisRef = useRef();
 		const _Attr= {
@@ -21,10 +22,10 @@ function Button({href,to,children,onClick,className,disabled,type,...props},ref)
 		}
 		if(href !== undefined){
 			Component = "a";
-			_Attr.href = href;
+			_Attr.href = href+getApiByParams(params);
 		}else if(to !== undefined){
 			Component = Link;
-			_Attr.to = to;
+			_Attr.to = to+getApiByParams(params);
 		};
 		_Attr.onClick = function(event){
 			event.this = thisRef.current;

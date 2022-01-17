@@ -1,28 +1,30 @@
-import {memo,useReducer,useMemo} from 'react';
+import {memo,useState,useReducer,useMemo} from 'react';
 import clsx from 'clsx';
-import {AppContext,initData,reducer} from './AppInit';
+import {AppContext} from './AppInit';
+import {useSearchProvider} from './model/Search/';
+import {useDialogProvider} from './model/Dialog/';
+import {useMessageProvider} from './model/Message/';
+import {useToastProvider} from './model/Toast/';
+import {useCartProvider} from './model/Cart/';
+import {useAuthProvider} from './model/Auth/';
 function AppProvider({children,...props}){
-	const [state,dispatch] = useReducer(reducer,initData);
-	const handle = useMemo(function(){
-		return {
-			set:function(key,value){
-				dispatch({
-					key:"set",
-					value:{
-						[key]:value
-					}
-				})
-			},
-			remove:function(key){
-				dispatch({
-					key:'remove',
-					value:key
-				})
-			}
-		}
-	},[]);
+	const search = useSearchProvider();
+	const dialog = useDialogProvider();
+	const message = useMessageProvider();
+	const toast = useToastProvider();
+	const cart = useCartProvider();
+	const auth = useAuthProvider();
+	const dataApp = {
+		search,
+		dialog,
+		message,
+		toast,
+		cart,
+		auth
+	}
+	console.log({console,dataApp})
 	return(
-		<AppContext.Provider value={[state,handle]}>
+		<AppContext.Provider value={dataApp}>
 			{
 				children
 			}

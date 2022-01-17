@@ -4,7 +4,7 @@ import {Widget} from "../../../../../../components/";
 import CategoryList from "./screens/CategoryList/";
 import RatingList from "./screens/RatingList/";
 import './index.css';
-function Sidebar({...props}){
+function Sidebar(){
 	return(
 		<section className="row">
 			<div className="col col-12">

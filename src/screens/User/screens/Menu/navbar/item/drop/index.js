@@ -1,8 +1,15 @@
 import './index.css';
 import {memo,forwardRef,useRef,useEffect} from 'react';
 import clsx from 'clsx';
+import useFetch from '../../../../../../../core/useFetch';
 import {List,Item,Button,Drop} from '../../../../../../../components/';
-export default memo(forwardRef(function MainMenuDrop({listItem,to,...props},ref){
+export default memo(forwardRef(function MainMenuDrop({keyApi,params,to,...props},ref){
+    let [fetchData] = useFetch({
+        initData :[],
+        keyApi   :keyApi,
+        position :"main-menu",
+        params   :params
+    });
     const dropdown={
         className:clsx("main-menu-navbar-dropdown-content")
     };
@@ -15,16 +22,16 @@ export default memo(forwardRef(function MainMenuDrop({listItem,to,...props},ref)
     const dropdownBtn={
         className:"main-menu-navbar-dropdown-button"
     };
-    if(listItem !== undefined && listItem.length > 0 ){
+    if(fetchData.data && fetchData.data.length > 0 ){
         return(
         <Drop ref={ref} position="bottom" >
             <div {...dropdown}>
                 <List {...dropdownList}>
                     {
-                        listItem.map(function(_item,_index){
+                        fetchData.data.map(function(_item,_index){
                             return(
                                 <Item key={_index}{...dropdownItem}>
-                                    <Button to={to+"/"+_item.alias}{...dropdownBtn}>
+                                    <Button {...dropdownBtn} to={to} params={{...params,alias:_item.alias}}>
                                         {_item.title}
                                     </Button>
                                 </Item>

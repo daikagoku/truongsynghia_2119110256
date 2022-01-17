@@ -1,8 +1,8 @@
 import styles from './index.module.css';
-import {useContext} from 'react';
+import {useContext,memo} from 'react';
 import {ProductContext,ProductDetailContext} from '../../init';
 import {Link} from '../../../../../../../../components/';
-export default function ProductTitle({...props}){
+function ProductDetailTitle({...props}){
 	const [state,dispatch] = useContext(ProductDetailContext) ?? {};
 	const data = useContext(ProductContext);
 	let text = "Đang cập nhật";
@@ -20,3 +20,4 @@ export default function ProductTitle({...props}){
 		<Link {...attr}>{text}</Link>
 	)
 };
+export default memo(ProductDetailTitle)

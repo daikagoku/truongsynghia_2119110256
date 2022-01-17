@@ -3,17 +3,16 @@ import clsx from 'clsx';
 import useFetch from '../../../../../../core/useFetch';
 import {Widget} from '../../../../../../components/';
 import ThumbnailContent from './screens/';
-function ProductDetailThumbnail({args,...props}){
+function ProductDetailThumbnail({search,handleSearch,...props}){
 	const [dataFetchVersion] = useFetch({
         initData:{},
         keyApi:'image',
         uriApi:'/product',
         position:"product-detail-thumbnail",
         params:{
-        	position_alias:"product-version",
-        	product_alias:args[2],
-        	version_alias:args[3]
-        }
+        	position:"product-version"
+        },
+        search:search
     });
 	const [dataFetch] = useFetch({
         initData:[],
@@ -21,12 +20,10 @@ function ProductDetailThumbnail({args,...props}){
         uriApi:'/product',
         position:"product-detail-thumbnail",
         params:{
-        	position_alias:"product-album",
-        	product_alias:args[3],
-        	version_alias:args[4]
-        }
+        	position:"product-album"
+        },
+        search:search
     });
-    console.log(dataFetchVersion,dataFetch)
     const list = useMemo(function(){
     	const newList = [...dataFetch.data];
     	if(dataFetchVersion.data.id !== undefined){

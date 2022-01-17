@@ -1,19 +1,19 @@
-import {useContext,useEffect} from 'react';
+import {useContext,useEffect,memo} from 'react';
 import {List,Item,Button,Icon} from '../../../../../../../../components/';
 import useFetch from '../../../../../../../../core/useFetch';
+
 import styles from './index.module.css';
 import clsx from 'clsx';
-import {ProductContext,ProductDetailContext} from '../../init';
-export default function() {
-	const [state,dispatch] = useContext(ProductDetailContext);
-	const data = useContext(ProductContext);
+function ProductDetailVersion({handleSearch}) {
+	const alias = handleSearch.get('alias');
+	const version_alias = handleSearch.get('version_alias');
 	const [dataFetch] = useFetch({
         initData:[],
         position: 'product-detail-version',
         keyApi:'product',
         uriApi:'/version',
         params:{
-        	id:data.id || -1
+        	alias:alias
         }
     });
 	return(
@@ -26,11 +26,15 @@ export default function() {
 					<List className="d-flex" >
 						{
 							dataFetch.data.map(function(item,index){
+								const active = item.alias === version_alias;
+								function onClick(){
+									handleSearch.set('version_alias',item.alias);
+								}
 								return (
 									<Item key={index}className="d-flex">
 										<Button 
-											className={clsx(styles.button,"square-btn",{[styles.active]:(item.id === data.versionId)})} 
-											to={item.alias}
+											onClick={onClick}
+											className={clsx(styles.button,"square-btn",{[styles.active]:active})} 
 										>
 											{item.title}
 										</Button>
@@ -44,3 +48,5 @@ export default function() {
 		</div>
 	)
 }
+
+export default memo(ProductDetailVersion);

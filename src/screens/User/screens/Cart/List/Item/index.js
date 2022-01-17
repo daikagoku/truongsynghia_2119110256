@@ -12,8 +12,12 @@ export default memo(function({data,index}){
 	const [dataFetch] = useFetch({
 		initData:{},
 		keyApi:'product',
-		uriApi:'/detail',
 		position:'cart-item',
+		handle:function(results){
+        	if(Array.isArray(results) && results.length > 0){
+        		return results[0];
+        	}
+        },
 		params:{
 			id:data.productId,
 			version_id:data.versionId
@@ -24,7 +28,7 @@ export default memo(function({data,index}){
 	if(dataFetch.error === ""){
 		return(
 		<ProductContext.Provider value={{data:dataFetch.data}}>
-			<CartProductContext.Provider value={{data,index}}>
+			<CartProductContext.Provider value={{data}}>
 				<div className="row cart-list-card">
 					<div className="col col-4 ">
 						<ProductThumbnail />

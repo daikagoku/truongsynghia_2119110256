@@ -41,26 +41,26 @@ function GroupPage({...props}){
         })
     },[location])
 	return(
-<HomePageContext.Provider value={[{...state,this:thisRef.current},dispatch]}>
-	<section ref={thisRef} className="container-fluid home-page py-2">
-    	<div className="container-lg">
-    		<div className="row">
-    			<div className="col col-12">
-    				<div className="row home-page-head">
-                    
-                    </div>
-                    <div className="row home-page-body">
-                        <GroupPageContent listItem={fetchDataList.data}/>
-                        <GroupPageLoading />
-                    </div>
-                    <div className="row home-page-footer">
-                        <GroupPagePagination/>
-                    </div>
-                </div>
-    		</div>
-    	</div>
-    </section>
-</HomePageContext.Provider>
+        <HomePageContext.Provider value={[{...state,this:thisRef.current},dispatch]}>
+        	<section ref={thisRef} className="container-fluid home-page py-2">
+            	<div className="container-lg">
+            		<div className="row">
+            			<div className="col col-12">
+            				<div className="row home-page-head">
+                            
+                            </div>
+                            <div className="row home-page-body">
+                                <GroupPageContent listItem={fetchDataList.data}/>
+                                <GroupPageLoading />
+                            </div>
+                            <div className="row home-page-footer">
+                                <GroupPagePagination/>
+                            </div>
+                        </div>
+            		</div>
+            	</div>
+            </section>
+        </HomePageContext.Provider>
 	)
 }
 export default memo(GroupPage);

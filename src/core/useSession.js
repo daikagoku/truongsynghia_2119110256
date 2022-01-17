@@ -3,7 +3,7 @@ import {StoreContext} from '../AppInit';
 const useStorage = (function(){
     return function(nameSpace,initData){
         const storeData = useContext(StoreContext);
-        const [store,handleStore] = storeData['local'];
+        const [store,handleStore] = storeData['session'];
         useEffect(function(){
         if(handleStore.get(nameSpace) === undefined){
             handleStore.set(nameSpace,initData);

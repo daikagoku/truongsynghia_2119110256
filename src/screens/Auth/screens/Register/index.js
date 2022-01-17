@@ -14,7 +14,7 @@ export default function(){
 				<InputText label="Password:"icon="fas fa-lock"/>
 				<InputText label="Confirm Password:"icon="fas fa-lock"/>
 				<Checkbox label="Đồng ý với điều khoản và chính sách sử dụng"/>
-				<Submit text="Đăng ký"/>
+				<Submit action="register" text="Đăng ký"/>
 				<TextLink label="Bạn đã có tài khoản?"title="Đăng nhập"to="login"/>
 				<TextLink label="Bạn quên mật khẩu?"title="Quên mật khẩu"to="forget"/>
 				<MoreButtons title="Đăng nhập bằng tài khoản khác"/>

@@ -8,13 +8,16 @@ export default memo(function ProductTitle({...props}){
 	let text = "Đang cập nhật";
 	const attr={
 		...props,
+		params:{},
 		className:clsx(styles.title)
 	};
 	if(data.title !== undefined){
-		text="/"+data.title+"/"+data.versionTitle;
+		text=data.title+"/"+data.versionTitle;
 	};
 	if(data.alias !==undefined){
-		attr.to="/product/detail/"+data.alias+"/"+data.versionAlias;
+		attr.to="/product/detail/";
+		attr.params.alias = data.alias;
+		attr.params.version_alias = data.versionAlias;
 	};
 	return(
 		<Link {...attr}>{text}</Link>

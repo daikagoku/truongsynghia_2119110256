@@ -27,3 +27,21 @@ export const API = {
 	about    : API_ABOUT
 
 };
+
+export function getApiByParams(params,search){
+   if(search === undefined){
+   		search = "";
+   }
+   let paramUrl = ( new URLSearchParams( params ) ).toString();
+   if(paramUrl !== ""){
+        if(search === ""){
+        	return "?"+paramUrl;
+        }else{
+        	return search+"&"+paramUrl;
+        }
+   };
+   return search;
+}
+export function getParamsBySearch(search){
+   return new URLSearchParams( search )
+}

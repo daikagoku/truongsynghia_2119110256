@@ -20,9 +20,11 @@ export default function({fetchData}){
 			setIndex(thisRef.current.state.activeIndex);
 		}
 	},[thisRef.current]);
-	function handleSlideChanged(event){
-		setIndex(event.item);
-	};
+	const handleSlideChanged = useMemo(function(){
+		return function(event){
+			setIndex(event.item);
+		};
+	})
 	if(!fetchData.error){
 		return (
 		  <SlideContext.Provider value={[thisRef.current,fetchData.data]}>
@@ -47,8 +49,7 @@ export default function({fetchData}){
 									}
 									items={items}
 								/>
-			    	 		<BackButton />
-				    	 	<NextButton />
+			    	 		
 		    	 	</div>
 		    </SlideContext.Provider>
 		  );
@@ -56,3 +57,7 @@ export default function({fetchData}){
 		return <></>
 	}
 }
+/*
+<BackButton />
+<NextButton />
+*/

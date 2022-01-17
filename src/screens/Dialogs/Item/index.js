@@ -65,7 +65,7 @@ export default memo(function DialogComponent({type,title,text,index,time,yes,no,
 	if(!isClear){
 		const mesType = getType(type);
 		return(
-			<div data-index={index} className={clsx(styles.container,mesType.type,{[styles.hidden]:isHidden})}>
+			<div data-index={index}style={{'--index':index}} className={clsx(styles.container,mesType.type,{[styles.hidden]:isHidden})}>
 				<div className={clsx(styles.head)}>
 					<Icon className={clsx(styles.icon)} icon={mesType.icon}/>
 					<span className={clsx(styles.title)}>{title ?? mesType.title}</span>

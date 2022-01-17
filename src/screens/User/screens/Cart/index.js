@@ -1,5 +1,5 @@
 import {Button,Icon,Offcanvas} from '../../../../components/';
-import {useRef,memo,useEffect} from 'react';
+import {useRef,memo,useEffect,useMemo} from 'react';
 
 import useCartModel from '../../../../model/Cart';
 import {CartContext} from './init';
@@ -10,9 +10,11 @@ import './index.css';
 export default memo(function HeaderCart(){
 	const OffcanvasRef = useRef();
 	const [cart,handleCart] = useCartModel();
-	const totalItem = cart.data.reduce(function(results,item){
-		return results+item.quantity;
-	},0);
+	const totalItem = useMemo(function(){
+		return cart.data.reduce(function(results,item){
+			return results+item.quantity;
+		},0)
+	},[cart]);
 	useEffect(function(){
 		if(cart.isShow){
 			OffcanvasRef.current.show();

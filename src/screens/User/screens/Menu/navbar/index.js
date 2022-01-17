@@ -28,7 +28,7 @@ function MenuNavbar({...props},ref){
             <MainMenuNavbarItem 
               keyApi ="category"
               params = {{parent_alias:'phu-kien'}}
-                            to = "/product/category"
+              to = "/product/category"
               icon   ="fas fa-headphones-alt"
               text   ="Phụ kiện"
             />

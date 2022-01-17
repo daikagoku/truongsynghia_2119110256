@@ -28,7 +28,7 @@ function HomePageContent({listItem,...props}){
                 setViewItem(12)
                 break;
             case "xl":
-                setViewItem(10)
+                setViewItem(12)
                 break;
             case "xxl":
                 setViewItem(12)

@@ -4,6 +4,7 @@
 	box-shadow: 0 0 0.1em 0.1em var(--second-shadow);
 	border: 0.1em solid var(--second-border) ;
 
+	z-index: var(--index);
 	border-radius: 0.5em;
 	width: 18em;
 	max-width: 100%;
@@ -12,7 +13,6 @@
 	margin: 0.2em 0; 
 	pointer-events: auto;
 	animation: message-box-show 1 0.3s linear both;
-	
 	position: absolute;
 	top: 50%;
 	left: 50%;

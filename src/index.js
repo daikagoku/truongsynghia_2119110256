@@ -5,18 +5,17 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from "react-router-dom";
 
-
-import LocalStorage from './core/LocalStorage';
 import AppProvider from './AppProvider';
+import AppStoreProvider from './AppStoreProvider';
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+  <BrowserRouter>
+    <AppStoreProvider>
       <AppProvider>
-        <LocalStorage>
-            <App />
-        </LocalStorage>
+        <App />
       </AppProvider>
-    </BrowserRouter>
+    </AppStoreProvider>
+  </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

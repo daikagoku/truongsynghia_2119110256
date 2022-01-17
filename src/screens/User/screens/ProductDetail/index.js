@@ -7,12 +7,14 @@ import {
 	memo,
 	useMemo
 } from 'react';
-import useFetch from '../../../../core/useFetch';
+import { useLocation} from 'react-router-dom';
+import useSearchModel from '../../../../model/Search/';
 import ProductDetailContent from './screens/Content/';
 import ProductDetailLoading from './screens/Loading/';
 import ProductDetailThumbnail from './screens/Thumbnail/';
-export default memo(function({history,location,match}){
-	const args = location.pathname.split("/");
+export default memo(function({...props}){
+
+	const [search,handleSearch] = useSearchModel();
 	const sectionAttr = {
 			id:"product-detail",
 			className:"container-fluid"
@@ -22,11 +24,13 @@ export default memo(function({history,location,match}){
 				<div className="container">
 					<div className="row">
 						<ProductDetailThumbnail
-							args = {args}
+							handleSearch = {handleSearch}
+							search={search}
 							className="col col-12 col-md-6 p-1"
 						/>
 						<ProductDetailContent
-							args = {args}
+							handleSearch = {handleSearch}
+							search={search}
 							className="col col-12 col-md-6 p-1"
 						/>
 					</div>

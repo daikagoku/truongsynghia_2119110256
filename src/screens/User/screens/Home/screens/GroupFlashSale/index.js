@@ -10,7 +10,9 @@ function GroupFlashSale(props) {
     const [fetchData] = useFetch({
         initData:[],
         keyApi:'product',
-        uriApi:'/sale_price',
+        params:{
+            sale_price:[0,-1]
+        },
         position:'home-sale'
     });
     return (

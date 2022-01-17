@@ -45,7 +45,8 @@ export default memo(function Auth({...props}){
 				ref={modalRef} 
 				widthSize="w-12 w-sm-9 w-md-8 w-lg-7 w-xl-6" 
 				heightSize="h-12"
-				title="">
+				title=""
+			>
 				{state.action ==='login' && <FormLogin />}
 				{state.action ==='register' && <FormRegister />}
 			</Modal>
