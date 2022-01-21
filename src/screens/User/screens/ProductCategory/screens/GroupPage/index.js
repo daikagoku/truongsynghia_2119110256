@@ -13,31 +13,63 @@ function GroupPage({...props}){
     const [search,handleSearch] = useContext(ProductCategoryContext);
     const location = useLocation();
     const thisRef = useRef();
-    const [fetchDataLength] = useFetch({
+    const [fetchDataLength,handleFetchLength] = useFetch({
         initData:0,
         keyApi:'product',
         uriApi:'/category/count',
-        search:search,
-        position:"product-category-page",
-        handle:function(results){
-            dispatch({
-                key:"set_length",
-                value:results
-            })
-            return results;
-        }
+        position:"product-category-page"
     });
-	const [fetchDataList] = useFetch({
+    useEffect(function(){
+        function get(){
+            handleFetchLength.get({
+                params:{
+                    parent_alias:handleSearch.get("parent_alias"),
+                    alias:handleSearch.get("alias"),
+                    query:handleSearch.get("query"),
+                },
+                handle:function(results){
+                    dispatch({
+                        key:"set_length",
+                        value:results
+                    })
+                    return results;
+                }
+            })
+        }
+        get();
+        const interval = setInterval(function(){
+            get();
+        },10000);
+        return function(){
+            clearInterval(interval)
+        }
+    },[search])
+    const [fetchDataList,handleFetchList] = useFetch({
         initData:[],
         keyApi:'product',
         uriApi:'/category',
-        search:search,
-        params:{
-            offset:state.index,
-            limit:state.limit
-        },
         position:"product-category-page"
     });
+    useEffect(function(){
+        function get(){
+            handleFetchList.get({
+                params:{
+                    parent_alias:handleSearch.get("parent_alias"),
+                    alias:handleSearch.get("alias"),
+                    query:handleSearch.get("query"),
+                    offset:state.index,
+                    limit:state.limit
+                }
+            })
+        }
+         get()
+        const interval = setInterval(function(){
+            get()
+        },2000);
+        return function(){
+            clearInterval(interval);
+        }
+    },[state.index,state.limit,search])
     useEffect(function(){
         dispatch({
             key:"set_index",

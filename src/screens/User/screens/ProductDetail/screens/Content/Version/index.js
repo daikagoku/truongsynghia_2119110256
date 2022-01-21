@@ -1,32 +1,34 @@
 import {useContext,useEffect,memo} from 'react';
-import {List,Item,Button,Icon} from '../../../../../../../../components/';
-import useFetch from '../../../../../../../../core/useFetch';
+import {List,Item,Button,Icon} from '../../../../../../../components/';
+import useFetch from '../../../../../../../core/useFetch';
 
 import styles from './index.module.css';
 import clsx from 'clsx';
-function ProductDetailVersion({handleSearch}) {
-	const alias = handleSearch.get('alias');
-	const version_alias = handleSearch.get('version_alias');
-	const [dataFetch] = useFetch({
+function ProductDetailVersion({search,handleSearch}) {
+	const [dataFetch,handleFetch] = useFetch({
         initData:[],
         position: 'product-detail-version',
         keyApi:'product',
-        uriApi:'/version',
-        params:{
-        	alias:alias
-        }
+        uriApi:'/version'
     });
+    useEffect(function(){
+    	handleFetch.get({
+    		params:{
+    			alias:handleSearch.get('alias')
+    		}
+    	})
+    },[search])
 	return(
 		<div className="row product-detail-attr">
 			<div className="col col-4 justify-content-center">
 				<span>Phiên bản:</span>
 			</div>
 			<div className="col col-8">
-				<div className="d-flex">
+				<div className="d-flex justify-content-center">
 					<List className="d-flex" >
 						{
 							dataFetch.data.map(function(item,index){
-								const active = item.alias === version_alias;
+								const active = handleSearch.has("version_alias",item.alias);
 								function onClick(){
 									handleSearch.set('version_alias',item.alias);
 								}

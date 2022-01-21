@@ -1,15 +1,17 @@
 import './index.css';
-import {memo,useState} from "react";
+import {memo,useState,useEffect} from "react";
 import useFetch from '../../../../../core/useFetch';
 import {List} from '../../../../../components/';
 import FooterListItem from './Item/';
 function FooterList({keyApi,params,filter,className,...props}) {
-	const [fetchData] = useFetch({
+	const [fetchData,handleFetch] = useFetch({
 		initData:[],
 		keyApi:keyApi,
-		params:params,
 		position:"footer-list"
 	});
+	useEffect(function(){
+		handleFetch.get({params})
+	},[params])
   return (
     <List className="footer-list">
     	{

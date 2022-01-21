@@ -5,11 +5,11 @@ export default function ProductCurrendPrice({attr,styles}){
 	const {data} = useContext(ProductContext) ?? {};
 	let text="";
 	const _attr = {...attr};
-	if(data.salePrice && data.price){
+	if(data && data.salePrice && data.price){
 		text=data.salePrice+"$";
 		_attr.className+=" "+styles.sale;
 		return (<span {..._attr}>{text}</span>)
-	}else if(data.price){
+	}else if(data && data.price){
 		text=data.price+"$";
 		return (<span {..._attr}>{text}</span>)
 	}else{

@@ -11,6 +11,7 @@ function RatingList({...props}){
 			{
 				listItem.map(function(item,index){
 					let isCheck = (item === indexCheck);
+					console.log(item,indexCheck)
 					let setCheck = function(value){
 						if(value === true){
 							setIndex(item);
@@ -19,7 +20,10 @@ function RatingList({...props}){
 						}
 					}
 					return (
-						<RatingItem key={index} isCheck={isCheck} setCheck={setCheck}>
+						<RatingItem 
+							key={index} 
+							isCheck={isCheck} 
+							setCheck={setCheck}>
 							<RatingGroup rating={item}/>
 						</RatingItem>
 					)

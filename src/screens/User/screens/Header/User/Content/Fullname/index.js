@@ -5,7 +5,7 @@ import {Icon} from '../../../../../../../components/';
 export default function UserFullname({...props}){
 	const [data] = useContext(UserContext);
 	let text = "Đang cập nhật";
-	if(data.fullname !== undefined){
+	if(data.fullname){
 		text = data.fullname;
 	};
 	const attr={

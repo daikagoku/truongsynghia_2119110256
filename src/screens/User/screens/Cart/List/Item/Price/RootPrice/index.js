@@ -5,7 +5,7 @@ import {ProductContext} from '../../init';
 export default function ProductRootPrice({attr,styles}){
 	const {data} = useContext(ProductContext) ?? {};
 	const _attr = {...attr};
-	if(data.price && data.salePrice){
+	if(data && data.price && data.salePrice){
 		const text=data.price+"$";
 		_attr.className+=" "+styles.root;
 		return (<span {..._attr}>{text}</span>)

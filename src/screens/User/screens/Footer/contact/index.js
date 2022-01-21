@@ -1,24 +1,28 @@
 import './index.css';
-import React,{memo} from 'react';
+import React,{memo,useEffect} from 'react';
 import useFetch from '../../../../../core/useFetch';
 import {List,Item,Button,Icon} from '../../../../../components/';
 function FooterContact({className,...props}) {
-  const [fetchData] = useFetch({
+  const [fetchData,handleFetch] = useFetch({
     initData:[],
     keyApi:"about",
-    position:"footer-contact",
-    handle:function(datas){
-      return datas.reduce(function(result,data,index){
-        if(listInfo[data.alias]){
-          result.push( {
-            ...data,
-            ...listInfo[data.alias]
-          })
-        }
-        return result;
-      },[]);
-    }
+    position:"footer-contact"
   });
+  useEffect(function(){
+    handleFetch.get({
+      handle:function(datas){
+        return datas.reduce(function(result,data,index){
+          if(listInfo[data.alias]){
+            result.push( {
+              ...data,
+              ...listInfo[data.alias]
+            })
+          }
+          return result;
+        },[]);
+      }
+    })
+  },[])
   const listInfo = {
     facebook:{
       buttonClass:"facebook",

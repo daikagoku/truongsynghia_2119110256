@@ -1,13 +1,16 @@
 import './index.css';
-import {memo,useMemo} from 'react';
+import {memo,useMemo,useEffect} from 'react';
 import useFetch from '../../../../../core/useFetch';
 import {List,Item,Icon} from '../../../../../components/';
 function FooterInfo({className,...props}) {
-	const [fetchData] = useFetch({
+	const [fetchData,handleFetch] = useFetch({
     initData:[],
     position:"footer-info",
-    keyApi:"about",
-    handle:function(datas){
+    keyApi:"about"
+  });
+  useEffect(function(){
+    handleFetch.get({
+      handle:function(datas){
       return datas.reduce(function(result,data,index){
         if(listInfo[data.alias]){
           result.push( {
@@ -17,8 +20,8 @@ function FooterInfo({className,...props}) {
         }
         return result;
       },[]);
-    }
-  });
+    }})
+  },[])
   const listInfo = useMemo(function(){
     return {
       copyright:{

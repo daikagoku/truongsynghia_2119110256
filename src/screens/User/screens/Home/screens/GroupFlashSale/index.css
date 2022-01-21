@@ -28,7 +28,8 @@
     border-bottom: 0.1em dashed var(--second-border);
 }
 .group-flash-sale-body{
-	padding: 0.5em 0;
+	padding: 1em 0;
+	position: relative;
 }
 
 .group-flash-sale-button-view:hover{

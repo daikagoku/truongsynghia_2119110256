@@ -1,6 +1,7 @@
 
 .header-user_widget{
 	margin: 0.2em 0.4em;
+	padding: 0.5em;
 }
 .header-user_widget.head .widget-body{
 	display: flex;

@@ -38,15 +38,19 @@ function HomePageContent({listItem,...props}){
 	return(
 		<List className={clsx("d-flex flex-wrap",styles.list)}>
 			{
-				listItem.map(function(item,index){
-					return(
-					<Item key={index}className={clsx("col col-6 col-sm-4 col-md-3 col-xl-2pt col-xxl-2 px-1 py-1")}>
-						<CardProductVertical prefix="group-flash-sale" data={item} index = {index} />
-					</Item>
-					)
-				})
-			}
+                listItem.map(function(item,index){
+                    return(
+                    <Item key={index}className={clsx("col col-6 col-sm-4 col-md-3 col-xl-2pt col-xxl-2 px-1 py-1")}>
+                        <CardProductVertical prefix="group-flash-sale" data={item} index = {index} />
+                    </Item>
+                    )
+                })
+            }
 		</List>
 	)
 }
 export default memo(HomePageContent);
+/*
+{
+                
+            }*/

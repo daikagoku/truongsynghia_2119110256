@@ -14,7 +14,7 @@ export default memo(function ProductPrice({className,...props}){
 				<span>Giá:</span>
 			</div>
 			<div className="col col-8">
-				<div className="d-flex">
+				<div className="d-flex justify-content-center">
 					<CurrentPrice styles={{...styles}} attr={{...attr}}/>					
 					<RootPrice styles={{...styles}} attr={{...attr}}/>	
 				</div>

@@ -1,4 +1,4 @@
-import {useContext} from "react";
+import {useContext,useMemo} from "react";
 import clsx from 'clsx';
 import {SlideContext} from '../index';
 import {List,Item,Button,Icon} from '../../../../../../../../../components/';
@@ -8,11 +8,11 @@ export  function BackButton(){
 	const buttonAttr = {
 		className:clsx("circle-btn",styles.button,styles.back)	
 	}
-	if(slide){
-		buttonAttr.onClick = function(){
-			slide.slidePrev();
-		}
-	}
+	buttonAttr.onClick= useMemo(function(){
+			return function(){
+				slide.slidePrev();
+			}
+	})
 	return(
 		<Button 
 		    {...buttonAttr}
@@ -26,11 +26,11 @@ export  function NextButton(){
 	const buttonAttr = {
 		className:clsx("circle-btn",styles.button,styles.next)	
 	}
-	if(slide){
-		buttonAttr.onClick=function(){
-			slide.slideNext();
-		}
-	}
+	buttonAttr.onClick= useMemo(function(){
+			return function(){
+				slide.slideNext();
+			}
+	})
 	return(
 		<Button 
 		    {...buttonAttr}

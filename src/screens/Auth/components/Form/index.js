@@ -1,5 +1,4 @@
 import {Form} from '../../../../components/';
-import useAuthModel from '../../../../model/Auth';
 import {AuthContext} from '../../init';
 import {useState,useMemo,useEffect} from 'react';
 import clsx from 'clsx';
@@ -16,35 +15,27 @@ const handleData = function(data,setData){
 		}
 	}
 }
-export default function({action,children,className,...props}){
-	const [auth,handleAuth] = useAuthModel();
-	const [value,setValue] = useState(auth.user);
-	const [valid,setValid] = useState({});
-	const [validate,setValidate] = useState({});
+export default function({value,setValue,valid,setValid,action,children,className,...props}){
+	const valueForm = value ?? {};
+	const validForm = valid ?? {};
+	const [validateForm,setValidate] = useState({});
 	const handleData = useMemo(function(){
-		const newValue = {...value};
-		const newValid = {...valid};
-		return {
-			delete:function(key){
-				delete newValue[key];
-				setValue(newValue)
-				delete newValid[key];
-				setValid(newValid)
-			}
-		}
-	},[value,valid]);
+		return {}
+	},[valueForm,validForm]);
 	handleData.set = useMemo(function(){
 		return function(key,value){
-			setValue(function(prevValue){
-				return{
-					...prevValue,
-					[key]:value
-				}
-			});
+			if(setValue){
+				setValue(function(prevValue){
+					return{
+						...prevValue,
+						[key]:value
+					}
+				});
+			}
 		}
-	},[value]);
+	},[valueForm]);
 	handleData.valid = useMemo(function(){
-		const newValid = {...valid};
+		const newValid = {...validForm};
 		return function(key,value){
 			setValid(function(prevValid){
 				return{
@@ -53,20 +44,22 @@ export default function({action,children,className,...props}){
 				}
 			});
 		}
-	},[valid]);
+	},[validForm]);
 	handleData.validate = useMemo(function(){
-		const newValidate = {...validate};
+		const newValidate = {...validateForm};
 		return function(key,value){
-			setValidate(function(prevValid){
+			if(setValid){
+				setValidate(function(prevValid){
 				return{
 					...prevValid,
 					[key]:value
 				}
 			});
+			}
 		}
-	},[validate]);
+	},[validateForm]);
 	return (
-	<AuthContext.Provider value={[{value,valid,validate},handleData]}>
+	<AuthContext.Provider value={[{value:valueForm,valid:validForm,validate:validateForm},handleData]}>
 		<Form className={clsx("auth-form",{[className]:className})} {...props}>
 			{children}
 		</Form>

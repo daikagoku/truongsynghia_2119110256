@@ -28,19 +28,16 @@ export const API = {
 
 };
 
-export function getApiByParams(params,search){
-   if(search === undefined){
-   		search = "";
+export function getApiByParams(params){
+   if(params !== undefined){
+   	   let paramUrl = ( new URLSearchParams( params ) ).toString();
+	   if(paramUrl !== ""){
+	        return "?"+paramUrl;
+	   }else{
+	   	 	return "";
+	   }
    }
-   let paramUrl = ( new URLSearchParams( params ) ).toString();
-   if(paramUrl !== ""){
-        if(search === ""){
-        	return "?"+paramUrl;
-        }else{
-        	return search+"&"+paramUrl;
-        }
-   };
-   return search;
+   return "";
 }
 export function getParamsBySearch(search){
    return new URLSearchParams( search )

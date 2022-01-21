@@ -16,7 +16,7 @@ function Footer(props) {
                   <Widget title="THÔNG TIN"prefix="footer">
                       <FooterList 
                         keyApi="post"
-                        params={{parent_alias:'thong-tin'}}
+                        params={{topic_alias:'thong-tin'}}
                       />
                   </Widget>
                 </div>
@@ -24,7 +24,7 @@ function Footer(props) {
                   <Widget title="CHÍNH SÁCH"prefix="footer">
                       <FooterList 
                         keyApi="post"
-                        params={{parent_alias:'chinh-sach'}}
+                        params={{topic_alias:'chinh-sach'}}
                       />
                   </Widget>
                 </div>

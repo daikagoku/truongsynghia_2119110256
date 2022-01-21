@@ -11,10 +11,14 @@ export default function({fetchData}){
 
 	const items = useMemo(function(){
 		return fetchData.data.map(function(item,index){
-			return (<CardProductVertical prefix="group-flash-sale" data={item} index = {index} />)
+			return (	
+				<CardProductVertical 
+					prefix="group-flash-sale" 
+					data={item} 
+					index={index} />
+			)
 		});
 	},[fetchData.data]);
-
 	useEffect(function(){
 		if(thisRef.current){
 			setIndex(thisRef.current.state.activeIndex);
@@ -28,7 +32,7 @@ export default function({fetchData}){
 	if(!fetchData.error){
 		return (
 		  <SlideContext.Provider value={[thisRef.current,fetchData.data]}>
-		    <div 	id="group-flash-sale">
+		    		<div 	id="group-flash-sale">
 			    	 		<AliceCarousel 
 									ref = {thisRef}
 									activeIndex={index}
@@ -48,8 +52,9 @@ export default function({fetchData}){
 										}
 									}
 									items={items}
-								/>
-			    	 		
+								/>	
+								<BackButton />
+								<NextButton />	    	 		
 		    	 	</div>
 		    </SlideContext.Provider>
 		  );
@@ -58,6 +63,5 @@ export default function({fetchData}){
 	}
 }
 /*
-<BackButton />
-<NextButton />
+
 */

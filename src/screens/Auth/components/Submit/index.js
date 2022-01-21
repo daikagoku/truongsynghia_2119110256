@@ -4,12 +4,14 @@ import {AuthContext} from '../../init';
 import clsx from 'clsx';
 import './index.css';
 import {memo,useContext,useMemo} from 'react';
-function AuthSubmit({action,text,...props}){
+function AuthSubmit({action,text,onSubmit,...props}){
 	const [data,handleData] = useContext(AuthContext);
 	const [auth,handleAuth] = useAuthModel();
 	const handleSubmit = function(event){
 			switch (action) {
 				case 'login':
+				case 'register':
+					console.log(data)
 					const validCount = Object.keys(data.validate).reduce(function(results,key){
 						const valid = data.validate[key](data.value[key]);
 						handleData.valid(key,valid);
@@ -20,7 +22,9 @@ function AuthSubmit({action,text,...props}){
 						}
 					},0)
 					if(validCount === 0){
-						handleAuth.login(data.value)
+						if(onSubmit){
+							onSubmit(data.value);
+						}
 					}
 					break;
 				default:

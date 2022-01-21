@@ -9,6 +9,8 @@ import Cart from './screens/Cart/';
 import ProductCategory from './screens/ProductCategory/';
 import ProductDetail from './screens/ProductDetail/';
 
+import PostDetail from './screens/PostDetail/';
+
 import Footer from './screens/Footer/';
 export const UserPageContext = createContext({});
 export default function User({history,location,match,...props}) {
@@ -22,6 +24,8 @@ export default function User({history,location,match,...props}) {
 			<Route exact path ="/" component={Home}/>
 			<Route path ="/product/detail" component={ProductDetail}/>
 			<Route path ="/product/category" component={ProductCategory}/>
+
+			<Route path ="/post/detail" component={PostDetail}/>
 			<Redirect to='/error'/>
 		</Switch>
 		<Route path ="/" component={Footer}/>

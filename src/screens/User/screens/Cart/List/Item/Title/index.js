@@ -11,10 +11,10 @@ export default memo(function ProductTitle({...props}){
 		params:{},
 		className:clsx(styles.title)
 	};
-	if(data.title !== undefined){
+	if(data && data.title){
 		text=data.title+"/"+data.versionTitle;
 	};
-	if(data.alias !==undefined){
+	if(data && data.alias){
 		attr.to="/product/detail/";
 		attr.params.alias = data.alias;
 		attr.params.version_alias = data.versionAlias;

@@ -1,4 +1,4 @@
-import {memo} from 'react';
+import {memo,useEffect} from 'react';
 import './index.css';
 import useFetch from '../../../../../../core/useFetch';
 import {Button} from '../../../../../../components/';
@@ -7,14 +7,27 @@ import GroupLoading from './screens/Loading/';
 import GroupTitle from './screens/Title';
 import GroupTime from './screens/Time';
 function GroupFlashSale(props) {
-    const [fetchData] = useFetch({
+    const [fetchData,handleFetch] = useFetch({
         initData:[],
         keyApi:'product',
-        params:{
-            sale_price:[0,-1]
-        },
         position:'home-sale'
     });
+    useEffect(function(){
+         function get(){
+            handleFetch.get({
+                params:{
+                    sale_price:[0,-1]
+                }
+            })
+        }
+        get();
+        const interval = setInterval(function(){
+            get();
+        },10000)
+        return function(){
+            clearInterval(interval);
+        }
+    },[])
     return (
         <div className="container-fluid group-flash-sale-section px-0">
              <div className="container-lg">
@@ -32,9 +45,11 @@ function GroupFlashSale(props) {
                              </div>
                          </div>
                          <div className="row group-flash-sale-body">
+                            <GroupSlide fetchData={fetchData} />
                             {
-                                fetchData.isLoading && <GroupLoading />
-                                || <GroupSlide fetchData={fetchData} />
+                                fetchData.data.length === 0 && 
+                                fetchData.isLoading && 
+                                <GroupLoading />
                             }
                          </div>
                      </div>

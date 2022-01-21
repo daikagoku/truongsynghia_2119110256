@@ -7,8 +7,10 @@ export default function ProductRating({...props}){
 	const attr = {...props};
 	attr.className+=" product-rating-view ";
 	let rating = 0;
-	if(data.rating !== undefined){
+	if(data.rating){
 		rating = data.rating;
+	}else{
+		rating = 0;
 	}
     function formatRating(results){
     	return Number.parseFloat(results).toFixed(1);

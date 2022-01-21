@@ -26,9 +26,6 @@ function Sidebar(){
               			params = {{parent_alias:'phu-kien'}}
               		/>
 				</Widget>
-				<Widget title="Đánh giá:"className="m-1"prefix="product-category">
-              		<RatingList />
-				</Widget>
 			</div>
 		</section>
 	)

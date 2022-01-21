@@ -12,28 +12,54 @@ function GroupPage({...props}){
 	const [state,dispatch] = useReducer(reducer,initData);
     const location = useLocation();
     const thisRef = useRef();
-    const [fetchDataLength] = useFetch({
+    const [fetchDataLength,handleFetchLength] = useFetch({
         initData:0,
         keyApi:'product',
         uriApi:'/count',
-        position:"home-page",
-        handle:function(results){
-            dispatch({
-                key:"set_length",
-                value:results
-            })
-            return results;
-        }
-    });
-	const [fetchDataList] = useFetch({
-        initData:[],
-        keyApi:'product',
-        params:{
-            offset:state.index,
-            limit:state.limit
-        },
         position:"home-page"
     });
+    useEffect(function(){
+        function get(){
+            handleFetchLength.get({
+                handle:function(results){
+                    dispatch({
+                        key:"set_length",
+                        value:results
+                    })
+                    return results;
+                }
+            })
+        }
+        get();
+        const interval = setInterval(function(){
+            get();
+        },5000)
+        return function(){
+            clearInterval(interval);
+        }
+    },[])
+	const [fetchDataList,handleFetchList] = useFetch({
+        initData:[],
+        keyApi:'product',
+        position:"home-page"
+    });
+    useEffect(function(){
+        function get(){
+            handleFetchList.get({
+                params:{
+                    offset:state.index,
+                    limit:state.limit
+                }
+            })
+        }
+        get();
+        const interval = setInterval(function(){
+            get();
+        },5000)
+        return function(){
+            clearInterval(interval);
+        }
+    },[state.index,state.limit])
     useEffect(function(){
         dispatch({
             key:"set_index",

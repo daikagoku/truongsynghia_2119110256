@@ -4,12 +4,23 @@ import clsx from 'clsx';
 import useFetch from '../../../../../../../core/useFetch';
 import {List,Item,Button,Drop} from '../../../../../../../components/';
 export default memo(forwardRef(function MainMenuDrop({keyApi,params,to,...props},ref){
-    let [fetchData] = useFetch({
+    let [fetchData,handleFetch] = useFetch({
         initData :[],
         keyApi   :keyApi,
-        position :"main-menu",
-        params   :params
+        position :"main-menu"
     });
+    useEffect(function(){
+        function get(){
+            handleFetch.get({params});
+        }
+        get();
+        const interval = setInterval(function(){
+            get();
+        },10000);
+        return function(){
+            get();
+        }
+    },[params])
     const dropdown={
         className:clsx("main-menu-navbar-dropdown-content")
     };

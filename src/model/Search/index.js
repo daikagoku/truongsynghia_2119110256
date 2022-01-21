@@ -12,8 +12,15 @@ export function useSearchProvider(){
 		history.push("?"+search);
 	};
 	const handleSearch = {
-			get:function(key){
-				return data.get(key);
+			to:function(url){
+				history.push(url);
+			},
+			get:function(key){		
+				if(data.has(key)){
+					return data.get(key).split(",");
+				}else{
+					return [];
+				}
 			},
 			set:function(key,value){				
 				if(value !== undefined){

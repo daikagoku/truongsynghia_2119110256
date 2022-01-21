@@ -23,7 +23,12 @@ function CategoryItems({isCheck,setCheck,children,multiple,name,dataKey,dataValu
 			if(thisCheck){
 				handleSearch.remove(dataKey,dataValue)
 			}else{
-				handleSearch.add(dataKey,dataValue)
+				
+				if(multiple === undefined){
+					handleSearch.set(dataKey,dataValue)
+				}else{
+					handleSearch.add(dataKey,dataValue)
+				}
 			}
 	}
 	return (

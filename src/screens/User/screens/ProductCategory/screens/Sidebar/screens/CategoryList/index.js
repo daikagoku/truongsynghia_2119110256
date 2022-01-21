@@ -7,12 +7,23 @@ import useSearchModel from "../../../../../../../../model/Search/";
 import {ProductCategoryContext} from '../../../../init';
 import {List} from "../../../../../../../../components/";
 function CategoryList({keyApi,params,...props}){
-	let [fetchData] = useFetch({
+	let [fetchData,handleFetch] = useFetch({
         initData :[],
         keyApi   :keyApi,
-        position :"product-category-sidebar",
-        params   :params
+        position :"product-category-sidebar"
   	});
+  	useEffect(function(){
+  		function get(){
+  			handleFetch.get({params});
+  		}
+  		get();
+  		const interval = setInterval(function(){
+			get();
+  		},5000);
+  		return function(){
+  			get();
+  		}
+  	},[params])
   	const [search,handleSearch] = useContext(ProductCategoryContext);
   	const [isCheck,setList] = useState();
   	useEffect(function(){

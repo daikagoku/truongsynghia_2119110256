@@ -1,0 +1,14 @@
+.user-avatar-container{
+	position: relative;
+	width: 100%;
+}
+.user-avatar-btn{
+	z-index: 1;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	font-size: 1em;
+	height: 2em;
+	width: 2em;
+	transform: translate(-50%,50%);
+}

@@ -1,5 +1,5 @@
 import './index.css';
-import {useContext,useMemo,memo} from 'react';
+import {useContext,useEffect,useMemo,memo} from 'react';
 import {Button,Icon} from '../../../../../../components/';
 import useFetch from '../../../../../../core/useFetch';
 import {ProductContext,CartProductContext} from './init';
@@ -9,44 +9,45 @@ import ProductTitle from './Title/';
 import ProductPrice from './Price/';
 import ProductOption from './Option/';
 export default memo(function({data,index}){
-	const [dataFetch] = useFetch({
+	const [dataFetch,handleFetch] = useFetch({
 		initData:{},
 		keyApi:'product',
-		position:'cart-item',
-		handle:function(results){
-        	if(Array.isArray(results) && results.length > 0){
-        		return results[0];
-        	}
-        },
-		params:{
-			id:data.productId,
-			version_id:data.versionId
-		}
+		position:'cart-item'
 	});
-
-	dataFetch.data.quantity = data.quantity;
+	useEffect(function(){
+		handleFetch.get({
+			params:{
+				id:data.productId,
+				version_id:data.versionId
+			},handle:function(results){
+	        	if(Array.isArray(results) && results.length > 0){
+	        		return results[0];
+	        	}
+	        }
+		})
+	},[data])
 	if(dataFetch.error === ""){
 		return(
-		<ProductContext.Provider value={{data:dataFetch.data}}>
-			<CartProductContext.Provider value={{data}}>
-				<div className="row cart-list-card">
-					<div className="col col-4 ">
-						<ProductThumbnail />
-					</div>
-					<div className="col col-6 ">
-						<ProductTitle />		
-						<div className="d-flex">
-							<ProductPrice sale/>
-							<ProductPrice root/>
+			<ProductContext.Provider value={{data:dataFetch.data}}>
+				<CartProductContext.Provider value={{data}}>
+					<div className="row cart-list-card">
+						<div className="col col-4 ">
+							<ProductThumbnail />
 						</div>
-						<ProductInputNumber />
+						<div className="col col-6 ">
+							<ProductTitle />		
+							<div className="d-flex">
+								<ProductPrice sale/>
+								<ProductPrice root/>
+							</div>
+							<ProductInputNumber />
+						</div>
+						<div className="col col-2 justify-content-center">
+							<ProductOption />
+						</div>
 					</div>
-					<div className="col col-2 justify-content-center">
-						<ProductOption />
-					</div>
-				</div>
-			</CartProductContext.Provider>
-		</ProductContext.Provider>
+				</CartProductContext.Provider>
+			</ProductContext.Provider>
 		)
 	}else{
 		return <></>

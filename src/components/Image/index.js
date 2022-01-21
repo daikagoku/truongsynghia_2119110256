@@ -19,7 +19,7 @@ const Image = (function(){
 			_Attr.alt=alt;
 		};
 		_Attr['src'] = useMemo(function(){
-			if(src !== undefined){
+			if(src){
 				return src;
 			}else{
 				return "/img/default-no-img.jpg";

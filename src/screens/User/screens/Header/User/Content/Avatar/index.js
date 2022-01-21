@@ -4,7 +4,6 @@ import {Thumbnail,Image} from '../../../../../../../components/';;
 export default function UserThumbnail({imageAttr,thumbnailAttr,...props}){
 	const [data] = useContext(UserContext);
 	const _thumbnailAttr = {
-		...thumbnailAttr,
 		...props
 	};
 	_thumbnailAttr.thumbnailClass+=" circle";

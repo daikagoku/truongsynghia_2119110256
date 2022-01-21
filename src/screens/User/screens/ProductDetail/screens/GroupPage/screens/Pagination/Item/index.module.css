@@ -1,0 +1,8 @@
+.button{
+	min-width: 2em;
+	height: 100%;
+}
+.button-active{
+	color: var(--highlight-color);
+	background: var(--highlight-background);
+}

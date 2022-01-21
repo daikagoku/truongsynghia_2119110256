@@ -30,12 +30,12 @@ export default memo(function Auth({...props}){
 		handle.setAction('login');
 	}
 	useEffect(function(){
-		if(auth.isShow){
+		if(auth.isShow && !auth.user){
 			modalRef.current.show();
 		}else{
 			modalRef.current.close();
 		}
-	},[auth.isShow]);
+	},[auth.isShow,auth.user]);
 	return(
 		<FormContext.Provider value={[state,handle]}>
 			<Modal 

@@ -4,7 +4,7 @@ import {Item,Link} from '../../../../../../components/';
 function FooterListItem({item,index,...props}){
 	return(
 		<Item key={index}className={"footer-list-item"}>
-			<Link to={"/postdetail/"+item.alias} className="footer-list-button">
+			<Link to={"/post/detail"} params={{alias:item.alias}} className="footer-list-button">
 				{item.title}
 			</Link>
 		</Item>

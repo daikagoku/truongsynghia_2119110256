@@ -6,7 +6,7 @@ import GroupPostLoading from './Loading/';
 import GroupPostContent from './Content/';
 
 export default memo(function GroupPost() {
-	const [listItem] = useFetch({
+	const [fetchData,handleFetch] = useFetch({
         initData:[],
         position:"home-post",
         keyApi:'post'
@@ -20,9 +20,11 @@ export default memo(function GroupPost() {
 						<GroupPostTitle />
 					</div>
 					<div className="group-post-body">
+						<GroupPostContent listItem={fetchData.data}/>
 						{
-							listItem.length > 0 && <GroupPostContent listItem={listItem}/>
-											|| <GroupPostLoading />
+							fetchData.data.length === 0 && 
+							fetchData.isLoading &&
+							<GroupPostLoading />
 						}
 					</div>	
 				</div>

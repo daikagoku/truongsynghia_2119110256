@@ -2,7 +2,7 @@ import './index.css';
 import { SearchContext } from '../init';
 import {useContext , useMemo,memo,useRef} from 'react';
 import {Button,Icon} from '../../../../../../components/';
-export default memo(function HeaderSearchSubmit(){
+export default memo(function HeaderSearchSubmit({onClick}){
 	const {state,dispatch,form} 		= useContext(SearchContext);
     const submitAttr = useMemo(function(){
 	    return{
@@ -10,9 +10,7 @@ export default memo(function HeaderSearchSubmit(){
 	      className:"header-search-btn square-btn submit",
 	      onMouseDown:function(e){
 	        e.preventDefault()
-	      },onClick:function(e){
-	        form.submit();
-	      }
+	      },onClick:onClick
 	    }
 	  },[state.value]);
 	return(      	

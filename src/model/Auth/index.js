@@ -5,38 +5,6 @@ import useApp from '../../core/useApp';
 import {AppContext} from '../../AppInit';
 import useMessageModel from '../../model/Message/';
 import useDialogModel from '../../model/Dialog/';
-async function handleLogin(account,setProgress,setError,setStore,setSession,showMes){
-	setProgress(true);
-	new Promise(function(resolve, reject){
-		resolve(account);
-	})
-		.then(function(results){	
-			setTimeout(function(){
-				setProgress(false);	
-				if(account.save){
-					setStore(account);
-				}else{
-					setStore({});
-				};
-
-				setSession(account);
-				showMes({
-					type:"success",
-					text:"Đăng nhập thành công chào mừng bạn đến với GoShop"
-				});	
-			},500)
-		})
-		.catch(function(error){
-			setTimeout(function(){
-				setProgress(false);	
-				setError(error);
-				showMes({
-					type:"error",
-					text:error
-				})		
-			},500)
-		})
-}
 export function useAuthProvider(){
 	const [data,setData] = useState({});
 	const handleCart = useMemo(function(){
@@ -71,7 +39,7 @@ export default function useAuthModel(){
 	const dataApp = useContext(AppContext);
 	const [data,handle] = dataApp['auth'];
 	const [store,handleStore] = useStorage('auth',{});
-	const [session,handleSession] = useSession('auth',{});
+	const [session,handleSession] = useSession('auth');
 	const [onProgress,setProgress] = useState(false);
 	const [error,setError] = useState("");
 	const [messages,handleMessage] = useMessageModel();
@@ -79,20 +47,25 @@ export default function useAuthModel(){
 	const handleAuth = useMemo(function(){
 		return {
 			login:function(obj){
-				handleLogin(obj,setProgress,setError,handleStore.set,handleSession.set,handleMessage.show);
-			},regiter:function(obj){
-
-			},forget:function(obj){
-
+				console.log("Login:",obj);
+				handleSession.set(obj);
 			},logout:function(){
-				handleSession.set({});
+				console.log("Logout:");
+				handleSession.remove();
+			},save:function(obj,isSave){
+				if(isSave){
+					handleStore.set(obj)
+				}else{
+					handleStore.set({});
+				}
 			}
 		};
 	},[store]);
 	return [{
 		error:error,
 		onProgress:onProgress,
-		user:store,
+		users:store,
+		user:session,
 		...data
 	},{
 		...handleAuth,

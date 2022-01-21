@@ -3,9 +3,12 @@
 	max-width: 100%;
 	position: relative;
 	margin:0.1em 0;
+	
 }
 .auth-input-content{
 	position: relative;
+	color: var(--primary-color) !important;
+	background: var(--primary-background) !important;
 }
 .auth-input{
 	width: 100%;
@@ -15,12 +18,12 @@
 	padding-top: 1em;
 	padding-bottom: 0.1em;
 	border-radius: 0.4em;
-	color: var(--primary-color);
-	background: var(--primary-background);
+	background: transparent;
 	border: 0.1em solid var(--primary-border);
 	box-shadow: 0 0 0.05em 0.05em var(--primary-shadow);
 }
 .auth-input-label{
+	color: var(--primary-color);
 	pointer-events: none;
 	position: absolute;
 	top: 50%;

@@ -1,7 +1,7 @@
 import {useContext,useEffect,memo,useMemo,useState} from 'react';
 import clsx from 'clsx';
-import {Input,Button,Icon} from '../../../../../../../../components/';
-import {ProductDetailContext} from '../../init';
+import {Input,Button,Icon} from '../../../../../../../components/';
+import {ProductDetailContext} from '../init';
 import styles from './index.module.css';
 export default memo(function(){
 	const [state,dispatch] = useContext(ProductDetailContext);
@@ -65,7 +65,7 @@ export default memo(function(){
 				<span>Số lượng:</span>
 			</div>
 			<div className="col col-8">
-				<div className="d-flex">
+				<div className="d-flex justify-content-center">
 					<div className={styles.container}>
 						<Input {...inputAttr}/>
 						<Button 
